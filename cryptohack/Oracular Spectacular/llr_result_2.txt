@@ -186,3 +186,53 @@ Banner: That last challenge was pretty easy, but I'm positive that this one will
   B1[10]='1' p=0.9624 q=312 T=5208
   B1[ 9]='3' p=0.9466 q=202 T=5410
   B1[ 8]='0' p=0.9624 q=274 T=5684
+  B1[ 7]='7' p=0.9624 q=218 T=5902
+  B1[ 6]='9' p=0.9466 q=180 T=6082
+  B1[ 5]='0' p=0.9466 q=164 T=6246
+  B1[ 4]='4' p=0.9624 q=226 T=6472
+  B1[ 3]='0' p=0.9276 q=192 T=6664
+  B1[ 2]='2' p=0.9624 q=292 T=6956
+  B1[ 1]='e' p=0.9466 q=166 T=7122
+  B1[ 0]='0' p=0.9624 q=226 T=7348
+Traceback (most recent call last):
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 267, in <module>
+    solve_once()
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 256, in solve_once
+    raise RuntimeError(f'Wrong message: {resp}')
+RuntimeError: Wrong message: {'error': 'incorrect message'}
+  -> 0e2040970319910c
+
+Message: 0e2040970319910c20302fa4d806e7b6
+Queries: 7348/12000
+Result: {'error': 'incorrect message'}
+Attempt 4 error: Wrong message: {'error': 'incorrect message'}
+
+============================================================
+ATTEMPT 5
+============================================================
+Banner: That last challenge was pretty easy, but I'm positive that this one will be harder!
+=== Block 2 (C2) ===
+  B2[15]='c' p=0.9624 q=212 T=212
+  B2[14]='1' p=0.9554 q=174 T=386
+  B2[13]='e' p=0.9466 q=322 T=708
+  B2[12]='e' p=0.9466 q=280 T=988
+  B2[11]='3' p=0.9276 q=368 T=1356
+  B2[10]='e' p=0.9276 q=276 T=1632
+  B2[ 9]='3' p=0.9276 q=190 T=1822
+  B2[ 8]='9' p=0.9466 q=222 T=2044
+  B2[ 7]='6' p=0.9276 q=196 T=2240
+  B2[ 6]='6' p=0.9624 q=234 T=2474
+  B2[ 5]='5' p=0.9624 q=302 T=2776
+  B2[ 4]='8' p=0.9624 q=192 T=2968
+  B2[ 3]='1' p=0.9624 q=276 T=3244
+  B2[ 2]='2' p=0.9624 q=226 T=3470
+  B2[ 1]='4' p=0.9593 q=220 T=3690
+  B2[ 0]='5' p=0.9624 q=196 T=3886
+  -> 5421856693e3ee1c
+=== Block 1 (C1) ===
+  B1[15]='9' p=0.9665 q=164 T=4050
+  B1[14]='2' p=0.9624 q=220 T=4270
+  B1[13]='a' p=0.9624 q=182 T=4452
+  B1[12]='d' p=0.9624 q=256 T=4708
+  B1[11]='5' p=0.9624 q=246 T=4954
+  B1[10]='4' p=0.9466 q=166 T=5120

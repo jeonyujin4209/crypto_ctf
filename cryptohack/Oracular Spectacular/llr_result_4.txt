@@ -217,3 +217,32 @@ Banner: That last challenge was pretty easy, but I'm positive that this one will
   B1[ 3]='a' p=0.9624 q=370 T=6944
   B1[ 2]='b' p=0.9276 q=284 T=7228
   B1[ 1]='7' p=0.9624 q=346 T=7574
+  B1[ 0]='1' p=0.9276 q=336 T=7910
+Traceback (most recent call last):
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 267, in <module>
+    solve_once()
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 256, in solve_once
+    raise RuntimeError(f'Wrong message: {resp}')
+RuntimeError: Wrong message: {'error': 'incorrect message'}
+  -> 17ba871ce7a0fb14
+
+Message: 17ba871ce7a0fb14cce1e9ae8570822c
+Queries: 7910/12000
+Result: {'error': 'incorrect message'}
+Attempt 5 error: Wrong message: {'error': 'incorrect message'}
+
+============================================================
+ATTEMPT 6
+============================================================
+Banner: That last challenge was pretty easy, but I'm positive that this one will be harder!
+=== Block 2 (C2) ===
+  B2[15]='b' p=0.9276 q=186 T=186
+  B2[14]='0' p=0.9466 q=274 T=460
+  B2[13]='5' p=0.9665 q=164 T=624
+  B2[12]='6' p=0.9624 q=312 T=936
+  B2[11]='b' p=0.9624 q=230 T=1166
+  B2[10]='5' p=0.6923 q=396 T=1562
+  B2[ 9]='7' p=0.9276 q=208 T=1770
+  B2[ 8]='4' p=0.9276 q=234 T=2004
+  B2[ 7]='9' p=0.9624 q=224 T=2228
+  B2[ 6]='6' p=0.9624 q=232 T=2460

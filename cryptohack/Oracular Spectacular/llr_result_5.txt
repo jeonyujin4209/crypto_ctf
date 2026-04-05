@@ -272,3 +272,5 @@ Banner: That last challenge was pretty easy, but I'm positive that this one will
 === Block 2 (C2) ===
   B2[15]='a' p=0.9466 q=228 T=228
   B2[14]='5' p=0.9624 q=190 T=418
+  B2[13]='2' p=0.9276 q=208 T=626
+  B2[12]='f' p=0.9624 q=210 T=836
