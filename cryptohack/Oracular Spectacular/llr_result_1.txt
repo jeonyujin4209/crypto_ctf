@@ -1,0 +1,219 @@
+
+============================================================
+ATTEMPT 1
+============================================================
+Banner: That last challenge was pretty easy, but I'm positive that this one will be harder!
+=== Block 2 (C2) ===
+  B2[15]='3' p=0.9276 q=210 T=210
+  B2[14]='6' p=0.9466 q=168 T=378
+  B2[13]='6' p=0.9276 q=234 T=612
+  B2[12]='7' p=0.9624 q=298 T=910
+  B2[11]='8' p=0.9624 q=234 T=1144
+  B2[10]='8' p=0.9624 q=388 T=1532
+  B2[ 9]='1' p=0.9624 q=194 T=1726
+  B2[ 8]='3' p=0.9624 q=322 T=2048
+  B2[ 7]='e' p=0.9554 q=164 T=2212
+  B2[ 6]='b' p=0.9624 q=336 T=2548
+  B2[ 5]='a' p=0.9466 q=384 T=2932
+  B2[ 4]='8' p=0.9624 q=206 T=3138
+  B2[ 3]='1' p=0.9624 q=228 T=3366
+  B2[ 2]='b' p=0.9466 q=216 T=3582
+  B2[ 1]='1' p=0.9624 q=206 T=3788
+  B2[ 0]='9' p=0.9276 q=242 T=4030
+  -> 91b18abe31887663
+=== Block 1 (C1) ===
+  B1[15]='b' p=0.9593 q=178 T=4208
+  B1[14]='2' p=0.9624 q=308 T=4516
+  B1[13]='b' p=0.9624 q=344 T=4860
+  B1[12]='9' p=0.9276 q=164 T=5024
+  B1[11]='8' p=0.9624 q=308 T=5332
+Traceback (most recent call last):
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 267, in <module>
+    solve_once()
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 243, in solve_once
+    i1 = recover_block(session, c1, iv, 'B1', bytes_after=0)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 220, in recover_block
+    winner, prob, q_used = find_byte_independent(session, target, prev, inter, pos, bytes_after)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 210, in find_byte_independent
+    raise RuntimeError(
+RuntimeError: Low-confidence byte at pos=10: p=0.5000, gap=0.000, used=420, active=2
+Attempt 1 error: Low-confidence byte at pos=10: p=0.5000, gap=0.000, used=420, active=2
+
+============================================================
+ATTEMPT 2
+============================================================
+Banner: That last challenge was pretty easy, but I'm positive that this one will be harder!
+=== Block 2 (C2) ===
+  B2[15]='5' p=0.9756 q=164 T=164
+  B2[14]='8' p=0.9466 q=286 T=450
+  B2[13]='7' p=0.9624 q=260 T=710
+  B2[12]='2' p=0.9624 q=222 T=932
+  B2[11]='d' p=0.9276 q=196 T=1128
+  B2[10]='c' p=0.9624 q=236 T=1364
+  B2[ 9]='1' p=0.9624 q=232 T=1596
+  B2[ 8]='5' p=0.9624 q=252 T=1848
+  B2[ 7]='5' p=0.9276 q=240 T=2088
+  B2[ 6]='c' p=0.9276 q=210 T=2298
+  B2[ 5]='1' p=0.9624 q=238 T=2536
+  B2[ 4]='2' p=0.9554 q=268 T=2804
+  B2[ 3]='1' p=0.9466 q=252 T=3056
+  B2[ 2]='6' p=0.9554 q=172 T=3228
+  B2[ 1]='0' p=0.9466 q=244 T=3472
+  B2[ 0]='d' p=0.9466 q=276 T=3748
+  -> d06121c551cd2785
+=== Block 1 (C1) ===
+  B1[15]='2' p=0.9554 q=214 T=3962
+  B1[14]='5' p=0.9276 q=174 T=4136
+  B1[13]='b' p=0.9624 q=224 T=4360
+  B1[12]='1' p=0.9624 q=268 T=4628
+Traceback (most recent call last):
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 267, in <module>
+    solve_once()
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 243, in solve_once
+    i1 = recover_block(session, c1, iv, 'B1', bytes_after=0)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 220, in recover_block
+    winner, prob, q_used = find_byte_independent(session, target, prev, inter, pos, bytes_after)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 210, in find_byte_independent
+    raise RuntimeError(
+RuntimeError: Low-confidence byte at pos=11: p=0.6090, gap=0.811, used=418, active=3
+Attempt 2 error: Low-confidence byte at pos=11: p=0.6090, gap=0.811, used=418, active=3
+
+============================================================
+ATTEMPT 3
+============================================================
+Banner: That last challenge was pretty easy, but I'm positive that this one will be harder!
+=== Block 2 (C2) ===
+  B2[15]='b' p=0.9624 q=252 T=252
+  B2[14]='e' p=0.9466 q=184 T=436
+  B2[13]='8' p=0.9466 q=172 T=608
+  B2[12]='e' p=0.9624 q=238 T=846
+  B2[11]='2' p=0.9624 q=200 T=1046
+  B2[10]='a' p=0.9276 q=392 T=1438
+  B2[ 9]='5' p=0.9554 q=172 T=1610
+  B2[ 8]='3' p=0.9276 q=164 T=1774
+  B2[ 7]='2' p=0.9554 q=168 T=1942
+  B2[ 6]='a' p=0.9276 q=174 T=2116
+  B2[ 5]='7' p=0.9554 q=204 T=2320
+  B2[ 4]='a' p=0.9466 q=220 T=2540
+  B2[ 3]='0' p=0.9624 q=396 T=2936
+  B2[ 2]='2' p=0.9554 q=166 T=3102
+  B2[ 1]='d' p=0.9276 q=242 T=3344
+  B2[ 0]='2' p=0.9624 q=228 T=3572
+  -> 2d20a7a235a2e8eb
+=== Block 1 (C1) ===
+  B1[15]='3' p=0.9624 q=262 T=3834
+  B1[14]='3' p=0.9624 q=300 T=4134
+  B1[13]='5' p=0.9466 q=190 T=4324
+  B1[12]='c' p=0.9554 q=232 T=4556
+  B1[11]='e' p=0.9276 q=164 T=4720
+  B1[10]='a' p=0.9554 q=250 T=4970
+  B1[ 9]='c' p=0.9554 q=178 T=5148
+  B1[ 8]='d' p=0.9624 q=334 T=5482
+  B1[ 7]='d' p=0.9624 q=250 T=5732
+  B1[ 6]='5' p=0.9466 q=198 T=5930
+  B1[ 5]='e' p=0.9466 q=234 T=6164
+  B1[ 4]='d' p=0.9624 q=256 T=6420
+  B1[ 3]='e' p=0.9624 q=344 T=6764
+  B1[ 2]='d' p=0.9276 q=210 T=6974
+  B1[ 1]='1' p=0.9276 q=170 T=7144
+  B1[ 0]='1' p=0.9624 q=182 T=7326
+Traceback (most recent call last):
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 267, in <module>
+    solve_once()
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 256, in solve_once
+    raise RuntimeError(f'Wrong message: {resp}')
+RuntimeError: Wrong message: {'error': 'incorrect message'}
+  -> 11dede5ddcaec533
+
+Message: 11dede5ddcaec5332d20a7a235a2e8eb
+Queries: 7326/12000
+Result: {'error': 'incorrect message'}
+Attempt 3 error: Wrong message: {'error': 'incorrect message'}
+
+============================================================
+ATTEMPT 4
+============================================================
+Banner: That last challenge was pretty easy, but I'm positive that this one will be harder!
+=== Block 2 (C2) ===
+  B2[15]='a' p=0.9466 q=222 T=222
+Traceback (most recent call last):
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 267, in <module>
+    solve_once()
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 238, in solve_once
+    i2 = recover_block(session, c2, c1, 'B2', bytes_after=16)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 220, in recover_block
+    winner, prob, q_used = find_byte_independent(session, target, prev, inter, pos, bytes_after)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 210, in find_byte_independent
+    raise RuntimeError(
+RuntimeError: Low-confidence byte at pos=14: p=0.6090, gap=0.811, used=374, active=3
+Attempt 4 error: Low-confidence byte at pos=14: p=0.6090, gap=0.811, used=374, active=3
+
+============================================================
+ATTEMPT 5
+============================================================
+Banner: That last challenge was pretty easy, but I'm positive that this one will be harder!
+=== Block 2 (C2) ===
+  B2[15]='d' p=0.9276 q=178 T=178
+  B2[14]='5' p=0.9624 q=210 T=388
+  B2[13]='d' p=0.9624 q=282 T=670
+  B2[12]='5' p=0.9624 q=222 T=892
+  B2[11]='4' p=0.9276 q=164 T=1056
+  B2[10]='5' p=0.9276 q=186 T=1242
+  B2[ 9]='c' p=0.9624 q=218 T=1460
+  B2[ 8]='5' p=0.9276 q=180 T=1640
+  B2[ 7]='c' p=0.9276 q=264 T=1904
+  B2[ 6]='c' p=0.9624 q=298 T=2202
+  B2[ 5]='4' p=0.9276 q=216 T=2418
+  B2[ 4]='e' p=0.9466 q=166 T=2584
+  B2[ 3]='8' p=0.9624 q=300 T=2884
+  B2[ 2]='7' p=0.9624 q=184 T=3068
+  B2[ 1]='3' p=0.9276 q=220 T=3288
+  B2[ 0]='6' p=0.9624 q=262 T=3550
+  -> 6378e4cc5c545d5d
+=== Block 1 (C1) ===
+  B1[15]='d' p=0.9624 q=278 T=3828
+  B1[14]='5' p=0.9466 q=166 T=3994
+  B1[13]='9' p=0.9624 q=266 T=4260
+  B1[12]='5' p=0.9624 q=320 T=4580
+  B1[11]='2' p=0.9276 q=176 T=4756
+  B1[10]='9' p=0.9276 q=214 T=4970
+  B1[ 9]='1' p=0.9276 q=204 T=5174
+Traceback (most recent call last):
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 267, in <module>
+    solve_once()
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 243, in solve_once
+    i1 = recover_block(session, c1, iv, 'B1', bytes_after=0)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 220, in recover_block
+    winner, prob, q_used = find_byte_independent(session, target, prev, inter, pos, bytes_after)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\UserK\Documents\crypto_ctf\cryptohack\Oracular Spectacular\solve_llr_independent.py", line 210, in find_byte_independent
+    raise RuntimeError(
+RuntimeError: Low-confidence byte at pos=8: p=0.4091, gap=0.000, used=418, active=3
+Attempt 5 error: Low-confidence byte at pos=8: p=0.4091, gap=0.000, used=418, active=3
+
+============================================================
+ATTEMPT 6
+============================================================
+Banner: That last challenge was pretty easy, but I'm positive that this one will be harder!
+=== Block 2 (C2) ===
+  B2[15]='3' p=0.9276 q=270 T=270
+  B2[14]='7' p=0.9276 q=176 T=446
+  B2[13]='7' p=0.9466 q=198 T=644
+  B2[12]='2' p=0.9624 q=204 T=848
+  B2[11]='7' p=0.9624 q=296 T=1144
+  B2[10]='a' p=0.9276 q=164 T=1308
+  B2[ 9]='d' p=0.9466 q=228 T=1536
+  B2[ 8]='9' p=0.9624 q=294 T=1830
+  B2[ 7]='9' p=0.9466 q=180 T=2010
+  B2[ 6]='6' p=0.9554 q=174 T=2184
+  B2[ 5]='4' p=0.9276 q=242 T=2426
+  B2[ 4]='8' p=0.9624 q=342 T=2768
+  B2[ 3]='7' p=0.9276 q=240 T=3008
+  B2[ 2]='d' p=0.9624 q=380 T=3388
