@@ -85,6 +85,8 @@ class ServerOracle:
 
     def check_padding(self, ct_hex):
         self.query_count += 1
+        if self.query_count % 1000 == 0:
+            print(f" q={self.query_count}", end="", flush=True)
         return self._cmd({"option": "unpad", "ct": ct_hex})["result"]
 
     def check_message(self, message):
