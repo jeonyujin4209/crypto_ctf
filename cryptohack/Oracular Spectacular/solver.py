@@ -148,7 +148,7 @@ def find_byte(oracle_fn, target, inter, pos, prev_byte, budget):
     return cands[best], used
 
 
-def solve_attempt(oracle, budget_per_byte=370):
+def solve_attempt(oracle, budget_per_byte=370, verbose=False):
     """
     Single attempt to recover the 32-byte hex message.
     Returns the recovered message string.
@@ -165,6 +165,8 @@ def solve_attempt(oracle, budget_per_byte=370):
         best, _ = find_byte(oracle.check_padding, c2, inter2, pos, c1[pos],
                             budget_per_byte)
         inter2[pos] = best
+    if verbose:
+        print(" B2", end="", flush=True)
 
     # Attack block 1 (bytes 0-15): target=C1, prev=IV
     inter1 = [0] * 16
@@ -172,6 +174,8 @@ def solve_attempt(oracle, budget_per_byte=370):
         best, _ = find_byte(oracle.check_padding, c1, inter1, pos, iv[pos],
                             budget_per_byte)
         inter1[pos] = best
+    if verbose:
+        print(" B1", end="", flush=True)
 
     pt1 = bytes([inter1[i] ^ iv[i] for i in range(16)])
     pt2 = bytes([inter2[i] ^ c1[i] for i in range(16)])
@@ -219,13 +223,12 @@ def run_server(max_attempts=500):
     for attempt in range(1, max_attempts + 1):
         elapsed = time.time() - start
         rate = attempt / elapsed if elapsed > 1 else 0
-        print(f"\rAttempt {attempt}/{max_attempts}  "
-              f"({elapsed:.0f}s, {rate:.2f}/s)", end="", flush=True)
+        print(f"Attempt {attempt}/{max_attempts} ({elapsed:.0f}s)", end="", flush=True)
 
         oracle = None
         try:
             oracle = ServerOracle()
-            msg = solve_attempt(oracle)
+            msg = solve_attempt(oracle, verbose=True)
             flag = oracle.check_message(msg)
 
             if flag:
