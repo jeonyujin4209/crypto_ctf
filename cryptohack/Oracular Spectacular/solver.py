@@ -219,12 +219,11 @@ def run_local(n_trials=200):
 
 
 def run_server(max_attempts=500):
-    """Run solver against CryptoHack server with automatic retry."""
+    """Run solver against CryptoHack server with automatic retry (sequential)."""
     start = time.time()
 
     for attempt in range(1, max_attempts + 1):
         elapsed = time.time() - start
-        rate = attempt / elapsed if elapsed > 1 else 0
         print(f"Attempt {attempt}/{max_attempts} ({elapsed:.0f}s)", end="", flush=True)
 
         oracle = None
@@ -259,11 +258,83 @@ def run_server(max_attempts=500):
     return False
 
 
+def _worker(worker_id, attempt_counter, lock, found_flag, max_attempts, start):
+    """Worker thread for parallel server solving."""
+    while not found_flag.is_set():
+        with lock:
+            num = attempt_counter[0]
+            if num > max_attempts:
+                return
+            attempt_counter[0] += 1
+
+        oracle = None
+        try:
+            oracle = ServerOracle()
+            msg = solve_attempt(oracle)
+            flag = oracle.check_message(msg)
+
+            elapsed = time.time() - start
+            if flag:
+                found_flag.set()
+                print(f"\n\n{'='*60}")
+                print(f"[W{worker_id}] SUCCESS on attempt {num}!")
+                print(f"FLAG: {flag}")
+                print(f"Time: {elapsed:.0f}s")
+                print(f"{'='*60}")
+                with open("flag.txt", "w") as f:
+                    f.write(flag + "\n")
+                return
+            else:
+                print(f"[W{worker_id}] attempt {num} -> wrong (q={oracle.query_count}, {elapsed:.0f}s)")
+        except Exception as e:
+            print(f"[W{worker_id}] attempt {num} -> error: {e}")
+        finally:
+            if oracle and hasattr(oracle, 'close'):
+                oracle.close()
+
+
+def run_parallel(max_attempts=500, workers=4):
+    """Run solver with multiple parallel connections."""
+    import threading
+
+    start = time.time()
+    attempt_counter = [1]
+    lock = threading.Lock()
+    found_flag = threading.Event()
+
+    print(f"Starting {workers} parallel workers, max {max_attempts} attempts")
+    threads = []
+    for i in range(workers):
+        t = threading.Thread(target=_worker,
+                             args=(i, attempt_counter, lock, found_flag, max_attempts, start))
+        t.daemon = True
+        t.start()
+        threads.append(t)
+        time.sleep(0.5)  # stagger connections
+
+    try:
+        for t in threads:
+            while t.is_alive():
+                t.join(timeout=1)
+    except KeyboardInterrupt:
+        print("\nAborted by user. Waiting for workers to stop...")
+        found_flag.set()
+        for t in threads:
+            t.join(timeout=5)
+
+    elapsed = time.time() - start
+    total = attempt_counter[0] - 1
+    print(f"\nDone. {total} attempts in {elapsed:.0f}s")
+
+
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'local'
     count = int(sys.argv[2]) if len(sys.argv) > 2 else 5000
+    workers = int(sys.argv[3]) if len(sys.argv) > 3 else 4
 
     if mode == 'server':
         run_server(count)
+    elif mode == 'parallel':
+        run_parallel(count, workers)
     else:
         run_local(count)
