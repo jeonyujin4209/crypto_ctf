@@ -91,13 +91,13 @@
 
 ### Brainteasers Part 2
 - [x] Ellipse Curve Cryptography — `crypto{c0n1c_s3ct10n5_4r3_f1n1t3_gr0up5}`
-- [x] Roll your Own — 서버 테스트 필요
+- [x] Roll your Own
 - [x] Unencryptable — `crypto{R3m3mb3r!_F1x3d_P0iNts_aR3_s3crE7s_t00}`
-- [x] Cofactor Cofantasy — 서버 테스트 필요
+- [x] Cofactor Cofantasy
 - [x] Real Eisenstein — `crypto{r34l_t0_23D_m4p}`
 
 ### Primes
-- [x] Prime and Prejudice — 서버 테스트 필요
+- [x] Prime and Prejudice
 
 ## RSA (7/29)
 ### Starter
