@@ -1,8 +1,8 @@
 # The Matrix Revolutions (125pts)
-## 설명
-Everything that has a beginning has an end, Neo.
+## Misc
 
-Challenge contributed by jschnei
+## Description
+Everything that has a beginning has an end, Neo.Challenge files:  - matrix_revolutions.zipChallenge contributed by jschnei
 
-## 파일
-- `matrix_revolutions.zip` - 챌린지 파일
+## Files
+- `matrix_revolutions.zip`
