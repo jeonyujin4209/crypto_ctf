@@ -1,46 +1,36 @@
 # Let's Decrypt Again
 
+- **Category**: RSA / Signatures Part 2
+- **Points**: 150
+- **Server**: socket.cryptohack.org:13394
+
 ## Challenge
 
-The server has a fixed SIGNATURE. We must provide a composite public key N (via set_pubkey), receive a random suffix, then make 3 "claims" -- each requiring a valid signature verification for a different message pattern (with the same N but different e values). The 3 claims yield secret shares that XOR together to produce the flag.
+SIGNATURE가 고정. N(합성수)을 설정하고, 3개의 서로 다른 메시지 패턴에 대해 각각 e를 제공.
+pow(SIGNATURE, e_i, N) == emsa_pkcs1_v15.encode(msg_i) 성립 시 share 획득. 3개 XOR → FLAG.
 
-For each claim: `pow(SIGNATURE, e_i, N) == bytes_to_long(emsa_pkcs1_v15.encode(msg_i, 96))`
+## 실패 기록
 
-We control N, e_i, and msg_i (within pattern constraints).
+### 시도 1: smooth prime p, N = p^2, p-adic DLP
+- p-1이 smooth한 ~386비트 소수를 랜덤 생성 → N = p^2
+- **실패**: smooth prime 생성 300,000회 반복 → Lightsail(512MB) 메모리/시간 초과 kill
 
-## Attack: Smooth prime squared + discrete log
+### 시도 2: emsa_pkcs1_v15 SHA-256 vs SHA-1
+- 커스텀 SHA-256 인코딩 사용 → 서버는 `pkcs1` 라이브러리 기본 SHA-1
+- **실패**: 해시 불일치 `Invalid signature`
+- **교훈**: `from pkcs1 import emsa_pkcs1_v15` 필수
 
-### Key Insight: N = p^2
+## 최종 풀이: N = 41^144
 
-Choose N = p^2 where p is a smooth prime (~385 bits). This gives:
-- N is composite (passes the `isPrime` check)
-- N ~ 770 bits > max digest value (~753 bits)
-- The group (Z/p^2Z)* has order p*(p-1), which is smooth if p-1 is smooth
-- Discrete log mod p^2 is computationally feasible
+핵심 발상: smooth prime을 **찾을** 필요 없이, **작은 소수의 거듭제곱**을 N으로 사용.
 
-### Steps:
+- SIGNATURE mod 41 = 12 (primitive root mod 41 확인)
+- N = 41^144 = 772 bits > 768 bits (digest 크기)
+- phi(N) = 40 * 41^143 = 2^3 * 5 * 41^143 (극도로 smooth)
+- sympy `discrete_log`으로 Pohlig-Hellman + Hensel lifting
+- **장점**: smooth prime 생성 불필요, O(초) 실행
 
-1. **Get SIGNATURE** from the server
-2. **Generate smooth prime p** (~385 bits) where:
-   - p-1 is smooth (product of small primes up to ~200)
-   - SIGNATURE is a primitive root mod p (so every coprime element has a dlog)
-   - SIGNATURE^(p-1) != 1 mod p^2 (primitive root mod p^2 too)
-3. **Set pubkey** N = p^2, receive suffix
-4. **For each claim pattern**, craft a matching message, compute the EMSA-PKCS1 digest, then:
-   - Compute dlog mod p using Pohlig-Hellman (fast because p-1 is smooth)
-   - Hensel-lift to get dlog mod p*(p-1) = dlog mod p^2
-5. **Submit claims** and XOR the 3 shares
-
-### Hensel Lifting Detail
-
-Given e0 = dlog(digest, SIGNATURE, p):
-- Compute h_ratio = digest * SIGNATURE^(-e0) mod p^2. This is 1 mod p.
-- Write h_ratio = 1 + s*p and SIGNATURE^(p-1) = 1 + t*p mod p^2
-- Then k = s * t^(-1) mod p gives the correction
-- Final answer: e = e0 + k*(p-1)
-
-## Patterns
-
-- Pattern 0: `This is a test ... for a fake signature.`
-- Pattern 1: `My name is [name] and I own CryptoHack.org`
-- Pattern 2: Valid Bitcoin address message (generated using version 0x00 with zero payload)
+### 메시지 패턴
+- Pattern 0: `This is a test...for a fake signature.`
+- Pattern 1: `My name is Alice and I own CryptoHack.org`
+- Pattern 2: Valid Bitcoin address (`1111111111111111111114oLvT2`)
