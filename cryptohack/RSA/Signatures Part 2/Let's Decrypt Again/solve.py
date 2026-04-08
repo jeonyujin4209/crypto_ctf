@@ -11,7 +11,7 @@ from pwn import *
 import json
 import hashlib
 from Crypto.Util.number import bytes_to_long, long_to_bytes, isPrime, GCD
-from sympy.ntheory import discrete_log as sympy_dlog
+from sympy.ntheory.modular import crt
 
 USE_LOCAL = False
 HOST = "socket.cryptohack.org"
@@ -35,6 +35,43 @@ def exchange(r, payload):
 def emsa_encode(msg_bytes, emLen):
     from pkcs1 import emsa_pkcs1_v15
     return emsa_pkcs1_v15.encode(msg_bytes, emLen)
+
+def dlog_prime_power(g, h, p, k, n):
+    """Discrete log for the p-part: solve g^x = h mod p^k, x mod p^(k-1).
+    Uses iterative p-adic lifting. O(k) modular exponentiations."""
+    g_sub = pow(g, p - 1, n)
+    h_sub = pow(h, p - 1, n)
+    x = 0
+    gamma = g_sub
+    for i in range(k - 1):
+        gx = pow(g_sub, x, n)
+        diff = h_sub * pow(gx, -1, n) % n
+        c = ((diff - 1) // p**(i + 1)) % p
+        a_i = ((gamma - 1) // p**(i + 1)) % p
+        if a_i != 0:
+            x += (c * pow(a_i, -1, p) % p) * p**i
+        gamma = pow(gamma, p, n)
+    return x
+
+def dlog_small(g, h, order, n, phi):
+    """Brute-force dlog for small prime-power factor of phi."""
+    exp = phi // order
+    g_sub = pow(g, exp, n)
+    h_sub = pow(h, exp, n)
+    curr = 1
+    for i in range(order):
+        if curr == h_sub:
+            return i
+        curr = curr * g_sub % n
+    return 0
+
+def full_dlog(g, h, n):
+    """Full discrete log in (Z/41^144)* using Pohlig-Hellman + p-adic lifting."""
+    e8 = dlog_small(g, h, 8, n, PHI_N)
+    e5 = dlog_small(g, h, 5, n, PHI_N)
+    e41 = dlog_prime_power(g, h, P_BASE, K_EXP, n)
+    result, _ = crt([8, 5, P_BASE**(K_EXP - 1)], [e8, e5, e41])
+    return int(result)
 
 def btc_address():
     """Generate a valid Bitcoin address (version 0x00)."""
@@ -114,9 +151,8 @@ def solve():
 
         # Compute discrete log: SIGNATURE^e ≡ digest_int mod 41^144
         # Using sympy which handles smooth orders well
-        log.info(f"  Computing dlog (smooth order: 2^3 * 5 * 41^143)...")
-        prime_order = {2: 3, 5: 1, P_BASE: K_EXP - 1}  # factorization of phi(N)
-        e_i = int(sympy_dlog(N_VAL, digest_int % N_VAL, SIGNATURE % N_VAL, PHI_N, prime_order))
+        log.info(f"  Computing dlog (p-adic lifting)...")
+        e_i = full_dlog(SIGNATURE % N_VAL, digest_int % N_VAL, N_VAL)
         log.success(f"  e = {e_i} ({e_i.bit_length()} bits)")
 
         # Verify locally
