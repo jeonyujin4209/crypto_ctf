@@ -115,7 +115,8 @@ def solve():
         # Compute discrete log: SIGNATURE^e ≡ digest_int mod 41^144
         # Using sympy which handles smooth orders well
         log.info(f"  Computing dlog (smooth order: 2^3 * 5 * 41^143)...")
-        e_i = int(sympy_dlog(N_VAL, digest_int % N_VAL, SIGNATURE % N_VAL, PHI_N))
+        prime_order = {2: 3, 5: 1, P_BASE: K_EXP - 1}  # factorization of phi(N)
+        e_i = int(sympy_dlog(N_VAL, digest_int % N_VAL, SIGNATURE % N_VAL, PHI_N, prime_order))
         log.success(f"  e = {e_i} ({e_i.bit_length()} bits)")
 
         # Verify locally
