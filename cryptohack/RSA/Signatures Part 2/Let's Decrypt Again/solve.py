@@ -41,15 +41,9 @@ def exchange(r, payload):
     return json.loads(line)
 
 def emsa_pkcs1_v15_encode(msg_bytes, emLen):
-    """EMSA-PKCS1-v1.5 encoding for SHA-256"""
-    der_prefix = bytes.fromhex("3031300d060960864801650304020105000420")
-    h = hashlib.sha256(msg_bytes).digest()
-    T = der_prefix + h
-    if emLen < len(T) + 11:
-        raise ValueError("intended encoded message length too short")
-    PS = b'\xff' * (emLen - len(T) - 3)
-    EM = b'\x00\x01' + PS + b'\x00' + T
-    return EM
+    """EMSA-PKCS1-v1.5 encoding using pkcs1 library (SHA-1, matching server)"""
+    from pkcs1 import emsa_pkcs1_v15
+    return emsa_pkcs1_v15.encode(msg_bytes, emLen)
 
 def gen_smooth_prime(bits, attempts=300000):
     """Generate a prime p of given bit length where p-1 is B-smooth."""
