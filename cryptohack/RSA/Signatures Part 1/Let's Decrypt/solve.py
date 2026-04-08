@@ -9,8 +9,8 @@ Attack: We control N and e in verification. Set e=1, then:
 
 from pwn import *
 import json
-import hashlib
 from Crypto.Util.number import bytes_to_long, long_to_bytes
+from pkcs1 import emsa_pkcs1_v15
 
 USE_LOCAL = False
 HOST = "socket.cryptohack.org"
@@ -23,20 +23,6 @@ def exchange(r, payload):
     if idx >= 0:
         line = line[idx:]
     return json.loads(line)
-
-def emsa_pkcs1_v15_encode(msg_bytes, emLen):
-    """EMSA-PKCS1-v1.5 encoding for SHA-256"""
-    # DER encoding of DigestInfo for SHA-256
-    der_prefix = bytes.fromhex("3031300d060960864801650304020105000420")
-    h = hashlib.sha256(msg_bytes).digest()
-    T = der_prefix + h
-
-    if emLen < len(T) + 11:
-        raise ValueError("intended encoded message length too short")
-
-    PS = b'\xff' * (emLen - len(T) - 3)
-    EM = b'\x00\x01' + PS + b'\x00' + T
-    return EM
 
 def solve():
     if USE_LOCAL:
@@ -54,8 +40,8 @@ def solve():
     # Step 2: Craft our message matching the regex pattern
     msg = "I am Mallory and I own CryptoHack.org"
 
-    # Step 3: Compute EMSA-PKCS1-v1.5 digest for our message
-    digest = emsa_pkcs1_v15_encode(msg.encode(), 256)
+    # Step 3: Compute EMSA-PKCS1-v1.5 digest using same library as server
+    digest = emsa_pkcs1_v15.encode(msg.encode(), 256)
     digest_int = bytes_to_long(digest)
     log.info(f"digest_int = {digest_int}")
 
