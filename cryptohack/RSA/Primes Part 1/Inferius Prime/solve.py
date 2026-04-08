@@ -1,0 +1,9 @@
+from Crypto.Util.number import long_to_bytes
+p = 848445505077945374527983649411
+q = 1160939713152385063689030212503
+n = p * q
+e = 65537
+ct = 948553474947320504624302879933619818331484350431616834086273
+d = pow(e, -1, (p-1)*(q-1))
+print(long_to_bytes(pow(ct, d, n)))
+# crypto{N33d_b1g_pR1m35}
