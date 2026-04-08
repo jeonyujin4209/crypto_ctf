@@ -2,12 +2,12 @@
 
 from Crypto.Util.number import getPrime, inverse, bytes_to_long, long_to_bytes
 
-e = 3
+e = 1
 d = -1
 
 while d == -1:
-    p = getPrime(1024)
-    q = getPrime(1024)
+    p = getPrime(512)
+    q = getPrime(512)
     phi = (p - 1) * (q - 1)
     d = inverse(e, phi)
 
