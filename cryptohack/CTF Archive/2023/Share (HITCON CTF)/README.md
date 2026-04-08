@@ -1,0 +1,8 @@
+# Share (HITCON CTF) (?pts)
+## 2023
+
+## Description
+I hope I actually implemented Shamir Secret Sharing correctly this year. I am pretty sure you won't be able to guess my secret even when I give you all but one share.Challenge contributed by maple3142Connect at archive.cryptohack.org 12739Challenge files:  - server.py
+
+## Files
+- `server.py`
