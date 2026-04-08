@@ -8,9 +8,27 @@ PORT = 13403
 
 
 def json_recv(r):
+    """Receive a line, strip any prefix text before JSON, and parse."""
     line = r.recvline().decode().strip()
     log.info(f"Received: {line}")
-    return json.loads(line)
+    # CryptoHack listener prepends 'before_send' text before the JSON value
+    # Find the start of JSON (object, array, string, or number)
+    for i, c in enumerate(line):
+        if c in '{["0123456789-':
+            try:
+                return json.loads(line[i:])
+            except json.JSONDecodeError:
+                continue
+    # If no JSON found, the line might be a prompt — read the next line
+    line2 = r.recvline().decode().strip()
+    log.info(f"Received (2nd): {line2}")
+    for i, c in enumerate(line2):
+        if c in '{["0123456789-':
+            try:
+                return json.loads(line2[i:])
+            except json.JSONDecodeError:
+                continue
+    raise ValueError(f"Cannot parse JSON from: {line} / {line2}")
 
 
 def json_send(r, obj):
@@ -53,8 +71,16 @@ def solve():
     r = remote(HOST, PORT)
 
     # Step 1: Receive q
+    # Server sends: "Prime generated: " + hex(q) on one line
+    # Then prompt: "Send integers (g,n) such that pow(g,q,n) = 1: " on next line
     data = json_recv(r)
     q = extract_hex(data)
+    # Consume the prompt line
+    try:
+        prompt = r.recvline(timeout=2)
+        log.info(f"Prompt: {prompt.decode().strip()}")
+    except:
+        pass
     log.info(f"q = {q.bit_length()} bits")
 
     # Step 2: Set up p-adic DLP
@@ -70,12 +96,19 @@ def solve():
     json_send(r, {"g": hex(g), "n": hex(n)})
 
     # Step 4: Receive h
+    # Server sends: "Generated my public key: " + hex(h)
+    # Then prompt: "What is my private key: "
     data = json_recv(r)
-    if "error" in data:
+    if isinstance(data, dict) and "error" in data:
         log.error(f"Server error: {data['error']}")
         r.close()
         return
     h = extract_hex(data)
+    try:
+        prompt = r.recvline(timeout=2)
+        log.info(f"Prompt: {prompt.decode().strip()}")
+    except:
+        pass
     log.info(f"h = {h.bit_length()} bits")
 
     # Step 5: Recover x using p-adic logarithm
