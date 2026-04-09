@@ -37,7 +37,7 @@ import time
 from Crypto.Cipher import AES
 from sympy import discrete_log, factorint, isprime, nextprime
 
-HOST = "127.0.0.1"
+HOST = "socket.cryptohack.org"
 PORT = 13373
 TIMEOUT = 10
 

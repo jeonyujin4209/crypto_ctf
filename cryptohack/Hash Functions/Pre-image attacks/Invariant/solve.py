@@ -83,7 +83,7 @@ _real_listener.start_server = _real_start
 
 MyHash = ns["MyHash"]
 
-HOST = "127.0.0.1"
+HOST = "socket.cryptohack.org"
 PORT = 13393
 TIMEOUT = 30
 

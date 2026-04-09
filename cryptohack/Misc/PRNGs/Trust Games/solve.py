@@ -66,7 +66,7 @@ from Crypto.Cipher import AES
 sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "tools"))
 from trunc_lcg import recover_truncated_lcg_seed  # noqa: E402
 
-HOST = "127.0.0.1"
+HOST = "socket.cryptohack.org"
 PORT = 13396
 TIMEOUT = 30
 

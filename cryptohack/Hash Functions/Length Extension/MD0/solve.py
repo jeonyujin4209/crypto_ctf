@@ -38,7 +38,7 @@ import socket
 import sys
 from Crypto.Cipher import AES
 
-HOST = "127.0.0.1"
+HOST = "socket.cryptohack.org"
 PORT = 13388
 
 

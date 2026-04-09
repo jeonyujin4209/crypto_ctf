@@ -23,7 +23,7 @@ import json
 import socket
 import sys
 
-HOST = "127.0.0.1"
+HOST = "socket.cryptohack.org"
 PORT = 13389
 TIMEOUT = 30
 

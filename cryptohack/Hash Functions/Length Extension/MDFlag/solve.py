@@ -54,7 +54,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "tools"))
 from md5_ext import md5_continue, md5_pad  # noqa: E402
 
-HOST = "127.0.0.1"
+HOST = "socket.cryptohack.org"
 PORT = 13407
 TIMEOUT = 30
 

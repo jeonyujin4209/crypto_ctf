@@ -45,7 +45,7 @@ import json
 import socket
 from hashlib import sha256
 
-HOST = "127.0.0.1"
+HOST = "socket.cryptohack.org"
 PORT = 13402
 TIMEOUT = 30
 
