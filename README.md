@@ -1,79 +1,402 @@
 # Crypto CTF - CryptoHack Writeups
 
-## Introduction
+## Progress Overview
 
-### Encoding
-| # | 문제 | pts | technique | 플래그 |
-|---|------|-----|-----------|--------|
-| 1 | [ASCII](cryptohack/ASCII/) | 5 | `chr()` 변환 | `crypto{ASCII_pr1nt4bl3}` |
-| 2 | [Hex](cryptohack/Hex/) | 5 | `bytes.fromhex()` | `crypto{You_will_be_working_with_hex_strings_a_lot}` |
-| 3 | [Base64](cryptohack/Base64/) | 10 | hex→bytes→base64 | `crypto/Base+64+Encoding+is+Web+Safe/` |
-| 4 | [Bytes and Big Integers](cryptohack/Bytes%20and%20Big%20Integers/) | 10 | `int.to_bytes()` / `long_to_bytes()` | `crypto{3nc0d1n6_4ll_7h3_w4y_d0wn}` |
-| 5 | [Encoding Challenge](cryptohack/Encoding%20Challenge/) | 40 | 다중 인코딩 자동 디코딩 + pwntools | `crypto{3nc0d3_d3c0d3_3nc0d3}` |
+| Category | Progress | Status |
+|----------|----------|--------|
+| Introduction | 3 / 3 | ✅ |
+| General | 19 / 19 | ✅ |
+| Symmetric Ciphers | 27 / 27 | ✅ |
+| Mathematics | 15 / 15 | ✅ |
+| RSA | 29 / 29 | ✅ |
+| Diffie-Hellman | 9 / 14 | 🔨 |
+| Elliptic Curves | 13 / 23 | 🔨 |
+| Hash Functions | 5 / 14 | 🔨 |
+| Crypto on the Web | 7 / 17 | 🔨 |
+| Lattices | 12 / 18 | 🔨 |
+| Isogenies | 6 / 23 | 🔨 |
+| ZKPs | 2 / 17 | 🔨 |
+| Misc | 5 / 14 | 🔨 |
+| CTF Archive | 0 / 75 | ⬜ |
 
-### XOR
-| # | 문제 | pts | technique | 플래그 |
-|---|------|-----|-----------|--------|
-| 1 | [XOR Starter](cryptohack/XOR%20Starter/) | 10 | single-byte XOR | `crypto{aloha}` |
-| 2 | [XOR Properties](cryptohack/XOR%20Properties/) | 15 | XOR 교환/결합/자기역원 성질 | `crypto{x0r_i5_ass0c1at1v3}` |
-| 3 | [Favourite byte](cryptohack/Favourite%20byte/) | 20 | single-byte XOR brute force (256) | `crypto{0x10_15_my_f4v0ur173_by7e}` |
-| 4 | [You either know XOR you don't](cryptohack/You%20either%20know%20XOR%20you%20dont/) | 30 | known plaintext + repeating-key XOR | `crypto{1f_y0u_Kn0w_En0uGH_y0u_Kn0w_1t_4ll}` |
-| 5 | [Lemur XOR](cryptohack/Lemur%20XOR/) | 40 | 이미지 XOR (A⊕K ^ B⊕K = A⊕B) | `crypto{X0Rly_n0t!}` |
-
-### Mathematics
-| # | 문제 | pts | technique | 답 |
-|---|------|-----|-----------|-----|
-| 1 | [Greatest Common Divisor](cryptohack/Greatest%20Common%20Divisor/) | 15 | 유클리드 알고리즘 | `1512` |
-| 2 | [Extended GCD](cryptohack/Extended%20GCD/) | 20 | 확장 유클리드 → 모듈러 역원 | `-8404` |
-| 3 | [Modular Arithmetic 1](cryptohack/Modular%20Arithmetic%201/) | 20 | 모듈러 나머지 연산 | `4` |
-| 4 | [Modular Arithmetic 2](cryptohack/Modular%20Arithmetic%202/) | 20 | 페르마 소정리 a^(p-1)≡1 mod p | `1` |
-| 5 | [Modular Inverting](cryptohack/Modular%20Inverting/) | 25 | 모듈러 역원 `pow(a,-1,p)` | `9` |
-
-### Data Formats
-| # | 문제 | pts | technique | 답/플래그 |
-|---|------|-----|-----------|-----------|
-| 1 | [Privacy-Enhanced Mail](cryptohack/Privacy-Enhanced%20Mail/) | 25 | PEM 파싱, `RSA.importKey()` | d값 (큰 정수) |
-| 2 | [CERTainly not](cryptohack/CERTainly%20not/) | 30 | DER x509 인증서 파싱 | n값 (큰 정수) |
-| 3 | [SSH Keys](cryptohack/SSH%20Keys/) | 35 | ssh-rsa 공개키 바이너리 파싱 | n값 (큰 정수) |
-| 4 | [Transparency](cryptohack/Transparency/) | 50 | Certificate Transparency (crt.sh) | `crypto{thx_redpwn_for_inspiration}` |
-
-### Symmetric Ciphers (AES)
-| # | 문제 | pts | technique | 플래그 |
-|---|------|-----|-----------|--------|
-| 1 | [Keyed Permutations](cryptohack/Keyed%20Permutations/) | 5 | AES 이론 (bijection) | `crypto{bijection}` |
-| 2 | [Resisting Bruteforce](cryptohack/Resisting%20Bruteforce/) | 10 | AES 이론 (biclique attack) | `crypto{biclique}` |
-| 3 | [Structure of AES](cryptohack/Structure%20of%20AES/) | 15 | matrix2bytes 변환 | `crypto{inmatrix}` |
-| 4 | [Round Keys](cryptohack/Round%20Keys/) | 20 | AddRoundKey (XOR) | `crypto{r0undk3y}` |
-| 5 | [Confusion through Substitution](cryptohack/Confusion%20through%20Substitution/) | 25 | SubBytes (inv_s_box) | `crypto{l1n34rly}` |
-| 6 | [Diffusion through Permutation](cryptohack/Diffusion%20through%20Permutation/) | 30 | inv_shift_rows + inv_mix_columns | `crypto{d1ffUs3R}` |
-| 7 | [Bringing It All Together](cryptohack/Bringing%20It%20All%20Together/) | 50 | AES-128 전체 복호화 | `crypto{MYAES128}` |
-| 8 | [Modes of Operation Starter](cryptohack/Modes%20of%20Operation%20Starter/) | 15 | ECB decrypt oracle | `crypto{bl0ck_c1ph3r5_4r3_f457_!}` |
-| 9 | [Passwords as Keys](cryptohack/Passwords%20as%20Keys/) | 50 | dictionary attack (md5) | `crypto{k3y5__r__n07__p455w0rdz?}` |
-| 10 | [ECB CBC WTF](cryptohack/ECB%20CBC%20WTF/) | 55 | CBC→ECB 수동 복호화 | `crypto{3cb_5uck5_4v01d_17_!!!!!}` |
-| 11 | [ECB Oracle](cryptohack/ECB%20Oracle/) | 60 | byte-at-a-time ECB | `crypto{p3n6u1n5_h473_3cb}` |
-| 12 | [Flipping Cookie](cryptohack/Flipping%20Cookie/) | 60 | CBC bit-flipping | `crypto{4u7h3n71c4710n_15_3553n714l}` |
-| 13 | [Lazy CBC](cryptohack/Lazy%20CBC/) | 60 | IV=KEY 키 추출 | `crypto{50m3_p30pl3_d0n7_7h1nk_IV_15_1mp0r74n7_?}` |
-| 14 | [Triple DES](cryptohack/Triple%20DES/) | 60 | DES weak key 자기역원 | `crypto{n0t_4ll_k3ys_4r3_g00d_k3ys}` |
-| 15 | [Symmetry](cryptohack/Symmetry/) | 50 | OFB encrypt=decrypt | `crypto{0fb_15_5ymm37r1c4l_!!!11!}` |
-| 16 | [Bean Counter](cryptohack/Bean%20Counter/) | 60 | CTR 카운터 버그 + known PNG header | `crypto{hex_bytes_beans}` |
-| 17 | [CTRIME](cryptohack/CTRIME/) | 70 | CRIME 압축 오라클 | `crypto{CRIME_571ll_p4y5}` |
-| 18 | [Logon Zero](cryptohack/Logon%20Zero/) | 80 | CFB-8 Zerologon (CVE-2020-1472) | `crypto{Zerologon_Windows_CVE-2020-1472}` |
-| 19 | [Stream of Consciousness](cryptohack/Stream%20of%20Consciousness/) | 80 | CTR nonce 재사용 many-time pad | `crypto{k3y57r34m_r3u53_15_f474l}` |
-| 20 | [Dancing Queen](cryptohack/Dancing%20Queen/) | 120 | ChaCha20 역연산 (addition 누락) | `crypto{M1x1n6_r0und5_4r3_1nv3r71bl3!}` |
-| 21 | [Oh SNAP](cryptohack/Oh%20SNAP/) | 120 | RC4 FMS 공격 | `crypto{w1R3d_equ1v4l3nt_pr1v4cy?!}` |
-| 22 | [Pad Thai](cryptohack/Pad%20Thai/) | 80 | 클래식 패딩 오라클 | `crypto{if_you_ask_enough_times_you_usually_get_what_you_want}` |
-| 23 | [The Good The Pad The Ugly](cryptohack/The%20Good%20The%20Pad%20The%20Ugly/) | 100 | 노이즈 패딩 오라클 (OR) | `crypto{even_a_faulty_oracle_leaks_all_information}` |
-| 24 | [Oracular Spectacular](cryptohack/Oracular%20Spectacular/) | 150 | 노이즈 패딩 오라클 (XOR) | 진행 중 |
-
-### General
-| # | 문제 | pts | technique | 플래그 |
-|---|------|-----|-----------|--------|
-| 1 | [Great Snakes](cryptohack/Great%20Sankes/) | 3 | Python XOR 실행 | `crypto{z3n_0f_pyth0n}` |
-| 2 | [Network Attacks](cryptohack/Network%20Attacks/) | 5 | pwntools JSON socket | `crypto{sh0pp1ng_f0r_fl4g5}` |
+**총 점수**: 1875+ pts (+ 신규 풀이 ~1500pts)
 
 ---
 
-## 통계
-- **총 문제**: 45개 (1개 진행 중)
-- **총 점수**: 1875 pts
-- **카테고리**: Encoding(5), XOR(5), Mathematics(5), Data Formats(4), AES(24), General(2)
+## Introduction (3/3) ✅
+
+- [x] Great Snakes — 3pts — Python XOR 실행 — `crypto{z3n_0f_pyth0n}`
+- [x] Network Attacks — 5pts — pwntools JSON socket — `crypto{sh0pp1ng_f0r_fl4g5}`
+- [x] Finding Flags — 2pts
+
+## General (19/19) ✅
+
+### Encoding
+- [x] ASCII — 5pts — `chr()` 변환
+- [x] Hex — 5pts — `bytes.fromhex()`
+- [x] Base64 — 10pts — hex→bytes→base64
+- [x] Bytes and Big Integers — 10pts — `int.to_bytes()` / `long_to_bytes()`
+- [x] Encoding Challenge — 40pts — 다중 인코딩 자동 디코딩 + pwntools
+
+### XOR
+- [x] XOR Starter — 10pts — single-byte XOR
+- [x] XOR Properties — 15pts — XOR 교환/결합/자기역원 성질
+- [x] Favourite byte — 20pts — single-byte XOR brute force (256)
+- [x] You either know XOR you don't — 30pts — known plaintext + repeating-key XOR
+- [x] Lemur XOR — 40pts — 이미지 XOR
+
+### Mathematics
+- [x] Greatest Common Divisor — 15pts — 유클리드 알고리즘
+- [x] Extended GCD — 20pts — 확장 유클리드 → 모듈러 역원
+- [x] Modular Arithmetic 1 — 20pts — 모듈러 나머지 연산
+- [x] Modular Arithmetic 2 — 20pts — 페르마 소정리
+- [x] Modular Inverting — 25pts — `pow(a,-1,p)`
+
+### Data Formats
+- [x] Privacy-Enhanced Mail — 25pts — PEM 파싱
+- [x] CERTainly not — 30pts — DER x509 인증서 파싱
+- [x] SSH Keys — 35pts — ssh-rsa 공개키 바이너리 파싱
+- [x] Transparency — 50pts — Certificate Transparency (crt.sh)
+
+## Symmetric Ciphers (27/27) ✅
+
+### How AES Works
+- [x] Keyed Permutations — 5pts
+- [x] Resisting Bruteforce — 10pts
+- [x] Structure of AES — 15pts
+- [x] Round Keys — 20pts
+- [x] Confusion through Substitution — 25pts
+- [x] Diffusion through Permutation — 30pts
+- [x] Bringing It All Together — 50pts
+
+### Symmetric Starter
+- [x] Modes of Operation Starter — 15pts
+- [x] Passwords as Keys — 50pts
+
+### Block Ciphers 1
+- [x] ECB CBC WTF — 55pts
+- [x] ECB Oracle — 60pts
+- [x] Flipping Cookie — 60pts
+- [x] Lazy CBC — 60pts
+- [x] Triple DES — 60pts
+
+### Stream Ciphers
+- [x] Symmetry — 50pts
+- [x] Bean Counter — 60pts
+- [x] CTRIME — 70pts
+- [x] Logon Zero — 80pts
+- [x] Stream of Consciousness — 80pts
+- [x] Dancing Queen — 120pts
+- [x] Oh SNAP — 120pts
+
+### Padding Attacks
+- [x] Pad Thai — 80pts
+- [x] The Good The Pad The Ugly — 100pts
+- [x] Oracular Spectacular — 150pts
+
+### Authenticated Encryption
+- [x] Forbidden Fruit
+- [x] Paper Plane
+
+### Linear Cryptanalysis
+- [x] Beatboxer
+
+## Mathematics (15/15) ✅
+
+### Modular Math
+- [x] Chinese Remainder Theorem
+- [x] Quadratic Residues
+- [x] Legendre Symbol
+- [x] Modular Square Root
+
+### Brainteasers Part 1
+- [x] Successive Powers
+- [x] Adrien's Signs
+- [x] Modular Binomials
+- [x] Broken RSA
+- [x] No Way Back Home
+
+### Brainteasers Part 2
+- [x] Unencryptable
+- [x] Ellipse Curve Cryptography
+- [x] Roll your Own
+- [x] Real Eisenstein
+- [x] Cofactor Cofantasy
+
+### Primes
+- [x] Prime and Prejudice
+
+## RSA (29/29) ✅
+
+### Starter
+- [x] RSA Signatures
+- [x] Public Keys
+- [x] Euler's Totient
+- [x] Modular Exponentiation
+- [x] Private Keys
+- [x] RSA Decryption
+
+### Primes Part 1
+- [x] Factoring
+- [x] Manyprime
+- [x] Monoprime
+- [x] Square Eyes
+- [x] Inferius Prime
+
+### Primes Part 2
+- [x] Marin's Secrets
+- [x] Ron was Wrong, Whit is Right
+- [x] Fast Primes
+- [x] RSA Backdoor Viability
+- [x] Infinite Descent
+
+### Public exponent
+- [x] Salty
+- [x] Modulus Inutilis
+- [x] Everything is Big
+- [x] Crossed Wires
+- [x] Everything is Still Big
+- [x] Endless Emails
+
+### Signatures Part 1
+- [x] Signing Server
+- [x] Let's Decrypt
+- [x] Blinding Light
+
+### Signatures Part 2
+- [x] Let's Decrypt Again
+- [x] Vote for Pedro
+
+### PADDING
+- [x] Bespoke Padding
+- [x] Null or Never
+
+## Diffie-Hellman (9/14) 🔨
+
+### Starter ✅
+- [x] Working with Fields — 10pts
+- [x] Generators of Groups — 20pts
+- [x] Computing Public Values — 25pts
+- [x] Computing Shared Secrets — 30pts
+- [x] Deriving Symmetric Keys — 40pts
+
+### Man In The Middle (2/3)
+- [x] Parameter Injection — 60pts
+- [x] Export-grade
+- [ ] Static Client *(server)*
+
+### Group Theory (0/2)
+- [ ] Additive *(server)*
+- [ ] Static Client 2 *(server)*
+
+### Misc (2/4)
+- [x] Script Kiddie — `crypto{b3_c4r3ful_w1th_y0ur_n0tati0n}`
+- [x] The Matrix — `crypto{there_is_no_spoon_66eff188}`
+- [ ] The Matrix Reloaded *(SageMath 필요)*
+- [ ] The Matrix Revolutions *(SageMath 필요)*
+
+## Elliptic Curves (13/23) 🔨
+
+### Background ✅
+- [x] Background Reading — 5pts — `abelian`
+
+### Starter ✅
+- [x] Point Negation — 10pts — `(8045, 2803)`
+- [x] Point Addition — 30pts — `(4215, 2162)`
+- [x] Scalar Multiplication — 35pts — `(9467, 2742)`
+- [x] Curves and Logs — 40pts — `crypto{80e5212754a824d3a4aed185ace4f9cac0f908bf}`
+- [x] Efficient Exchange — 50pts — `crypto{3ff1c1ent_k3y_3xch4ng3}`
+
+### Parameter Choice (3/5)
+- [ ] Smooth Criminal — 60pts *(SageMath 필요: curve order)*
+- [x] Exceptional Curves — 100pts — `crypto{H3ns3l_lift3d_my_fl4g!}` (Smart's attack)
+- [ ] Micro Transmissions — 120pts *(SageMath 필요: BSGS)*
+- [x] Elliptic Nodes — 150pts — `crypto{s1ngul4r_s1mplif1c4t1on}` (singular curve)
+- [x] Moving Problems — 150pts — `crypto{MOV_attack_on_non_supersingular_curves}`
+
+### Parameter Choice 2 (0/5)
+- [ ] A Twisted Mind — 80pts *(server)*
+- [ ] An Exceptional Twisted Mind — 125pts *(server)*
+- [ ] Checkpoint — 150pts *(server)*
+- [ ] An Evil Twisted Mind — 175pts *(server)*
+- [ ] Real Curve Crypto — 200pts
+
+### Edwards Curves ✅
+- [x] Edwards Goes Degenerate — 100pts — `crypto{degenerates_will_never_keep_a_secret}`
+
+### Side Channels ✅
+- [x] Montgomery's Ladder — 40pts — Curve25519 ladder
+- [x] Double and Broken — 50pts — `crypto{Sid3_ch4nn3ls_c4n_br34k_s3cur3_curv3s}`
+
+### Signatures (1/4)
+- [ ] Digestive — 60pts *(web server)*
+- [ ] ProSign 3 — 100pts *(server)*
+- [ ] Curveball — 100pts *(server)*
+- [x] No Random, No Bias — 120pts — `crypto{3mbrac3_r4nd0mn3ss}` (HNP/lattice attack)
+
+## Hash Functions (5/14) 🔨
+
+### Probability ✅
+- [x] Jack's Birthday Hash — `1420`
+- [x] Jack's Birthday Confusion — `76`
+
+### Collisions (0/5)
+- [ ] No Difference *(server)*
+- [ ] Collider *(server)*
+- [ ] Hash Stuffing *(server)*
+- [ ] Twin Keys *(server)*
+- [ ] PriMeD5 *(server)*
+
+### Pre-image attacks (0/2)
+- [ ] Mixed Up *(server)*
+- [ ] Invariant *(server)*
+
+### Length Extension (0/2)
+- [ ] MD0 *(server)*
+- [ ] MDFlag *(server)*
+
+### Hash-based Cryptography ✅
+- [x] Merkle Trees — `crypto{U_are_R3ady_For_S4plins_ch4lls}`
+- [x] WOTS Up — `ECSC{h4sh1ng_ch41n_r34ct1on_ff_}`
+- [x] WOTS Up 2 — `ECSC{0ne_m0r3_t1m3_s1gn4tur3_ff}`
+
+## Crypto on the Web (7/17) 🔨
+
+### JSON Web Tokens (2/7)
+- [x] Token Appreciation — `crypto{jwt_contents_can_be_easily_viewed}`
+- [x] JWT Sessions — theory: `Authorization`
+- [ ] No Way JOSE *(web server)*
+- [ ] JWT Secrets *(web server)*
+- [ ] RSA or HMAC *(web server)*
+- [ ] RSA or HMAC Part 2 *(web server)*
+- [ ] JSON in JSON *(web server)*
+
+### TLS Part 1 The Protocol (5/7)
+- [ ] Secure Protocols *(live cert query)*
+- [ ] Saying Hello *(live TLS query)*
+- [x] TLS Handshake — `crypto{67c6bf8ffda56fcb359fba7f0149f85422223cf021ab1a0af701de5dd2091498}`
+- [x] Sharks on the Wire — `15` (pcap analysis)
+- [x] Decrypting TLS 1.2 — `crypto{weaknesses_of_non_ephemeral_key_exchange}`
+- [x] Decrypting TLS 1.3 — `crypto{export_SSLKEYLOGFILE}`
+- [x] Authenticated Handshake — `crypto{b51d7b5fb12aa3d692140d8f1f80732610e99411ca0f6d928b0f60570cbc778e672457a729d7cf3b58bc174f00dc5d30}`
+
+### Cloud (0/3)
+- [ ] Megalomaniac 1 *(server)*
+- [ ] Megalomaniac 2 *(server)*
+- [ ] Megalomaniac 3 *(server)*
+
+## Lattices (12/18) 🔨
+
+### Lattices ✅
+- [x] Vectors — `702`
+- [x] Size and Basis — `9.0`
+- [x] What's a Lattice — `255`
+- [x] Gram Schmidt — `0.91611`
+- [x] Gaussian Reduction — `7410790865146821`
+- [x] Find the Lattice — `crypto{Gauss_lattice_attack!}`
+- [x] Backpack Cryptography — `crypto{my_kn4ps4ck_1s_l1ghtw31ght}` (LLL)
+
+### Learning With Errors 1 ✅
+- [x] LWE Background — `Oded Regev`
+- [x] LWE Intro — `Gaussian Elimination`
+- [x] LWE Low Bits Message — `147`
+- [x] LWE High Bits Message — `201`
+- [x] From Private to Public Key LWE — `1568`
+
+### Learning With Errors 2 (2/6)
+- [ ] Noise Free *(server)*
+- [ ] Noise Cheap *(server)*
+- [x] Bounded Noise — `crypto{linearised_polynomials_for_bounded_errors}` (Arora-Ge)
+- [x] Nativity — `crypto{flavortext-flag-coprime-regev-yadda-yadda}`
+- [ ] Missing Modulus *(server)*
+- [ ] Too Many Errors *(server)*
+
+## Isogenies (6/23) 🔨
+
+### Introduction ✅
+- [x] Introduction to Isogenies — `crypto{65537}`
+
+### Starter ✅
+- [x] Montgomery Curves — `crypto{723347356}` (twist pair)
+- [x] The j-invariant — `crypto{127}`
+- [x] Image Point Arithmetic — `crypto{37097}`
+- [x] Where's the Supersingular Curve — `crypto{170141183460469230846243588177825628225}`
+- [x] DLOG on the Surface — `crypto{now_try_writing_a_function_for_fast_torsion_basis_generation!}`
+
+### Road to SIDH (0/5) *(SageMath 필요)*
+- [ ] Two Isogenies
+- [ ] Three Isogenies
+- [ ] Composite Isogenies
+- [ ] SIDH Key Exchange
+- [ ] Breaking SIDH
+
+### Road to CSIDH (0/5) *(SageMath 필요)*
+- [ ] Special Isogenies
+- [ ] Prime Power Isogenies
+- [ ] Secret Exponents
+- [ ] CSIDH Key Exchange
+- [ ] Twisted CSIDH Isogenies
+
+### Isogeny Challenges (0/7) *(대부분 SageMath 필요)*
+- [ ] What's My Kernel
+- [ ] Better than Linear
+- [ ] Meet me in the Claw
+- [ ] André Encoding
+- [ ] Dual Masters
+- [ ] Abelian SIDH
+- [ ] A True Genus *(SageMath: CSIDH)*
+
+## ZKPs (2/17) 🔨
+
+### Sigma Protocol (1/11)
+- [x] ZKP Introduction — `crypto{1985}`
+- [ ] Proofs of Knowledge *(server)*
+- [ ] Honest Verifier Zero Knowledge *(server)*
+- [ ] Special Soundness *(server)*
+- [ ] Non-Interactive *(server)*
+- [ ] Too Honest *(server)*
+- [ ] Fischlin Transform *(server)*
+- [ ] OR Proof *(server)*
+- [ ] Hamiltonicity 1 *(server)*
+- [ ] Hamiltonicity 2 *(server)*
+- [ ] Ticket Maestro *(server)*
+
+### ZKP Challenges (1/6)
+- [ ] Let's Prove It *(server)*
+- [ ] Let's Prove It Again *(server)*
+- [ ] Couples *(server)*
+- [ ] Mister Saplin's Preview *(server)*
+- [ ] Mister Saplins The Prover *(server)*
+- [x] Pairing-Based Cryptography — `crypto{Pa1rings_R_Str0ng}`
+
+## Misc (5/14) 🔨
+
+### ElGamal ✅
+- [x] Bit by Bit — `crypto{s0m3_th1ng5_4r3_pr3served_4ft3r_encrypti0n}` (Legendre symbol)
+
+### LFSR (2/3)
+- [ ] LFSR Destroyer *(server)*
+- [x] Jeff's LFSR — `crypto{Geffe_generator_is_a_textbook_example_to_show_correlation_attacks_on_LFSR}`
+- [x] L-Win — `crypto{minimal_polynomial_in_an_arbitrary_field}` (Berlekamp-Massey)
+
+### One Time Pad (0/2)
+- [ ] No Leaks *(server)*
+- [ ] Gotta Go Fast *(server)*
+
+### PRNGs (1/4)
+- [ ] Lo-Hi Card Game *(server)*
+- [ ] Nothing Up My Sleeve *(server)*
+- [x] RSA vs RNG — `crypto{pseudorandom_shamir_adleman}` (LCG Hensel lift)
+- [ ] Trust Games *(server)*
+
+### Password Complexity (0/2)
+- [ ] Bruce Schneier's Password *(server)*
+- [ ] Bruce Schneier's Password Part 2 *(server)*
+
+### Secret Sharing Schemes (1/2)
+- [ ] Toshi's Treasure *(server)*
+- [x] Armory — `crypto{fr46m3n73d_b4ckup_vuln?}` (deterministic Shamir)
+
+## CTF Archive (0/75) ⬜
+
+*See `cryptohack/CTF Archive/` for challenge files (2020-2025)*
