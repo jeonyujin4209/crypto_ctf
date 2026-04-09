@@ -10,7 +10,7 @@
 | Mathematics | 15 / 15 | ✅ |
 | RSA | 29 / 29 | ✅ |
 | Diffie-Hellman | 9 / 14 | 🔨 |
-| Elliptic Curves | 13 / 23 | 🔨 |
+| Elliptic Curves | 14 / 23 | 🔨 |
 | Hash Functions | 5 / 14 | 🔨 |
 | Crypto on the Web | 7 / 17 | 🔨 |
 | Lattices | 12 / 18 | 🔨 |
@@ -195,7 +195,7 @@
 - [ ] The Matrix Reloaded *(SageMath 필요)*
 - [ ] The Matrix Revolutions *(SageMath 필요)*
 
-## Elliptic Curves (13/23) 🔨
+## Elliptic Curves (14/23) 🔨
 
 ### Background ✅
 - [x] Background Reading — 5pts — `abelian`
@@ -214,12 +214,12 @@
 - [x] Elliptic Nodes — 150pts — `crypto{s1ngul4r_s1mplif1c4t1on}` (singular curve)
 - [x] Moving Problems — 150pts — `crypto{MOV_attack_on_non_supersingular_curves}`
 
-### Parameter Choice 2 (0/5)
+### Parameter Choice 2 (1/5)
 - [ ] A Twisted Mind — 80pts *(server)*
 - [ ] An Exceptional Twisted Mind — 125pts *(server)*
 - [ ] Checkpoint — 150pts *(server)*
 - [ ] An Evil Twisted Mind — 175pts *(server)*
-- [ ] Real Curve Crypto — 200pts
+- [x] Real Curve Crypto — 200pts — `crypto{real_fields_arent_finite}` (PSLQ + real elliptic log)
 
 ### Edwards Curves ✅
 - [x] Edwards Goes Degenerate — 100pts — `crypto{degenerates_will_never_keep_a_secret}`
