@@ -9,14 +9,14 @@
 | Symmetric Ciphers | 27 / 27 | ✅ |
 | Mathematics | 15 / 15 | ✅ |
 | RSA | 29 / 29 | ✅ |
-| Diffie-Hellman | 9 / 14 | 🔨 |
-| Elliptic Curves | 14 / 23 | 🔨 |
-| Hash Functions | 5 / 14 | 🔨 |
-| Crypto on the Web | 7 / 17 | 🔨 |
-| Lattices | 12 / 18 | 🔨 |
-| Isogenies | 6 / 23 | 🔨 |
-| ZKPs | 2 / 17 | 🔨 |
-| Misc | 5 / 14 | 🔨 |
+| Diffie-Hellman | 14 / 14 | ✅ |
+| Elliptic Curves | 19 / 23 | 🔨 |
+| Hash Functions | 13 / 14 | 🔨 |
+| Crypto on the Web | 12 / 17 | 🔨 |
+| Lattices | 16 / 18 | 🔨 |
+| Isogenies | 20 / 23 | 🔨 |
+| ZKPs | 10 / 17 | 🔨 |
+| Misc | 12 / 14 | 🔨 |
 | CTF Archive | 0 / 75 | ⬜ |
 
 **총 점수**: 1875+ pts (+ 신규 풀이 ~1500pts)
@@ -171,7 +171,7 @@
 - [x] Bespoke Padding
 - [x] Null or Never
 
-## Diffie-Hellman (9/14) 🔨
+## Diffie-Hellman (14/14) ✅
 
 ### Starter ✅
 - [x] Working with Fields — 10pts
@@ -180,20 +180,20 @@
 - [x] Computing Shared Secrets — 30pts
 - [x] Deriving Symmetric Keys — 40pts
 
-### Man In The Middle (2/3)
+### Man In The Middle ✅
 - [x] Parameter Injection — 60pts
 - [x] Export-grade
-- [ ] Static Client *(server)*
+- [x] Static Client — smooth prime > p_orig 필수 (Pohlig-Hellman truncation)
 
-### Group Theory (0/2)
-- [ ] Additive *(server)*
-- [ ] Static Client 2 *(server)*
+### Group Theory ✅
+- [x] Additive — `crypto{cycl1c_6r0up_und3r_4dd1710n?}` (additive DLP = a = A·g⁻¹)
+- [x] Static Client 2 — `crypto{uns4f3_pr1m3_sm4ll_oRd3r}` (smooth-prime PH; Bob rejects A=2)
 
-### Misc (2/4)
+### Misc ✅
 - [x] Script Kiddie — `crypto{b3_c4r3ful_w1th_y0ur_n0tati0n}`
 - [x] The Matrix — `crypto{there_is_no_spoon_66eff188}`
-- [ ] The Matrix Reloaded *(SageMath 필요)*
-- [ ] The Matrix Revolutions *(SageMath 필요)*
+- [x] The Matrix Reloaded — `crypto{the_oracle_told_me_about_you_91e019ff}` (repeated-root local-ring trick: SECRET = λ·b/a)
+- [x] The Matrix Revolutions — `crypto{we_are_looking_for_the_keymaker_478415c4}` (min poly factors GF(2^61)·GF(2^89), DLPs via PARI fflog + CRT)
 
 ## Elliptic Curves (14/23) 🔨
 
@@ -207,18 +207,18 @@
 - [x] Curves and Logs — 40pts — `crypto{80e5212754a824d3a4aed185ace4f9cac0f908bf}`
 - [x] Efficient Exchange — 50pts — `crypto{3ff1c1ent_k3y_3xch4ng3}`
 
-### Parameter Choice (3/5)
-- [ ] Smooth Criminal — 60pts *(SageMath 필요: curve order)*
+### Parameter Choice (4/5)
+- [x] Smooth Criminal — 60pts — `crypto{n07_4ll_curv3s_4r3_s4f3_curv3s}` (Sage curve-order → smooth → PH+BSGS)
 - [x] Exceptional Curves — 100pts — `crypto{H3ns3l_lift3d_my_fl4g!}` (Smart's attack)
 - [ ] Micro Transmissions — 120pts *(SageMath 필요: BSGS)*
 - [x] Elliptic Nodes — 150pts — `crypto{s1ngul4r_s1mplif1c4t1on}` (singular curve)
 - [x] Moving Problems — 150pts — `crypto{MOV_attack_on_non_supersingular_curves}`
 
-### Parameter Choice 2 (1/5)
-- [ ] A Twisted Mind — 80pts *(server)*
-- [ ] An Exceptional Twisted Mind — 125pts *(server)*
-- [ ] Checkpoint — 150pts *(server)*
-- [ ] An Evil Twisted Mind — 175pts *(server)*
+### Parameter Choice 2 (2/5)
+- [x] A Twisted Mind — 80pts — `crypto{tw1st_s3curity_of_x_0nly_ladder}` (X-only ladder twist attack, PH over curve N_smooth + twist Np_smooth)
+- [ ] An Exceptional Twisted Mind — 125pts *(Z/p² Smart-style lift, modulus = secp256k1_prime²)*
+- [ ] Checkpoint — 150pts *(invalid curve attack on ECDH-AES)*
+- [ ] An Evil Twisted Mind — 175pts *(384-bit composite modulus, needs factoring)*
 - [x] Real Curve Crypto — 200pts — `crypto{real_fields_arent_finite}` (PSLQ + real elliptic log)
 
 ### Edwards Curves ✅
@@ -228,32 +228,32 @@
 - [x] Montgomery's Ladder — 40pts — Curve25519 ladder
 - [x] Double and Broken — 50pts — `crypto{Sid3_ch4nn3ls_c4n_br34k_s3cur3_curv3s}`
 
-### Signatures (1/4)
-- [ ] Digestive — 60pts *(web server)*
-- [ ] ProSign 3 — 100pts *(server)*
-- [ ] Curveball — 100pts *(server)*
+### Signatures ✅
+- [x] Digestive — 60pts — `crypto{thanx_for_ctf_inspiration_https://mastodon.social/@filippo/109360453402691894}` (24-byte digest truncation + duplicate JSON "admin" key)
+- [x] ProSign 3 — 100pts — `crypto{ECDSA_700_345y_70_5cr3wup}` (ECDSA tiny nonce recovery)
+- [x] Curveball — 100pts — `crypto{Curveballing_Microsoft_CVE-2020-0601}` (CVE-2020-0601 explicit-params attack)
 - [x] No Random, No Bias — 120pts — `crypto{3mbrac3_r4nd0mn3ss}` (HNP/lattice attack)
 
-## Hash Functions (5/14) 🔨
+## Hash Functions (11/14) 🔨
 
 ### Probability ✅
 - [x] Jack's Birthday Hash — `1420`
 - [x] Jack's Birthday Confusion — `76`
 
-### Collisions (0/5)
-- [ ] No Difference *(server)*
-- [ ] Collider *(server)*
-- [ ] Hash Stuffing *(server)*
-- [ ] Twin Keys *(server)*
-- [ ] PriMeD5 *(server)*
+### Collisions (4/5) — Twin Keys only remaining
+- [x] No Difference — `crypto{n0_d1ff_n0_pr0bl3m}` (2-block differential via SBOX 0xdf-symmetry)
+- [x] Collider — `crypto{m0re_th4n_ju5t_p1g30nh0le_pr1nc1ple}` (Wang MD5 collision pair)
+- [x] Hash Stuffing — `crypto{Always_add_padding_even_if_its_a_whole_block!!!}` (non-injective padding)
+- [ ] Twin Keys *(server — HashClash CPC, GPU build running)*
+- [x] PriMeD5 — `crypto{MD5_5uck5_p4rt_tw0}` (fastcoll loop → prime/composite MD5 collision)
 
-### Pre-image attacks (0/2)
-- [ ] Mixed Up *(server)*
-- [ ] Invariant *(server)*
+### Pre-image attacks ✅
+- [x] Mixed Up — `crypto{y0u_c4n7_m1x_3v3ry7h1n6_1n_l1f3}`
+- [x] Invariant — `crypto{preimages_of_the_all_zero_output}` (2-block hash-zero search)
 
-### Length Extension (0/2)
-- [ ] MD0 *(server)*
-- [ ] MDFlag *(server)*
+### Length Extension ✅
+- [x] MD0 — `crypto{l3ngth_3xT3nd3r}` (MD5 length extension forgery)
+- [x] MDFlag — flag byte-by-byte leak via MD5 length extension
 
 ### Hash-based Cryptography ✅
 - [x] Merkle Trees — `crypto{U_are_R3ady_For_S4plins_ch4lls}`
@@ -262,17 +262,17 @@
 
 ## Crypto on the Web (7/17) 🔨
 
-### JSON Web Tokens (2/7)
+### JSON Web Tokens (6/7)
 - [x] Token Appreciation — `crypto{jwt_contents_can_be_easily_viewed}`
 - [x] JWT Sessions — theory: `Authorization`
-- [ ] No Way JOSE *(web server)*
-- [ ] JWT Secrets *(web server)*
-- [ ] RSA or HMAC *(web server)*
-- [ ] RSA or HMAC Part 2 *(web server)*
-- [ ] JSON in JSON *(web server)*
+- [x] No Way JOSE — `crypto{The_Cryptographic_Doom_Principle}` (alg:none bypass)
+- [x] JWT Secrets — `crypto{jwt_secret_keys_must_be_protected}` (weak default secret `"secret"`)
+- [x] RSA or HMAC — `crypto{Doom_Principle_Strikes_Again}` (HS256/RS256 key confusion via PEM-as-HMAC-secret)
+- [ ] RSA or HMAC Part 2 *(web server — gmpy2 N recovery works, PEM format matching failed)*
+- [x] JSON in JSON — `crypto{https://owasp.org/www-community/Injection_Theory}` (username JSON injection → duplicate admin key)
 
 ### TLS Part 1 The Protocol (5/7)
-- [ ] Secure Protocols *(live cert query)*
+- [x] Secure Protocols — (cert download)
 - [ ] Saying Hello *(live TLS query)*
 - [x] TLS Handshake — `crypto{67c6bf8ffda56fcb359fba7f0149f85422223cf021ab1a0af701de5dd2091498}`
 - [x] Sharks on the Wire — `15` (pcap analysis)
@@ -303,15 +303,15 @@
 - [x] LWE High Bits Message — `201`
 - [x] From Private to Public Key LWE — `1568`
 
-### Learning With Errors 2 (2/6)
-- [ ] Noise Free *(server)*
-- [ ] Noise Cheap *(server)*
-- [x] Bounded Noise — `crypto{linearised_polynomials_for_bounded_errors}` (Arora-Ge)
-- [x] Nativity — `crypto{flavortext-flag-coprime-regev-yadda-yadda}`
-- [ ] Missing Modulus *(server)*
-- [ ] Too Many Errors *(server)*
+### Learning With Errors 2 (4/6)
+- [x] Noise Free — `crypto{linear_algebra_is_useful}` (Gaussian elim over GF(q))
+- [x] Noise Cheap — `crypto{LLL_is_also_very_useful!}` (short-secret Kannan embedding + BKZ)
+- [ ] Bounded Noise *(solver draft exists — Arora-Ge linearization, untested on site)*
+- [ ] Nativity *(solver draft exists — Regev-style, untested on site)*
+- [x] Missing Modulus — `crypto{learning-is-easy-over-the-real-numbers}` (integer linalg, noise ≪ matrix scale)
+- [x] Too Many Errors — `crypto{f4ult_4ttack5_0n_lw3}` (reset+majority vote → 1-coord fault recovery)
 
-## Isogenies (6/23) 🔨
+## Isogenies (20/23) 🔨
 
 ### Introduction ✅
 - [x] Introduction to Isogenies — `crypto{65537}`
@@ -323,78 +323,78 @@
 - [x] Where's the Supersingular Curve — `crypto{170141183460469230846243588177825628225}`
 - [x] DLOG on the Surface — `crypto{now_try_writing_a_function_for_fast_torsion_basis_generation!}`
 
-### Road to SIDH (0/5) *(SageMath 필요)*
-- [ ] Two Isogenies
-- [ ] Three Isogenies
-- [ ] Composite Isogenies
-- [ ] SIDH Key Exchange
-- [ ] Breaking SIDH
+### Road to SIDH (4/5)
+- [x] Two Isogenies — `crypto{287496}` (Sage E.isogeny(K))
+- [x] Three Isogenies — `crypto{96392670793}`
+- [x] Composite Isogenies — `crypto{249510360818*i + 292990704480}` (chain 13 three-isogenies)
+- [x] SIDH Key Exchange — `crypto{congratulations_you_are_an_isogenist!}`
+- [ ] Breaking SIDH *(Castryck-Decru attack, complex)*
 
-### Road to CSIDH (0/5) *(SageMath 필요)*
-- [ ] Special Isogenies
-- [ ] Prime Power Isogenies
-- [ ] Secret Exponents
-- [ ] CSIDH Key Exchange
-- [ ] Twisted CSIDH Isogenies
+### Road to CSIDH ✅
+- [x] Special Isogenies — `crypto{199}` (Montgomery A of 5-isogeny codomain)
+- [x] Prime Power Isogenies — `crypto{27}` (7-isogeny graph cycle length)
+- [x] Secret Exponents — `crypto{404}` (CSIDH with [2,3,4] vector)
+- [x] CSIDH Key Exchange — `crypto{post_quantum_NIKE_isogenies_just_do_it}` (twist trick: negative step = positive on twist, A → -A)
+- [x] Twisted CSIDH Isogenies — `crypto{261}` (backward step on 3-isogeny graph)
 
-### Isogeny Challenges (0/7) *(대부분 SageMath 필요)*
-- [ ] What's My Kernel
-- [ ] Better than Linear
-- [ ] Meet me in the Claw
-- [ ] André Encoding
-- [ ] Dual Masters
-- [ ] Abelian SIDH
-- [ ] A True Genus *(SageMath: CSIDH)*
+### Isogeny Challenges (4/7)
+- [x] What's My Kernel — `crypto{whoops_this_was_just_a_dlog}` (P_b=P_a bug → direct DL)
+- [x] Better than Linear — `crypto{48495725269*i + 91493879515}` (large-prime factored isogeny)
+- [ ] Meet me in the Claw *(MITM claw-finding)*
+- [x] André Encoding — `crypto{weil_pairings_and_isogenies_are_best_friends}` (Weil pairing degree leak)
+- [x] Dual Masters — `crypto{but_I_only_gave_one_point?!}` (phi_hat.dual() from Sage built-in, then DL like What's My Kernel)
+- [x] Abelian SIDH — `crypto{wait_I_thought_this_was_the_post_quantum_section}` (phi_hat∘phi = [deg])
+- [ ] A True Genus *(CSIDH class group DLP)*
 
-## ZKPs (2/17) 🔨
+## ZKPs (10/17) 🔨
 
-### Sigma Protocol (1/11)
+### Sigma Protocol (6/11)
 - [x] ZKP Introduction — `crypto{1985}`
-- [ ] Proofs of Knowledge *(server)*
-- [ ] Honest Verifier Zero Knowledge *(server)*
-- [ ] Special Soundness *(server)*
-- [ ] Non-Interactive *(server)*
-- [ ] Too Honest *(server)*
-- [ ] Fischlin Transform *(server)*
-- [ ] OR Proof *(server)*
-- [ ] Hamiltonicity 1 *(server)*
-- [ ] Hamiltonicity 2 *(server)*
+- [x] Proofs of Knowledge — `crypto{sigma_protocol_complete!}` (honest Schnorr w leaked in source)
+- [x] Honest Verifier Zero Knowledge — `crypto{so_honest_very_zero_knowledge}` (Schnorr simulator)
+- [x] Special Soundness — `crypto{specially_sound_sigmas}` (nonce reuse → witness extract)
+- [x] Non-Interactive — `crypto{shvzk_and_ss_to_nizk}` (Fiat-Shamir honest prover, w hardcoded)
+- [x] Too Honest — `crypto{2_hon3st_to_b3_tru3}` (unreduced z + uncapped e → w = z // huge_e)
+- [ ] Fischlin Transform *(CTF Archive)*
+- [ ] OR Proof *(CTF Archive)*
+- [ ] Hamiltonicity 1 *(CTF Archive)*
+- [ ] Hamiltonicity 2 *(CTF Archive)*
 - [ ] Ticket Maestro *(server)*
 
-### ZKP Challenges (1/6)
-- [ ] Let's Prove It *(server)*
-- [ ] Let's Prove It Again *(server)*
-- [ ] Couples *(server)*
-- [ ] Mister Saplin's Preview *(server)*
-- [ ] Mister Saplins The Prover *(server)*
+### ZKP Challenges (4/6)
+- [ ] Let's Prove It *(server, complex — v regenerated each call, no nonce reuse)*
+- [x] Let's Prove It Again — `crypto{CRT_1s_m4gic_for_cryptanalysis}` (Schnorr nonce reuse with v fixed across different primes; integer equation + bruteforce R.randint)
+- [x] Couples — `crypto{don_t_let_useless_param_and_edge_cases_in_your_code}` (BLS verifier bypass: set_internal_z(p-5) via Fermat → inverse(0,p)=0 → z=0 → trivial pairing)
+- [x] Mister Saplin's Preview — `crypto{M3rkle_tree_AND_race_condition_AND_replay_attack___that's_too_much}` (thread-race TOCTOU)
+- [ ] Mister Saplins The Prover *(server, skipped — only 1 preview allowed)*
 - [x] Pairing-Based Cryptography — `crypto{Pa1rings_R_Str0ng}`
 
-## Misc (5/14) 🔨
+## Misc (12/14) 🔨
 
 ### ElGamal ✅
 - [x] Bit by Bit — `crypto{s0m3_th1ng5_4r3_pr3served_4ft3r_encrypti0n}` (Legendre symbol)
 
 ### LFSR (2/3)
-- [ ] LFSR Destroyer *(server)*
+- [ ] LFSR Destroyer *(server, skipped — algebraic attack)*
 - [x] Jeff's LFSR — `crypto{Geffe_generator_is_a_textbook_example_to_show_correlation_attacks_on_LFSR}`
 - [x] L-Win — `crypto{minimal_polynomial_in_an_arbitrary_field}` (Berlekamp-Massey)
 
-### One Time Pad (0/2)
-- [ ] No Leaks *(server)*
-- [ ] Gotta Go Fast *(server)*
+### One Time Pad ✅
+- [x] No Leaks — `crypto{unr4nd0m_07p}` (rejection sampling → missing-byte-per-position is flag byte)
+- [x] Gotta Go Fast — `crypto{t00_f4st_t00_furi0u5}` (time-based OTP, ±30s brute window)
 
-### PRNGs (1/4)
-- [ ] Lo-Hi Card Game *(server)*
-- [ ] Nothing Up My Sleeve *(server)*
+### PRNGs ✅
+- [x] Lo-Hi Card Game — `crypto{shuffl3_tr4ck1n6_i5_1t_l3g4l?}` (LCG recovery from base-52 card stream, 3 states → A,B)
+- [x] Nothing Up My Sleeve — `crypto{No_Str1ngs_Att4ch3d}` (Dual EC DRBG backdoor, player Q := P)
 - [x] RSA vs RNG — `crypto{pseudorandom_shamir_adleman}` (LCG Hensel lift)
-- [ ] Trust Games *(server)*
+- [x] Trust Games — `crypto{L4ttice_C0mpl1ant_G4m3}` (truncated LCG + LLL)
 
-### Password Complexity (0/2)
-- [ ] Bruce Schneier's Password *(server)*
-- [ ] Bruce Schneier's Password Part 2 *(server)*
+### Password Complexity (1/2)
+- [x] Bruce Schneier's Password — `crypto{https://www.schneierfacts.com/facts/1341}` (numpy int64 overflow → prime product)
+- [ ] Bruce Schneier's Password Part 2 *(skipped — needs MITM over 2^64 for sum==prod constraint)*
 
-### Secret Sharing Schemes (1/2)
-- [ ] Toshi's Treasure *(server)*
+### Secret Sharing Schemes ✅
+- [x] Toshi's Treasure — `crypto{shoulda_used_verifiable_secret_sharing}` (adaptive fake share in 5-of-6 SSSS via Lagrange linearity)
 - [x] Armory — `crypto{fr46m3n73d_b4ckup_vuln?}` (deterministic Shamir)
 
 ## CTF Archive (0/75) ⬜

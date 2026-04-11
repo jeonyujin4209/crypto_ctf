@@ -1,0 +1,56 @@
+# CryptoHack CTF solver environment — pip dependencies
+# Audited against 168 solve*.py files + tools/* (as of 2026-04-11)
+#
+# Install:  pip install -r infra/requirements.txt
+# Python:   3.12.x (tested on 3.12.10)
+
+# Core crypto — used by 71+ solvers
+pycryptodome==3.17
+
+# Numerics / linalg / lattices — used by 14 solvers
+numpy==2.2.6
+
+# Number theory (factorization, primality, CRT, dlog, poly ops) — 16 solvers
+sympy==1.14.0
+
+# Socket + CTF primitives — 14 solvers
+pwntools==4.15.0
+
+# HTTP requests — 9 solvers
+requests==2.32.5
+
+# Pcap / packet parsing (TLS track) — 5 solvers
+scapy==2.7.0
+
+# x509, AESGCM, key serialization — 4 solvers
+cryptography==46.0.3
+
+# Fast bignum / mpz — 10 solvers
+gmpy2==2.3.0
+
+# Image XOR (Lemur XOR) — 1 solver
+Pillow==11.3.0
+
+# Finite field / GF(2^n) — 1 solver (Matrix Revolutions)
+galois==0.4.10
+
+# Arbitrary-precision (PSLQ, integration) — 2 solvers
+mpmath==1.3.0
+
+# LLL / lattice matrix (Backpack, Real Eisenstein) — 2 solvers
+python-flint==0.8.0
+
+# ECDSA curve parameters (No Random No Bias) — 1 solver
+ecdsa==0.19.2
+
+# BN128 pairing (Pairing-Based Cryptography ZKP) — 1 solver
+py-ecc==8.0.0
+
+# Wiener attack helper (Everything is Big / Still Big) — 2 solvers
+owiener==1.0.10
+
+# PKCS#1 v1.5 encoding helper (Let's Decrypt) — 1 solver
+pkcs1==0.9.7
+
+# Integer factorization (ECM etc.) — 1 solver
+primefac==2.0.12

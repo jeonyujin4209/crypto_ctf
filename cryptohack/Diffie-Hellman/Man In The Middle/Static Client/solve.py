@@ -115,8 +115,10 @@ def main() -> None:
     print(f"    B_bob     = {hex(B_bob)[:20]}...")
 
     # Step 2: build smooth prime
+    # Must be LARGER than p_orig so that dlog recovers the full b (not
+    # merely b mod (p_smooth - 1), which would truncate the high bits).
     print("[2] Generating smooth prime (p-1 is B-smooth, g = 2 is primitive root)...")
-    p_smooth = make_smooth_prime(min_bits=800)
+    p_smooth = make_smooth_prime(min_bits=p_orig.bit_length() + 16)
     print(f"    p_smooth  = {p_smooth.bit_length()}-bit")
 
     # Step 3: send malicious params and receive Bob's reply

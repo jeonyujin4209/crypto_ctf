@@ -1,0 +1,41 @@
+# HashClash build for MD5 chosen-prefix collisions — CUDA-enabled
+#
+# Build:
+#   docker build -t hashclash -f infra/Dockerfile.hashclash infra/
+# Run with GPU (the --gpus all flag is REQUIRED to use the RTX):
+#   docker run --rm --gpus all -v "$PWD:/work" -w /work hashclash \
+#     /hashclash/scripts/fastcpc.sh /work/prefix1.bin /work/prefix2.bin
+#
+# Without --gpus all the build's CUDA binaries silently fall back to CPU
+# code paths, so make sure the flag is on the run command.
+
+# Use NVIDIA's CUDA devel image so nvcc + CUDA runtime are present at build
+# time. devel (vs base/runtime) gives the headers + nvcc compiler hashclash
+# autoconf needs.
+FROM nvidia/cuda:12.6.0-devel-ubuntu22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git ca-certificates build-essential autoconf automake libtool \
+    pkg-config libboost-all-dev zlib1g-dev libbz2-dev wget \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /hashclash
+RUN git clone --depth=1 https://github.com/cr-marcstevens/hashclash.git .
+
+# build.sh downloads + compiles its own pinned boost, then autoreconf +
+# configure + make. We append --with-cuda to configure so AX_CUDA picks up
+# /usr/local/cuda.
+RUN sed -i 's|./configure --with-boost=${BOOST_INSTALL_PREFIX}|./configure --with-boost=${BOOST_INSTALL_PREFIX} --with-cuda=/usr/local/cuda|' build.sh \
+ && bash build.sh 2>&1 | tail -80
+
+# Sanity: must have md5_birthdaysearch with CUDA built in. Show ldd to
+# prove libcuda/libcudart is linked in.
+RUN ls /hashclash/bin/ \
+ && ldd /hashclash/bin/md5_birthdaysearch | grep -E '(cuda|cudart)' || \
+    (echo "WARNING: CUDA not linked into md5_birthdaysearch — check build log" && exit 1)
+
+ENV PATH="/hashclash/bin:${PATH}"
+WORKDIR /work
+CMD ["bash"]

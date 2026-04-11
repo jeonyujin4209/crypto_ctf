@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm \"/c/Users/UserK/.claude/projects/C--Users-UserK-Documents-hackerone-program-crypto-ctf/memory/sagemath_docker_setup.md\")",
+      "Bash(cat)"
+    ]
+  }
+}

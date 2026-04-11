@@ -78,27 +78,14 @@ def query(f, data: bytes) -> str:
     return resp["hash"]
 
 
-def find_flag_length(f) -> int:
-    """Binary-search the smallest data length the server accepts."""
-    lo, hi = 1, 1024
-    while lo < hi:
-        mid = (lo + hi) // 2
-        f.write((json.dumps({"option": "message", "data": ("00" * mid)}) + "\n").encode())
-        line = f.readline()
-        resp = json.loads(line.decode())
-        if "hash" in resp:
-            hi = mid
-        else:
-            lo = mid + 1
-    return lo
-
-
 def main() -> None:
+    # FLAG length is known for this CryptoHack challenge. The previous
+    # binary-search probe proved flaky because the server drops the socket
+    # on short-data error responses and rate-limits rapid reconnects.
+    flag_len = 46
     sock, f = open_session()
     try:
-        flag_len = find_flag_length(f)
-        print(f"[+] FLAG length = {flag_len}")
-        assert flag_len == 46, "this POC is hardcoded for FLAG length 46"
+        print(f"[+] FLAG length = {flag_len} (hardcoded)")
 
         L1 = 183
         assert L1 % 64 == 55, "L1 must give the 9-byte minimum MD5 pad"
