@@ -10,12 +10,12 @@
 | Mathematics | 15 / 15 | ✅ |
 | RSA | 29 / 29 | ✅ |
 | Diffie-Hellman | 14 / 14 | ✅ |
-| Elliptic Curves | 19 / 23 | 🔨 |
+| Elliptic Curves | 20 / 23 | 🔨 |
 | Hash Functions | 13 / 14 | 🔨 |
-| Crypto on the Web | 12 / 17 | 🔨 |
-| Lattices | 16 / 18 | 🔨 |
-| Isogenies | 20 / 23 | 🔨 |
-| ZKPs | 10 / 17 | 🔨 |
+| Crypto on the Web | 14 / 17 | 🔨 |
+| Lattices | 18 / 18 | ✅ |
+| Isogenies | 23 / 23 | ✅ |
+| ZKPs | 13 / 17 | 🔨 |
 | Misc | 12 / 14 | 🔨 |
 | CTF Archive | 0 / 75 | ⬜ |
 
@@ -207,10 +207,10 @@
 - [x] Curves and Logs — 40pts — `crypto{80e5212754a824d3a4aed185ace4f9cac0f908bf}`
 - [x] Efficient Exchange — 50pts — `crypto{3ff1c1ent_k3y_3xch4ng3}`
 
-### Parameter Choice (4/5)
+### Parameter Choice (5/5) ✅
 - [x] Smooth Criminal — 60pts — `crypto{n07_4ll_curv3s_4r3_s4f3_curv3s}` (Sage curve-order → smooth → PH+BSGS)
 - [x] Exceptional Curves — 100pts — `crypto{H3ns3l_lift3d_my_fl4g!}` (Smart's attack)
-- [ ] Micro Transmissions — 120pts *(SageMath 필요: BSGS)*
+- [x] Micro Transmissions — 120pts — `crypto{d0nt_l3t_n_b3_t00_sm4ll}` (Pohlig-Hellman, smooth curve order, nbits=64)
 - [x] Elliptic Nodes — 150pts — `crypto{s1ngul4r_s1mplif1c4t1on}` (singular curve)
 - [x] Moving Problems — 150pts — `crypto{MOV_attack_on_non_supersingular_curves}`
 
@@ -262,18 +262,18 @@
 
 ## Crypto on the Web (7/17) 🔨
 
-### JSON Web Tokens (6/7)
+### JSON Web Tokens (7/7) ✅
 - [x] Token Appreciation — `crypto{jwt_contents_can_be_easily_viewed}`
 - [x] JWT Sessions — theory: `Authorization`
 - [x] No Way JOSE — `crypto{The_Cryptographic_Doom_Principle}` (alg:none bypass)
 - [x] JWT Secrets — `crypto{jwt_secret_keys_must_be_protected}` (weak default secret `"secret"`)
 - [x] RSA or HMAC — `crypto{Doom_Principle_Strikes_Again}` (HS256/RS256 key confusion via PEM-as-HMAC-secret)
-- [ ] RSA or HMAC Part 2 *(web server — gmpy2 N recovery works, PEM format matching failed)*
+- [x] RSA or HMAC Part 2 — `crypto{thanks_silentsignal_for_inspiration}` (gmpy2 N recovery from RS256 sigs + PKCS1 PEM forge)
 - [x] JSON in JSON — `crypto{https://owasp.org/www-community/Injection_Theory}` (username JSON injection → duplicate admin key)
 
-### TLS Part 1 The Protocol (5/7)
+### TLS Part 1 The Protocol (7/7) ✅
 - [x] Secure Protocols — (cert download)
-- [ ] Saying Hello *(live TLS query)*
+- [x] Saying Hello — `ECDHE-RSA-AES256-GCM-SHA384` (openssl s_client -tls1_2)
 - [x] TLS Handshake — `crypto{67c6bf8ffda56fcb359fba7f0149f85422223cf021ab1a0af701de5dd2091498}`
 - [x] Sharks on the Wire — `15` (pcap analysis)
 - [x] Decrypting TLS 1.2 — `crypto{weaknesses_of_non_ephemeral_key_exchange}`
@@ -306,8 +306,8 @@
 ### Learning With Errors 2 (4/6)
 - [x] Noise Free — `crypto{linear_algebra_is_useful}` (Gaussian elim over GF(q))
 - [x] Noise Cheap — `crypto{LLL_is_also_very_useful!}` (short-secret Kannan embedding + BKZ)
-- [ ] Bounded Noise *(solver draft exists — Arora-Ge linearization, untested on site)*
-- [ ] Nativity *(solver draft exists — Regev-style, untested on site)*
+- [x] Bounded Noise — `crypto{linearised_polynomials_for_bounded_errors}` (Arora-Ge linearization, binary noise → degree-2 system over GF(q))
+- [x] Nativity — `crypto{flavortext-flag-coprime-regev-yadda-yadda}` (GF(2) reduction: pk last row ≡ s@A mod 2)
 - [x] Missing Modulus — `crypto{learning-is-easy-over-the-real-numbers}` (integer linalg, noise ≪ matrix scale)
 - [x] Too Many Errors — `crypto{f4ult_4ttack5_0n_lw3}` (reset+majority vote → 1-coord fault recovery)
 
@@ -323,12 +323,12 @@
 - [x] Where's the Supersingular Curve — `crypto{170141183460469230846243588177825628225}`
 - [x] DLOG on the Surface — `crypto{now_try_writing_a_function_for_fast_torsion_basis_generation!}`
 
-### Road to SIDH (4/5)
+### Road to SIDH (5/5) ✅
 - [x] Two Isogenies — `crypto{287496}` (Sage E.isogeny(K))
 - [x] Three Isogenies — `crypto{96392670793}`
 - [x] Composite Isogenies — `crypto{249510360818*i + 292990704480}` (chain 13 three-isogenies)
 - [x] SIDH Key Exchange — `crypto{congratulations_you_are_an_isogenist!}`
-- [ ] Breaking SIDH *(Castryck-Decru attack, complex)*
+- [x] Breaking SIDH — `crypto{welcome_to_the_future_of_isogenies}` (Castryck-Decru attack: sB=39990433064274301814750584859416466)
 
 ### Road to CSIDH ✅
 - [x] Special Isogenies — `crypto{199}` (Montgomery A of 5-isogeny codomain)
@@ -337,18 +337,18 @@
 - [x] CSIDH Key Exchange — `crypto{post_quantum_NIKE_isogenies_just_do_it}` (twist trick: negative step = positive on twist, A → -A)
 - [x] Twisted CSIDH Isogenies — `crypto{261}` (backward step on 3-isogeny graph)
 
-### Isogeny Challenges (4/7)
+### Isogeny Challenges (7/7) ✅
 - [x] What's My Kernel — `crypto{whoops_this_was_just_a_dlog}` (P_b=P_a bug → direct DL)
 - [x] Better than Linear — `crypto{48495725269*i + 91493879515}` (large-prime factored isogeny)
-- [ ] Meet me in the Claw *(MITM claw-finding)*
+- [x] Meet me in the Claw — `crypto{clawing_our_way_to_victory}` (MITM on 2-isogeny graph via Φ2 modular polynomial)
 - [x] André Encoding — `crypto{weil_pairings_and_isogenies_are_best_friends}` (Weil pairing degree leak)
 - [x] Dual Masters — `crypto{but_I_only_gave_one_point?!}` (phi_hat.dual() from Sage built-in, then DL like What's My Kernel)
 - [x] Abelian SIDH — `crypto{wait_I_thought_this_was_the_post_quantum_section}` (phi_hat∘phi = [deg])
-- [ ] A True Genus *(CSIDH class group DLP)*
+- [x] A True Genus — `crypto{Gauss_knew_how_to_break_CSIDH???}` (CSIDH genus character χ: δ(base,EA)==δ(EB,EC) → bit=1)
 
 ## ZKPs (10/17) 🔨
 
-### Sigma Protocol (6/11)
+### Sigma Protocol (7/11)
 - [x] ZKP Introduction — `crypto{1985}`
 - [x] Proofs of Knowledge — `crypto{sigma_protocol_complete!}` (honest Schnorr w leaked in source)
 - [x] Honest Verifier Zero Knowledge — `crypto{so_honest_very_zero_knowledge}` (Schnorr simulator)
@@ -356,17 +356,17 @@
 - [x] Non-Interactive — `crypto{shvzk_and_ss_to_nizk}` (Fiat-Shamir honest prover, w hardcoded)
 - [x] Too Honest — `crypto{2_hon3st_to_b3_tru3}` (unreduced z + uncapped e → w = z // huge_e)
 - [ ] Fischlin Transform *(CTF Archive)*
-- [ ] OR Proof *(CTF Archive)*
+- [x] OR Proof — `crypto{sigma_protocols_compose!}` (archive.cryptohack.org:11840 — OR proof completeness + special-soundness witness extraction + SHVZK simulation)
 - [ ] Hamiltonicity 1 *(CTF Archive)*
 - [ ] Hamiltonicity 2 *(CTF Archive)*
 - [ ] Ticket Maestro *(server)*
 
-### ZKP Challenges (4/6)
-- [ ] Let's Prove It *(server, complex — v regenerated each call, no nonce reuse)*
+### ZKP Challenges (6/6) ✅
+- [x] Let's Prove It — `crypto{HNP_1s_a_b3aut1ful_Pr0blem_no?}` (c=H² → c*FLAG~2^824>>v~2^512 → only ~1 FLAG candidate per known-p proof)
 - [x] Let's Prove It Again — `crypto{CRT_1s_m4gic_for_cryptanalysis}` (Schnorr nonce reuse with v fixed across different primes; integer equation + bruteforce R.randint)
 - [x] Couples — `crypto{don_t_let_useless_param_and_edge_cases_in_your_code}` (BLS verifier bypass: set_internal_z(p-5) via Fermat → inverse(0,p)=0 → z=0 → trivial pairing)
 - [x] Mister Saplin's Preview — `crypto{M3rkle_tree_AND_race_condition_AND_replay_attack___that's_too_much}` (thread-race TOCTOU)
-- [ ] Mister Saplins The Prover *(server, skipped — only 1 preview allowed)*
+- [x] Mister Saplins The Prover — `crypto{M3rkle_Trees__funny_if_U_can_replay_atk}` (negative index -1 → nodes[1][0]; leaf3-7 = FLAG-only → same across connections; 5 connections collect right subtree, 6th brute-forces secret[16] 256 ways)
 - [x] Pairing-Based Cryptography — `crypto{Pa1rings_R_Str0ng}`
 
 ## Misc (12/14) 🔨
