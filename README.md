@@ -15,9 +15,9 @@
 | Crypto on the Web | 14 / 17 | 🔨 |
 | Lattices | 18 / 18 | ✅ |
 | Isogenies | 23 / 23 | ✅ |
-| ZKPs | 13 / 17 | 🔨 |
+| ZKPs | 16 / 17 | 🔨 |
 | Misc | 12 / 14 | 🔨 |
-| CTF Archive | 0 / 75 | ⬜ |
+| CTF Archive | 8 / 75 | 🔨 |
 
 **총 점수**: 1875+ pts (+ 신규 풀이 ~1500pts)
 
@@ -234,7 +234,7 @@
 - [x] Curveball — 100pts — `crypto{Curveballing_Microsoft_CVE-2020-0601}` (CVE-2020-0601 explicit-params attack)
 - [x] No Random, No Bias — 120pts — `crypto{3mbrac3_r4nd0mn3ss}` (HNP/lattice attack)
 
-## Hash Functions (11/14) 🔨
+## Hash Functions (13/14) 🔨
 
 ### Probability ✅
 - [x] Jack's Birthday Hash — `1420`
@@ -260,7 +260,7 @@
 - [x] WOTS Up — `ECSC{h4sh1ng_ch41n_r34ct1on_ff_}`
 - [x] WOTS Up 2 — `ECSC{0ne_m0r3_t1m3_s1gn4tur3_ff}`
 
-## Crypto on the Web (7/17) 🔨
+## Crypto on the Web (14/17) 🔨
 
 ### JSON Web Tokens (7/7) ✅
 - [x] Token Appreciation — `crypto{jwt_contents_can_be_easily_viewed}`
@@ -285,7 +285,7 @@
 - [ ] Megalomaniac 2 *(server)*
 - [ ] Megalomaniac 3 *(server)*
 
-## Lattices (12/18) 🔨
+## Lattices (18/18) ✅
 
 ### Lattices ✅
 - [x] Vectors — `702`
@@ -303,7 +303,7 @@
 - [x] LWE High Bits Message — `201`
 - [x] From Private to Public Key LWE — `1568`
 
-### Learning With Errors 2 (4/6)
+### Learning With Errors 2 (6/6) ✅
 - [x] Noise Free — `crypto{linear_algebra_is_useful}` (Gaussian elim over GF(q))
 - [x] Noise Cheap — `crypto{LLL_is_also_very_useful!}` (short-secret Kannan embedding + BKZ)
 - [x] Bounded Noise — `crypto{linearised_polynomials_for_bounded_errors}` (Arora-Ge linearization, binary noise → degree-2 system over GF(q))
@@ -311,7 +311,7 @@
 - [x] Missing Modulus — `crypto{learning-is-easy-over-the-real-numbers}` (integer linalg, noise ≪ matrix scale)
 - [x] Too Many Errors — `crypto{f4ult_4ttack5_0n_lw3}` (reset+majority vote → 1-coord fault recovery)
 
-## Isogenies (20/23) 🔨
+## Isogenies (23/23) ✅
 
 ### Introduction ✅
 - [x] Introduction to Isogenies — `crypto{65537}`
@@ -346,20 +346,20 @@
 - [x] Abelian SIDH — `crypto{wait_I_thought_this_was_the_post_quantum_section}` (phi_hat∘phi = [deg])
 - [x] A True Genus — `crypto{Gauss_knew_how_to_break_CSIDH???}` (CSIDH genus character χ: δ(base,EA)==δ(EB,EC) → bit=1)
 
-## ZKPs (10/17) 🔨
+## ZKPs (16/17) 🔨
 
-### Sigma Protocol (7/11)
+### Sigma Protocol (10/11)
 - [x] ZKP Introduction — `crypto{1985}`
 - [x] Proofs of Knowledge — `crypto{sigma_protocol_complete!}` (honest Schnorr w leaked in source)
 - [x] Honest Verifier Zero Knowledge — `crypto{so_honest_very_zero_knowledge}` (Schnorr simulator)
 - [x] Special Soundness — `crypto{specially_sound_sigmas}` (nonce reuse → witness extract)
 - [x] Non-Interactive — `crypto{shvzk_and_ss_to_nizk}` (Fiat-Shamir honest prover, w hardcoded)
 - [x] Too Honest — `crypto{2_hon3st_to_b3_tru3}` (unreduced z + uncapped e → w = z // huge_e)
-- [ ] Fischlin Transform *(CTF Archive)*
+- [x] Fischlin Transform *(CTF Archive)* (WI distinguisher via RO hit count)
 - [x] OR Proof — `crypto{sigma_protocols_compose!}` (archive.cryptohack.org:11840 — OR proof completeness + special-soundness witness extraction + SHVZK simulation)
-- [ ] Hamiltonicity 1 *(CTF Archive)*
+- [x] Hamiltonicity 1 *(CTF Archive)* (online FS: grind A until challenge=0)
 - [ ] Hamiltonicity 2 *(CTF Archive)*
-- [ ] Ticket Maestro *(server)*
+- [x] Ticket Maestro *(server)* (Groth16 rerandomization → replay with new proof ID)
 
 ### ZKP Challenges (6/6) ✅
 - [x] Let's Prove It — `crypto{HNP_1s_a_b3aut1ful_Pr0blem_no?}` (c=H² → c*FLAG~2^824>>v~2^512 → only ~1 FLAG candidate per known-p proof)
@@ -397,6 +397,16 @@
 - [x] Toshi's Treasure — `crypto{shoulda_used_verifiable_secret_sharing}` (adaptive fake share in 5-of-6 SSSS via Lagrange linearity)
 - [x] Armory — `crypto{fr46m3n73d_b4ckup_vuln?}` (deterministic Shamir)
 
-## CTF Archive (0/75) ⬜
+## CTF Archive (8/75) 🔨
 
-*See `cryptohack/CTF Archive/` for challenge files (2020-2025)*
+### 2020 (4/?)
+- [x] 1337crypt (DownUnderCTF) — `DUCTF{wh0_N33ds_pr3cIsi0n_wh3n_y0u_h4v3_c0pp3rsmiths_M3thod}` (Coppersmith p recovery from sqrt hint, GM decryption)
+- [x] Calm Down (HKCERT CTF) — `hkcert20{c4lm_d0wn_4nd_s0lv3_th3_ch4llen9e}` (RSA last-byte oracle 0x81 fixed-point binary search)
+- [x] 2020 (TETCTF) (MT19937 prediction via index 1396/1792)
+- [x] Sign in Please (HKCERT CTF) (SHA-256 length extension + pbox rainbow table)
+
+### 2021 (4/?)
+- [x] 1n_jection (Zh3r0 CTF V2) — `zh3r0{wh0_th0ugh7_b1j3c710n5_fr0m_n^k_t0_n_c0uld_b3_s00000_c0000000l!}` (inverse Cantor pairing)
+- [x] A Joke Cipher (HKCERT CTF) — `hkcert21{th1s_i5_wh4t_w3_c4ll3d_sn4k3o1l_crypt0sy5t3m}` (Nagaty shared key = (yA·yB)² mod p)
+- [x] Key Backup Service 2 (HKCERT CTF) — `hkcert21{y0u_d0nt_n33d_p41rw15e_9cd_1f_y0u_c4n_d0_i7_1n_b4tch}` (ord(G)=2²⁵ birthday + GCD prime)
+- [x] Unimplemented (TETCTF) — `TetCTF{c0unt1ng_1s_n0t_4lw4ys_34sy-vina:*100*48012023578024#}` (Gaussian integer RSA lambda)
