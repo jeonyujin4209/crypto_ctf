@@ -1,3 +1,9 @@
+---
+name: fischlin-wi-distinguisher
+description: Fischlin OR proof WI 구별자: RO hit count로 b=0/1 판별. count>1이면 b=1 확실, count==1이면 b=0 추정(73%)
+type: skill
+---
+
 # Fischlin Transform — WI Distinguisher via RO Hit Count
 
 ## When to use

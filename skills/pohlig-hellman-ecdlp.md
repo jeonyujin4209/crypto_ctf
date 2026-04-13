@@ -1,3 +1,9 @@
+---
+name: pohlig-hellman-ecdlp
+description: Smooth/small order ECDLP → Pohlig-Hellman. BSGS 전에 factor(E.order()) 필수. Sage discrete_log()이 자동 PH 처리
+type: skill
+---
+
 # Pohlig-Hellman ECDLP on Smooth-Order Curves
 
 ## When to use

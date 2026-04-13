@@ -1,3 +1,9 @@
+---
+name: singular-curve-mapping
+description: Singular EC (discriminant=0) → additive/multiplicative group 매핑으로 ECDLP trivially 해결
+type: skill
+---
+
 # Singular Elliptic Curve → Multiplicative/Additive Group Mapping
 
 ## 유형

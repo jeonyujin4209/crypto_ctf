@@ -1,3 +1,9 @@
+---
+name: matrix-dh-repeated-root-local-ring
+description: Matrix DH에서 min_poly가 중복근 → local ring trick으로 DLP 없이 SECRET = λ·b/a 즉시 복구. DLP 시도 전 squarefree 검사 필수
+type: skill
+---
+
 # Matrix DH with Repeated Root → Local Ring Trick Gives SECRET Directly
 
 ## 유형

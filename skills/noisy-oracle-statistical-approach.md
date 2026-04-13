@@ -1,3 +1,9 @@
+---
+name: noisy-oracle-statistical-approach
+description: 노이즈 오라클(확률적 응답)은 Sequential Halving 실패. Adaptive Top-2 통계 접근으로 해결
+type: skill
+---
+
 # Noisy Oracle: 통계적 접근으로 노이즈 극복
 
 ## 유형

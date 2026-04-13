@@ -1,3 +1,9 @@
+---
+name: isogeny-claw-mitm
+description: 2^e-isogeny E1→E2를 MITM claw-finding으로 복구. j-invariant DFS 양방향 + 고정점 매칭 → 경로 재구성 → 포인트 push
+type: skill
+---
+
 # Isogeny Claw / MITM Attack (2-isogeny graph)
 
 ## When to use

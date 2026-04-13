@@ -1,3 +1,9 @@
+---
+name: hnp-biased-ecdsa-nonce
+description: Biased ECDSA nonce(MSBs=0) → Hidden Number Problem → Boneh-Venkatesan lattice 공격. Sage 없으면 pure-Python LLL
+type: skill
+---
+
 # HNP Lattice Attack on Biased ECDSA Nonces
 
 ## 유형

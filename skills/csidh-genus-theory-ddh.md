@@ -1,3 +1,9 @@
+---
+name: csidh-genus-theory-ddh
+description: CSIDH DDH 구별자: genus theory로 j-invariant가 같은 isogeny class인지 판단. DH shared secret vs random triple 구별
+type: skill
+---
+
 # CSIDH Genus Theory / DDH-CGA Distinguisher
 
 ## When to use

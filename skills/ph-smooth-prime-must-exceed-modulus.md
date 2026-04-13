@@ -1,3 +1,9 @@
+---
+name: ph-smooth-prime-must-exceed-modulus
+description: DH MITM에서 Pohlig-Hellman용 custom smooth prime은 original p보다 커야 함. 작으면 b가 잘림(truncation)
+type: feedback
+---
+
 # Pohlig-Hellman on Chosen Smooth Group: p_smooth Must Exceed p_orig
 
 ## 유형

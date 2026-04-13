@@ -1,3 +1,9 @@
+---
+name: tls12-extended-master-secret
+description: TLS 1.2 RSA key exchange pcap 복호화 시 EMS extension(0x17) 있으면 master_secret 유도식이 달라 복호화 실패
+type: feedback
+---
+
 # TLS 1.2 Decryption: Extended Master Secret Trap
 
 ## 유형

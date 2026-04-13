@@ -1,3 +1,9 @@
+---
+name: hamiltonicity-online-fs-grinding
+description: Online Fiat-Shamir 시그마 프로토콜은 A 랜덤 재시도로 challenge=0 강제 가능. Batch FS에서는 불가
+type: skill
+---
+
 # Hamiltonicity / Sigma Protocol — Online Fiat-Shamir Grinding
 
 ## When to use

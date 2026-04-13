@@ -1,3 +1,9 @@
+---
+name: gaussian-int-padic-dlp
+description: Z[i]/(p^2)* DLP의 p-subgroup은 BSGS 불가(2^63). Hensel lifting으로 k_p = (h_p-1)/p * inv((g_p-1)/p) mod p 선형 해결
+type: skill
+---
+
 # Gaussian Integer p-adic DLP (Z[i]/(p^2)*)
 
 ## 실패 원인

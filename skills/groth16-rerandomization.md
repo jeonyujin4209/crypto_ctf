@@ -1,3 +1,9 @@
+---
+name: groth16-rerandomization
+description: Groth16 (A,B,C)에서 λ 적용 → (λ⁻¹A, λB, C)도 valid proof. 동일 증명으로 다른 ID 크레딧 파밍 가능
+type: skill
+---
+
 # Groth16 Proof Re-randomization (Malleability)
 
 ## When to use

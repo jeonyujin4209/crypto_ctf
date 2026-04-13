@@ -1,3 +1,9 @@
+---
+name: jwt-algorithm-confusion
+description: JWT RS256→HS256 algorithm confusion: 서버가 RS256 공개키를 HMAC secret으로 수락하면 서명 위조 가능
+type: skill
+---
+
 # JWT Algorithm Confusion (RS256 → HS256)
 
 ## When to use

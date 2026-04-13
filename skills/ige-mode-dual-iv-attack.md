@@ -1,3 +1,9 @@
+---
+name: ige-mode-dual-iv-attack
+description: AES-IGE에서 (m0, c0) dual IV 변조 방향: 앞부분 복호화는 m0, 뒷부분은 c0 조작. 방향 혼동 주의
+type: feedback
+---
+
 # IGE 모드: Dual IV(m0/c0) 공격 전략
 
 ## 유형

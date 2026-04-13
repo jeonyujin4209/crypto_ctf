@@ -1,3 +1,9 @@
+---
+name: castryck-decru-sidh-attack
+description: SIDH/SIKE에서 phiA_P3/phiA_Q3(Alice 3-torsion images) 주어지면 Castryck-Decru로 Alice 비밀 isogeny 복구
+type: skill
+---
+
 # Castryck-Decru SIDH Attack
 
 ## When to use

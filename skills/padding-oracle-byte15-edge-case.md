@@ -1,3 +1,9 @@
+---
+name: padding-oracle-byte15-edge-case
+description: Padding oracle에서 pad_value를 1로 고정 가정하면 byte index 15에서 실패. 블록 경계에서 동적 판별 필요
+type: feedback
+---
+
 # Padding Oracle: Byte 15 Edge Case
 
 ## 유형

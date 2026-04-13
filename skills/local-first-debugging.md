@@ -1,3 +1,9 @@
+---
+name: local-first-debugging
+description: 서버 디버깅 전 반드시 로컬 재현 먼저. 서버 loop은 느리고 중간 상태 관찰 불가능
+type: feedback
+---
+
 # 원칙: 서버 전에 로컬에서 먼저 검증
 
 ## 유형

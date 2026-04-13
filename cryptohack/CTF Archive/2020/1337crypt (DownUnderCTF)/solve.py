@@ -37,7 +37,8 @@ from Crypto.Util.number import long_to_bytes
 # -----------------------------------------------------------------------
 # Load output.txt
 # -----------------------------------------------------------------------
-path = 'C:/Users/UserK/Documents/hackerone/program/crypto_ctf/cryptohack/CTF Archive/2020/1337crypt (DownUnderCTF)/output.txt'
+import os
+path = os.path.join(os.path.dirname(__file__), 'output.txt')
 with open(path, 'r') as f:
     content = f.read()
 

@@ -1,3 +1,9 @@
+---
+name: lwe-kannan-embedding-sign-trap
+description: Kannan embedding은 -t에 closest한 점을 찾음. embed row에 +target 넣으면 BKZ 성공해도 검증 50% 실패 → 부호 반전 필요
+type: feedback
+---
+
 # LWE Primal Embedding — Kannan Target-Sign Trap
 
 ## 유형

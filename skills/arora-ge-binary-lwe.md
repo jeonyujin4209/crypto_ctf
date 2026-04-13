@@ -1,3 +1,9 @@
+---
+name: arora-ge-binary-lwe
+description: Binary/bounded error LWE에서 error polynomial이 0 → monomial linearization으로 Gaussian elimination. 표준 lattice 공격보다 훨씬 빠름
+type: skill
+---
+
 # Arora-Ge Linearization for Binary/Bounded LWE
 
 ## 유형
