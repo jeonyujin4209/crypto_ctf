@@ -7,3 +7,9 @@ Mystiz is really lazy. He expects that someone would crack the bank-level encryp
 ## Files
 - `transcript.zip`
 - `chall.py`
+
+## Solution
+`ord(G) = 2^25` → 16384라운드에서 birthday collision (~4쌍). 충돌 쌍 (i,j)에서 `p = gcd(c2_i - c2_j, c3_i - c3_j)` (512-bit 소수). `master_secret = pow(cb % p, pow(e,-1,p-1), p)`. AES-CBC 복호화.
+
+## Flag
+`hkcert21{y0u_d0nt_n33d_p41rw15e_9cd_1f_y0u_c4n_d0_i7_1n_b4tch}`

@@ -6,3 +6,6 @@ Every slightest mistake in cryptography would lead to a disastrous result. Let's
 
 ## Files
 - `chall.py`
+
+## Solution
+CFB-128에 zero plaintext를 암호화하면 OFB keystream과 동일. `cfb data <80 zeros>` → keystream, `ofb flag` → flag XOR keystream. XOR하면 flag 복원. (서버 연결 필요)
