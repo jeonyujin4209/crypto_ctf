@@ -41,6 +41,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [padding-oracle-byte15-edge-case](failures/padding-oracle-byte15-edge-case.md) — pad_value를 1로 가정하면 실패, 동적 판별 필요
 - [ph-smooth-prime-must-exceed-modulus](failures/ph-smooth-prime-must-exceed-modulus.md) — Static-key DH MITM에서 PH용 smooth prime은 p_orig보다 커야 b가 truncation 없이 복구됨
 - [sage-isogeny-dual-builtin](failures/sage-isogeny-dual-builtin.md) — Isogeny dual은 Sage `.dual()` 쓰기. copypasta dual()은 Aut(E) 임의 선택으로 틀린 sigma-class에 빠짐
+- [normalize-unknown-sizes-before-lattice](failures/normalize-unknown-sizes-before-lattice.md) — 힌트 방정식 small unknown 여러 개 → dominant known으로 나눠서 크기 분석 먼저. O(1)짜리는 격자서 제외
 - [schnorr-nonce-reuse-over-different-moduli](failures/schnorr-nonce-reuse-over-different-moduli.md) — Schnorr nonce v 재사용이 서로 다른 소수 p_i 하에서도 유효. c*w>v면 정확히 1번 wrap → 정수 등식
 - [thread-race-slow-the-thread](failures/thread-race-slow-the-thread.md) — background thread validation은 race 말고 worker inner loop를 팽창시켜 일부러 느리게 만들어라
 - [tls12-extended-master-secret](failures/tls12-extended-master-secret.md) — TLS 1.2 InvalidTag면 즉시 EMS extension(0x17) 의심. master_secret 유도식 변경됨
