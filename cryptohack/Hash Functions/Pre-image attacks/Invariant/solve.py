@@ -73,7 +73,7 @@ CHALL_PATH = Path(__file__).with_name("13393.py")
 # Importing 13393.py would normally call listener.start_server() and block. We
 # only need the MyHash class definition; replace utils.listener with a stub
 # that swallows the start_server call.
-sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "tools"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "lib"))
 import utils.listener as _real_listener  # noqa: E402
 
 _real_start = _real_listener.start_server

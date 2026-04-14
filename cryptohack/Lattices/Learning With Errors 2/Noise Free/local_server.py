@@ -6,7 +6,7 @@ import random
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "tools"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "lib"))
 from utils import listener  # noqa: E402
 
 FLAG = b"crypto{local_test_flag_not_real}"

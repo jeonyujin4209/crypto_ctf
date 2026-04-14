@@ -63,7 +63,7 @@ from pathlib import Path
 from Crypto.Cipher import AES
 
 # Use our pure-Python truncated-LCG attack from tools/
-sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "tools"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "lib"))
 from trunc_lcg import recover_truncated_lcg_seed  # noqa: E402
 
 HOST = "socket.cryptohack.org"

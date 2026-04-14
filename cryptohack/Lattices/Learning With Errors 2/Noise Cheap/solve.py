@@ -53,7 +53,7 @@ from pathlib import Path
 
 from flint import fmpz_mat
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "tools"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "lib"))
 import fast_lll  # noqa: E402  (Babai NP only)
 
 HOST = "socket.cryptohack.org"
