@@ -24,6 +24,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [pohlig-hellman-ecdlp](attack/pohlig-hellman-ecdlp.md) — Smooth/small order ECDLP → Pohlig-Hellman. BSGS 전에 `factor(E.order())` 필수
 - [rsa-last-byte-oracle-binary-search](attack/rsa-last-byte-oracle-binary-search.md) — last byte == 0x2e oracle에서 s ≡ 0x81 overflow 감지 → binary search로 m 복구
 - [singular-curve-mapping](attack/singular-curve-mapping.md) — ECDLP 전 discriminant 체크. Singular 곡선은 F_p*/F_p+ 로 매핑해 DLP 해결
+- [custom-hash-xor-finalization-noop](attack/custom-hash-xor-finalization-noop.md) — 커스텀 해시 finalization이 고정 입력으로 짝수번 XOR하면 no-op → 라운드 충돌로 환원
 
 ---
 
@@ -56,3 +57,4 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [sage-gf-large-fp2-construction](tools/sage-gf-large-fp2-construction.md) — 큰 p에서 `GF((p,2),...)` → GAP order 에러. `GF(p^2,'i',modulus=[1,0,1])`로 바꿀 것
 - [sage-preparser-xor-trap](tools/sage-preparser-xor-trap.md) — `.sage` 파일에서 `^`는 XOR 아닌 거듭제곱. Sage XOR은 `^^`
 - [stuck-checklist-5-questions](tools/stuck-checklist-5-questions.md) ⭐ — "복잡 → skip" 전 5문 체크: 분해 / dir(obj) / 제목 공격명 / 두 번째 약점 / github 구현
+- [z3-bitblast-sat-for-crypto](tools/z3-bitblast-sat-for-crypto.md) — Z3 bitvector 곱셈+XOR 문제에서 `Then('simplify','bit-blast','sat')`로 극적 속도 향상
