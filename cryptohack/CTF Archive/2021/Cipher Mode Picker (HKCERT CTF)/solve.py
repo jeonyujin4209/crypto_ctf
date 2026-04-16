@@ -16,7 +16,7 @@ Attack (2 queries):
 """
 import socket
 
-HOST = 'socket.cryptohack.org'
+HOST = 'archive.cryptohack.org'
 PORT = 2951
 
 def recvuntil(s, delim=b'\n'):
