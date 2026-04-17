@@ -24,7 +24,9 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [matrix-dh-repeated-root-local-ring](attack/matrix-dh-repeated-root-local-ring.md) — Matrix DH에서 min_poly 중복근이면 DLP 없이 SECRET = λ·b/a로 즉시 복구
 - [mt-state-partial-leak-z3](attack/mt-state-partial-leak-z3.md) — random.random() 부분 비트 leak → Z3로 MT state 복원 (관측이 twist 경계 넘어야 unique)
 - [noisy-oracle-statistical-approach](attack/noisy-oracle-statistical-approach.md) — 노이즈 오라클에서 Sequential Halving 실패; Adaptive Top-2로 해결
+- [patarin-linearization-mi-mq](attack/patarin-linearization-mi-mq.md) — MI(Matsumoto-Imai) 다변수 이차 공개키 → Patarin bilinear relation으로 선형화 복호
 - [pohlig-hellman-ecdlp](attack/pohlig-hellman-ecdlp.md) — Smooth/small order ECDLP → Pohlig-Hellman. BSGS 전에 `factor(E.order())` 필수
+- [prange-isd-xor-keystream-recovery](attack/prange-isd-xor-keystream-recovery.md) — n개 AES-CTR XOR 구조 + known-plaintext → syndrome decoding(Prange ISD)으로 키스트림 복구
 - [rsa-last-byte-oracle-binary-search](attack/rsa-last-byte-oracle-binary-search.md) — last byte == 0x2e oracle에서 s ≡ 0x81 overflow 감지 → binary search로 m 복구
 - [sbox-invariant-subspace-birthday](attack/sbox-invariant-subspace-birthday.md) — SBOX invariant subspace(특정 비트=0 보존) + bit-index 보존 permute → 유효 capacity 축소, birthday 가능
 - [sha256-length-extension-via-oracle](attack/sha256-length-extension-via-oracle.md) — Hash oracle에서 제어 바이트로 SHA256 padding 재현 → output을 intermediate state로 length extension
