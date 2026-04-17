@@ -8,6 +8,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 
 재사용 가능한 암호 공격 레시피.
 
+- [aes-component-disable-key-recovery](attack/aes-component-disable-key-recovery.md) — AES 개별 컴포넌트(ARK/SB/SR/MC) 비활성화 시 각각의 약점으로 key 복구
 - [arora-ge-binary-lwe](attack/arora-ge-binary-lwe.md) — Binary/bounded error LWE는 격자 대신 다항식 linearization → 가우스 소거
 - [castryck-decru-sidh-attack](attack/castryck-decru-sidh-attack.md) — SIDH에서 3-torsion images 주어지면 Castryck-Decru로 비밀 isogeny 복구
 - [coppersmith-approx-factor](attack/coppersmith-approx-factor.md) — `floor(D*sqrt(p))` 힌트에서 오류 ≈ 2*sqrt(p)/D; `small_roots(beta=0.5)`로 정확한 p 복구
