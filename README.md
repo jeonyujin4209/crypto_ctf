@@ -17,7 +17,7 @@
 | Isogenies | 23 / 23 | ✅ |
 | ZKPs | 16 / 17 | 🔨 |
 | Misc | 12 / 14 | 🔨 |
-| CTF Archive | 16 / 75 | 🔨 |
+| CTF Archive | 17 / 75 | 🔨 |
 
 **총 점수**: 1875+ pts (+ 신규 풀이 ~1500pts)
 
@@ -397,7 +397,7 @@
 - [x] Toshi's Treasure — `crypto{shoulda_used_verifiable_secret_sharing}` (adaptive fake share in 5-of-6 SSSS via Lagrange linearity)
 - [x] Armory — `crypto{fr46m3n73d_b4ckup_vuln?}` (deterministic Shamir)
 
-## CTF Archive (16/75) 🔨
+## CTF Archive (17/75) 🔨
 
 ### 2020 (4/?)
 - [x] 1337crypt (DownUnderCTF) — `DUCTF{wh0_N33ds_pr3cIsi0n_wh3n_y0u_h4v3_c0pp3rsmiths_M3thod}` (Coppersmith p recovery from sqrt hint, GM decryption)
@@ -420,3 +420,4 @@
 - [x] C0ll1d3r (Firebird Internal CTF) — `firebird{wh3n_1n_d0ub7_u5e_latt111c3_r3duc71110n_4lg0r111thm}` (hidden p: 연속 exponent h2²-h1h3=kp → gcd로 p 복구; LLL knapsack Kannan embedding으로 소문자 충돌 찾기)
 - [x] Dark Arts (CODEGATE CTF) — `CODEGATE{I_told_you_building_secure_PRFs_is_hard_:(}` (4-stage "mod p + mod q" weak PRF: unit-vector distinguisher → Fourier |F_2|² bias → quadratic Arora-Ge linearization on GF(5) → HNP BKZ lattice)
 - [x] FaILProof (SekaiCTF) — `SEKAI{w3ll_1_gu355_y0u_c4n_4lw4y5_4sk_f0r_m0r3_3qu4t10n5_wh3n_n0_0n3s_l00k1ng}` (happiness(x)=x-Σ(x>>i)는 popcount 위장. 서버가 secret 공개 → A 재구성, 블록당 128개 Z-linear 등식 on 256 binary unknowns → pulp+CBC ILP 0.2 s/block)
+- [x] FaILProof Revenge (SekaiCTF) — `SEKAI{b00l3n5_4r3_my5t3r10u5_1n_th31r_0wn_ch33ky_w4y5}` (sha512 chain, 256 pubkey 512-bit, block=24rand∥8msg∥32rand. 블록당 256 Z-linear 등식 on 512 binary unknowns → pulp+CBC ILP 0.85 s/block; 랜덤 패딩은 linear-on-bits 암호에 무용)

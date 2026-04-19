@@ -58,7 +58,7 @@ def solve_binary_linear(A, c, n_vars):
 | n vars | m eqs | density A | time |
 |--------|-------|-----------|------|
 | 256    | 128   | 50%       | 0.2 s |
-| 512    | 256   | 50%       | ~2 s |
+| 512    | 256   | 50%       | ~0.85 s (측정) |
 | 1024   | 512   | 50%       | ~30 s+ (marginal) |
 
 A가 sparse면 훨씬 빠름. dense 50%에서 n > 1000 넘어가면 CBC marginal.
@@ -94,4 +94,7 @@ A가 sparse면 훨씬 빠름. dense 50%에서 n > 1000 넘어가면 CBC marginal
   - 128 × 256 binary A, c ∈ [0, 128]^128, 유일한 B ∈ {0,1}^256 복구
   - LLL dim 257×385 basis에 target absent → BKZ crash (fplll babai)
   - pulp+CBC 0.22 s/block × 3 블록 즉시 풀림
+- CryptoHack CTF Archive 2022: FaILProof Revenge (SekaiCTF)
+  - 256 × 512 binary A, c ∈ [0, 256]^256, 유일한 B ∈ {0,1}^512 복구 (7 블록)
+  - pulp+CBC 0.85 s/block, LLL 시도 없이 바로 ILP
 - 일반적 tech 배경: SAT/ILP for crypto = Cohn-Heninger style "combinatorial crypto" 해법
