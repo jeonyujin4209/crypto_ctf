@@ -24,6 +24,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [jwt-algorithm-confusion](attack/jwt-algorithm-confusion.md) — JWT RS256→HS256 algorithm confusion: RS256 공개키를 HMAC secret으로 서명 위조
 - [matrix-dh-repeated-root-local-ring](attack/matrix-dh-repeated-root-local-ring.md) — Matrix DH에서 min_poly 중복근이면 DLP 없이 SECRET = λ·b/a로 즉시 복구
 - [mt-state-partial-leak-z3](attack/mt-state-partial-leak-z3.md) — random.random() 부분 비트 leak → Z3로 MT state 복원 (관측이 twist 경계 넘어야 unique)
+- [numpy-mt-32bit-seed-brute](attack/numpy-mt-32bit-seed-brute.md) — numpy.random.seed(32-bit)는 state[0]=seed. 첫 bytes(16) → untemper 후 numba로 2^32 brute ~3분
 - [noisy-oracle-statistical-approach](attack/noisy-oracle-statistical-approach.md) — 노이즈 오라클에서 Sequential Halving 실패; Adaptive Top-2로 해결
 - [patarin-linearization-mi-mq](attack/patarin-linearization-mi-mq.md) — MI(Matsumoto-Imai) 다변수 이차 공개키 → Patarin bilinear relation으로 선형화 복호
 - [pohlig-hellman-ecdlp](attack/pohlig-hellman-ecdlp.md) — Smooth/small order ECDLP → Pohlig-Hellman. BSGS 전에 `factor(E.order())` 필수

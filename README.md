@@ -397,7 +397,7 @@
 - [x] Toshi's Treasure — `crypto{shoulda_used_verifiable_secret_sharing}` (adaptive fake share in 5-of-6 SSSS via Lagrange linearity)
 - [x] Armory — `crypto{fr46m3n73d_b4ckup_vuln?}` (deterministic Shamir)
 
-## CTF Archive (11/75) 🔨
+## CTF Archive (12/75) 🔨
 
 ### 2020 (4/?)
 - [x] 1337crypt (DownUnderCTF) — `DUCTF{wh0_N33ds_pr3cIsi0n_wh3n_y0u_h4v3_c0pp3rsmiths_M3thod}` (Coppersmith p recovery from sqrt hint, GM decryption)
@@ -413,3 +413,4 @@
 - [x] Twist and Shout (Zh3r0 CTF V2) — `zh3r0{7h3_fu7ur3_m1gh7_b3_c4p71v471ng_bu7_n0w_y0u_kn0w_h0w_t0_l00k_a7_7h3_p457}` (MT19937 untemper + reverse in-place twist → state bytes)
 - [x] Unimplemented (TETCTF) — `TetCTF{c0unt1ng_1s_n0t_4lw4ys_34sy-vina:*100*48012023578024#}` (Gaussian integer RSA lambda)
 - [x] Unevaluated (TETCTF) — `TetCTF{h0m0m0rph1sm_1s_0ur_fr13nd-mobi:*100*231199111007#}` (Z[i]/p² DLP: norm map + Paillier log mod p + Sage F_p* DLP mod q + partial PH)
+- [x] import numpy as MT (Zh3r0 CTF V2) — `zh3r0{wh0_th0ugh7_7h3_m3r53nn3_7w1573r_w45_5o_pr3d1c74bl3?c3rt41nly_n0t_m47454n0}` (numpy MT 32-bit seed brute force: state[0]=seed, numba parallel ~3min/round)
