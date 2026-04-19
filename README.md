@@ -17,7 +17,7 @@
 | Isogenies | 23 / 23 | ✅ |
 | ZKPs | 16 / 17 | 🔨 |
 | Misc | 12 / 14 | 🔨 |
-| CTF Archive | 9 / 75 | 🔨 |
+| CTF Archive | 10 / 75 | 🔨 |
 
 **총 점수**: 1875+ pts (+ 신규 풀이 ~1500pts)
 
@@ -397,7 +397,7 @@
 - [x] Toshi's Treasure — `crypto{shoulda_used_verifiable_secret_sharing}` (adaptive fake share in 5-of-6 SSSS via Lagrange linearity)
 - [x] Armory — `crypto{fr46m3n73d_b4ckup_vuln?}` (deterministic Shamir)
 
-## CTF Archive (9/75) 🔨
+## CTF Archive (11/75) 🔨
 
 ### 2020 (4/?)
 - [x] 1337crypt (DownUnderCTF) — `DUCTF{wh0_N33ds_pr3cIsi0n_wh3n_y0u_h4v3_c0pp3rsmiths_M3thod}` (Coppersmith p recovery from sqrt hint, GM decryption)
@@ -405,9 +405,11 @@
 - [x] 2020 (TETCTF) (MT19937 prediction via index 1396/1792)
 - [x] Sign in Please (HKCERT CTF) (SHA-256 length extension + pbox rainbow table)
 
-### 2021 (5/?)
+### 2021 (7/?)
 - [x] 1337crypt v2 (DownUnderCTF) — `DUCTF{mantissa_in_crypto??_n0_th4nks!!}` (3×3 LLL on normalized hint2 to recover d, then p)
 - [x] 1n_jection (Zh3r0 CTF V2) — `zh3r0{wh0_th0ugh7_b1j3c710n5_fr0m_n^k_t0_n_c0uld_b3_s00000_c0000000l!}` (inverse Cantor pairing)
 - [x] A Joke Cipher (HKCERT CTF) — `hkcert21{th1s_i5_wh4t_w3_c4ll3d_sn4k3o1l_crypt0sy5t3m}` (Nagaty shared key = (yA·yB)² mod p)
 - [x] Key Backup Service 2 (HKCERT CTF) — `hkcert21{y0u_d0nt_n33d_p41rw15e_9cd_1f_y0u_c4n_d0_i7_1n_b4tch}` (ord(G)=2²⁵ birthday + GCD prime)
+- [x] Twist and Shout (Zh3r0 CTF V2) — `zh3r0{7h3_fu7ur3_m1gh7_b3_c4p71v471ng_bu7_n0w_y0u_kn0w_h0w_t0_l00k_a7_7h3_p457}` (MT19937 untemper + reverse in-place twist → state bytes)
 - [x] Unimplemented (TETCTF) — `TetCTF{c0unt1ng_1s_n0t_4lw4ys_34sy-vina:*100*48012023578024#}` (Gaussian integer RSA lambda)
+- [x] Unevaluated (TETCTF) — `TetCTF{h0m0m0rph1sm_1s_0ur_fr13nd-mobi:*100*231199111007#}` (Z[i]/p² DLP: norm map + Paillier log mod p + Sage F_p* DLP mod q + partial PH)

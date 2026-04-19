@@ -1,94 +1,69 @@
 ---
 name: gaussian-int-padic-dlp
-description: Z[i]/(p^2)* DLP의 p-subgroup은 BSGS 불가(2^63). Hensel lifting으로 k_p = (h_p-1)/p * inv((g_p-1)/p) mod p 선형 해결
+description: Z[i]/(p^2)* DLP에서 norm map + Paillier-style log로 p-파트 O(1). k bits < order bits면 일부 prime만 CRT로 충분
 type: skill
 ---
 
-# Gaussian Integer p-adic DLP (Z[i]/(p^2)*)
+# Gaussian Integer DLP over Z[i]/(p^2)*
 
-## 실패 원인
-Unevaluated (TETCTF 2021): 군 차수 = p*q*r (p,q,r 모두 ~127-bit 소수).
-Pohlig-Hellman + BSGS로 접근 → p-파트에서 sqrt(p) ≈ 2^63 스텝 → MemoryError.
+## 문제 구조
+- `n = p^2`, p ≡ 3 mod 4 (또는 특정 mod 조건) 소수
+- g의 order = p·q·r, 여기서 q=(p-1)/2 또는 (p-1)/6, r=(p+1)/12 또는 (p+1)/4 모두 소수
+- 즉 `p-1 = 2q`, `p+1 = 12r` (case A) 또는 `p-1 = 6q`, `p+1 = 4r` (case B)
+- **(p²-1) = 24·q·r** (두 case 모두). g = h^24 로 24-torsion 제거 → order p·q·r
 
-**BSGS는 p가 60비트 이상이면 쓸 수 없다.**
+## 핵심 통찰 1: Partial Pohlig-Hellman (크리티컬)
 
-## 핵심 원리: p-파트는 선형
+**private key k가 order보다 작으면 모든 prime factor를 풀 필요 없다.**
 
-Z[i]/(p^2)* 의 p-파트 = { x ∈ Z[i]/(p^2) : x ≡ 1 (mod p) }
+예: k는 256-bit urandom, order = pqr ≈ 2³⁸⁴ (p,q,r 각 ~128-bit).
+- **p·q > 2²⁵⁴** 이므로 k mod (pq) 알면 최대 4개 candidate (k < 2²⁵⁶ ≈ 4·pq)
+- r (p+1 쪽, 124-bit) 풀 필요 **없음**
 
-이 부분군은 덧셈군 Z[i]/(p) ≅ GF(p^2) 와 동형:
-```
-φ: x ↦ (x - 1) / p  (mod p)
-```
-즉 `g_p = g^(order/p)` 가 `1 + p·a` 꼴이면:
-```
-g_p^k ≡ 1 + p·(k·a)  (mod p^2)
-```
+**selection rule**: p, q, r 중 가장 **큰** prime 2개 선택 → CRT 모듈러스 최대화 → brute force 최소화
 
-**DLP k mod p는 나눗셈 한 번:**
+## 핵심 통찰 2: Norm Map + Paillier Log
+
+Norm map `N(a+bi) = a² + b²`는 (Z[i]/p²)* → (Z/p²)* 준동형.
+
+### k mod p (O(1))
 ```python
-def padic_dlp(g_p, h_p, p, n):
-    """
-    g_p, h_p: Complex elements of Z[i]/(n), both ≡ (1,0) mod p
-    Finds k such that g_p^k = h_p, with 0 <= k < p
-    """
-    # Extract the first-order term: (x - 1) / p mod p
-    def first_order(x):
-        re = (x.re - 1) // p % p   # if re part: (re-1)/p
-        im = x.im // p % p          # if im part: im/p
-        return re, im
-
-    g_re, g_im = first_order(g_p)
-    h_re, h_im = first_order(h_p)
-
-    # Solve k*g ≡ h (mod p) in Z[i]/(p) — try re or im component
-    for g_val, h_val in [(g_re, h_re), (g_im, h_im)]:
-        if g_val != 0:
-            return h_val * pow(g_val, -1, p) % p
-    raise ValueError("degenerate case")
+gp  = cpow(g, q*r, n)          # order p (in 1 + p·Z[i]/p²)
+pubp = cpow(pub, q*r, n)
+c1 = norm(gp)  % (p*p)         # c1 = 1 + p·a mod p²
+c2 = norm(pubp) % (p*p)        # c2 = 1 + p·b mod p²
+a = (c1 - 1) // p % p
+b = (c2 - 1) // p % p
+k_mod_p = b * pow(a, -1, p) % p
 ```
+원리: (1+pa)^k = 1 + pak mod p² (이항정리 + p² = 0), Paillier 같은 구조.
 
-## q, r 파트: GF(p^2) DLP으로 환원
-
-차수 q = (p-1)/2 짜리 부분군은 Z[i]/(p^2) → Z[i]/(p) = GF(p^2) 로 환원 후 DLP.
-
-p ≡ 3 mod 4 → Z[i]/(p) ≅ GF(p^2) 이고, GF(p^2)*의 차수 q 부분군 DLP는 Sage:
+### k mod q (F_p* DLP로 환원)
 ```python
-F = GF(p^2, 'i', modulus=[1,0,1])
-i = F.gen()
-g_Fp2 = F(g_sub.re + g_sub.im * i)   # mod p
-h_Fp2 = F(h_sub.re + h_sub.im * i)
-k = discrete_log(h_Fp2, g_Fp2, ord=q)
+gq  = cpow(g, p*r, n)          # order q
+pubq = cpow(pub, p*r, n)
+Ng  = norm(gq)  % p            # in F_p*, order q
+Npub= norm(pubq) % p
+# Sage: k_mod_q = discrete_log(GF(p)(Npub), GF(p)(Ng), ord=q)
 ```
+q | (p-1)이므로 q-order 원소는 F_p^\*에 속함. **128-bit p + 127-bit prime subgroup = Sage 실측 49.6초** (PARI znlog는 index calculus, Pollard rho 아님). 자세한 타이밍은 `tools/sage-dlp-fp-feasibility` 참고.
 
-q가 ~127비트이면 이것도 느릴 수 있음. q가 smooth하면 PH, 아니면 Pollard-rho (Sage 자동).
-
-## 전체 흐름
-
-```
-order = p * q * r
-g, pub, n = ...  # n = p^2
-
-# 1. p-파트: Hensel lifting (O(1))
-cofactor_p = q * r
-g_p = cpow(g, cofactor_p, n)   # order = p
-h_p = cpow(pub, cofactor_p, n)
-k_p = padic_dlp(g_p, h_p, p, n)
-
-# 2. q, r 파트: GF(p^2) DLP
-cofactor_q = p * r
-g_q = cpow(g, cofactor_q, n)   # mod p for Fp2 DLP
-h_q = cpow(pub, cofactor_q, n)
-k_q = dlp_in_Fp2(g_q, h_q, p, q)
-
-# 3. CRT
-k = crt([k_p, k_q, k_r], [p, q, r])
+### CRT + Brute Force
+```python
+# k ≡ k_mod_p (mod p), k ≡ k_mod_q (mod q)
+x0 = crt([k_mod_p, k_mod_q], [p, q])
+for i in range((2**256)//(p*q) + 2):
+    cand = x0 + i*p*q
+    if cand >= 2**256: break
+    # try AES.new(cand.to_bytes(32,'big')).decrypt(ciphertext), check flag prefix
 ```
 
 ## 체크리스트
-- `sqrt(prime_factor) > 2^30` 이면 BSGS 금지
-- p^2 구조면 p-파트는 반드시 Hensel lifting 사용
-- q, r이 (p-1)/2, (p+1)/12 꼴이면 GF(p^2)로 환원 가능
+1. `k.bit_length() < order.bit_length()` 인가? → partial PH 적용
+2. prime factor 중 **큰 것부터** 선택해서 CRT 모듈러스 > k size 만들기
+3. p² 구조면 norm + Paillier log (component 추출 대신)
+4. 128-bit F_p* DLP는 Sage `discrete_log(..., ord=q)` 그냥 돌리면 됨 (수 분~수십 분), 미리 포기 금지
 
 ## 관련 문제
-- Unevaluated (TETCTF 2021) — `order = p*q*r`, n = p^2, p ≡ 3 mod 4 ≡ 2 mod 3
+- Unevaluated (TETCTF 2021) — 위 수식 그대로 적용, flag = `TetCTF{h0m0m0rph1sm_...}`
+- Unimplemented (TETCTF 2021) — 같은 group 구조로 RSA-like decrypt, `f(p) = p³-p` 사용 (Lagrange)
