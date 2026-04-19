@@ -8,6 +8,10 @@ After a post-mortem of 6 problems I wrongly labelled "too complex / skip" during
 
 ## The 5 questions
 
+**Q0 (최우선). 지금 내 판단 근거가 실측인가, 계산/추론인가?**
+
+막혀 있을 때 가장 먼저 확인. "이 알고리즘은 infeasible", "이 attack은 안 될 것 같다" 같은 판단이 **실제 실행**에서 나왔는지, 아니면 머릿속 복잡도 계산에서 나왔는지 구분. 후자면 → 도구 실제로 돌려서 검증 먼저. 상세: `tools/try-first-principle`.
+
 **1. Decompose test — did I break the attack into 3-6 named pieces, in ≤5 minutes, before calling it complex?**
 
 Failure mode: seeing a named attack ("invalid curve attack", "Castryck-Decru", "claw-finding") and collapsing the whole thing into one "too hard" label. The label is almost always wrong because named attacks have **publishable** structure → decomposable into small pieces.

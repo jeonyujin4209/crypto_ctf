@@ -69,5 +69,6 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [direct-prime-power-construction](tools/direct-prime-power-construction.md) — N=p^k 필요하면 smooth 검색 말고 `getPrime(bits)**k` 직접
 - [sage-gf-large-fp2-construction](tools/sage-gf-large-fp2-construction.md) — 큰 p에서 `GF((p,2),...)` → GAP order 에러. `GF(p^2,'i',modulus=[1,0,1])`로 바꿀 것
 - [sage-preparser-xor-trap](tools/sage-preparser-xor-trap.md) — `.sage` 파일에서 `^`는 XOR 아닌 거듭제곱. Sage XOR은 `^^`
-- [stuck-checklist-5-questions](tools/stuck-checklist-5-questions.md) ⭐ — "복잡 → skip" 전 5문 체크: 분해 / dir(obj) / 제목 공격명 / 두 번째 약점 / github 구현
+- [try-first-principle](tools/try-first-principle.md) ⭐⭐ — AI 1위 실수: 이론만으로 infeasible 판정. 생각을 실험으로 전환하는 범용 원칙
+- [stuck-checklist-5-questions](tools/stuck-checklist-5-questions.md) ⭐ — "복잡 → skip" 전 6문 체크 (Q0: 실측 근거 / 분해 / dir(obj) / 제목 공격명 / 두 번째 약점 / github 구현)
 - [z3-bitblast-sat-for-crypto](tools/z3-bitblast-sat-for-crypto.md) — Z3 bitvector 곱셈+XOR 문제에서 `Then('simplify','bit-blast','sat')`로 극적 속도 향상
