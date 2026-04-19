@@ -44,6 +44,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [paillier-homomorphic-carry-oracle](attack/paillier-homomorphic-carry-oracle.md) — Paillier 가법 준동형 + PKCS padding oracle: all-carry delta로 separator carry 유발 → has_zero_byte 핑거프린트
 - [popcount-hidden-bit-shifts](attack/popcount-hidden-bit-shifts.md) — `x - Σ floor(x/2^i) = popcount(x)`. 비트 쉬프트 합 위장 → popcount → AND-popcount는 Z-linear on bits
 - [recurrence-jordan-block-no-dlp](attack/recurrence-jordan-block-no-dlp.md) — BM char poly에 중복 인수 (g(x))^k 있으면 companion에 Jordan block → M^n이 n의 polynomial → DLP 없이 n 복구
+- [spn-sbox-ddt-anomaly-iterative-diff](attack/spn-sbox-ddt-anomaly-iterative-diff.md) — Custom SPN에서 S-box DDT 이상치 + parity-preserving permutation → iterative differential trail로 per-byte key 복구, round peeling으로 master K까지
 
 ---
 
