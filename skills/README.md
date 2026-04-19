@@ -75,3 +75,5 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [try-first-principle](tools/try-first-principle.md) ⭐⭐ — AI 1위 실수: 이론만으로 infeasible 판정. 생각을 실험으로 전환하는 범용 원칙
 - [stuck-checklist-5-questions](tools/stuck-checklist-5-questions.md) ⭐ — "복잡 → skip" 전 6문 체크 (Q0: 실측 근거 / 분해 / dir(obj) / 제목 공격명 / 두 번째 약점 / github 구현)
 - [z3-bitblast-sat-for-crypto](tools/z3-bitblast-sat-for-crypto.md) — Z3 bitvector 곱셈+XOR 문제에서 `Then('simplify','bit-blast','sat')`로 극적 속도 향상
+- [sage-script-exit-returncode](tools/sage-script-exit-returncode.md) — `.sage`에서 `sys.exit(N)`은 preparser와 충돌 → `raise SystemExit(N)` + stdout `RESULT:` 마커로 통신
+- [docker-windows-path-mount](tools/docker-windows-path-mount.md) — Python subprocess로 docker 호출 시 Windows path 수동 변환 (`D:\foo` → `/d/foo`) + `MSYS_NO_PATHCONV=1`
