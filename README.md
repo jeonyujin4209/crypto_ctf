@@ -17,7 +17,7 @@
 | Isogenies | 23 / 23 | ✅ |
 | ZKPs | 16 / 17 | 🔨 |
 | Misc | 12 / 14 | 🔨 |
-| CTF Archive | 17 / 75 | 🔨 |
+| CTF Archive | 18 / 75 | 🔨 |
 
 **총 점수**: 1875+ pts (+ 신규 풀이 ~1500pts)
 
@@ -397,7 +397,7 @@
 - [x] Toshi's Treasure — `crypto{shoulda_used_verifiable_secret_sharing}` (adaptive fake share in 5-of-6 SSSS via Lagrange linearity)
 - [x] Armory — `crypto{fr46m3n73d_b4ckup_vuln?}` (deterministic Shamir)
 
-## CTF Archive (17/75) 🔨
+## CTF Archive (18/75) 🔨
 
 ### 2020 (4/?)
 - [x] 1337crypt (DownUnderCTF) — `DUCTF{wh0_N33ds_pr3cIsi0n_wh3n_y0u_h4v3_c0pp3rsmiths_M3thod}` (Coppersmith p recovery from sqrt hint, GM decryption)
@@ -415,9 +415,10 @@
 - [x] Unevaluated (TETCTF) — `TetCTF{h0m0m0rph1sm_1s_0ur_fr13nd-mobi:*100*231199111007#}` (Z[i]/p² DLP: norm map + Paillier log mod p + Sage F_p* DLP mod q + partial PH)
 - [x] import numpy as MT (Zh3r0 CTF V2) — `zh3r0{wh0_th0ugh7_7h3_m3r53nn3_7w1573r_w45_5o_pr3d1c74bl3?c3rt41nly_n0t_m47454n0}` (numpy MT 32-bit seed brute force: state[0]=seed, numba parallel ~3min/round)
 
-### 2022 (3/?)
+### 2022 (4/?)
 - [x] Authenticator (Firebird Internal CTF) — `firebird{y0u_d0n7_n33d_t0_pr3c0mpu73_3very7h1n9_4nyw4y}` (blake3 challenge-response with 6-char unique alnum pw: partial precompute 1/62 subset w/ fixed chal_c → reconnect ~62 times)
 - [x] C0ll1d3r (Firebird Internal CTF) — `firebird{wh3n_1n_d0ub7_u5e_latt111c3_r3duc71110n_4lg0r111thm}` (hidden p: 연속 exponent h2²-h1h3=kp → gcd로 p 복구; LLL knapsack Kannan embedding으로 소문자 충돌 찾기)
 - [x] Dark Arts (CODEGATE CTF) — `CODEGATE{I_told_you_building_secure_PRFs_is_hard_:(}` (4-stage "mod p + mod q" weak PRF: unit-vector distinguisher → Fourier |F_2|² bias → quadratic Arora-Ge linearization on GF(5) → HNP BKZ lattice)
 - [x] FaILProof (SekaiCTF) — `SEKAI{w3ll_1_gu355_y0u_c4n_4lw4y5_4sk_f0r_m0r3_3qu4t10n5_wh3n_n0_0n3s_l00k1ng}` (happiness(x)=x-Σ(x>>i)는 popcount 위장. 서버가 secret 공개 → A 재구성, 블록당 128개 Z-linear 등식 on 256 binary unknowns → pulp+CBC ILP 0.2 s/block)
 - [x] FaILProof Revenge (SekaiCTF) — `SEKAI{b00l3n5_4r3_my5t3r10u5_1n_th31r_0wn_ch33ky_w4y5}` (sha512 chain, 256 pubkey 512-bit, block=24rand∥8msg∥32rand. 블록당 256 Z-linear 등식 on 512 binary unknowns → pulp+CBC ILP 0.85 s/block; 랜덤 패딩은 linear-on-bits 암호에 무용)
+- [x] Functional (ICC Athens) — `ICC{N0w_y0u_4re_a_mast3r_0f_t3h_l1n34r_r3curr3nc3s!}` (L=20 linear recurrence over GF(2^142-111), ITERS~2^137. BM char poly에 중복 인수 (x^3+31337)^3 → Jordan block → M^n이 n-polynomial → DLP 없이 ITERS 복구. 그다음 17-dim matrix exp로 S3=i(ITERS+0..1336), Kitamasa(L=10000, not 9999!) for j(ITERS))

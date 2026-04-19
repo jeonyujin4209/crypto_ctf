@@ -40,6 +40,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [weak-prf-fourier-magnitude-distinguisher](attack/weak-prf-fourier-magnitude-distinguisher.md) — marginal uniform처럼 보이는 PRF를 `|F_k|²` Fourier magnitude로 구별. Chi-square보다 강력
 - [output-filter-arora-ge-degree-reduction](attack/output-filter-arora-ge-degree-reduction.md) — PRF output class마다 annihilator 차수 다르면, 낮은 차수 output만 필터해 Arora-Ge → 모노미얼 수 20×+ 감소
 - [popcount-hidden-bit-shifts](attack/popcount-hidden-bit-shifts.md) — `x - Σ floor(x/2^i) = popcount(x)`. 비트 쉬프트 합 위장 → popcount → AND-popcount는 Z-linear on bits
+- [recurrence-jordan-block-no-dlp](attack/recurrence-jordan-block-no-dlp.md) — BM char poly에 중복 인수 (g(x))^k 있으면 companion에 Jordan block → M^n이 n의 polynomial → DLP 없이 n 복구
 
 ---
 
@@ -53,6 +54,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [hand-rolled-inverse-edge-cases](failures/hand-rolled-inverse-edge-cases.md) — 챌린지 inline GCD에서 `inverse(0, p)`는 raise 대신 0 반환 → identity element bypass
 - [ige-mode-dual-iv-attack](failures/ige-mode-dual-iv-attack.md) — IGE dual IV(m0/c0) 중 어느 쪽을 변조할지 혼동
 - [invalid-curve-attack-alternative-b](failures/invalid-curve-attack-alternative-b.md) — ECDH point-on-curve 미검증 시 다른 b' 곡선 스캔 → smooth order PH+CRT로 비밀 복구
+- [kitamasa-base-case-threshold](failures/kitamasa-base-case-threshold.md) — Kitamasa order L = base-case threshold T (NOT recurrence max-shift). T > max-shift면 off-by-one 함정 (naive sanity도 같이 틀려서 "match=True"로 속임)
 - [isogeny-degree-leak-via-weil-pairing](failures/isogeny-degree-leak-via-weil-pairing.md) — 비밀이 isogeny 차수에 인코딩되고 phi(P)/phi(Q) 공개 → Weil pairing으로 degree leak
 - [lwe-kannan-embedding-sign-trap](failures/lwe-kannan-embedding-sign-trap.md) — Kannan은 lattice point closest to **−t** 탐색. embed row에 +target 넣으면 BKZ 성공해도 검증 50% 실패
 - [padding-oracle-byte15-edge-case](failures/padding-oracle-byte15-edge-case.md) — pad_value를 1로 가정하면 실패, 동적 판별 필요
