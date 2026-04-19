@@ -38,6 +38,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [dlog-unknown-modulus-gcd-recovery](attack/dlog-unknown-modulus-gcd-recovery.md) — `pow(g, M, p)` with hidden p: 연속 정수 M_i로 `h2²≡h1h3 mod p` 관계식 → GCD로 p 복구
 - [mod-p-plus-mod-q-prf-hnp](attack/mod-p-plus-mod-q-prf-hnp.md) — `(prod%p + prod%q) % p` weak PRF에서 p >> q면 wrap 무시 → `<k,h> ≡ out - r_q (mod p)` HNP 격자 BKZ
 - [weak-prf-fourier-magnitude-distinguisher](attack/weak-prf-fourier-magnitude-distinguisher.md) — marginal uniform처럼 보이는 PRF를 `|F_k|²` Fourier magnitude로 구별. Chi-square보다 강력
+- [output-filter-arora-ge-degree-reduction](attack/output-filter-arora-ge-degree-reduction.md) — PRF output class마다 annihilator 차수 다르면, 낮은 차수 output만 필터해 Arora-Ge → 모노미얼 수 20×+ 감소
 
 ---
 
