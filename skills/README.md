@@ -65,6 +65,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [ph-smooth-prime-must-exceed-modulus](failures/ph-smooth-prime-must-exceed-modulus.md) — Static-key DH MITM에서 PH용 smooth prime은 p_orig보다 커야 b가 truncation 없이 복구됨
 - [sage-isogeny-dual-builtin](failures/sage-isogeny-dual-builtin.md) — Isogeny dual은 Sage `.dual()` 쓰기. copypasta dual()은 Aut(E) 임의 선택으로 틀린 sigma-class에 빠짐
 - [normalize-unknown-sizes-before-lattice](failures/normalize-unknown-sizes-before-lattice.md) — 힌트 방정식 small unknown 여러 개 → dominant known으로 나눠서 크기 분석 먼저. O(1)짜리는 격자서 제외
+- [oracle-model-simulation-mismatch](failures/oracle-model-simulation-mismatch.md) — 오라클 시뮬레이션에서 파라미터 범위별 case 누락. mixed zone에서 no-carry=항상😀 무시 → 36% unique. 범위 제한으로 case 제거
 - [schnorr-nonce-reuse-over-different-moduli](failures/schnorr-nonce-reuse-over-different-moduli.md) — Schnorr nonce v 재사용이 서로 다른 소수 p_i 하에서도 유효. c*w>v면 정확히 1번 wrap → 정수 등식
 - [sympy-discrete-log-pk-oom](failures/sympy-discrete-log-pk-oom.md) — sympy discrete_log은 p^k에서 OOM. Hensel lifting으로 분해
 - [thread-race-slow-the-thread](failures/thread-race-slow-the-thread.md) — background thread validation은 race 말고 worker inner loop를 팽창시켜 일부러 느리게 만들어라
