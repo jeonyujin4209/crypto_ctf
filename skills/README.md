@@ -35,6 +35,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [sha256-length-extension-via-oracle](attack/sha256-length-extension-via-oracle.md) — Hash oracle에서 제어 바이트로 SHA256 padding 재현 → output을 intermediate state로 length extension
 - [singular-curve-mapping](attack/singular-curve-mapping.md) — ECDLP 전 discriminant 체크. Singular 곡선은 F_p*/F_p+ 로 매핑해 DLP 해결
 - [custom-hash-xor-finalization-noop](attack/custom-hash-xor-finalization-noop.md) — 커스텀 해시 finalization이 고정 입력으로 짝수번 XOR하면 no-op → 라운드 충돌로 환원
+- [base-conversion-shared-digit-rsa-factoring](attack/base-conversion-shared-digit-rsa-factoring.md) — `q=int(digits(p,k))` 구조: p의 k진 digit = q의 10진 digit → MSB-first greedy digit search로 O(L) 인수분해
 - [dlog-unknown-modulus-gcd-recovery](attack/dlog-unknown-modulus-gcd-recovery.md) — `pow(g, M, p)` with hidden p: 연속 정수 M_i로 `h2²≡h1h3 mod p` 관계식 → GCD로 p 복구
 - [mod-p-plus-mod-q-prf-hnp](attack/mod-p-plus-mod-q-prf-hnp.md) — `(prod%p + prod%q) % p` weak PRF에서 p >> q면 wrap 무시 → `<k,h> ≡ out - r_q (mod p)` HNP 격자 BKZ
 - [weak-prf-fourier-magnitude-distinguisher](attack/weak-prf-fourier-magnitude-distinguisher.md) — marginal uniform처럼 보이는 PRF를 `|F_k|²` Fourier magnitude로 구별. Chi-square보다 강력
