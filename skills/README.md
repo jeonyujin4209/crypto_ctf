@@ -23,7 +23,8 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [isogeny-claw-mitm](attack/isogeny-claw-mitm.md) — 2^e-isogeny E1→E2를 MITM claw-finding으로 복구. DFS 양방향 + j-invariant 고정점 매칭
 - [jwt-algorithm-confusion](attack/jwt-algorithm-confusion.md) — JWT RS256→HS256 algorithm confusion: RS256 공개키를 HMAC secret으로 서명 위조
 - [matrix-dh-repeated-root-local-ring](attack/matrix-dh-repeated-root-local-ring.md) — Matrix DH에서 min_poly 중복근이면 DLP 없이 SECRET = λ·b/a로 즉시 복구
-- [mt-state-partial-leak-z3](attack/mt-state-partial-leak-z3.md) — random.random() 부분 비트 leak → Z3로 MT state 복원 (관측이 twist 경계 넘어야 unique)
+- [known-prng-game-graph-dp](attack/known-prng-game-graph-dp.md) — PRNG state 알면 미래 스트림 결정론 → graph DP로 최적 hit/stand 시퀀스 탐색. greedy(54%) vs DP(64%) 차이 결정적
+- [mt-state-partial-leak-z3](attack/mt-state-partial-leak-z3.md) — random.random() 연속 624 floats → Z3 getnext() 큐 모델로 MT state 복원 (2 twist cycle = unique)
 - [numpy-mt-32bit-seed-brute](attack/numpy-mt-32bit-seed-brute.md) — numpy.random.seed(32-bit)는 state[0]=seed. 첫 bytes(16) → untemper 후 numba로 2^32 brute ~3분
 - [partial-precompute-short-password-mac](attack/partial-precompute-short-password-mac.md) — 짧은 pw hash-MAC challenge-response에서 chal_c 고정 + pw 1/N subset 정밀타격, reconnect N번까지
 - [noisy-oracle-statistical-approach](attack/noisy-oracle-statistical-approach.md) — 노이즈 오라클에서 Sequential Halving 실패; Adaptive Top-2로 해결

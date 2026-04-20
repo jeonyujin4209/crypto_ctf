@@ -1,105 +1,104 @@
 ---
 name: mt-state-partial-leak-z3
-description: Partial bit leaks from random.random() → Z3로 MT19937 state 복원 (관측이 twist 경계를 넘어야 unique solution)
+description: random.random() 53-bit 관측 → Z3로 MT19937 state 복원. 624 floats (정확히 2 twist cycle) = unique solution. getnext() 큐 모델이 핵심.
 type: skill
 ---
 
 ## 상황
 
-`random.random()`이 생성한 float의 일부 비트만 유출되는 시나리오. 예: score formula가 `int(2^53*x)`를 leak, 또는 일부 상위 비트만 공개.
+`random.random()`의 출력을 연속으로 관측 가능한 시나리오.
 
-`random.random()` 내부:
 ```c
+// CPython 내부
 a = genrand_uint32() >> 5   // 27 bits
 b = genrand_uint32() >> 6   // 26 bits
 return (a * 2^26 + b) / 2^53
 ```
 
-→ 라운드당 27+26 = **53비트** leak, 11비트(5+6) hidden per MT-word pair.
+→ float 1개당 27+26 = **53비트** leak, 11비트 hidden.
 
-## 핵심 조건 (왜 624개로 안 되나)
+## 핵심: 624 floats만 있으면 충분
 
-MT state = 624 × 32 = **19968 비트**. 라운드당 53비트 × N = 53N 비트 정보.
+- 624 floats = 1248 getnext() 호출 = **정확히 2 twist cycle**
+- 1248 × 27/26 bits ≫ 624 × 32 bits state → over-determined → unique solution
+- **N=312 (1 twist cycle):** 53×312 = 16536 < 19968 bits → **under-determined, 반드시 실패**
+- **N=624 (2 twist cycles):** 33072 > 19968 → unique ✓
 
-- N=312 (624 outputs, = 1 twist period): 53×312 = 16536 비트 < 19968. **under-determined**.
-- N=500 (1000 outputs, 2 twists): 53×500 = 26500 비트. 이론상 충분하나 **2 twist 내에선 Z3가 unique 못 찾음**.
-- **N≥700 (1400+ outputs, 3 twists):** 관측이 3번째 twist로 넘어가야 첫 twist state를 강하게 제약 → unique.
-
-관측이 여러 twist 경계를 넘어야 linear system rank가 full이 됨.
-
-## Z3 모델 (MT twist + tempering)
+## getnext() 큐 모델 (권장, 빠름)
 
 ```python
 from z3 import *
-N_MT, M_MT = 624, 397
-MATRIX_A = 0x9908b0df
-UPPER_MASK, LOWER_MASK = 0x80000000, 0x7fffffff
+import random
 
-def temper(y):
-    y = y ^ LShR(y, 11)
-    y = y ^ ((y << 7) & 0x9d2c5680)
-    y = y ^ ((y << 15) & 0xefc60000)
-    y = y ^ LShR(y, 18)
-    return y
+def mtcrack_floats(arr):
+    """624개의 연속 random.random() 출력으로 MT state 복원.
+    반환: 관측 직후 위치에 동기화된 Random 객체."""
+    MT = [BitVec(f'm{i}', 32) for i in range(624)]
+    s = Solver()
 
-def mt_twist_z3(state):
-    """⚠️ Python/C MT twist는 in-place. Phase 2와 last element는 이미 업데이트된 new 참조!"""
-    new = [None] * N_MT
-    # Phase 1: i=0..226, mt[i+M]은 아직 구 값
-    for i in range(N_MT - M_MT):
-        y = (state[i] & UPPER_MASK) | (state[i+1] & LOWER_MASK)
-        mag = If((y & 1) == 1, BitVecVal(MATRIX_A, 32), BitVecVal(0, 32))
-        new[i] = state[i + M_MT] ^ LShR(y, 1) ^ mag
-    # Phase 2: i=227..622, mt[i+M-N] = mt[i-227]은 **Phase 1에서 업데이트된 new** 참조
-    for i in range(N_MT - M_MT, N_MT - 1):
-        y = (state[i] & UPPER_MASK) | (state[i+1] & LOWER_MASK)
-        mag = If((y & 1) == 1, BitVecVal(MATRIX_A, 32), BitVecVal(0, 32))
-        new[i] = new[i + M_MT - N_MT] ^ LShR(y, 1) ^ mag
-    # Last: i=623, mt[0]은 Phase 1에서 업데이트됨 → new[0] 참조 (★ 흔한 버그)
-    i = N_MT - 1
-    y = (state[i] & UPPER_MASK) | (new[0] & LOWER_MASK)
-    mag = If((y & 1) == 1, BitVecVal(MATRIX_A, 32), BitVecVal(0, 32))
-    new[i] = new[M_MT - 1] ^ LShR(y, 1) ^ mag
-    return new
+    def cache(x):  # 중간값 캐시 → Z3 속도 향상
+        tmp = Const(f'c{len(s.assertions())}', x.sort())
+        s.add(tmp == x)
+        return tmp
 
-# 체인: 초기 state → 여러 번 twist → 각 twist의 state[i]에 대한 관측 제약
-s = Solver()
-states_orig = [BitVec(f's0_{i}', 32) for i in range(N_MT)]
-all_outs = []
-cur = states_orig
-for _ in range(n_twists):
-    cur = mt_twist_z3(cur)
-    all_outs.extend(cur)
+    def tamper(y):
+        y ^= LShR(y, 11)
+        y = cache(y ^ (y << 7) & 0x9D2C5680)
+        y ^= cache((y << 15) & 0xEFC60000)
+        return y ^ LShR(y, 18)
 
-for i, x_53 in enumerate(pairs):
-    a, b = x_53 >> 26, x_53 & ((1<<26)-1)
-    s.add(LShR(temper(all_outs[2*i]),   5) == a)
-    s.add(LShR(temper(all_outs[2*i+1]), 6) == b)
+    def getnext():
+        # CPython in-place twist를 큐로 모델링
+        x = Concat(Extract(31, 31, MT[0]), Extract(30, 0, MT[1]))
+        y = If(x & 1 == 0, BitVecVal(0, 32), BitVecVal(0x9908B0DF, 32))
+        MT.append(MT[397] ^ LShR(x, 1) ^ y)
+        return tamper(MT.pop(0))
 
-assert s.check() == sat
-state = [s.model()[v].as_long() for v in states_orig]
+    def getrandbits(n):
+        return Extract(31, 32 - n, getnext())
+
+    # 624 floats × 2 getnext() calls = 1248 calls = 2 full twists
+    s.add([Concat(getrandbits(27), getrandbits(26)) == int(f * (1 << 53))
+           for f in arr])
+
+    assert s.check() == sat
+    state = [s.model().eval(x).as_long() for x in MT]
+
+    r = random.Random()
+    r.setstate((3, tuple(state + [0]), None))  # index=0: 관측 직후 상태
+    return r
 ```
 
-## 복원된 state로 예측
+`setstate(..., [0])`: 624 getnext() 호출 후 state → 다음 `r.random()` = 관측 마지막 이후 첫 번째 값.
+
+## 다른 Z3 모델 (초기 state 복원 방식)
+
+초기 seed state에서 여러 twist를 거쳐 관측값에 제약. 수학적으로 동일하나 더 느리고 twist 수 계산 주의 필요.
 
 ```python
-import random
-rnd = random.Random()
-rnd.setstate((3, tuple(state + [624]), None))
-# 이미 소비한 N_LEARN 라운드만큼 advance
-for _ in range(N_LEARN):
-    rnd.random()
-# 이제 서버와 동기 → 정확한 예측
+# n_tw = (n_obs * 2 // 624) + 2  # 충분한 twist 횟수
+# → outs[2*i], outs[2*i+1]에 제약
+# setstate((3, tuple(state0 + [624]), None))  # index=624: 최초 seed 상태
 ```
 
-## 실전 예시 (Real Mersenne — Zh3r0 CTF V2)
+이 방식 사용 시 `setstate` index = **624** (twist 트리거), skip = n_obs만큼 advance 필요.
 
-- 2000라운드 점수 게임, `score = 2^53/(int(2^53*x) - int(2^53*y))`
-- y=0 보내면 denominator = `int(2^53*x)` 직접 노출
-- 700라운드 learn (Z3 60s) → 1300라운드 × 1024 score ≈ 1.33M > 10^6
+## 연속 관측이 아닌 경우 (일부 비트만 leak)
+
+score formula 등으로 `int(2^53 * x)` 의 일부만 공개될 때:
+- 53비트 미만 leak → 관측 수가 더 많이 필요 (1400+)
+- 제약: `LShR(temper(out), shift) == partial_value`
+
+## 실전 예시 (Probability — SEETF 2022)
+
+- 1337라운드 블랙잭, 모든 draws(player + dealer) 출력 → 전체 53비트 leak
+- threshold 0.57 전략으로 ~181라운드 플레이 → 624 floats 수집
+- Z3로 state 복원 → 미래 draws 완전 예측 → graph DP로 최적 경로 계산
+- 결과: 825+/1337 wins deterministically
 
 ## 공통 함정
 
-1. **N=312로 충분하다고 가정** → under-determined, Z3 sat이지만 틀린 state
-2. **Twist를 naive한 functional 방식으로 모델링** (in-place 무시) → phase 2와 last element 오류
-3. **Z3 SAT ≠ 정답**: rank 부족하면 Z3가 임의 solution 선택. 복원된 state를 실제 state와 비교 검증 필수
+1. **N=312로 충분하다고 가정** → under-determined, Z3 sat이지만 틀린 state (Z3가 임의 solution 반환)
+2. **Twist를 functional 방식으로 모델링** (in-place 무시) → phase 2와 last element 오류
+3. **초기 state 방식에서 setstate index 혼동**: seed state면 index=624, getnext() 큐 방식이면 index=0
+4. **training sample으로 검증** → obs[0]은 항상 constraint에 포함되어 있어 검증 의미 없음. 반드시 미관측 미래 값으로 검증
