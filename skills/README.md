@@ -41,6 +41,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [mod-p-plus-mod-q-prf-hnp](attack/mod-p-plus-mod-q-prf-hnp.md) — `(prod%p + prod%q) % p` weak PRF에서 p >> q면 wrap 무시 → `<k,h> ≡ out - r_q (mod p)` HNP 격자 BKZ
 - [weak-prf-fourier-magnitude-distinguisher](attack/weak-prf-fourier-magnitude-distinguisher.md) — marginal uniform처럼 보이는 PRF를 `|F_k|²` Fourier magnitude로 구별. Chi-square보다 강력
 - [output-filter-arora-ge-degree-reduction](attack/output-filter-arora-ge-degree-reduction.md) — PRF output class마다 annihilator 차수 다르면, 낮은 차수 output만 필터해 Arora-Ge → 모노미얼 수 20×+ 감소
+- [paillier-homomorphic-carry-oracle](attack/paillier-homomorphic-carry-oracle.md) — Paillier 가법 준동형 + PKCS padding oracle: all-carry delta로 separator carry 유발 → has_zero_byte 핑거프린트
 - [popcount-hidden-bit-shifts](attack/popcount-hidden-bit-shifts.md) — `x - Σ floor(x/2^i) = popcount(x)`. 비트 쉬프트 합 위장 → popcount → AND-popcount는 Z-linear on bits
 - [recurrence-jordan-block-no-dlp](attack/recurrence-jordan-block-no-dlp.md) — BM char poly에 중복 인수 (g(x))^k 있으면 companion에 Jordan block → M^n이 n의 polynomial → DLP 없이 n 복구
 
