@@ -49,6 +49,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [crt-rsa-kp-kq-reduction-mod-e](attack/crt-rsa-kp-kq-reduction-mod-e.md) — CRT-RSA에서 k_p ≡ -(p-1)^-1 mod e. p mod e iterate만 해도 (k_p, k_q) 유일 → e^2 → e로 검색 축소
 - [permuted-digits-hs-branch-prune](attack/permuted-digits-hs-branch-prune.md) — d_p, d_q hex digit permutation = σ에 선형. CRT 항등식 mod 16^(d+1) LSB-first backtrack (Heninger-Shacham style)
 - [nested-lcg-rsa-base-q-layered-recovery](attack/nested-lcg-rsa-base-q-layered-recovery.md) — `p = L3·q² + L2·q + L1` with 공격자 제어 LCG1: (a,x,b)=(1,1,1)로 roll index 주입 → n mod q에서 index 복구 → n mod q²로 LCG2 다항식 → Coppersmith
+- [unbalanced-rsa-trivariate-bd-yz-substitution](attack/unbalanced-rsa-trivariate-bd-yz-substitution.md) — Unbalanced RSA (p=N^β, β<0.5) with small d: 3-variable BD `1+x(N+1-y-z)` + `poly_sub(y*z, N)`로 quotient ring에서 정확 제약 처리. Bivariate 큐빅 reduction은 bound에 걸려 실패; trivariate는 unbalanced 심할수록 쉬워짐
 
 ---
 
