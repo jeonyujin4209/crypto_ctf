@@ -47,6 +47,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [spn-sbox-ddt-anomaly-iterative-diff](attack/spn-sbox-ddt-anomaly-iterative-diff.md) — Custom SPN에서 S-box DDT 이상치 + parity-preserving permutation → iterative differential trail로 per-byte key 복구, round peeling으로 master K까지
 - [crt-rsa-kp-kq-reduction-mod-e](attack/crt-rsa-kp-kq-reduction-mod-e.md) — CRT-RSA에서 k_p ≡ -(p-1)^-1 mod e. p mod e iterate만 해도 (k_p, k_q) 유일 → e^2 → e로 검색 축소
 - [permuted-digits-hs-branch-prune](attack/permuted-digits-hs-branch-prune.md) — d_p, d_q hex digit permutation = σ에 선형. CRT 항등식 mod 16^(d+1) LSB-first backtrack (Heninger-Shacham style)
+- [nested-lcg-rsa-base-q-layered-recovery](attack/nested-lcg-rsa-base-q-layered-recovery.md) — `p = L3·q² + L2·q + L1` with 공격자 제어 LCG1: (a,x,b)=(1,1,1)로 roll index 주입 → n mod q에서 index 복구 → n mod q²로 LCG2 다항식 → Coppersmith
 
 ---
 
