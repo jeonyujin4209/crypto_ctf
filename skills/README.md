@@ -45,6 +45,8 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [popcount-hidden-bit-shifts](attack/popcount-hidden-bit-shifts.md) — `x - Σ floor(x/2^i) = popcount(x)`. 비트 쉬프트 합 위장 → popcount → AND-popcount는 Z-linear on bits
 - [recurrence-jordan-block-no-dlp](attack/recurrence-jordan-block-no-dlp.md) — BM char poly에 중복 인수 (g(x))^k 있으면 companion에 Jordan block → M^n이 n의 polynomial → DLP 없이 n 복구
 - [spn-sbox-ddt-anomaly-iterative-diff](attack/spn-sbox-ddt-anomaly-iterative-diff.md) — Custom SPN에서 S-box DDT 이상치 + parity-preserving permutation → iterative differential trail로 per-byte key 복구, round peeling으로 master K까지
+- [crt-rsa-kp-kq-reduction-mod-e](attack/crt-rsa-kp-kq-reduction-mod-e.md) — CRT-RSA에서 k_p ≡ -(p-1)^-1 mod e. p mod e iterate만 해도 (k_p, k_q) 유일 → e^2 → e로 검색 축소
+- [permuted-digits-hs-branch-prune](attack/permuted-digits-hs-branch-prune.md) — d_p, d_q hex digit permutation = σ에 선형. CRT 항등식 mod 16^(d+1) LSB-first backtrack (Heninger-Shacham style)
 
 ---
 
