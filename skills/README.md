@@ -75,6 +75,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [sympy-discrete-log-pk-oom](failures/sympy-discrete-log-pk-oom.md) — sympy discrete_log은 p^k에서 OOM. Hensel lifting으로 분해
 - [thread-race-slow-the-thread](failures/thread-race-slow-the-thread.md) — background thread validation은 race 말고 worker inner loop를 팽창시켜 일부러 느리게 만들어라
 - [tls12-extended-master-secret](failures/tls12-extended-master-secret.md) — TLS 1.2 InvalidTag면 즉시 EMS extension(0x17) 의심. master_secret 유도식 변경됨
+- [unbalanced-rsa-small-d-boundary](failures/unbalanced-rsa-small-d-boundary.md) — Unbalanced RSA (β=0.25) with d ≈ N^0.293: CF/BD 실패, 큐빅 polynomial은 asymptotic 경계 (`(2/3)logX+logY < (4/9)logE`) 바로 위라 basic JM 실패. Maitra-Sarkar 또는 Herrmann-May sublattice 필요
 
 ---
 
