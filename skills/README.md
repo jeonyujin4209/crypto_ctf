@@ -20,6 +20,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [hamiltonicity-online-fs-grinding](attack/hamiltonicity-online-fs-grinding.md) — Online FS면 A 랜덤 재시도로 challenge=0 강제 가능 (Batch FS Ham2와 대비)
 - [hastad-small-message-broadcast](attack/hastad-small-message-broadcast.md) — RSA e가 크더라도 m이 작으면 e개 미만 ciphertext로 Hastad broadcast attack 가능
 - [hnp-biased-ecdsa-nonce](attack/hnp-biased-ecdsa-nonce.md) — Biased ECDSA nonce → Boneh-Venkatesan 격자. Sage 없으면 pure-Python LLL fallback
+- [ecdsa-nonce-xor-d-hash-bit-lattice](attack/ecdsa-nonce-xor-d-hash-bit-lattice.md) — nonce k = d XOR z (d 비밀키, z 해시)이면 signature congruence가 d_i 비트에 linear mod q → Kannan embedding + LLL로 d 복구. AND/OR 등 다른 bitwise도 동일 프레임
 - [isogeny-claw-mitm](attack/isogeny-claw-mitm.md) — 2^e-isogeny E1→E2를 MITM claw-finding으로 복구. DFS 양방향 + j-invariant 고정점 매칭
 - [jwt-algorithm-confusion](attack/jwt-algorithm-confusion.md) — JWT RS256→HS256 algorithm confusion: RS256 공개키를 HMAC secret으로 서명 위조
 - [matrix-dh-repeated-root-local-ring](attack/matrix-dh-repeated-root-local-ring.md) — Matrix DH에서 min_poly 중복근이면 DLP 없이 SECRET = λ·b/a로 즉시 복구
