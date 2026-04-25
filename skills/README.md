@@ -33,6 +33,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [pohlig-hellman-ecdlp](attack/pohlig-hellman-ecdlp.md) — Smooth/small order ECDLP → Pohlig-Hellman. BSGS 전에 `factor(E.order())` 필수
 - [prange-isd-xor-keystream-recovery](attack/prange-isd-xor-keystream-recovery.md) — n개 AES-CTR XOR 구조 + known-plaintext → syndrome decoding(Prange ISD)으로 키스트림 복구
 - [rsa-last-byte-oracle-binary-search](attack/rsa-last-byte-oracle-binary-search.md) — last byte == 0x2e oracle에서 s ≡ 0x81 overflow 감지 → binary search로 m 복구
+- [rsa-msb-byte-oracle-manger-variant](attack/rsa-msb-byte-oracle-manger-variant.md) — `hex(m).startswith("0x67")` MSB byte oracle: 양방향 Manger 변종. 다양한 i(lift count) + clean lift + 양쪽 boundary로 hit ⟺ m ∈ [hit_lo, hit_hi). 단일 cut binary search는 정수 산술 stall
 - [sbox-invariant-subspace-birthday](attack/sbox-invariant-subspace-birthday.md) — SBOX invariant subspace(특정 비트=0 보존) + bit-index 보존 permute → 유효 capacity 축소, birthday 가능
 - [sha256-length-extension-via-oracle](attack/sha256-length-extension-via-oracle.md) — Hash oracle에서 제어 바이트로 SHA256 padding 재현 → output을 intermediate state로 length extension
 - [singular-curve-mapping](attack/singular-curve-mapping.md) — ECDLP 전 discriminant 체크. Singular 곡선은 F_p*/F_p+ 로 매핑해 DLP 해결
@@ -50,6 +51,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [permuted-digits-hs-branch-prune](attack/permuted-digits-hs-branch-prune.md) — d_p, d_q hex digit permutation = σ에 선형. CRT 항등식 mod 16^(d+1) LSB-first backtrack (Heninger-Shacham style)
 - [nested-lcg-rsa-base-q-layered-recovery](attack/nested-lcg-rsa-base-q-layered-recovery.md) — `p = L3·q² + L2·q + L1` with 공격자 제어 LCG1: (a,x,b)=(1,1,1)로 roll index 주입 → n mod q에서 index 복구 → n mod q²로 LCG2 다항식 → Coppersmith
 - [unbalanced-rsa-trivariate-bd-yz-substitution](attack/unbalanced-rsa-trivariate-bd-yz-substitution.md) — Unbalanced RSA (p=N^β, β<0.5) with small d: 3-variable BD `1+x(N+1-y-z)` + `poly_sub(y*z, N)`로 quotient ring에서 정확 제약 처리. Bivariate 큐빅 reduction은 bound에 걸려 실패; trivariate는 unbalanced 심할수록 쉬워짐
+- [loidreau-shuttle-rank-inflate-gabidulin](attack/loidreau-shuttle-rank-inflate-gabidulin.md) — Loidreau PKE `G' = S·G_Gab·P⁻¹` (P 엔트리 ∈ λ-dim F_q-subspace) → 우측 P-곱으로 distortion 제거, error rank가 t→t·λ로 팽창해도 ≤⌊(n-k)/2⌋면 Sage Gao decoder 일발
 
 ---
 
@@ -77,6 +79,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [thread-race-slow-the-thread](failures/thread-race-slow-the-thread.md) — background thread validation은 race 말고 worker inner loop를 팽창시켜 일부러 느리게 만들어라
 - [tls12-extended-master-secret](failures/tls12-extended-master-secret.md) — TLS 1.2 InvalidTag면 즉시 EMS extension(0x17) 의심. master_secret 유도식 변경됨
 - [unbalanced-rsa-small-d-boundary](failures/unbalanced-rsa-small-d-boundary.md) — Unbalanced RSA (β=0.25) with d ≈ N^0.293: CF/BD 실패, 큐빅 polynomial은 asymptotic 경계 (`(2/3)logX+logY < (4/9)logE`) 바로 위라 basic JM 실패. Maitra-Sarkar 또는 Herrmann-May sublattice 필요
+- [binary-search-d-top-resolution-stall](failures/binary-search-d-top-resolution-stall.md) — RSA d=top binary search는 mid²/A 정수 산술 한계로 (b-a) ≈ 2·mid²/A에서 stall. m << n + tight initial 케이스. 단일 boundary cut 안 됨 → 양방향 Manger 변종
 
 ---
 
@@ -91,6 +94,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [sage-preparser-xor-trap](tools/sage-preparser-xor-trap.md) — `.sage` 파일에서 `^`는 XOR 아닌 거듭제곱. Sage XOR은 `^^`
 - [try-first-principle](tools/try-first-principle.md) ⭐⭐ — AI 1위 실수: 이론만으로 infeasible 판정. 생각을 실험으로 전환하는 범용 원칙
 - [stuck-checklist-5-questions](tools/stuck-checklist-5-questions.md) ⭐ — "복잡 → skip" 전 6문 체크 (Q0: 실측 근거 / 분해 / dir(obj) / 제목 공격명 / 두 번째 약점 / github 구현)
+- [cascade-not-all-at-once](tools/cascade-not-all-at-once.md) ⭐ — AI 자주 빠지는 함정: 한 번에 다 풀려 함. A→B→C 단계적 cascade로 분해. 각 단계 산출물이 다음 단계 input
 - [z3-bitblast-sat-for-crypto](tools/z3-bitblast-sat-for-crypto.md) — Z3 bitvector 곱셈+XOR 문제에서 `Then('simplify','bit-blast','sat')`로 극적 속도 향상
 - [sage-script-exit-returncode](tools/sage-script-exit-returncode.md) — `.sage`에서 `sys.exit(N)`은 preparser와 충돌 → `raise SystemExit(N)` + stdout `RESULT:` 마커로 통신
 - [docker-windows-path-mount](tools/docker-windows-path-mount.md) — Python subprocess로 docker 호출 시 Windows path 수동 변환 (`D:\foo` → `/d/foo`) + `MSYS_NO_PATHCONV=1`
