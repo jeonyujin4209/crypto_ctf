@@ -72,6 +72,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [rlwe-reducible-modulus-cyclotomic-crt](attack/rlwe-reducible-modulus-cyclotomic-crt.md) — Ring-LWE에서 modulus poly가 reducible (`x^n - 1`, n composite) → Z[x] 상 `Phi_d` 분해 후 각 component의 small lattice 공격으로 (s mod Phi_d, e mod Phi_d) 복구 → Q-CRT로 s, e 재구성. ψ_N projection 함정 회피. GLP420 (HackTM 2023)
 - [ecdsa-lcg-nonce-stern-shift-relation](attack/ecdsa-lcg-nonce-stern-shift-relation.md) — ECDSA nonce가 unknown LCG (a,b,p)에서 나오면 `kk_i = u_i d + v_i (mod q)`에 인접 두 shift augment해 a 소거 → LLL short integer relation → kernel로 `kk_i` 복구 (up to ±) → d 회수. p > q (HNP biased 안 통할 때)에도 작동. HITCON 2024 ECLCG
 - [ibs-pairing-verification-public-forgery](attack/ibs-pairing-verification-public-forgery.md) — Pairing-based IBS interactive verification: verifier가 `C = xy*R` 한 점만 공개하고 모든 식을 `^x`로 검사하면, prover가 `r = e(C, public_G2)`로 xy를 exponent에 흡수 → 모든 식이 base equality로 collapse. Qid_admin = H0('admin')가 공개 계산이라 R=Q, S=Qid_admin+H(m)*Qid_user, t는 결정식. ECSC 2024 Smithing contest
+- [aes-gcm-nonce-reuse-ghash-zero-pad-linear-system](attack/aes-gcm-nonce-reuse-ghash-zero-pad-linear-system.md) — AES-GCM 고정 (K, IV) 재사용 + 12-byte 입력 블록 padding의 32 zero bits → tag-diff에서 `D·y^{-k}·a^{-32}` top 96 bits = 0 시그니처로 H 복구, 다음 단계로 GF(2) linear system 1500×1400으로 (AAD, CT, S) 일괄 복구. Empty-message tag = S 직접 위조. CODEGATE 2024 Greatest Common Multiple. `pre_mat[exp]` 128×128 행렬 슬라이스 + `M.rank()` (basis 안 만들고) + min-kernel 패턴 선택이 alarm(20)에 맞추는 핵심
 
 ---
 

@@ -37,9 +37,11 @@ while True:
     elif cmd == "u2":
         s[randbit()] += gen()
 
+actual = new().digest().hex()
+print(f"DBG_S: {actual}", flush=True)
 guess = input(f"tag: ")
-if guess == new().digest().hex():
+if guess == actual:
     print(flag)
 else:
-    print("nope")
+    print(f"nope (expected {actual})")
 sys.stdout.flush()

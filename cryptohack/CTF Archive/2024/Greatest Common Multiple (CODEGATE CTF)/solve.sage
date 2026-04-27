@@ -166,9 +166,15 @@ def solve1():
 # ---------------- Step 2: recover s and ct/ad ----------------
 def solve2(y):
     cnt = 0
-    pre = []
+    # Precompute pre_mat[exp]: 128x128 GF(2) Matrix where col k = bit_decomp(y^exp * a^k)
+    pre_mat = []
     for exp in range(20):
-        pre.append([list(y^exp * a^i) for i in range(128)])
+        cols = [list(y^exp * a^i) for i in range(128)]
+        M_pre = Matrix(GF(2), 128, 128)
+        for k in range(128):
+            for j in range(128):
+                M_pre[j, k] = cols[k][j]
+        pre_mat.append(M_pre)
 
     while True:
         cnt += 1
@@ -228,11 +234,11 @@ def solve2(y):
         tags = [bytes_to_poly(t) for t in tags]
         assert len(tags) == tag_n
 
+        valid_its = []
         for it in range(2^(tag_n - 7)):
             ad_l = 96
             ct_l = 96
             it_full = base_it + [(it >> i) & 1 for i in range(tag_n - 4)]
-            # NOTE: writeup uses tag_n-4 (=8) length list but only first tag_n-1 used below.
             ad_tot = ad_l + 96 * ((tag_n - 1) - sum(it_full))
             ct_tot = ct_l + 96 * sum(it_full)
 
@@ -253,22 +259,30 @@ def solve2(y):
                 ad_b = (ad_l + 127) // 128
                 ct_b = (ct_l + 127) // 128
 
-                exp = 2 + ad_b + ct_b
-                for i in range(ad_l):
-                    if i % 128 == 0:
-                        exp -= 1
-                    for j in range(128):
-                        M[bl * 128 + j, i] = pre[exp][i % 128][j]
+                # Vectorized AD-block assignment.
+                row_lo = bl * 128
+                row_hi = row_lo + 128
+                for c in range(ad_b):
+                    col_lo = c * 128
+                    col_hi = min((c + 1) * 128, ad_l)
+                    width = col_hi - col_lo
+                    exp_c = 1 + ad_b + ct_b - c
+                    if width == 128:
+                        M[row_lo:row_hi, col_lo:col_hi] = pre_mat[exp_c]
+                    else:
+                        M[row_lo:row_hi, col_lo:col_hi] = pre_mat[exp_c][:, :width]
 
-                exp = 2 + ct_b
-                for i in range(ct_l):
-                    if i % 128 == 0:
-                        exp -= 1
-                    for j in range(128):
-                        M[bl * 128 + j, i + ad_tot] = pre[exp][i % 128][j]
+                for c in range(ct_b):
+                    col_lo = ad_tot + c * 128
+                    col_hi = ad_tot + min((c + 1) * 128, ct_l)
+                    width = col_hi - col_lo
+                    exp_c = 1 + ct_b - c
+                    if width == 128:
+                        M[row_lo:row_hi, col_lo:col_hi] = pre_mat[exp_c]
+                    else:
+                        M[row_lo:row_hi, col_lo:col_hi] = pre_mat[exp_c][:, :width]
 
-                for i in range(128):
-                    M[bl * 128 + i, i + ad_tot + ct_tot] = 1
+                M[row_lo:row_hi, ad_tot + ct_tot:ad_tot + ct_tot + 128] = identity_matrix(GF(2), 128)
 
             r = vector(GF(2), r)
 
@@ -277,27 +291,36 @@ def solve2(y):
             except ValueError:
                 continue
 
-            basis = M.right_kernel().basis()
-            l = len(basis)
+            # Rank-only check: kernel basis is expensive, defer to final pick.
+            l = M.ncols() - M.rank()
             if l > 10:
                 continue
+            valid_its.append((it, l, res, M, ad_tot, ct_tot))
 
-            cands = []
-            for itt in product(range(2), repeat=l):
-                v = res
-                for i, b in enumerate(itt):
-                    v += b * basis[i]
-                vs = [v[:ad_tot], v[ad_tot:ad_tot + ct_tot], v[ad_tot + ct_tot:]]
-                for idx in range(3):
-                    vv = list(vs[idx])
-                    v_bytes = b""
-                    for i in range(0, len(vv), 128):
-                        block = [int(t) for t in vv[i:i + 128]]
-                        v_bytes += poly_to_bytes(F(block))[:len(block) // 8]
-                    vs[idx] = v_bytes
-                cands.append(vs)
-            print(f"[solve2] kernel basis size = {l}, candidates = {len(cands)}", flush=True)
-            return cands
+        if not valid_its:
+            continue
+
+        # Pick smallest kernel
+        valid_its.sort(key=lambda t: t[1])
+        it_best, l, res, M_best, ad_tot, ct_tot = valid_its[0]
+        basis = M_best.right_kernel().basis()
+        print(f"[solve2] best it={it_best} kernel={l}", flush=True)
+
+        cands = []
+        for itt in product(range(2), repeat=l):
+            v = res
+            for i, b in enumerate(itt):
+                v += b * basis[i]
+            vs = [v[:ad_tot], v[ad_tot:ad_tot + ct_tot], v[ad_tot + ct_tot:]]
+            for idx in range(3):
+                vv = list(vs[idx])
+                v_bytes = b""
+                for i in range(0, len(vv), 128):
+                    block = [int(t) for t in vv[i:i + 128]]
+                    v_bytes += poly_to_bytes(F(block))[:len(block) // 8]
+                vs[idx] = v_bytes
+            cands.append(vs)
+        return cands
 
 # ---------------- Step 3: forge tag for empty AAD+CT ----------------
 def solve3(y, cands):
@@ -322,14 +345,15 @@ def solve3(y, cands):
     except Exception:
         data = b""
     text = data.decode(errors="replace").strip()
-    print(f"[solve3] response: {text!r}", flush=True)
-    if text and ("{" in text and "}" in text) and not text.lower().startswith("nope"):
-        # Extract a flag-looking substring
-        import re
-        m = re.search(r"[A-Za-z_][A-Za-z0-9_]*\{[^}]+\}", text)
+    # Strip ANSI escape codes (server colorizes the flag)
+    import re
+    clean = re.sub(r"\x1b\[[0-9;]*m", "", text)
+    print(f"[solve3] response: {clean!r}", flush=True)
+    if clean and ("{" in clean and "}" in clean) and not clean.lower().startswith("nope"):
+        m = re.search(r"[A-Za-z_][A-Za-z0-9_]*\{[^}]+\}", clean)
         if m:
             return m.group(0)
-        return text
+        return clean
     return None
 
 
