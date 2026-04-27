@@ -102,6 +102,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [tls12-extended-master-secret](failures/tls12-extended-master-secret.md) — TLS 1.2 InvalidTag면 즉시 EMS extension(0x17) 의심. master_secret 유도식 변경됨
 - [unbalanced-rsa-small-d-boundary](failures/unbalanced-rsa-small-d-boundary.md) — Unbalanced RSA (β=0.25) with d ≈ N^0.293: CF/BD 실패, 큐빅 polynomial은 asymptotic 경계 (`(2/3)logX+logY < (4/9)logE`) 바로 위라 basic JM 실패. Maitra-Sarkar 또는 Herrmann-May sublattice 필요
 - [binary-search-d-top-resolution-stall](failures/binary-search-d-top-resolution-stall.md) — RSA d=top binary search는 mid²/A 정수 산술 한계로 (b-a) ≈ 2·mid²/A에서 stall. m << n + tight initial 케이스. 단일 boundary cut 안 됨 → 양방향 Manger 변종
+- [agcd-lattice-tight-eta-rho-gap](failures/agcd-lattice-tight-eta-rho-gap.md) — AGCD/DGHV Galbraith lattice는 `t > γ/(η-ρ)` 필요. η-ρ ≤ 2 bits + 샘플 수 flag_len(36-66)으로 한정되면 LLL/BKZ 절대 안 풂 (target이 lattice 최단 vector가 아님). 시도 전에 `required_t` 계산 → 샘플 부족하면 lattice 포기, oracle/구조적 leak 탐색. CSC Belgium 2024 Additional problems
 
 ---
 
