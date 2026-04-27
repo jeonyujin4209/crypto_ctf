@@ -70,6 +70,8 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [poly-gcd-mod-resultant-no-factor](attack/poly-gcd-mod-resultant-no-factor.md) — `gcd(f(x), g(x))` (integer gcd) 최대화: factoring 불가능한 resultant `R` 대신 `Zmod(R)[x]`에서 Sage poly Euclidean 돌리면 degree-1 remainder `a*x+b`에 멈춤 → `x = -b/a mod R`이 simultaneous CRT root. Pure-Python pow(_,-1,R) Euclidean은 lc 항상 invertible로 잘못 끝남, Sage `%` 필수
 - [multiprime-rsa-partial-factor-crt](attack/multiprime-rsa-partial-factor-crt.md) — Multi-prime RSA에서 m << N이면 일부 p_i만 복구해도 충분. `prod(p_i) > 2^|m|`일 때 각 p_i mod CRT로 m 직접 회수. 전체 factorization 불필요. RRSSAA(ECSC23): 5/126 prime만 있어도 flag 1024-bit 회수
 - [rlwe-reducible-modulus-cyclotomic-crt](attack/rlwe-reducible-modulus-cyclotomic-crt.md) — Ring-LWE에서 modulus poly가 reducible (`x^n - 1`, n composite) → Z[x] 상 `Phi_d` 분해 후 각 component의 small lattice 공격으로 (s mod Phi_d, e mod Phi_d) 복구 → Q-CRT로 s, e 재구성. ψ_N projection 함정 회피. GLP420 (HackTM 2023)
+- [ecdsa-lcg-nonce-stern-shift-relation](attack/ecdsa-lcg-nonce-stern-shift-relation.md) — ECDSA nonce가 unknown LCG (a,b,p)에서 나오면 `kk_i = u_i d + v_i (mod q)`에 인접 두 shift augment해 a 소거 → LLL short integer relation → kernel로 `kk_i` 복구 (up to ±) → d 회수. p > q (HNP biased 안 통할 때)에도 작동. HITCON 2024 ECLCG
+- [ibs-pairing-verification-public-forgery](attack/ibs-pairing-verification-public-forgery.md) — Pairing-based IBS interactive verification: verifier가 `C = xy*R` 한 점만 공개하고 모든 식을 `^x`로 검사하면, prover가 `r = e(C, public_G2)`로 xy를 exponent에 흡수 → 모든 식이 base equality로 collapse. Qid_admin = H0('admin')가 공개 계산이라 R=Q, S=Qid_admin+H(m)*Qid_user, t는 결정식. ECSC 2024 Smithing contest
 
 ---
 
