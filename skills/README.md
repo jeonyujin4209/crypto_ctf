@@ -73,6 +73,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [ecdsa-lcg-nonce-stern-shift-relation](attack/ecdsa-lcg-nonce-stern-shift-relation.md) — ECDSA nonce가 unknown LCG (a,b,p)에서 나오면 `kk_i = u_i d + v_i (mod q)`에 인접 두 shift augment해 a 소거 → LLL short integer relation → kernel로 `kk_i` 복구 (up to ±) → d 회수. p > q (HNP biased 안 통할 때)에도 작동. HITCON 2024 ECLCG
 - [ibs-pairing-verification-public-forgery](attack/ibs-pairing-verification-public-forgery.md) — Pairing-based IBS interactive verification: verifier가 `C = xy*R` 한 점만 공개하고 모든 식을 `^x`로 검사하면, prover가 `r = e(C, public_G2)`로 xy를 exponent에 흡수 → 모든 식이 base equality로 collapse. Qid_admin = H0('admin')가 공개 계산이라 R=Q, S=Qid_admin+H(m)*Qid_user, t는 결정식. ECSC 2024 Smithing contest
 - [aes-gcm-nonce-reuse-ghash-zero-pad-linear-system](attack/aes-gcm-nonce-reuse-ghash-zero-pad-linear-system.md) — AES-GCM 고정 (K, IV) 재사용 + 12-byte 입력 블록 padding의 32 zero bits → tag-diff에서 `D·y^{-k}·a^{-32}` top 96 bits = 0 시그니처로 H 복구, 다음 단계로 GF(2) linear system 1500×1400으로 (AAD, CT, S) 일괄 복구. Empty-message tag = S 직접 위조. CODEGATE 2024 Greatest Common Multiple. `pre_mat[exp]` 128×128 행렬 슬라이스 + `M.rank()` (basis 안 만들고) + min-kernel 패턴 선택이 alarm(20)에 맞추는 핵심
+- [dghv-overflow-oracle-mod-N-crt](attack/dghv-overflow-oracle-mod-N-crt.md) — DGHV `c=p*q+N*r+m`에서 (c%p)%N decrypt 오라클 + 공격자 제어 N. Action 1 + K번 add(m=1) 누적 시 `T=N*ΣR+(k+1)`이 p 경계 넘으며 decrypt가 `((k+1)-j*p) mod N`로 계단형 변화 → 비-+1 diff = `1 - p mod N`. 허용된 N 범위 내 prime sweep + CRT로 p 즉시 복구. η-ρ tight (gap=2 bits)라 lattice 안 통하는 케이스의 정공법. CSC Belgium 2024 Additional problems
 
 ---
 
