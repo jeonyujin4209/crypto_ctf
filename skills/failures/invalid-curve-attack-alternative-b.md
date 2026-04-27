@@ -22,6 +22,12 @@ Classic invalid curve attack: an ECDH server does scalar multiplication `d * Q` 
 - "AES-test-message oracle" is just try 0..q-1, derive key, try `unpad(decrypt(test_ct))`, accept the one that succeeds (valid PKCS7 padding or known plaintext prefix)
 - CRT is one line
 
+**Server-crash gotchas (pekobot — naive recursive `Point.__mul__` + `double()`):**
+- **`q = 2` 항상 죽음**: order-2 점은 y = 0. 서버가 `Q*d` 계산 도중 `pow(2*y, -1, p) = pow(0, -1, p)` → "base is not invertible". → q=2 항상 제외. odd prime만.
+- **`d ≡ 0 (mod q)` 죽음**: `d*Q = INFINITY` (`x = None`) → `S.x.to_bytes(...)` AttributeError → `except: print('kusa peko'); break`. 한 번 죽으면 그 connection 끝.
+- **자연스러운 대처**: query를 **q 큰 것 → 작은 것** 순으로. 큰 q는 `1/q` 작아 거의 안 죽고, 충분한 bits 모이면 (M > n) 멈춤. 작은 q에서 죽어도 이미 다 모음. 한번 죽으면 reconnect; d는 새로워지지만 strategy는 동일. 28 prime list (q ≥ 13)에서 single-conn 성공률 ~76%.
+- **Composite order 해결책 안 됨**: order 2q (q odd prime) 점도 scalar mul 도중 q*Q (order 2, y=0) 거치며 doubling crash. 항상 prime *odd* order만.
+
 **Key architectural insight I missed:** for Checkpoint specifically, the attack DOESN'T rely on the standard "quadratic twist" variant (which only gives you one extra group). It scans many `b'` values to find *many* independent attack curves, each contributing a few bits via PH on a different small factor. You can get 256+ bits of `d` via, say, 16–20 alternative curves each contributing 16–17 bits.
 
 **How to apply:**

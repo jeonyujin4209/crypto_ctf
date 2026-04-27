@@ -39,6 +39,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [singular-curve-mapping](attack/singular-curve-mapping.md) — ECDLP 전 discriminant 체크. Singular 곡선은 F_p*/F_p+ 로 매핑해 DLP 해결
 - [custom-hash-xor-finalization-noop](attack/custom-hash-xor-finalization-noop.md) — 커스텀 해시 finalization이 고정 입력으로 짝수번 XOR하면 no-op → 라운드 충돌로 환원
 - [mmh3-seed-independent-differential-collision](attack/mmh3-seed-independent-differential-collision.md) — MurmurHash3_x86_32 모든 seed 동시 collision: 2-block trail (block1 diff `0x00040000` → ROTL13 → bit-31, `*5+c`가 top-bit XOR diff 보존; block2 diff `0x80000000`가 cancel). 8byte+공통suffix → bloom filter add/check 우회
+- [ed25519-magic-malleability-and-identity-key](attack/ed25519-magic-malleability-and-identity-key.md) — Warner의 `python-ed25519` (SUPERCOP ref10): (1) S+L malleability — 같은 R, 다른 S로 검증, (2) identity verifying key + R=identity + S=0으로 임의 메시지 universal 위조. RFC 8032 검사들이 다 빠져 있음
 - [base-conversion-shared-digit-rsa-factoring](attack/base-conversion-shared-digit-rsa-factoring.md) — `q=int(digits(p,k))` 구조: p의 k진 digit = q의 10진 digit → MSB-first greedy digit search로 O(L) 인수분해
 - [dlog-unknown-modulus-gcd-recovery](attack/dlog-unknown-modulus-gcd-recovery.md) — `pow(g, M, p)` with hidden p: 연속 정수 M_i로 `h2²≡h1h3 mod p` 관계식 → GCD로 p 복구
 - [mod-p-plus-mod-q-prf-hnp](attack/mod-p-plus-mod-q-prf-hnp.md) — `(prod%p + prod%q) % p` weak PRF에서 p >> q면 wrap 무시 → `<k,h> ≡ out - r_q (mod p)` HNP 격자 BKZ
@@ -65,7 +66,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [ec-check-smoothness-before-bsgs](failures/ec-check-smoothness-before-bsgs.md) — Small secret ECDLP면 BSGS 전에 반드시 `factor(E.order())`. Smooth → PH 초단위 해결
 - [hand-rolled-inverse-edge-cases](failures/hand-rolled-inverse-edge-cases.md) — 챌린지 inline GCD에서 `inverse(0, p)`는 raise 대신 0 반환 → identity element bypass
 - [ige-mode-dual-iv-attack](failures/ige-mode-dual-iv-attack.md) — IGE dual IV(m0/c0) 중 어느 쪽을 변조할지 혼동
-- [invalid-curve-attack-alternative-b](failures/invalid-curve-attack-alternative-b.md) — ECDH point-on-curve 미검증 시 다른 b' 곡선 스캔 → smooth order PH+CRT로 비밀 복구
+- [invalid-curve-attack-alternative-b](failures/invalid-curve-attack-alternative-b.md) — ECDH point-on-curve 미검증 시 다른 b' 곡선 스캔 → smooth order PH+CRT로 비밀 복구. **Crash gotchas**: q=2(y=0 doubling) + d≡0 mod q(INF.to_bytes) 둘 다 connection 죽임. 큰 q부터, M>n에서 stop, 죽으면 reconnect
 - [kitamasa-base-case-threshold](failures/kitamasa-base-case-threshold.md) — Kitamasa order L = base-case threshold T (NOT recurrence max-shift). T > max-shift면 off-by-one 함정 (naive sanity도 같이 틀려서 "match=True"로 속임)
 - [isogeny-degree-leak-via-weil-pairing](failures/isogeny-degree-leak-via-weil-pairing.md) — 비밀이 isogeny 차수에 인코딩되고 phi(P)/phi(Q) 공개 → Weil pairing으로 degree leak
 - [lwe-kannan-embedding-sign-trap](failures/lwe-kannan-embedding-sign-trap.md) — Kannan은 lattice point closest to **−t** 탐색. embed row에 +target 넣으면 BKZ 성공해도 검증 50% 실패
