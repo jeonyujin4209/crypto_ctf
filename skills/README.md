@@ -75,6 +75,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [ibs-pairing-verification-public-forgery](attack/ibs-pairing-verification-public-forgery.md) — Pairing-based IBS interactive verification: verifier가 `C = xy*R` 한 점만 공개하고 모든 식을 `^x`로 검사하면, prover가 `r = e(C, public_G2)`로 xy를 exponent에 흡수 → 모든 식이 base equality로 collapse. Qid_admin = H0('admin')가 공개 계산이라 R=Q, S=Qid_admin+H(m)*Qid_user, t는 결정식. ECSC 2024 Smithing contest
 - [aes-gcm-nonce-reuse-ghash-zero-pad-linear-system](attack/aes-gcm-nonce-reuse-ghash-zero-pad-linear-system.md) — AES-GCM 고정 (K, IV) 재사용 + 12-byte 입력 블록 padding의 32 zero bits → tag-diff에서 `D·y^{-k}·a^{-32}` top 96 bits = 0 시그니처로 H 복구, 다음 단계로 GF(2) linear system 1500×1400으로 (AAD, CT, S) 일괄 복구. Empty-message tag = S 직접 위조. CODEGATE 2024 Greatest Common Multiple. `pre_mat[exp]` 128×128 행렬 슬라이스 + `M.rank()` (basis 안 만들고) + min-kernel 패턴 선택이 alarm(20)에 맞추는 핵심
 - [dghv-overflow-oracle-mod-N-crt](attack/dghv-overflow-oracle-mod-N-crt.md) — DGHV `c=p*q+N*r+m`에서 (c%p)%N decrypt 오라클 + 공격자 제어 N. Action 1 + K번 add(m=1) 누적 시 `T=N*ΣR+(k+1)`이 p 경계 넘으며 decrypt가 `((k+1)-j*p) mod N`로 계단형 변화 → 비-+1 diff = `1 - p mod N`. 허용된 N 범위 내 prime sweep + CRT로 p 즉시 복구. η-ρ tight (gap=2 bits)라 lattice 안 통하는 케이스의 정공법. CSC Belgium 2024 Additional problems
+- [invalid-curve-composite-modulus-twist-crt](attack/invalid-curve-composite-modulus-twist-crt.md) — EC scalar mul mod composite N=p1·p2 (no on-curve check) → CRT decomposes per prime. x0가 각 prime side에서 twist 위 smooth-order 점으로 떨어지도록 CRT 구성 → 한 query로 PH×2sides → CRT k. Per-side sign coupling으로 4 candidate, 서버에 순차 제출. CryptoHack An Evil Twisted Mind
 
 ---
 
@@ -105,6 +106,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [binary-search-d-top-resolution-stall](failures/binary-search-d-top-resolution-stall.md) — RSA d=top binary search는 mid²/A 정수 산술 한계로 (b-a) ≈ 2·mid²/A에서 stall. m << n + tight initial 케이스. 단일 boundary cut 안 됨 → 양방향 Manger 변종
 - [agcd-lattice-tight-eta-rho-gap](failures/agcd-lattice-tight-eta-rho-gap.md) — AGCD/DGHV Galbraith lattice는 `t > γ/(η-ρ)` 필요. η-ρ ≤ 2 bits + 샘플 수 flag_len(36-66)으로 한정되면 LLL/BKZ 절대 안 풂 (target이 lattice 최단 vector가 아님). 시도 전에 `required_t` 계산 → 샘플 부족하면 lattice 포기, oracle/구조적 leak 탐색. CSC Belgium 2024 Additional problems
 - [premature-dlp-wall-missed-value-reuse](failures/premature-dlp-wall-missed-value-reuse.md) — Collision 시 "값 만들려면 DLP" 결론 직전 자문: 그 값이 *이미 protocol 안에 자유 형태로 존재*하나? Honest commit 그대로 복사 가능한 자리 찾으면 DLP 우회 (Ham2)
+- [per-side-sign-coupling-not-per-factor](failures/per-side-sign-coupling-not-per-factor.md) — x-only PH ±k 모호성은 per "y-lift unit" (per prime side / per group) 수준으로 묶임, per-factor 아님. CRT-decomposed multi-side에서 2^(num_factors) 시도하면서 base sign 고정 = valid configs 절반 누락. 정확히 2^(num_sides) enumerate
 
 ---
 
@@ -127,3 +129,5 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [json-loose-typing-attack-surface](tools/json-loose-typing-attack-surface.md) — `json.loads` 입력 + shape-only validation 시 type-confusion 체크리스트 (str/int collision via `str()`, bool=int, Inf/NaN, list-as-cell)
 - [sigma-protocol-batch-fs-attack-checklist](tools/sigma-protocol-batch-fs-attack-checklist.md) — Sigma/FS NIZK first-pass: online vs batch FS, hash 직렬화 ambiguity, verify branch asymmetry, witness shape forgery
 - [sage-docker-custom-image-pycryptodome](tools/sage-docker-custom-image-pycryptodome.md) — `sagemath/sagemath` 이미지에 `pycryptodome` `pwntools` 빠짐. 1줄 Dockerfile로 layer 추가하면 `--rm` 호출마다 pip install 30초 절약
+- [factordb-lookup-first](tools/factordb-lookup-first.md) — Sage `factor()`가 300+ bit 합성수에서 정체되면 factordb.com API 먼저. CTF 모듈러스 대부분 등록됨. 13분 vs 0.3초
+- [brier-joye-x-only-recognition](tools/brier-joye-x-only-recognition.md) — `(X,Z)` 페어 + `4·b·ZZ²` const + `−x0·Z3` 항 + `pbit XOR bit` swap 패턴 = Brier-Joye x-only short Weierstraß ladder. y-coord 안 쓰고 (a,b)만 → on-curve check 불가능 = invalid curve / twist 공격 surface
