@@ -19,6 +19,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [partial-pohlig-hellman-bounded-key](attack/partial-pohlig-hellman-bounded-key.md) — k가 order보다 작으면 큰 factor 몇 개만 풀고 CRT + small brute force
 - [groth16-rerandomization](attack/groth16-rerandomization.md) — Groth16 (A,B,C)에서 λ 재랜덤화 → (λ⁻¹A, λB, C)도 valid. 크레딧 파밍 가능
 - [hamiltonicity-online-fs-grinding](attack/hamiltonicity-online-fs-grinding.md) — Online FS면 A 랜덤 재시도로 challenge=0 강제 가능 (Batch FS Ham2와 대비)
+- [hash-strjoin-no-separator-prover-collision](attack/hash-strjoin-no-separator-prover-collision.md) — `"".join(str(x) for x in G)` 분리자 無 → A_a (type 0)와 A_b (type 1)가 같은 fm으로 정렬되도록 free cell 길이 조정 → batch FS 깸 (Ham2)
 - [hastad-small-message-broadcast](attack/hastad-small-message-broadcast.md) — RSA e가 크더라도 m이 작으면 e개 미만 ciphertext로 Hastad broadcast attack 가능
 - [hnp-biased-ecdsa-nonce](attack/hnp-biased-ecdsa-nonce.md) — Biased ECDSA nonce → Boneh-Venkatesan 격자. Sage 없으면 pure-Python LLL fallback
 - [ecdsa-nonce-xor-d-hash-bit-lattice](attack/ecdsa-nonce-xor-d-hash-bit-lattice.md) — nonce k = d XOR z (d 비밀키, z 해시)이면 signature congruence가 d_i 비트에 linear mod q → Kannan embedding + LLL로 d 복구. AND/OR 등 다른 bitwise도 동일 프레임
