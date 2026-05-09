@@ -104,6 +104,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [unbalanced-rsa-small-d-boundary](failures/unbalanced-rsa-small-d-boundary.md) — Unbalanced RSA (β=0.25) with d ≈ N^0.293: CF/BD 실패, 큐빅 polynomial은 asymptotic 경계 (`(2/3)logX+logY < (4/9)logE`) 바로 위라 basic JM 실패. Maitra-Sarkar 또는 Herrmann-May sublattice 필요
 - [binary-search-d-top-resolution-stall](failures/binary-search-d-top-resolution-stall.md) — RSA d=top binary search는 mid²/A 정수 산술 한계로 (b-a) ≈ 2·mid²/A에서 stall. m << n + tight initial 케이스. 단일 boundary cut 안 됨 → 양방향 Manger 변종
 - [agcd-lattice-tight-eta-rho-gap](failures/agcd-lattice-tight-eta-rho-gap.md) — AGCD/DGHV Galbraith lattice는 `t > γ/(η-ρ)` 필요. η-ρ ≤ 2 bits + 샘플 수 flag_len(36-66)으로 한정되면 LLL/BKZ 절대 안 풂 (target이 lattice 최단 vector가 아님). 시도 전에 `required_t` 계산 → 샘플 부족하면 lattice 포기, oracle/구조적 leak 탐색. CSC Belgium 2024 Additional problems
+- [premature-dlp-wall-missed-value-reuse](failures/premature-dlp-wall-missed-value-reuse.md) — Collision 시 "값 만들려면 DLP" 결론 직전 자문: 그 값이 *이미 protocol 안에 자유 형태로 존재*하나? Honest commit 그대로 복사 가능한 자리 찾으면 DLP 우회 (Ham2)
 
 ---
 
@@ -123,3 +124,5 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [sage-script-exit-returncode](tools/sage-script-exit-returncode.md) — `.sage`에서 `sys.exit(N)`은 preparser와 충돌 → `raise SystemExit(N)` + stdout `RESULT:` 마커로 통신
 - [docker-windows-path-mount](tools/docker-windows-path-mount.md) — Python subprocess로 docker 호출 시 Windows path 수동 변환 (`D:\foo` → `/d/foo`) + `MSYS_NO_PATHCONV=1`
 - [binary-ilp-pulp-cbc](tools/binary-ilp-pulp-cbc.md) — 0/1 변수 + 정수 선형 등식 시스템: `pulp + CBC` binary ILP가 LLL embedding 대안. n=256, m=128 → 0.2s
+- [json-loose-typing-attack-surface](tools/json-loose-typing-attack-surface.md) — `json.loads` 입력 + shape-only validation 시 type-confusion 체크리스트 (str/int collision via `str()`, bool=int, Inf/NaN, list-as-cell)
+- [sigma-protocol-batch-fs-attack-checklist](tools/sigma-protocol-batch-fs-attack-checklist.md) — Sigma/FS NIZK first-pass: online vs batch FS, hash 직렬화 ambiguity, verify branch asymmetry, witness shape forgery
