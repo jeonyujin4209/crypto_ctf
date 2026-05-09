@@ -126,3 +126,4 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [binary-ilp-pulp-cbc](tools/binary-ilp-pulp-cbc.md) — 0/1 변수 + 정수 선형 등식 시스템: `pulp + CBC` binary ILP가 LLL embedding 대안. n=256, m=128 → 0.2s
 - [json-loose-typing-attack-surface](tools/json-loose-typing-attack-surface.md) — `json.loads` 입력 + shape-only validation 시 type-confusion 체크리스트 (str/int collision via `str()`, bool=int, Inf/NaN, list-as-cell)
 - [sigma-protocol-batch-fs-attack-checklist](tools/sigma-protocol-batch-fs-attack-checklist.md) — Sigma/FS NIZK first-pass: online vs batch FS, hash 직렬화 ambiguity, verify branch asymmetry, witness shape forgery
+- [sage-docker-custom-image-pycryptodome](tools/sage-docker-custom-image-pycryptodome.md) — `sagemath/sagemath` 이미지에 `pycryptodome` `pwntools` 빠짐. 1줄 Dockerfile로 layer 추가하면 `--rm` 호출마다 pip install 30초 절약

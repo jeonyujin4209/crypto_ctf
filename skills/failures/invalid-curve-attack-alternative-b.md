@@ -22,6 +22,13 @@ Classic invalid curve attack: an ECDH server does scalar multiplication `d * Q` 
 - "AES-test-message oracle" is just try 0..q-1, derive key, try `unpad(decrypt(test_ct))`, accept the one that succeeds (valid PKCS7 padding or known plaintext prefix)
 - CRT is one line
 
+**X-only oracle ⇒ ±k ambiguity (Checkpoint 2026-05 풀이에서 직접 확인):**
+- 서버가 `shared_key = SHA256(str(shared.x))[:16]` 류로 X-only 키 유도하면, brute force가 `s mod q` 와 `q - (s mod q)` 둘 다 매칭 (둘이 같은 x 값이므로 같은 key 생성).
+- 즉 PH로 얻은 residue는 `±(s mod q)`, 부호 모름.
+- N개 residue → 2^N CRT sign combination. 각 후보 s에 대해 진짜 shared = s·client_pub 계산 → AES 복호 → "crypto{" prefix check로 검증.
+- 16 residue → 2^16 = 65k 시도. Sage scalar mul ~1-2ms → 1-2분. CRT contribution 캐싱 (sign flip = ±c_i) 하면 더 빠름.
+- 이게 *예측 가능한 함정*이라 미리 코드 짜둘 것: residue 수집 후 sign disambiguation 루프 + flag prefix verifier.
+
 **Server-crash gotchas (pekobot — naive recursive `Point.__mul__` + `double()`):**
 - **`q = 2` 항상 죽음**: order-2 점은 y = 0. 서버가 `Q*d` 계산 도중 `pow(2*y, -1, p) = pow(0, -1, p)` → "base is not invertible". → q=2 항상 제외. odd prime만.
 - **`d ≡ 0 (mod q)` 죽음**: `d*Q = INFINITY` (`x = None`) → `S.x.to_bytes(...)` AttributeError → `except: print('kusa peko'); break`. 한 번 죽으면 그 connection 끝.
@@ -57,3 +64,6 @@ for bp in range(2, 200):
 ```
 
 The skill is recognizing that "invalid curve attack" looks intimidating but decomposes into the same plumbing as Pohlig-Hellman + oracle-based DL. Don't mentally flag it as "complex" without at least sketching the pieces.
+
+## Challenges
+- CryptoHack Checkpoint (Parameter Choice 2) — `crypto{nice_forward_secrecy_you_have_there!}` (16 alt curves, q ∈ [2^15, 2^22], 270-bit product, ±k sign brute force in CRT)
