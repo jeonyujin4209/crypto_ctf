@@ -1,0 +1,48 @@
+[+] committee: ['yhht_45', 'uowu_25', 'wrgu_4', 'pzty_43', 'yvnl_24', 'vxlp_18', 'rlxh_5', 'otlz_2', 'roxg_26', 'vulture'], our_key=10
+[+] our positions in sheriff_users: 1
+[+] initial kill: yhht_45
+  -> retry 1/3
+  -> yhht_45 dead (active: 49)
+cycle 1 starting, dead=False, elapsed=-943.4s
+cycle 2 starting, dead=False, elapsed=-940.5s
+cycle 3 starting, dead=False, elapsed=-937.7s
+cycle 4 starting, dead=False, elapsed=-935.0s
+  *** cycle 4: CHOSEN! K_new=2, evals: keys=[9, 10] ngs=24 br=8 ***
+    new sheriff_users: ['uowu_25', 'wrgu_4', 'pzty_43', 'yvnl_24', 'vxlp_18', 'rlxh_5', 'otlz_2', 'roxg_26', 'vulture', 'vulture'], n_my=2
+cycle 5 starting, dead=False, elapsed=-916.6s
+  cycle 5: trying to kill uowu_25
+    -> uowu_25 STILL ALIVE; retry next cycle
+cycle 6 starting, dead=False, elapsed=-910.3s
+  cycle 6: trying to kill uowu_25
+    -> uowu_25 confirmed dead (active count: 47)
+cycle 7 starting, dead=False, elapsed=-904.2s
+cycle 8 starting, dead=False, elapsed=-901.3s
+  *** cycle 8: CHOSEN! K_new=3, evals: keys=[8, 9, 10] ngs=35 br=7 ***
+    new sheriff_users: ['wrgu_4', 'pzty_43', 'yvnl_24', 'vxlp_18', 'rlxh_5', 'otlz_2', 'roxg_26', 'vulture', 'vulture', 'vulture'], n_my=3
+cycle 9 starting, dead=False, elapsed=-881.9s
+  cycle 9: trying to kill wrgu_4
+    -> wrgu_4 STILL ALIVE; retry next cycle
+  cycle 9: len(commits)=0 len(nurs)=0 K=3 - insufficient (need 2)
+cycle 10 starting, dead=False, elapsed=-875.7s
+  cycle 10: trying to kill wrgu_4
+    -> wrgu_4 confirmed dead (active count: 46)
+  cycle 10: K=3 N=46 no_match my_idx=45
+  *** cycle 13: CHOSEN! K_new=4, evals: keys=[7, 8, 9, 10] ngs=42 br=6 ***
+    new sheriff_users: ['pzty_43', 'yvnl_24', 'vxlp_18', 'rlxh_5', 'otlz_2', 'roxg_26', 'vulture', 'vulture', 'vulture', 'vulture'], n_my=4
+  cycle 14: trying to kill pzty_43
+    -> pzty_43 STILL ALIVE; retry next cycle
+  cycle 15: trying to kill pzty_43
+    -> pzty_43 STILL ALIVE; retry next cycle
+  cycle 15: len(commits)=0 len(nurs)=0 K=4 - insufficient (need 1)
+  cycle 16: trying to kill pzty_43
+    -> pzty_43 confirmed dead (active count: 44)
+cycle 20 starting, dead=False, elapsed=-815.3s
+  *** cycle 20: CHOSEN! K_new=5, evals: keys=[6, 7, 8, 9, 10] ngs=45 br=5 ***
+    new sheriff_users: ['yvnl_24', 'vxlp_18', 'rlxh_5', 'otlz_2', 'roxg_26', 'vulture', 'vulture', 'vulture', 'vulture', 'vulture'], n_my=5
+  cycle 21: trying to kill yvnl_24
+    -> yvnl_24 STILL ALIVE; retry next cycle
+  cycle 22: trying to kill yvnl_24
+    -> yvnl_24 confirmed dead (active count: 43)
+  cycle 25: K=5 N=43 no_match my_idx=42
+  cycle 30: K=5 N=43 no_match my_idx=42
+  cycle 35: K=5 N=43 no_match my_idx=42

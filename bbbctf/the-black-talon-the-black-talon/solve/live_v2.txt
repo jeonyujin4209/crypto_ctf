@@ -1,0 +1,12 @@
+1779608186.947	Team token: == proof-of-work: argon2id ==
+1779608186.947	    python3 <(curl -sSL https://pow.ctfwithbirds.com/pow) solve a2id.v2.17.46ee06ed98e8b4e6fd6d2185abe9cd6e
+1779608186.947	
+1779608240.579	Solution? Correct
+1779608240.658	[2m   0.000222291s[0m [32m INFO[0m Smoke curls from the saloon chimney as the town stirs to life.
+1779608241.659	[2m   1.001743708s[0m [32m INFO[0m The air smells of tobacco, blood, and old secrets. [3msaloon[0m[2m=[0m"the-coyotes-den"
+1779608242.659	[2m   2.002017386s[0m [32m INFO[0m The piano stops mid-note as you walk in, coat dragging dust behind you. [3mprotagonist[0m[2m=[0m"bloodmouth"
+1779608243.675	[2m   3.017763777s[0m [32m INFO[0m The dealer smirks like he already knows how the night ends.
+1779608244.678	[2m   4.020427116s[0m [32m INFO[0m A few names are muttered, a warning or a prayer---and with scarcely a goodbye, the sheriff steps off the boardwalk and out of town, like a man leaving something half-finished. [3msheriff[0m[2m=[0m"true_north"
+1779608244.680	[2m   4.023022132s[0m [32m INFO[0m What do you do?
+1779608245.253	MSGFROM the-coyotes-den true_north COMMITMENTS bFFVuW6N 12j53dd2lak5k2hxqm9jqz8ycx3iqq3exkxv7nesyah58zdj73meyggm6auialgxchgjn8wwjes88p15k4ux54mnbwelo9eczzdn 2 dyakv53tjbiz7se97dzboq4hrrzyjmte3stlnhpurnk3j0v2hu585mept98m6j4zammbig58z43lwir0azeu1r8vtknmwxlim6v,11zdmtu5mdyuo084825h0fl8vdblqd6ljmzzx2pyya9gftvwk5jfv5de9050f0704cn4rzb6kdbq6y6smr1yaro2gkhdxxfexdfy,20spmjnrqiaicfjkmf0n4kgguojcsoooaxswxwnaevis33dkdwwp7uq0q7g8546k14ijgj3015u1stj4cybqacbfm6y5im21az0u,k7vgtpt8x4sh8srcj1t1wktglo0jkhyhf641op1tbg6mowqafeqyvspoihniu0lesqcgkt0hp2t7b8pqge3typm5e1l4wfqg94c,24wj89lgkjzluhq1esl778qj5v4oyj5xj24dlw3bl68dbx2fkwfhdy8tqzy7rp16iv9qtsz35pbpuxffmtsz6ss9eseyjpngkal6 lrin_48,muoy_13,gswk_25,ysjv_43,wtlq_11,bloodmouth,sqhl_6,lztg_23,lizi_14,unij_38
+1779608245.253	MSGFROM @ true_north SHARE bFFVuW6N 6 opi24tuhwwesbh810aki8gm9mwr1egxyf0aghke1pox3bkfizcxgsdp9gx2xbqgrerm69s3iy9e76v247nysg6pe8khpsx4h5h0

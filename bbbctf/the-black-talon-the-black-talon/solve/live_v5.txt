@@ -1,0 +1,1351 @@
+1779629963.199	Team token: == proof-of-work: argon2id ==
+1779629963.199	    python3 <(curl -sSL https://pow.ctfwithbirds.com/pow) solve a2id.v2.17.5ab332c1415d8181480065e378c9c78b
+1779629963.199	
+1779629996.535	Solution? Correct
+1779629996.621	[2m   0.000200486s[0m [32m INFO[0m Smoke curls from the saloon chimney as the town stirs to life.
+1779629997.623	[2m   1.001891702s[0m [32m INFO[0m The air smells of tobacco, blood, and old secrets. [3msaloon[0m[2m=[0m"the-whispering-knife"
+1779629998.624	[2m   2.002072358s[0m [32m INFO[0m The piano stops mid-note as you walk in, coat dragging dust behind you. [3mprotagonist[0m[2m=[0m"six_toe"
+1779629999.642	[2m   3.020914438s[0m [32m INFO[0m The dealer smirks like he already knows how the night ends.
+1779630000.645	[2m   4.023960650s[0m [32m INFO[0m A few names are muttered, a warning or a prayer---and with scarcely a goodbye, the sheriff steps off the boardwalk and out of town, like a man leaving something half-finished. [3msheriff[0m[2m=[0m"old_steady"
+1779630000.648	[2m   4.027198063s[0m [32m INFO[0m What do you do?
+1779630001.341	MSGFROM the-whispering-knife old_steady COMMITMENTS kVfx6hca 1245s6iuy3ow07fv8d45lk4qrs3j56wlplpx58ko51rkbpdeoyqz93lofhxigb77c7jah2ueqfobx0umlnysdjj5e11x6i3fmzon 2 134wrhhqnofi5gmtysx3owqnpcswewgueorwlxcq5lvxj7yjyqbb3end6z1mnhcpsvgmrbpriy3ttfcgygztff68y3fg0nqtnvp5,1t492pbi194dyvmrolhd47jzgujkj8d0kvqa9rlye4k2rpd1zzjc60kehwzmvnj5efyrcxypj9h6ntsjuyoh30lowbuwzvs878hj,ba7mx6dw6gi3qubcyv8aara2sjn94mbm0e4sdghva185xap0br0anb143d1zbt7j7r2ekyymavqdfv59xwn3sl25543tdy59urw,iokf3m7n564ijxzsigrvte0mwlgwtzlahprfj07rqvayq4hu477e2ylflpz1bt4gi9yrvojbsowfg3ytjevcnbwu16sojz64f2s,1cw7mbifhl0xh7dlbe2ea66ak35hn6r0uxj862d3726gvprpztfp1h887b9jf9mwu0vmmmjrdb7icnghfelac34l4aefvq34moao lkyo_28,pusj_49,wxwy_16,sgyz_47,nnhi_0,uinn_17,six_toe,qksp_2,qyxo_26,hhvl_36
+1779630001.341	MSGFROM @ old_steady SHARE kVfx6hca 7 2jt2hk0kyxunn44pi4pvboeebb7dwbdb0u0bzy60bowq4qm4ff4gnc6wjh73b394x5b2qyegp3tozomnyaluu47fozhjkjga950
+1779630001.643	ACK
+1779630001.854	ACK
+1779630001.854	ACK
+1779630001.854	ACK
+1779630001.854	ACK
+1779630001.854	ACK
+1779630001.854	ACK
+1779630001.854	ACK
+1779630001.854	ACK
+1779630001.854	ACK
+1779630001.854	MSGFROM the-whispering-knife lkyo_28 RECOMM K00000001 3912088386 NUC qzexwgbj95rv9no8uisoo3x1af82nvdl5rg9su2y54kmpsz89rxmp1yis5i7aggpx0nau2afjw46uae6424beiflsdamf28rbiu
+1779630002.938	MSGFROM the-whispering-knife lkyo_28 RECOMM K00000001 3912088386 NUR 4405095160093770311
+1779630003.148	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 njuz_40 vlky_38 ptuv_20 lkyo_28 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630003.358	ACK
+1779630003.570	ACK
+1779630003.570	ACK
+1779630003.570	ACK
+1779630003.780	ACK
+1779630003.780	ACK
+1779630003.780	ACK
+1779630003.780	MSGFROM the-whispering-knife lkyo_28 RECOMM K00000001 3912088386 JACCUSE six_toe
+1779630003.990	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 njuz_40 vlky_38 ptuv_20 lkyo_28 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630004.714	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 njuz_40 vlky_38 ptuv_20 lkyo_28 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630005.435	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 njuz_40 vlky_38 ptuv_20 lkyo_28 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630006.158	ACK
+1779630006.338	ACK
+1779630006.338	ACK
+1779630006.369	ACK
+1779630006.400	ACK
+1779630006.400	ACK
+1779630006.400	ACK
+1779630006.400	ACK
+1779630006.400	ACK
+1779630006.400	ACK
+1779630006.400	MSGFROM the-whispering-knife lkyo_28 RECOMM K00000002 1163049469 NUC xd052odqfocxvco32pb3dmzvhbvj2ih1mu1j0zulr6zuhjzy536ilfu2jdaqo5mpcx14v0yc5w3tzu4skuhhnxdpjtkcp5ur52f
+1779630007.694	MSGFROM the-whispering-knife lkyo_28 RECOMM K00000002 1163049469 NUR 1200812623935594052
+1779630007.905	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 njuz_40 vlky_38 ptuv_20 lkyo_28 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630008.115	ACK
+1779630008.326	ACK
+1779630008.326	ACK
+1779630008.326	ACK
+1779630008.536	ACK
+1779630008.536	ACK
+1779630008.536	ACK
+1779630008.536	MSGFROM the-whispering-knife lkyo_28 RECOMM K00000002 1163049469 JACCUSE six_toe
+1779630008.747	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 njuz_40 vlky_38 ptuv_20 lkyo_28 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630009.565	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 njuz_40 vlky_38 ptuv_20 lkyo_28 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630010.284	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 njuz_40 vlky_38 ptuv_20 lkyo_28 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630011.007	ACK
+1779630011.217	ACK
+1779630011.217	ACK
+1779630011.217	ACK
+1779630011.217	ACK
+1779630011.217	ACK
+1779630011.217	ACK
+1779630011.217	ACK
+1779630011.217	ACK
+1779630011.217	ACK
+1779630011.217	MSGFROM the-whispering-knife lkyo_28 RECOMM K00000003 3409809101 NUC l0voi65q5724cx73ik2ledxi0jxo05kgv9pqosx6gkh7od8eoej3ar1765y5ndd9efqxzrpii6iico97jmujhy2huj0ru2h89vs
+1779630012.572	MSGFROM the-whispering-knife lkyo_28 RECOMM K00000003 3409809101 NUR 11979027617591198924
+1779630012.782	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 njuz_40 vlky_38 ptuv_20 lkyo_28 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630012.994	ACK
+1779630013.204	ACK
+1779630013.204	ACK
+1779630013.204	ACK
+1779630013.414	ACK
+1779630013.414	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 njuz_40 vlky_38 ptuv_20 lkyo_28 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630013.445	MSGFROM the-whispering-knife lkyo_28 RECOMM K00000003 3409809101 NGC 1 1fw85ep1xibj54pzg9pcqxjr2bhz8v6l6w1oamzff2sl1wb9p0glio2uy8v1ax545v9tazeprcalgo505m9t5edqeq2w0ru9dm7e,1cw9bsa0yy975c6qxznlr8yuw0sh90mn82zyookp89vgqkl59xlllocvqohddj2kk3l4e4rd02p1168uf6h5wbqg15i59yhv43xn,13rksvt3020r51l118fvojp1rf7i1w6tvn9lmy4hyf5lmw9cf0vhk3o6l3gdtrf7srpy32nqn27h555ks92zf9yy3aldruwak084,1cwyr53etn41q6dbjg1bmon2ijkkdlunzqttwuhho9ous2c0nlo1m129nr9nfwmkwhqlmd47hn5gy0f3xd1esss9rp6fdkeexboj,hsuajrgqx4iopawtdniikf7a2b8a838xpxyxi8ej3yet0gbne2kmes2asacnu8ikujbmmf0vhlag9cwhhx0ia53r6yhfgt4jimq 1o9v6aoe3c1k7xhnvaxpch5ql0dl9d9acq2ou7nw1llnb2kbewa7pdcbxqn7bybattzamraqbof3olpdfzp546lh2x94sfsgg5ib,hyewfzjnhdlbtnsj08fyn971y59y7p6259bw1hssjrmyc96d8t4knaiud6pgy7t5ivzn5vkp0qf50r07nbedcff13eftb15ef14,1zn7cfgc319jd8n8k1w0wvjadvu41xzjwxgir9qpzu7lip2757rqmubh276c6dmq7x40vz8i38rry3mbb9j3q74447s8nx3pjr36,13p4ttmwjqwihd8lmcec8eqd764tccvhiu5macslt0e8rck310mh7c9jsxbo4beiv9c235989xgc6nz2pc7w1eqatnka1u23o4bg,ymhlocec7xx90d4y4ckw90099umxrh56tsung18r51324jfq9iozkhww9o5eowegqy1vgqw3md8y4t2xb884bhf07llnimnb6sy
+1779630014.137	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 njuz_40 vlky_38 ptuv_20 lkyo_28 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630014.860	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 njuz_40 vlky_38 ptuv_20 lkyo_28 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630015.583	ACK
+1779630015.764	ACK
+1779630015.764	ACK
+1779630015.794	ACK
+1779630015.824	ACK
+1779630015.824	ACK
+1779630015.824	ACK
+1779630015.824	ACK
+1779630015.824	ACK
+1779630015.824	ACK
+1779630016.456	MSGFROM @ lkyo_28 RECOMM K00000003 3409809101 NGS 1 2 ybpaphf7qjb4671s6sgx9jpswk1n5boqh1w41239vzwu1enei157e7pade8qc8qpp9mi7go2r9pmwojmupnd55xgcwfntz25hdx R
+1779630016.456	MSGFROM @ lkyo_28 RECOMM K00000003 3409809101 NGS 1 3 qx8we2p1dah16f1kbpq2bm00aujnzpvtuvdbu0gu61ici14jtgp7ennw288r5td7s02rf4vjn11jxmkk64td8ynorewlml1xov8 R
+1779630016.456	MSGFROM @ lkyo_28 RECOMM K00000003 3409809101 NGS 1 4 2x8yi7yvm22vvexqr6td3dnkcdulqf4qgomi4vuohkiqt8zb6441txd8bt3fjkmpun3lkxhru5k84lm19gkd2yg14wi78togst8 R
+1779630016.456	MSGFROM @ lkyo_28 RECOMM K00000003 3409809101 NGS 1 5 xevtrxr8q3i3o9a5d6kg5sgz0cvy5geddrotakwoe4e14sxvlzcfbpspmxrbiw29pae51g598l2pxcs2spprf48yp1obwc7r259 R
+1779630016.456	MSGFROM @ lkyo_28 RECOMM K00000003 3409809101 NGS 1 6 xqjaoyhhxgzhlbpn8awudsxyaj4dp7pxs9lf9g8rhseazg4w5shhxjzuf5tf7no1kod8m7kr5xkxkwomno57zgdsmvmd5ghsasg R
+1779630016.456	MSGFROM @ lkyo_28 RECOMM K00000003 3409809101 NGS 1 7 uax2seii4vv9oe0r5lz5tbgunx9rusew57ti9b3wtkm16jyak8los0t9ka2cyocpmx6t5kiff7l0bhtrlmba8qkec5rgfuy0vg8 R
+1779630020.914	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 njuz_40 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630021.126	ACK
+1779630021.337	ACK
+1779630021.337	ACK
+1779630021.337	ACK
+1779630021.547	ACK
+1779630021.547	ACK
+1779630021.547	ACK
+1779630021.758	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 njuz_40 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630021.969	ACK
+1779630021.969	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 1945856334 NUC wpdf8m659qbc0f8b0n58zpeupinx6zhpc188y05dnx6z8ap6fi1zgj13u1kgadq3upntciuyw9eou3dzimh2hrpycppp9b5uezm
+1779630021.969	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1945856334 NUC jlr1r69bpidvx28toanz6ssn9gb9yg64ivja8xa1krzk38e0hz7f2bvk6xok1kgp5nyb4eairwj4c128cs3qrfhzku0jtavrex7
+1779630021.969	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1945856334 NUC yenb4qam12sw8oezkfrbmwny7dr6p1vtdy376dj1i5cbgs0g08j3y4ezq3yc3rsfa4xacxpwh6qb8o6e60rdhxuit4dag5tsrxy
+1779630021.969	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 1945856334 NUC n85erx5d9gob9duf5o0zdfaxqoq796utwm6y6sjhggy7woi8qhp4s4t0yucphw9z4zhl4oznbsspcdzcvs85p4ydfn3034iggbe
+1779630021.969	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1945856334 NUC nz13x43nudmvzpdl3p5ii2wjnoiuaffqt6pi24l6kcz8duebovkw62ykvupmv53fmpifmyfzdwkceg28t26vtencvkc2k7zs3i8
+1779630021.969	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1945856334 NUC x3prurwwnrec2sqinm5rxrkll4y1ducb2ftsa2d9nebwxqlebbnfie7q4q20meokkqihmjyldmbycsvfg19mhrk9q4ool1e1ohk
+1779630021.969	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1945856334 NUC cypmveoppcgwiidp1auirx2impmsjdvegoj1vgrh1vlnic5xhjnueb3t937dbr9ijseeprph8ck9nugmhdmo9hxdoom0xhy111h
+1779630021.969	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1945856334 NUC 7zkajvtdb7bxv0s3u0brvwmhf4pobmbv7fspor4327s8y8sgnx47wuuqdur02zh4cn32uwonp8zxf9ligh1qh07205t3nug2l6z
+1779630022.179	ACK
+1779630023.264	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1945856334 NUR 9003870191424608477
+1779630023.264	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 1945856334 NUR 11229803824707596718
+1779630023.264	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1945856334 NUR 10867854274694915820
+1779630023.294	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1945856334 NUR 17959902314325207267
+1779630023.294	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1945856334 NUR 13272546840165348184
+1779630023.294	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1945856334 NUR 3301263609830155527
+1779630023.294	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1945856334 NUR 12177432300976407220
+1779630023.294	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 1945856334 NUR 11354683420428945035
+1779630023.504	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630023.714	ACK
+1779630023.927	ACK
+1779630023.927	ACK
+1779630023.927	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3736744327 NUC 2r4oymuov2y8wk7n8nxblnsqzpd6fzhsa5wua8xdnru6vazgx0ip3zv6pnj04f71zjl4pxdt14zq42t7h5sdysl6jmfd8z79itw
+1779630023.927	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3736744327 NUC bjhfm7oqca3z24mucuevh1v07tqomy8fmnuh0o72wra79ytjhzn8wd494tqf9zbnbmwvyclc3sqp9h2lcy7d60w0xn6xanvknfq
+1779630023.927	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 3736744327 NUC 6bs7ovqqbdq1brgey9nehtiszc36exp3qv61bhqz4gmdw859vccr7y95k9n7cpf8xd2m4rq68n22afpzjdju0gpd824jbfkxlis
+1779630023.927	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 3736744327 NUC 1npbjvskoetoiwrvyfno29t3bmssf08vow80jzxn3e5jsacr53ipo4gekbzgs2sahp5ykobaz4uewi4d9arpznp436yuf2h17z0
+1779630023.927	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3736744327 NUC y7jo80s5e5e22jbmem3f5wthu1rmbxp6skh3vbsiyiljkm4s6gxxziezefu0vqvwy5tei6e2ve8grk4ao4nk2u6bj0ms1rwy0rj
+1779630023.927	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3736744327 NUC my1elx0l9l5q2rkydj6efb8sa49uip19h2clsbkuw6hd3n55cne8nwuw4ldn4l8rs9nuzmd47g2xw51r577hys436rjo77wnxl6
+1779630023.927	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 3736744327 NUC gph5wkcgpbm5dppt9cqkone4j9pmost6uzzgc4qagqpnx4ak0fxkhugj1awalfzpzm6pi1lhan0j3xflxokchieam54rwfk5oid
+1779630023.957	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3736744327 NUC oiu4fe50bjhfu4l4neezfnto00yvsdzz26eudhrkxh9cl3pw8di36ef4y8sv75pqltahn8kcczxa2gprsylz6kji0p4v3jts6fl
+1779630025.281	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3736744327 NUR 12720370211636761350
+1779630025.281	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3736744327 NUR 1468082747452509968
+1779630025.281	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 3736744327 NUR 15385931256870401551
+1779630025.281	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3736744327 NUR 325193828732102660
+1779630025.281	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3736744327 NUR 1649591366172748964
+1779630025.281	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 3736744327 NUR 17564497163256257036
+1779630025.311	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 3736744327 NUR 1245074560730703835
+1779630025.371	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3736744327 NUR 16849081097854175888
+1779630025.583	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630025.792	ACK
+1779630026.004	ACK
+1779630026.004	ACK
+1779630026.004	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3370539482 NUC ekrsor5jztdrh0l9cscq20gduku9e6vyok6rdt1f4xne70cx9evwoabk2dfx570b43nl5eagi3xfdfjvsgjpoivgn9vrblnup7c
+1779630026.004	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3370539482 NUC rybdwurag5zi2304cj84kw5wntwg641eps8x25hrn8nmarj5p8fwigepcxxj2ur64bka6hjyah9vnerw3pj7zwktqh8x53ixkvp
+1779630026.004	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3370539482 NUC e60mboys2wx6nd2eiid4siei6hb2cfy4aoftt1dou1mu1qgtzg2cs6nmtso9ryn5ku1v3e8kkqfk7g9id5nhiswdabu4o8kxe0e
+1779630026.004	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 3370539482 NUC ew0ouibjtha6qm54yu23de0pnd8bhieg4gk1vt2slwqw7lybfzfvcqjabtrkm0y90344ijzkups0s16wuad6zuxv3ulkm8yygjl
+1779630026.004	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3370539482 NUC vm7kb545jbl5uemnhybzafhs3htqenotjkovq93386ixxxdh2tiy6hrmm2o531c2ms62owzvjx4zqrtiphpn3ltubzf98suxket
+1779630026.004	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 3370539482 NUC iir4ukobh6tqqnc53iysdkluygcs8f6cgitd9czuyoooddswy1649os0zljdjrm347l0yxx2rpa3uw6or6rfuq28za2j5s9twe4
+1779630026.004	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 3370539482 NUC po5jnxfg9qasoiygh3hajcr46o0v9du851lcal75c666ktxknwpkuef74237sp08tjp2w7sfgt4em1omtdx5nldo07ddk4hvg9x
+1779630026.004	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3370539482 NUC 11i1ckwdx29iejbma1eyiew9kp37wkswex13eufjul3yyemb92ppibeh8q7lk3ujpk5u4w5hxkc2oomm9ihwmhfuonuxzbxqwsz8
+1779630027.329	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3370539482 NUR 15036948452026531789
+1779630027.329	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3370539482 NUR 10855250800517477187
+1779630027.359	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 3370539482 NUR 966843095677318178
+1779630027.359	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3370539482 NUR 8661384483311722452
+1779630027.359	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3370539482 NUR 2786493556926174095
+1779630027.359	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 3370539482 NUR 10471804578410759958
+1779630027.419	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3370539482 NUR 16181896728959483680
+1779630027.419	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 3370539482 NUR 13898804786277521820
+1779630027.631	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630027.841	ACK
+1779630028.052	ACK
+1779630028.052	ACK
+1779630028.052	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1640204448 NUC z5tipfcqrldsdm5synn7a6o9s80pg26ljyrp5xrr58vbpap0b6yu8c0spt41pjqattk649f4ms61co97p1of2t9njkc9nugzb8i
+1779630028.052	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1640204448 NUC ori7l8unbu000upmoqpeowciqv7f5w031teve5loi4gckvne2e2ynedexcnver0pucq2wgok5om73phorl5tbu4f2uxgirry6vk
+1779630028.052	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 1640204448 NUC 639rlzl84fywnj1so5iulr32gkqnt22rp0xcnprrnhll0u6ycduya15f5fseuhhwoddvovn8kgdyk3gbm9g497psa9n7x8knv2e
+1779630028.052	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1640204448 NUC 1oenygd8vp1gc3ty906gt9qur42bsx8ax7p1es4wuxy0d83ajncom2529vp3wsv7kzksy5czxbvyhht003qkvtvrwhfdlg3elbp
+1779630028.052	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 1640204448 NUC l4rrk94c61i65mv8ft7oq730chya7x87iie42wz1h0sd8wybnnhy66v18hb7q6unk8yz1jsp5vps2m3l256h6tkbyxcpjsqwrfd
+1779630028.052	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1640204448 NUC b6crqkfyv0s6oksd13xyt3b6xpvhjhc30gb2jddekctua2kgy6rap8621ss724fw77v2jc9efb8xwsybrvqrdh72rrprcw33ro0
+1779630028.052	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1640204448 NUC yawytb3ojck461dizrd68jtwir98whwjy8sdus56v7gkjemavc3tsky6h9cpjp1s14t64ceg7vhn5p4msb543qe7d6uv874tct4
+1779630028.082	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1640204448 NUC hyi4tu1o68mb5868ydi7lzcygfprh71ppk4v43y39mlnupf28gzaow7nfm5kgov6z90phlkpomoxqhk77fggnmt6i9po0znxh5m
+1779630029.347	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1640204448 NUR 9863828148655478851
+1779630029.347	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1640204448 NUR 4318735126320980874
+1779630029.347	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 1640204448 NUR 8908344315808426720
+1779630029.347	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 1640204448 NUR 5385286697002767963
+1779630029.378	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1640204448 NUR 16084153852359741054
+1779630029.378	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1640204448 NUR 12495357703353730497
+1779630029.437	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1640204448 NUR 10774399202862303183
+1779630029.468	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1640204448 NUR 12594962980314633062
+1779630029.678	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630029.889	ACK
+1779630030.101	ACK
+1779630030.101	ACK
+1779630030.101	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 3137023660 NUC 113kluf0nh7jyl2fexsw254ercczhr9ci19w0kbltgikb8aem9fmfw64gpzcvz12tiqztwlno72n78xu9va50q6ma3xvnaff09fi
+1779630030.101	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3137023660 NUC cx0jdw3qy65lqhezfes9txzgyh9v8aolls85at45v8mcaejzhi8z57mk5snud508exop1qnsnmneemmyzy5ultme71nmuo3m0nr
+1779630030.101	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 3137023660 NUC 6f89b58ev7w796969ehtyws1cvxqrkfey91lb6m3xow9f7azbps8145ebqtrgky7qv4h1cfpyu4k5kxeip8vc09lh0ss5qqwmbo
+1779630030.101	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3137023660 NUC nh3ctpxqa2cb034u3v5dxx8llcabcxj890mjx94rh18smwlybo2phtkcc9lz7behecswzdnathc1315sh3w7jk2b2h9dc8cogqx
+1779630030.101	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3137023660 NUC qofgze5uo0yvdoz028hqhwb6x5w07ua6kyvjl2f0wvdc567qqgqk1y465x2isal4xp2yqk97s2caa6tvpx2j9ttdrucp379mmst
+1779630030.101	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3137023660 NUC 8sh51ug9kvg13eva0ifrmdd06h507stij6phwbfreod0gun1r4tv239nasphlgh6lrqwu32nzs7u79sjwldnv5p8gas77nf4pe4
+1779630030.101	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 3137023660 NUC d3ysrv3pstm6ei24b5jzcmoklp2hn6zxwo13dpehcd6ukc8em6snh3j7dez48nqflgvs9tu10t5vauzdvwctnun7rnckh2fbrna
+1779630030.130	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3137023660 NUC ujp167ljxxecpq4v5ltcxfxq0fbief2jknmkfjsxg0b5go72hcw5j7n6gugzpfabebdeivg5ha3o71wr1a9146bztjcpmthmn6a
+1779630031.425	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3137023660 NUR 16435211762071611543
+1779630031.425	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3137023660 NUR 6909184214138308846
+1779630031.486	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 3137023660 NUR 12116106224279113306
+1779630031.486	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3137023660 NUR 4619834191715825124
+1779630031.486	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3137023660 NUR 15840234035928887378
+1779630031.486	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 3137023660 NUR 15199644537023121838
+1779630031.486	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3137023660 NUR 1538584242785700358
+1779630031.516	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 3137023660 NUR 15989119444639429610
+1779630031.726	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630031.937	ACK
+1779630032.149	ACK
+1779630032.149	ACK
+1779630032.149	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 400954371 NUC rsy1cgqn774i5wqhl35ip0q1zq8cac67k34cgr3ei8lldt13cywaq3yka7pxpk8ywakwkix06sf85tr6razitgt18w5gypskpoj
+1779630032.149	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 400954371 NUC iz0ofcfu280nw1tzn7hwmzff5j4bk23l8pz4a11rqx6vmcwjveuu0hg3j50s6sprsk0m2a1cqnyqakxf7xj60src1do8t8tz7lf
+1779630032.149	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 400954371 NUC drcz9limpi5bv3i5nv62ga2rb3xg80gehehk0fx1zxsdlyjnjo7n9ht6sjz5t53pulk56o3kbs7a0a5cdwgehve6ya5cd4aecp7
+1779630032.149	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 400954371 NUC uwvaiojb096866urz5fqv9ppjsv7q18go725k4epfwil3bj5207flrt0u1vmhpbcfge4vxocmx4b0evh2ay8kcld2hqsn9bh96i
+1779630032.149	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 400954371 NUC 752fyha9kg3ctj838qkvzad76d8ojp2moai75lxega858f8n3da1jrms7f4s6bw8b2aqlw82kjsmt5lz08uxutntb8v6xg9gw1s
+1779630032.149	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 400954371 NUC ni3ojpy7moeas96izkfv72u847b6w0hoa90vdlsxjz2dnbck95rsgv775wqyg2opu73w8dfmnwbc386ucq40fo3glj93c9vcnsl
+1779630032.179	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 400954371 NUC 2cimd0gmlzchoda0jnhvrifj7cwwxoo56u127jgy8lrkc5jvb9yny6cmrsnvnatmn9whgr418q12yhpl59wetcb55x97l4w24zv
+1779630032.179	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 400954371 NUC 2qeacpp7ngehpmera831h9txss345vh0nuvngx4z8eoz5y5ub4i42g4t9671f01oxo4y0c17cy3o2twzr7tb0cvgn8uezq59hpm
+1779630033.473	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 400954371 NUR 12204221290988546238
+1779630033.473	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 400954371 NUR 13785461519383120434
+1779630033.473	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 400954371 NUR 15252149993176261671
+1779630033.473	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 400954371 NUR 6211648211128424182
+1779630033.503	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 400954371 NUR 4278002855338150957
+1779630033.503	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 400954371 NUR 118110122591841058
+1779630033.503	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 400954371 NUR 14719621648256291179
+1779630033.503	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 400954371 NUR 15309537045416003789
+1779630033.715	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630034.042	ACK
+1779630034.243	ACK
+1779630034.243	ACK
+1779630034.243	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 4150693501 NUC k727bb7hklfrao7w1vu2waafeb5sw744yv39a6mfwlq1y098h2vb2c988kbno4u2ivcacw7gw0n6h7ra0y2mxlq002w3kzls7si
+1779630034.243	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 4150693501 NUC gaf126bb9320ull3k36ggv0dtkp5l9fb5616763zo26zepnpd6kppb7ef9mp21v6po4axuocbf80e32s37vqhttvdahq9q7m2ts
+1779630034.243	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 4150693501 NUC opaiznxw78l2dt6wekijhhufalw2x4r9wf2sdpw72c2kihbtxhh1xir0a6ytaytu9w6ftps7rqgbco2yl3s69f39sd8kwp0psic
+1779630034.243	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 4150693501 NUC wpyehygx8aytabw04kfd0umuv23xx5i5a798ko10zq473x6es4n0nla75xydilbsqjw07grtp3w78wotuh2g15q6a9zg6qfv14u
+1779630034.243	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 4150693501 NUC t6nztmlelrqwu65myr8xgg48luttc50hx2cmekz2gdldhu44lobhp7o87payw8iyfx4utg5txx63rhzlpy66juvrqdhiqws0dfy
+1779630034.243	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 4150693501 NUC yau9wh3ykfdi69s4l55hjul7od1mlzh28b9htvpj25eln3yqx19vlxk0bpavzmnnczli5i34f3k3cp28w66a834phgzu4j0q1wy
+1779630034.243	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 4150693501 NUC 5myi54bja3ytyqj3yazrf0uymcu6r9flig7nsydquynnfc0tbg1v3n3hc6wztcazxwzmhy6epfwuygfn1lgrfpkgsv54x24icvg
+1779630034.243	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 4150693501 NUC 33fydw513gh3u9aftqqionybxztcd61yv8w1mpllyajm8p4k4lnnchfr3iy77ass6e1hyxqz80rg9biqc4zoezkujvng9gwgk2j
+1779630035.491	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 4150693501 NUR 16105349406262734534
+1779630035.491	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 4150693501 NUR 15525495552692777506
+1779630035.551	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 4150693501 NUR 17310835926983729644
+1779630035.551	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 4150693501 NUR 1138677031654167809
+1779630035.551	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 4150693501 NUR 13315850008325291160
+1779630035.551	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 4150693501 NUR 4390626932782131953
+1779630035.581	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 4150693501 NUR 1922569345242960015
+1779630035.581	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 4150693501 NUR 5109274460650341783
+1779630035.792	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630036.002	ACK
+1779630036.213	ACK
+1779630036.213	ACK
+1779630036.213	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 697855319 NUC 5s1nsjyhl9qacj8sj14yv0ffjtv7u3ljqul8w9xec0z7ttcj7e8j2tnsr333umttpcstj8d4myo4aloq1ma9wmxbwmkz9l6lwtz
+1779630036.213	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 697855319 NUC fjoi4k2tgi1rbcsggb4rtch3em0vzgdf9fj9zp10yfvdojc3sybq5oxz8ygi28xxn6h60t7qufzvv0bt40e5mjkr3hk07wh6zso
+1779630036.213	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 697855319 NUC qhop9a4i3cm4rsh26a4c70jr8azx41rlr899naet6soqiat32p3bynmmwa1bycvspeoqaj70im2hqb363qvvb62coi452t6q38k
+1779630036.213	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 697855319 NUC 9u57052mgsfbwhg4q4ftqger9h8lvlzpyqdkxrspicp6betwa3v4irwurveiakdl4xgk3vaq52zrczwtudwof1oanvhqvajk9dx
+1779630036.213	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 697855319 NUC p7jobhnq7rl5d9i1bdmsctjo0rheddyvnz2w5oqrc0whe3bfp80neebib8wn3q24dbq8dinn2m7h6bhz7xdeiozycodbzdyen1y
+1779630036.213	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 697855319 NUC qntgcspugvcxen6qd5qypxbkfg2cgemnbd7j7lg4whnygq0ghon25ig7m1fcev9dus2pj8ipec5pr79x6ktfidwwag4ej2xvlxs
+1779630036.213	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 697855319 NUC u10lzhqluvevt3y0xukxu4ngey4arnkbfwb771a0nv0l0pql0hix3edevsy2cd2cptn633iei6pmfmyea10y985bnre52yvcyy0
+1779630036.244	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 697855319 NUC 44kikgjcubrqm1a1zd3q78hng0lamalq5efh9gviv1xzikuz10f4c860slp30q39fmr54qcd6yggmsc06znbse0s82lee9lqqzc
+1779630037.509	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 697855319 NUR 2309727181796505291
+1779630037.509	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 697855319 NUR 11067813354598939907
+1779630037.509	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 697855319 NUR 10001376289472613044
+1779630037.509	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 697855319 NUR 4512820631686381755
+1779630037.509	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 697855319 NUR 17687264799882747421
+1779630037.509	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 697855319 NUR 7918555310887881527
+1779630037.569	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 697855319 NUR 6844758048215847518
+1779630037.569	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 697855319 NUR 17088443764391175145
+1779630037.780	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630037.991	ACK
+1779630038.201	ACK
+1779630038.201	ACK
+1779630038.201	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 53005665 NUC qwirptibf4vz2iegyjs8jef4e6g43pugs56v5l21o7fbuqg7syjl6k9weg80qru2ud5vn6nmbe8f7mw02x0hic4eha9n4ckzvwm
+1779630038.201	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 53005665 NUC z2kkib43b3h8c8415s9fsck2ww5u98fpz6f163wz7d2r5537ulmx6q5c1et5yb2oc1jn319y9m268k1htjjvvv9j831h7wrvkiu
+1779630038.201	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 53005665 NUC 4rei6zbrs2lkuej3fn6sswnnqzzqufp9orem90fekruhnz83gs0cmoz18rzrrpwkeasrm24jg3xi7nfg81o5xe7z65tcfwr17fp
+1779630038.201	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 53005665 NUC abgsj0y6mslq4izsme6u5vk46ckx6lbav9cfi1yoe3mw8pl72v6tbi0ofxkehj7sf2sjab8bkxrqmnyodcs2zf5gr6b69zkpf5e
+1779630038.201	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 53005665 NUC ouyblp440thf7dwh3xsx6hejpbv08iowt0ci6l7juu3pf1mdqlpfgb96ukm4v1mxa7lf8z05ssrhq7yexuvujg9ikt3b5xnlymi
+1779630038.201	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 53005665 NUC 9rit1e7yfk1oydn8mepb2un2vy2jot59p1p3drege51pi8xfefzaemz3l9tpy6eerwg4famp8s0a54du7oov6c8sl60v2gdbdw8
+1779630038.201	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 53005665 NUC pu65gb6vomsvohlsa2cprjrnfpidfslfxogpbsp5rv93zqwwluf60qi6p51oiz81xknr7ibb9o6bvuq4xffou5cc6opbtiap200
+1779630038.231	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 53005665 NUC gu85q15jw3zo0tqnws70ilq2arvcpkaxsu722ahukpeeqei0vjgejysffz824oh9lc7xt8rnnmi1u8ijh3uw5r72sxnb9bvv0pr
+1779630039.436	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 53005665 NUR 6594721396796209135
+1779630039.436	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 53005665 NUR 3726548136347223270
+1779630039.466	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 53005665 NUR 1444503083907454439
+1779630039.496	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 53005665 NUR 7565690290280309381
+1779630039.496	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 53005665 NUR 17255368404485901143
+1779630039.496	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 53005665 NUR 17471758760133909791
+1779630039.496	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 53005665 NUR 5185792798892924276
+1779630039.737	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 53005665 NUR 13811573356315962688
+1779630039.948	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630040.159	ACK
+1779630040.369	ACK
+1779630040.369	ACK
+1779630040.369	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3785375667 NUC iryqofutnl9u7y5mwkm8xvxh11zsy2yeyfagos6i5zi9fa9jhjzlh7k323x21ig9ns5yfwup32h7xzfsbsfhz9bur6w7bzb6x5j
+1779630040.369	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 3785375667 NUC ia05wd3ok2e8u9613rer2xtafugqc91uok5z4di8yrz1d7lpniy5viso8kh84kzgl0y663hgeaa1xjtr7qhupgmd6epz7nw3n6i
+1779630040.369	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 3785375667 NUC gmw0gtback1jbayb0umcmpys4zqpkcivc4ipvh0dvzh4son1kvpb8k2cm8qdz6wqows1bdla39cnysgjfe0id9i1vt4jjfmehmj
+1779630040.369	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3785375667 NUC pgr9w5psvzv82ecubpwgn80wp1ropmfsi7oqldft1xe86f4qejkqmgflnph78h4foff7xet1shtwbrrwpyh38vqosl6l2ki0apn
+1779630040.369	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3785375667 NUC l9tdyih6b8zkhvjmf6k9mgr8r2jjjr1em8959cgbwwlwc7q9g3brz05obhdhr03ya63c107hyhr7thtt06df7a6k2e1kycyeaq5
+1779630040.400	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3785375667 NUC gz82x83micntpijbhkgcd2i4diwaylpsizfvjq8dnnu50e1295v2d3z8tzf80g1ukggd8uhixo7duzy6ops9n5ie5nu5q772cwr
+1779630040.400	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 3785375667 NUC ixahlpeov2k0o4ldbxoz1kd6gbmwlg55teuexhno3hi98iz2mttgz9a0qoyqsyh624s3rugfszkyy6rh7u8ourlgwf26gi7tb8a
+1779630040.400	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3785375667 NUC 1s25mfz3ashbhq71il20knt0z7ktvu4ye581sovnk8gxfmzgmdcdcqn34gjsm8bmdw6pfe7cwqaj5cet2u7k4ka7cubdotzfbie
+1779630041.605	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 3785375667 NUR 18107992483048055242
+1779630041.605	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3785375667 NUR 11277887659283617574
+1779630041.605	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 3785375667 NUR 10796504983545103205
+1779630041.605	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3785375667 NUR 715583390672197070
+1779630041.666	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3785375667 NUR 8375702610218999848
+1779630041.666	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3785375667 NUR 16917013448798615598
+1779630041.666	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 3785375667 NUR 4063115925767242352
+1779630041.695	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3785375667 NUR 5699188461301329733
+1779630041.906	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630042.117	ACK
+1779630042.328	ACK
+1779630042.328	ACK
+1779630042.328	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 1108511298 NUC ez92sr8h0ru5ex3g4t6da6qm9nf7mbh1czjfu4c4txzgfnso7bnqpfby237uo8tmc2ildae0jmbtzb5ief3j2t3kowjz3yru9nn
+1779630042.328	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1108511298 NUC hota9l9nrazjtzfcr0j2hpv2ra6ql1n4evjrkb1cy5xgx83hc6s8tf3e3i0vut5kjog0bfijwqsf7bhpcps4zkcinm8iig2udzq
+1779630042.328	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1108511298 NUC ntnnvc95l1sz163q2dxd3sgr1ew8qav9hqeyfvryenuusxuhwe49we2rhsryjbyqsoil6w1fs2fan4su6dbejc8eg7ze73ozp8b
+1779630042.328	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 1108511298 NUC 109jvayp28jdb6zpvoivc5r2nu5bv5ekuyl0lc8pexahfxck9gmfmavrrheujzuofccjxcdajskv5irb5vbvi5javhldbgz7n16j
+1779630042.328	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1108511298 NUC klfrfp90x5ht8y371q7p2iy083l4kbu9neakau8mory4rs3u40ev0vpxop8n1iz1uv9idl4nxeisdvkog6735q1t6boykn9utu8
+1779630042.328	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1108511298 NUC f1uw17qjcqbropfruevmmna8iuj9b498t1qfy5ftb5cacgj8t1rmlsbmiapjgnqv7sitxzwurm13xs0gjw6lqwled2uwxh7pvu5
+1779630042.328	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1108511298 NUC b7fi4pmv58b8kf8neo2nxd30n2behe3gqi40awzxntvg9x7u84iwhvm1fa8nc4bulmlslufwrqce9ns9wdk6xn1aj2brpdaqvg3
+1779630042.328	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1108511298 NUC dpwzbaoqnqzpuxp7ll2wuh6vcni3e7h878xoi51ialbidf33bkwvrjfm5qqq0f2hgxmh1opfvt8je0gil5yme26gis0v4x6mw8f
+1779630043.743	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1108511298 NUR 492568476209071476
+1779630043.743	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1108511298 NUR 15347532432307667950
+1779630043.743	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1108511298 NUR 10145775320587615576
+1779630043.743	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1108511298 NUR 5928029482673966633
+1779630043.743	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1108511298 NUR 16532285080075535755
+1779630043.774	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1108511298 NUR 17541884702832992475
+1779630043.774	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 1108511298 NUR 8032268855746182840
+1779630043.774	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 1108511298 NUR 1413194164284260754
+1779630043.984	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42 zlwg_21
+1779630044.195	ACK
+1779630044.406	ACK
+1779630044.406	ACK
+1779630044.406	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3995498203 NUC 86wxm63rrsdithhf0k6o42fqpfu6mkk4xwlh0k8fkxhwue7fg847rmrqzche5dv6jvjanjk154vol9s7g5x3vnd9hql4bn5uhhk
+1779630044.406	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3995498203 NUC e79tdwj8xs7k09gqfoa6s2oo18xnt0djpp8omdq38ew5jp456gsnheayac37ew6ef8fyp5w6v5cafaf2ap6hfj1wlpcwqmi4tbp
+1779630044.406	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3995498203 NUC jqh2ug6luyvp6xy3ed6cuczkt6qr717wxbmcyuutyf73doahsy1qq4r1983dk31b9d273z20nhxjxyz9uzmmb75sccbi1vb0afi
+1779630044.406	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3995498203 NUC tj2lnoy7m904ezgc2zgohv80c17jjfe00bdxm9qjd6rj7hlxael96ibbqtruvrukqe9skfggokxi32mygkgjqeb9rx9cdztqnu6
+1779630044.406	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 3995498203 NUC 5hk3pygrfpb1cxz8sh9nzkm0ehnmkobnl69d72vvgpw0j6awoxx4vd5rzurmowy0vtu8xy3iwg66adeyv0yz776vk7so0gsrzhx
+1779630044.406	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 3995498203 NUC lx1bbglzybelvi0mb9etvfbshf9fw4nuzutjnb99mbtueq2rct3vp22h1pnnsmv1k0ggveapyjxphize9oxgsjvo5mhhikmoun9
+1779630044.406	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 3995498203 NUC 10vfbrpy11cu4jtgqktbcw0z0ttzp6e3z5uemihbk38h2tg0yam1oh9d0q54m84hi96rwutlb1lxgixjln2ekwvts0rcreso7nen
+1779630044.436	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3995498203 NUC 5g39i6fuccl4f36u6kzcoqvc9z3l7nzur591ceus7d50w2nch4furof75e2ysbmmuckt13cm1qy2j0m3dinmw16vrt0ojduh4y1
+1779630045.641	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3995498203 NUR 12803141860618386790
+1779630045.641	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3995498203 NUR 12890883540975327736
+1779630045.641	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 3995498203 NUR 638807201827390748
+1779630045.671	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3995498203 NUR 7963441614012698064
+1779630045.671	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 3995498203 NUR 3634221867297979754
+1779630045.671	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 3995498203 NUR 7918011397358717074
+1779630045.671	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3995498203 NUR 11969975656851953246
+1779630045.702	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3995498203 NUR 1393432978797678593
+1779630045.912	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42
+1779630046.123	ACK
+1779630046.333	ACK
+1779630046.333	ACK
+1779630046.333	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 2369607885 NUC qrkddhnh4zrtqqqynbhdinzs3dhx2ijbei98mvjkmwf6v9el5km2t8dojm2podywwfj12z4o7on20ogf5l9o64khf9eretq6uzh
+1779630046.333	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 2369607885 NUC 1147a5b9ib0g7aftb9jbo76fua50x4yksi0b5b8rf8jj3g63l8wzxhkkcgnpoi85fi7kf3cxfrmhij3d6axyifahy4bkxrcxa1yk
+1779630046.333	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 2369607885 NUC nemxey1qlgh52b585oxtqekhqfpw8lpbb0evc8fio4sfhc4pfw96xswllzrw7pm6ksfu9av9f4cq7mv4eq9oqt3gtusm94gagc1
+1779630046.333	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 2369607885 NUC 29i3lhz8p1l9errzdfxlfmp0ejhmh7rscpoxu9cnuvtyybqh15yuqwlh73914wdukczl2zhvgu0hahbd41sy8nu1e40l6e5fwel
+1779630046.333	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 2369607885 NUC a0q8g4t8job7a1uoav9dvjhkzenwum6rtfidblanfbwwezgganx13m9m0i4jeprokgzwtgojk4loioa63dbpw8te6a2n40epi2g
+1779630046.333	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 2369607885 NUC 8q5z67tu71sq4tutx8ha920p5i5mf384bx92hwlg3ef3bpvrkariudwf2d58l0riax4b4di06yvj0i2zq0lgz6ox809oyg0h1q0
+1779630046.364	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 2369607885 NUC o2phol12561eyw9p09jj4b0jn7lqq0kuhlwfvxkfowyqz33sjlye0oszzjoohfojdw9yymiop0b0rjxo9wwiqxu1c2dypvs8ky1
+1779630046.364	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 2369607885 NUC eeitamx2z66dwr5hps9ja6lahb4g2wvjxquo0akg74me1nk753wtbjyy5v54suti49srjw3rv91x2bvhx7wy6hbz5drqyyt3zll
+1779630047.659	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 2369607885 NUR 2895854843354225989
+1779630047.659	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 2369607885 NUR 16167174094320490921
+1779630047.659	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 2369607885 NUR 10446881881527480342
+1779630047.659	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 2369607885 NUR 14846824353473312658
+1779630047.659	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 2369607885 NUR 15036188099039059949
+1779630047.659	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 2369607885 NUR 7020966988583563128
+1779630047.690	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 2369607885 NUR 416004840570660266
+1779630047.690	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 2369607885 NUR 10721908517886752192
+1779630047.900	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42
+1779630048.111	ACK
+1779630048.322	ACK
+1779630048.322	ACK
+1779630048.322	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 3595555919 NUC 1lhaquipwkxsi116ag8vnt6820ubjhp7ir8px62gl34djf06mtop8wdhdcyjmhbumcn9l8vwom35y2b3qfqlt48nie5w0a6xjce
+1779630048.322	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 3595555919 NUC xrvr14ys3v678poawjpphpt1bojpq5rx7ih40td6j5q9h6uup3wjtc2ivc0a0i4zsun14s4h2vs6h6ae5uxe6ttsu0z6wjvrg6c
+1779630048.322	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3595555919 NUC 11fzeb6o3tr8od32xom9353bshcn71pmatlhdgz03wz44gptckh3dgbbnz3obgchhxl09qqbhalg28szx6qv0h7eop5otc6eul6u
+1779630048.322	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3595555919 NUC mxldwxhzvimx3ivi5gjsvseowv85alpiyfcfhux03ga2piey19j2yz7lmoqesocdjmisdamr54a4c128pikafsjd7cgom09ll0j
+1779630048.322	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3595555919 NUC rzxan41fyx40ys6kj2ihp23cmnyyrwi9gglb5ny34dye0p653z26h5qjbimi1c7wx6amyns91joyrl1e3i05s64dvwm2tgaevvw
+1779630048.351	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3595555919 NUC 3ce2kzphh7tpjaaibey5yyfty10hlkoqbeb1ro990xoj7q25z1805dzr1yti4w46bt0bsa0yavashq0mrnhug0eeo90wz2ap4e2
+1779630048.351	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3595555919 NUC b56jbjrn2shntpk1mofe3gbn2cuq4sc1qv35uqtggk81qta3hh2dckauyc63twasbt57wamg791serrin4hgamasm92v4lh8gp7
+1779630048.351	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 3595555919 NUC chmtmdreqtlz3bks6enldarg821zy02r52bl0a4cfhymxdcez7i1m5fw0n3gpn072t2qxyrfhjqs31mbgv521n4b5kowqxi682s
+1779630049.586	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3595555919 NUR 3022297259968905689
+1779630049.586	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 3595555919 NUR 1741701377043536989
+1779630049.586	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3595555919 NUR 16688013529503865862
+1779630049.616	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3595555919 NUR 15417788334096313092
+1779630049.616	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3595555919 NUR 1927736913409492758
+1779630049.616	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 3595555919 NUR 9758812844015680658
+1779630049.677	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 3595555919 NUR 6207300074805919407
+1779630049.677	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3595555919 NUR 17887621046601371136
+1779630049.888	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42
+1779630050.099	ACK
+1779630050.310	ACK
+1779630050.310	ACK
+1779630050.310	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 4103157072 NUC 86on63d3a7iso08w33ryoyg8f735y2i8nsqw66pkjl5hhp7jph9usmcnxiblnp9x2p4s1elic4b2rx5rtayq4rbq6yx5cqwawej
+1779630050.310	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 4103157072 NUC asejys8k5rmqsh9th5drl6sdb3v1eycunozmsmigtwzf1l9y6x0rk28yed1a1wtd0z6gdawjlum8ijvlvym8wv6figlck7adkhe
+1779630050.310	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 4103157072 NUC hc4b5aexil43wqrektjx8tkzuqbem1yqi6gg2jxhwv7ebak850q5ec3inqun43c9hxw09nyvpkyq5ipx2zlkfogdaju8rglfj0n
+1779630050.310	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 4103157072 NUC ats510suntt603et7n0ymk9e2vb99961r364bvh5537n1za93kqc0jqqph203mgwe2gnnuktoc6hdu9ctvaapmeorwutaszxzug
+1779630050.310	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 4103157072 NUC u39dcqyz4wme131bcvmlncwaieqcpi9bo55nxxjnmfugykf23ozpvyx1qp84mi9wp112k6jn1dlbrdbxicxz2df0clobldftx6c
+1779630050.310	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 4103157072 NUC j4ri5qtmjujsm7ebpudc84w8rpogc2q0colmtrt8or6mrt0mh1go0uxhn07akdogyqaln6b23dbqnzlckd3tgilnxm0b6fyjktd
+1779630050.310	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 4103157072 NUC 9ny48o7lhp8fxmoav1md235bqi83jptbsanvvlhnlj27dafrw7mfl6w5892gu2ptfq2zhpkv7ggkb8va0iopaeptm5d7g1fc0t5
+1779630050.310	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 4103157072 NUC 3jqjx2c6nvbw7gwh2c1vkmwxo8e2ftv5uosp5eewmgvkr84ewjnecwbhtpkn2wm5hqylkstqwsl78ulaoftsjgicl3xu60yurmh
+1779630051.786	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 4103157072 NUR 15868401092431656270
+1779630051.786	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 4103157072 NUR 13112439735630088418
+1779630051.786	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 4103157072 NUR 9869379361020700388
+1779630051.786	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 4103157072 NUR 6583390347341405167
+1779630051.786	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 4103157072 NUR 5002920603523027390
+1779630051.847	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 4103157072 NUR 3100706171600732677
+1779630051.847	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 4103157072 NUR 18370682023383792847
+1779630051.878	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 4103157072 NUR 507640306447936496
+1779630052.088	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42
+1779630052.372	ACK
+1779630052.571	ACK
+1779630052.571	ACK
+1779630052.571	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 517947057 NUC 1gxu9fo0478fff67qjo743hle6481x680fvcewriisia0465bc0dbm3rivmi1i16z8qf9rky6vsxrfm1v9lp51h3eemcn0hhk04
+1779630052.571	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 517947057 NUC kuxl50yctl0vcmtj0yw3x6lvxocyoz41n4cd7k041slh3j5y8gf0kclni8l7qxb4fl1p5navmhlxxuwatbur6komkom7se22dhs
+1779630052.571	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 517947057 NUC 7xxjeuonlxc4ircli7joo74ykbn9ih3pisrbsrinhm8g23hbj79o26wbn6clyxw130sg7bhvgbsdyk66vp4fpdcxpnkycmrzlg5
+1779630052.571	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 517947057 NUC aywmysav4mg5rppcpckc6r837cqvhk3bx4z53f49ftv5htijgyh6bobxmqexx4xh75zb9ybx8q3dmf9g0w9phusn6jqftxp8xtb
+1779630052.571	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 517947057 NUC ve1990gx6u8ztjlgox6bujzcnedmlcy9g4t0e3q5onpqfdgyd0zp6l48y8jevsqyxhv12phspxcrz66nyvtzxmuq53fawh9n7ir
+1779630052.571	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 517947057 NUC qqp2o87mq6g8yds1asdi0ggztvtngzpahuuaffsa6d07z4fu9hov1bishs6myh80xww9bcen0pc04dte0edhrf7qxtygds9fh8g
+1779630052.571	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 517947057 NUC 3j4ydx4ymz4h77qnen7hx7boqyoxixof8odse8t4yyn8z6jrqqwvmppzzwmh2tbh41ywfjx3slm8y5o1qyfic0sh33bta3oyyd4
+1779630052.571	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 517947057 NUC 11xtrhm1e4c90bb1j7e0lvm2fi43pdd2r2jd0rxdqurp4xehezvins4equkjet4uwlwtn24nqrnfcmvw585pmxj6d3d9k8t4tmcy
+1779630053.926	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 517947057 NUR 16985737405621978422
+1779630053.926	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 517947057 NUR 13223663036209904664
+1779630053.926	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 517947057 NUR 4848067861101393244
+1779630053.926	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 517947057 NUR 3816541388872801156
+1779630053.986	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 517947057 NUR 8087250004830457564
+1779630053.986	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 517947057 NUR 11701654135286533377
+1779630053.986	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 517947057 NUR 11245825082714035055
+1779630054.016	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 517947057 NUR 7124334535447663550
+1779630054.228	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42
+1779630054.438	ACK
+1779630054.650	ACK
+1779630054.650	ACK
+1779630054.650	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 402474919 NUC yf63q9soyoechmjwppsnk4hg2jr1jln4ygtgu5kil81aq1r8h0hu9t0w3v84mdvnj3ilh1dq9blik2vi6lh0aiy7qdira3o47a2
+1779630054.650	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 402474919 NUC sgrmz39wwvzc5ejlldngp8cswoujrot1ymoz53ixu8906hlm3rnpc7n44jpdepgzhxbz6b0o6o3rqovfn8jzixcpqhrqvcyq7x2
+1779630054.650	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 402474919 NUC bczusickt60fyf3a74kuhifye270b4iukzcg5icbnsobzuj7z92bg649yh0lw3ulxovloav1ipmcewerkrmcwicxb4fd5vph0m5
+1779630054.650	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 402474919 NUC hmuw1uacnwooy8it3uo0d13su4meixzl0y52ak53qajlg7qhtfdhagvt5pjrcz3n46i0sm2ykt5odkfk67rcz8sswa2e7jf9tl3
+1779630054.650	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 402474919 NUC 91bgg5vj3e2ofvmcb1m9h9u99qand2frbieor02xogp052huuo54ybwizbdczwb4byok73ksq597nyb2utu1nuq1pknz2nbsyqi
+1779630054.650	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 402474919 NUC yfg3yd6gwwc45tf0qc3hskb6n13hkcnuauytauo2r8h11zr6rarst1us4jrav27o3ilh5zxr0erqu4d1u95tt9ifwla2mdcnuod
+1779630054.650	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 402474919 NUC gappm7378gvg3ehp9ylgoq29857wot7qrdz7pm06jymmb48io40bnmiv8fh4389g1s3yix7gbdrawx1d5koaykd4k0mvdihk1d8
+1779630054.650	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 402474919 NUC i2b59bhbbzu6rfz9sqhlx1ascndhr0wbcrmboom6webf79cjf5rp1g9ejga6fmzkfphst5g0c5lgrvxvivrmqd5g7183t425trs
+1779630056.155	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 402474919 NUR 10001576027996554277
+1779630056.155	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 402474919 NUR 13399164002769279331
+1779630056.155	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 402474919 NUR 6582497686645465161
+1779630056.155	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 402474919 NUR 16139554841992733136
+1779630056.155	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 402474919 NUR 6671751832086170710
+1779630056.155	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 402474919 NUR 1899011902270473540
+1779630056.185	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 402474919 NUR 8356915853994841078
+1779630056.185	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 402474919 NUR 13197006121080332795
+1779630056.396	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42
+1779630056.607	ACK
+1779630056.818	ACK
+1779630056.818	ACK
+1779630056.818	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 429603779 NUC zvfoy5nn72bv4t10665zaat3ndnmaw69oueo7em47fc44xn38awee1vvark7v0d11gvl3fmez1hqfu900lr6mjcptkx0b7jjexv
+1779630056.818	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 429603779 NUC il2lyigfx0rrg5wdl458y38v4amy8aj0z1fkt0hq3jxaxe67b90x6ydgd6wj2vnttp62cib323cfeyviki3ievv5cfgsb1k9oov
+1779630056.818	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 429603779 NUC jn099ys0y4m8mf0400wzag1f4kxqz282pib8rfdogsbzy7vrb3j2xr15l2ha5xfl3inc6qyyfzo5q5ta9i81cflz1ecyui9xjs5
+1779630056.818	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 429603779 NUC uqj3vnfocfpk988mnlxqfmi5aoxe5fmkuy6v6znkaz7y8upbp1moqf0kcr9ax07xx7oknel6wcfohqc7hnp31ovaozbhj7on1ev
+1779630056.818	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 429603779 NUC zemdftqc2nsx1sirziyyxv0abegyzj74iqg9wlapgqlw8zob61y9cirdvljp8hj00ff68wpjhfxil2bda196hm068gc0lqifkzq
+1779630056.818	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 429603779 NUC ssrs8piqxquwvkwqbmb7p1i97xfyajbzytdlkh8l0ih4uvozzixylpbbq7s1g5i7tnvt49s84s9okhabgj52b3fy7v7mabb5roo
+1779630056.848	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 429603779 NUC qbg9m4fzku7o15eq1ygdmqe54mrq285h1r0ok8a3t9ckcak671jtfop0vk46qe0ag77czbpn52038pjuzw7n267c0vwti5i1jzn
+1779630056.848	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 429603779 NUC aqjwl2m7amtaslnmreyi60sn6rzyv9chxhrenjhcw8207arkjpyi5bpz03tknq4ate02zif8o4glq9kgfgpjvsnduvng139wor7
+1779630058.173	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 429603779 NUR 3773858122935823491
+1779630058.173	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 429603779 NUR 10240167305636544976
+1779630058.173	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 429603779 NUR 5306265462938956967
+1779630058.173	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 429603779 NUR 8706122685408700824
+1779630058.173	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 429603779 NUR 14500988736101229939
+1779630058.203	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 429603779 NUR 10990497410587374621
+1779630058.264	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 429603779 NUR 12884936848970372946
+1779630058.264	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 429603779 NUR 6134742462741274702
+1779630058.474	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42
+1779630058.685	ACK
+1779630058.896	ACK
+1779630058.896	ACK
+1779630058.896	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1042920720 NUC tevrxieg11cbf8p5ar5f6eombfr4ahmtbpvewc7q4hyaup3ti7178fu5xw3g72ldkowytnqii1ljepvj3c5kz8vhcfuipyris4w
+1779630058.896	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1042920720 NUC zp56259k3qxj5yplqmnvmkmtdbfqpt31h703nuih20c8f7nm9qqw3yubqi24dq3477ic3o9c9byfjwk8a19pcv4d2patmmjo199
+1779630058.896	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 1042920720 NUC jb241p3q1abki1ugqtfi8gn3d1ry259ynwe0bprczs1kwvbaxb8626hu8ep2l3lqzth2arob4h0ue9gjp2mfpbivhpywjb3pc7f
+1779630058.896	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1042920720 NUC cgtvifmkyw1evnq8q7yssor92ojhj2k346g1ej3681g6y11fue7fpmnwo7k28e79v7db4auiaqoxjpl7fgsg8n88yglk885r5e7
+1779630058.896	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1042920720 NUC 6a6th4ad9jhiqm3p2dlnmtkmbsbucgfj26w2ub9k7pvv2dy9axvdjgjs6igddz9mmubndflph7bjfbxelaydbevqwbw0qc30sbv
+1779630058.896	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 1042920720 NUC dnzmf8ae53zbyt226u180o7b9saxjl2631o29e0a1gmkfsj408bik058gqwhbxqieez12ompr4tl0fy7e03013j0vefb6680gg4
+1779630058.896	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1042920720 NUC 11h5vna39sf9twhmyazu0kym2mdtsktzoebljwe96nabrd2z1r88h95s1biv9eg3wmjnr6rtzpu23ixxv4czc0pmr9tq41h5nwum
+1779630058.926	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1042920720 NUC zemu7crh3088ij0tfa52a4ayrchiybg6v642rw4bt517edg9jamt37bqtwdfdh28fbwq6ja0vabl645xsg5h6acdf62wg3e3jch
+1779630060.251	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1042920720 NUR 16689120442365327704
+1779630060.251	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1042920720 NUR 1001466612303301820
+1779630060.251	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1042920720 NUR 17751132700849715513
+1779630060.251	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1042920720 NUR 10846819345583090351
+1779630060.251	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1042920720 NUR 8047581541660610178
+1779630060.281	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 1042920720 NUR 4460831467746892712
+1779630060.281	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1042920720 NUR 16863497227618507172
+1779630060.281	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 1042920720 NUR 1786007377022000832
+1779630060.494	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42
+1779630060.703	ACK
+1779630060.913	ACK
+1779630060.913	ACK
+1779630060.913	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 971526843 NUC sxm4kjgps8d1acy47syjufdob9inr2caob9unmsjlr5xa9tmpx5vznapr2rjfr154fp874e3w5piwhvgbzjnv39abzh2modiypf
+1779630060.913	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 971526843 NUC sa41jcz0ahnuljpmv741q3jbnzsyxzlzfaycm64cz8m3igfspzd7f7lb0m6fxiri2prdf8gpou65pydrpza9t519jy03vrn6me8
+1779630060.913	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 971526843 NUC vaa2o0qjg6pbeit1uyq4icideva31rxts6nwxbqxdgyasrbbk5e04bt969ahqg3annb6kwmchi4lcqvjh0364lfdmfit7vtar8v
+1779630060.913	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 971526843 NUC vnrugav7af7544a8iqbkv1h84lv1pm8ob9ajc6h9j8i1eml6b0ld79c431sbjssulq1m0gjnkh6zhxboifxjizdp17kt3k8mct1
+1779630060.913	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 971526843 NUC mo6a7xs0hs5ioujod9vc0gw3f35r8q4je3tfs6slnxukn82xyag3h4o1yp0w95j9cs3ibrnla12m3m6cw48v5i9g2klfw3haesq
+1779630060.913	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 971526843 NUC nq2ouhzzhv0r5tr5bl9c10oqvkalark9s53ffqzclm3b86gn5bb0ooiyy1ffij8kwfipy9k9m07cekstlwfv4gzf42nf5l8boit
+1779630060.913	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 971526843 NUC fm8xkguf8j84psgldizzifeqq80ghmbw47p0gsju4jxarrslb9zz4zkglpxbnd7u58yaj1upql8jmb84qfx06arksv5igyxr8ef
+1779630060.944	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 971526843 NUC maolen5qeqeeeuex6669alqsuunrbcse2kq3gh515k0j7z0cfii5crs5mr0kman5934t8o7gwryr9gssxiqjw8a4vaspouej0vy
+1779630062.359	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 971526843 NUR 9242309743508853467
+1779630062.360	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 971526843 NUR 17832625653891871303
+1779630062.360	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 971526843 NUR 14467480225850472404
+1779630062.360	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 971526843 NUR 1231799522476085837
+1779630062.389	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 971526843 NUR 2336017511733086080
+1779630062.389	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 971526843 NUR 5166335404213686381
+1779630062.389	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 971526843 NUR 8499241811248910137
+1779630062.449	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 971526843 NUR 13324928450758139485
+1779630062.660	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42
+1779630062.871	ACK
+1779630063.082	ACK
+1779630063.082	ACK
+1779630063.082	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 976551008 NUC 81enl06csvy9hky97cop3rmk454stv6tffqru180zn0uu0b60amrpocc6tgakgcu0tcaxtu5fgw97offrbnaldocjfborw47bjq
+1779630063.082	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 976551008 NUC nmf6uz2viunpdpwcb9dnf0f403z51ilpqluzba8sn4u38en3i169m3i5rco9nfodi05snp6rucvvtftl5abpqy9v741f8ozir4b
+1779630063.082	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 976551008 NUC g3byadwwhp9l97p1so2vl5ar8cyqtiyf96nu8aqihggoemtcdbxxtl1fgqvc08ozkvhtn01yekdqkjjm5dr2nzqd5ozx17ibqb1
+1779630063.082	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 976551008 NUC 6yxi87tbim4giqbw8tzys45t6rdkgz3u4zesusk5zf903ascr04j4fc2em135e0vff7wfkqdn878jh90tbctrz11wg0lpndaevi
+1779630063.082	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 976551008 NUC 47d8g9s6ekqvnauakh6aj5hb71xtnr6zb2h1s7oub07fxwlwv1wvrkmdo48dbom50ij4aiaxun2xt9xis8fgxkoosgz1n69jagm
+1779630063.082	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 976551008 NUC 3yqvvef849qp8hcc36r6cohac0ln71iam2ebqckqivqhusm3a9hcqlhxdlubwro360uaxbq48p34t29al3id5rhx9vihg8c4dq0
+1779630063.112	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 976551008 NUC zuq0cetkl83h0cd0fejqw0xo8ui4kbcm6sviid67s2mahifk6lqzp94a0yuao8xeksdhvixkmmxnxyll8rhanwtoqvh666x1fbo
+1779630063.112	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 976551008 NUC g1d8g3o0rtx9m3w1dsm9wlxiw1xmdt0bvjgzekv8hde2m2vau3hib4qoo24kn792e40hxnb3o6427m9v3t8g6gvp2eisz8ndd6s
+1779630064.407	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 976551008 NUR 726995969427439196
+1779630064.407	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 976551008 NUR 11369533498738059129
+1779630064.407	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 976551008 NUR 2172776527018752251
+1779630064.407	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 976551008 NUR 13909608513430651140
+1779630064.407	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 976551008 NUR 440258937972192264
+1779630064.407	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 976551008 NUR 14808422322915347286
+1779630064.437	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 976551008 NUR 5895151912104682210
+1779630064.708	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 976551008 NUR 4053268612784325483
+1779630064.920	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42
+1779630065.130	ACK
+1779630065.341	ACK
+1779630065.341	ACK
+1779630065.341	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 691763337 NUC c1gq5h26yndmkdmdbybgnito2q72bq6ealpv10l0ofse9mqkrduh4udvmgbxx29mq468yzapwsffp39vgqhs6idjgi3a4e63ucb
+1779630065.341	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 691763337 NUC rhnvars41uwz5olnm8zhioj7szblgso546wnufwnenndukhdq83qhd7f2y4mr9krz0v76sjeo0ppooauxv163ck1bzcpuzwn0tg
+1779630065.341	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 691763337 NUC la1w4p9jo7fqg3l0y37ybo3grmrzcas9k5ut4wh0m6w0rcmdx882e8f6fy8nk94zocf08usb1uledq9zp50wptqk6032d2s45z0
+1779630065.341	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 691763337 NUC kugc1u60a468c50jmlnisku4r578ps6qaxd155ko7xtc8n9m2gxkr13d3wvv5wa680mlh4gp66d0q08b68wk5sa0wyt0butwcnd
+1779630065.341	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 691763337 NUC f7s5yyte695he9ekn0xfnzwpw3l0yjmme4wy94uxjt9lzktk7ae83n5cwxr0m2u50qwtj65fotwtzp4de8o7uf7oaoozyi3v1jx
+1779630065.341	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 691763337 NUC mlya2ibapjrokrd5qtaij42n53sicg5f6lvf96sjb7fjfpmfm2jjn83o6td85qqtnld6yfpwp7hx0thzx9g7aj2wch1senvcib2
+1779630065.341	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 691763337 NUC 11a2np651evg95a3kovsaaom2gyzr8grozy6jujdbxauh43l3vg9vm9qe1510bfzz5kwyvlqs1krigz40i9ih9hz6vyxds1omcth
+1779630065.341	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 691763337 NUC n3zc6xpjetv9woa2mu8vmx1btifruz0cjkc28du5iximi7eb4cdwb1y9dcvje3fy0q8fl23iavt9jqh4b8fu4la24zcdgeoat3v
+1779630066.636	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 691763337 NUR 8618904972290409843
+1779630066.756	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 691763337 NUR 16531349641808956389
+1779630066.756	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 691763337 NUR 333423106726337332
+1779630066.756	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 691763337 NUR 62923736687416451
+1779630066.756	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 691763337 NUR 4392206126254569583
+1779630066.786	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 691763337 NUR 5782512718544091917
+1779630066.786	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 691763337 NUR 16326994299648382612
+1779630066.786	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 691763337 NUR 11278014403398992829
+1779630067.083	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ypzw_8 pusj_49 vlky_38 ptuv_20 piyw_24 uswg_45 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 sowj_11 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42
+1779630067.299	ACK
+1779630067.480	ACK
+1779630067.510	ACK
+1779630067.540	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 691763337 NGC 10 8q33thwfzitnvv8h78ghz2oyp265u1muh4xnbl9ziv90r3w6g805bqupudz55oh971xnab0ysi02bvokv4advlfaz6ejdxwlofc,1l2vqn7d54mek8zxheqds1xwmknivtodjp3879k1ljas9gat0133kqipr22p6hv7sg37fn2pdlgf4bjrc2nmpx4gosrczqynr6bx,1fdakk82yrl04tujljjymkv1dumym0e4kf6o7gu1nqww3ma5iog23r7lnl2o57w9ojncebjcz3zkjai08419ottjtsvh6hi6q7y4,9w6efxmd17gf2c1tl66piclspdevx7i15dcooeldk6nkvfxderebdepiw19j5degavsk39u5s3jw96zoai7inq9484wevqky82c,lavfr2rnutqi5wpqfuudazebhlify0r6ejjprgprv7rmvo5pa8ckix9pm7odqrbxe5cdbmk7hg48fxusrbj6dbpeyrpinfam5ep 2024qrvmvwk72biafnwwf7jukfl9g6kapf0k7cr0zw9gugj6dx4zrr7cjwof5hxxbywhigjgu6ums8yb67u3l70u421r51g2kzmk,1yhq9ceuryex22rdjr5ltwr2ysksxpx9i0dapegtl333sm3e78bhgwflbd71gio8wlvzkm8un0yo8d6pwa37quj8mg2pfwxewoss,1yw09fsxyvt54hqfhqlol3kd7nff64g8otekdrf9cwdatxcmttt8vqiuemavzxpvjiy91p6admjkiqv4u1bpb8fdi13cyrvyd29s,1jy5up0fw119nm9wi6q627o4sdyyjyr6frvmadqjg3h6oxdyizi11ys3ghsqs22l2yseu0b3r3ivg1rkf18b8ceisxxw60row1wj,16a9txdcqn3bfy7a9j3of366j8kpb1tytk3xiwzfflcc7zw3cegt9eq5fvbxiweno7l2mr9hlnwxs9m22n2wnu3q4f1jtcdg6kth
+1779630067.540	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 691763337 NGC 3 1efpm17temr5sk2bc6c3oafcyttvmw5273d2643qm5v4thf3zhd9q9qmkhuwwn363hpg3rqsn8ks5ga0fke4salyyj2qifgcm31n,urhb4ccfntqaj9csw0ayrjpsvvwe9ofr9q9xuon5c23z58vl77jnlxesa3750eh2stgbaw7pigxmmy1bh0xz3znt49span5be03,c8puhkqpbye4mlkbzfd3qifi7xjbu5s3paj8xuz6jrhc0ptrra6a5j56j1zagbaqhoehnrnganyn33znqpz5oq4kfu49eldqlv2,svz2l2q8yumidx3xm75txvhdy4lg44y4tk3ugwjhso0lwznjix90vpllak43mlzdi24c74wccvk31o7xh4qvpmqr1ibc3n4xaxn,b89v2u30ssplse268xmdaq2slymzgt8yabmfsr2hbyig1s2k76tz6pap06ch6fcm3xwv6n4zply3s70ce2w9rxen5zmwj5dedjl w2lsz3ekhwqz7662a05gsopgi8ootfc2gfbvore3xh396fkt0xilyc7pmlttio0w5s7aoyfe5gjx5jy3xphn5i7dgxhw6qkpp1p,r4zmlmxoezk1a8hipilanndk82ma0dwrm55s8t8ec9vso4kbgka7c2kerdt2y7xrsdwcsl8ucn7gmnj05n0ciedqdve70pzd8q8,23h2wmxr1lq6mdssnw8ztxpqdjm6az05r76awziz5jnxzeelhpk0vjcj5tjgbzoq7cczcmfipxb2z6n0uhhxs16cl2vel8a42nc9,1pf2savtwbzji3anm470p1w99tv19qd2kfv36910pkqfhcd5kinc25zqjshuwtlg8wp8diz837zt2qzkj8sqjnd4c233idywjzu,124gl61n14foo3mybr2z9aodsjxl9h7fypp5nm0ew5ocdes8urokw07jl5p9j3vzkviq182z7icg5mzs877sbjepdd1hs82vogy0
+1779630067.540	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 691763337 NGC 8 8nig3pag9nnxbc1q3a36oslkrxmoq48a8piy56as0c0osevzwyfsku8avpsv4c3tvd2f0z7rmet3bd77zx119jcp1m1cmw5nz66,1k9cf5zqvpzx1ear633w6k9lj2gjczm9jls2hq5prcec0kdy4mdk2ld3q5gncgkmxj0xyo8u99zk664k8nwk0o4ecvqcutgplhih,5t3u6mw6gxc6bb95mupp45u0k3zxbkp0op1yeuo5w7eamx38cou7cx64m6x5ot15b9htyv4jcdjlyjqpahlb1ywpz1zrr50xezp,1yhe7fibcthhbe4w5al4sj64jyj9jo6l4r87amrzo6flakprm0vwjhhfoe3p6361grvjns8dtr9153eth9pfb6ntxclvovfqf9qk,1p79lqnrzgxp9hwmjz3vbvwkdneko3nggp6qxugtxjh12cmegz88ugg093t4vduxjxtvwy123rx3usmusibn21wbsowwd3t0s68u avs372qyy6h0cr26h9s7tmxq4f8yk721fkj3xgz0ctvlu59fdhd615mmfa2t3wwvxq0pxua9dqmw7lkenxggkvsoitj3pegx08i,1wixnz83y0mvs2v9ydsk8dkpx69hnvl3t6li3cl7rrwrj4hi05slyasatk93vukit64ad8hwqgu8qrxu5knvlqwb5w66xhqcbxdh,1w59308i2ckedhevcrtmm7m5q3bgb9itk7h491ubp77kktgxikd6vbymwmlxe7t2jubbi060mbwslbcap7f9ihuyv9tk4grb8lvi,1hhg4gf3a4atrylvs44ylkeccdwvmtalksr7r9u9slnjzloas58z3zwcrj1buwqpbvfpmugy5plwybsbb266noadatsi1cqbatrr,13pffb88jv5l5k7yizup0oi2tdhv3h2qe3d53u9wkkzrnvdywxaf5k6jk675ajyjmb2ugl0rb4w9cq47joyuodfj0inxjzxas5nz
+1779630067.540	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 691763337 NGC 4 1b2vpno6s1b4zbhg0sa8qz4lfwcrrrvjod0owj095cbrvqm455r9g5u6g903yqieac7bjq0et4idzcz1qqkzh2ipfla3twwwoj2n,7cr4xmbggurlx2pu06969kxjbd0aidwo34ai150i3il5e1lovk2zva856e201318uqzudz2a0uyqusnc36dwu1wan3xf6fd3cd8,189i5yqd6cdrstmh300fdi03r4q6b8qmtpqum21pf4milje9s8nkf7jd324zk822oznj5f7p6mqz177nu0etf7p0w55v9sf6q108,10sbv94ac0sxh3en3u99gk06ru83kyy0u4ae6m3sntxdc0eirf1gtcbt992uciwa86rkawuz6fri1qoaa79hzhnrwmgtxfreh8zx,5rfy9cx18vy1266sjs9nigjzbaa0wg24alcjcw573m4gtv9h76ow0zu8zaifszjo1bxdirh1ol03vl0ca7k8u2a4o9wwqsa6upi 1kug332vw11k7yl61cgdof83fqp7rrz5dcn3y9hsbui3cph5ebb6mrownth69n2gsrvlhef9olbvo908dg73m630w11dk8hg2p5o,3iwaue963k3yhgzviz3lw0oukuk47vv0zd0332s33jd54lqthehfnga5r70ebovnb06wnczbijx7tqp1588zf7ix1si5vobboky,11eha76nspzfnk2p31dh8anxzkftsmiidgkg0485x5axu0wc708hqovmpm4xtihuvub0geuecd8cbbv7z1yso9p70666i8in8d83,1o57elcti14cqczam1g0cgjpile9v67p8xhxu6pdkyugc0m2xykddscv97sjkfwytzqxvkysm6hselgb7q37oc4q0uyx2xn27hux,237b9rt2lyf2yr93djom9125ople3flfhws07k7g5myin01n75bbcndcq7rhnfyapnfmqq3yprp7z466i8c2r00u66xwtc6z0ft5
+1779630067.540	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 691763337 NGC 9 rnoy237qp5w938qj2q8yh8cfpbrptzq5yhzmkwohedoj2udzuf3yku4npejl1cq9mvut9yofzo7g4u5puajn8yk2ajxl4200uk7,1eyvz0ifjlt32x62u7y5x86700l2ap7e5kvjl8yhcbfcsz7laiz0t9jzsy0coa4he9nh4p35mju72swle1eavx6z3x4tqvv9gsy1,1ogeb3o47uvh1jrnsk045an1pzjqcbdgvebqv5rchtjsjagjwoc0bbra7q8emzes03zgmb9vnfj1759akacys5sws6q1dtvpjx6z,m7fufx287ze5avxqq16t3qjlmclzdscod8gn585ojehrbvco6mjncgjim1v9q2bjq2fyk1hk0s5a6znplq8s7lp3pzn4n7sqevn,dndtxlchrs2a8ms7u70uj211ekm502zzbabzma8jwzi4q8brr2zytzyfvzqxr0rnk34wm1pc7on91aaa8ogj3dhtgxhoz9dsjl0 227cixgfn1gh8f6p7dzu2n5goserj5zasmr1j9wk2wuadzjrmegsp06lr1topapk06yxzrixp6xg3ie4eno8zo30iykd7v53hxdd,rrmrcx7ipi1a9zhb9hltyv86j0eew3ggn4etcfr8vbnwnnh1iinnze4c00r68hslwpvnm9y1jljympb0aqapb2z6hfykbepqh1o,h4tcf623ua7vhw6f6ozao9kzyehqgqud9ip0nijxyxczrsk6l888d5w12riswug4aziijxdybje342u6wx0mfst66wwnlooz9iw,1jkph8zg1e55wbk7pno453khlz9cx8a7hdzf5d7dtnlh6plkba0za7k59z5g77uw2kd7yja0j33h5po06zjraaw5ipi8ngoyv9jf,qcx0s91utqtgs5w252mdk8l302k0bdu9yv9pxbsovmgmcikyji9dacd4y2fhoabwfv6969wc8asvu8tujuornkqw2jwxygj757p
+1779630067.575	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 691763337 NGC 5 qvggyr32026q551mkyunjvgwz0klssnink40oqd06gnmiuwwmy4psupe45ja5mhdlgnuf2f70ct7uvbrgdbc6xtv3jlojt6eqy4,1ap63vi7e85ow1sewdk2t3wczzk7pod3zidh9tld1axh3w4hbpm7np58wmbr937jq8zu9g49wep8kr1siik32rmfzdwn7zk2jbvn,zqpfdqs5xke04f7gpifkmfchp8igkb7bzq1orsbwahjypk3y6x4s1nyhri9nu24ppiztn1uclkr506lg7o02l0rtgp60l1tpcph,18q3w1zpa4japswrk9sb3r0cgikskza8u0avsn9ybvljz44i24ug41vhllo0xu11o20w6vyi9htyyuuf697u8hidj01j9bj02a2r,1vga5rghn8qjubccmokftc5o920l3ymkl6evcuzhcp9bgxcz2yvcrc9geb3uwgfd6dzpyxm8z1lkdaw4who8rv5cap0ik732y9u4 1alra1jn1c23asudq0zgzwij3mjrkbnt9zatl0givug148exwlec1w206507gbm78ci8qci1ethk0wnnw1jgw37bmoegmgpz3dxb,so1gulubbileix135bcsk38dbm0b3jpus7zthjftnkl878fw6aup4fridyh1k5eqianxjl11vgti7nducpyhrruqohw1sphqo72,1xbf2r3owj58p190ley5c1en3ag7pt0erm9nchv1soacejdeu8bf99xbt3cz3s8x4nnrzei0gz3on85v5piyqo9u0m5ao4w4cylv,1l7plroddi39ibldff8njdm6d4c97t5kfzq24nwib9nle4f2n1p2y4dczs2hohqogqeksicxwxaz3fhq9m9raopujnugmvvsq0sn,10csgsd7nriv6patx0n42swie2d64wqimcaggpolpe3th6qxye9ja55gx4bd0lqonsqq7k0yl75klj160rlksh479995d560d8mj
+1779630067.575	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 691763337 NGC 2 5oab7a8fxt24vjxki9zwdar3vw47gr93vvkb3np3taqx73xfofy6xmtb229uvh6ahwoaycpd2akxnk7jf9hwtji9qs2wi2z0rl6,183wptkbie7l6imknybztcex37ocz5wgjcewolp83yensp29f9z4xjo34u9hk07ezywq72yb87ldgzfvqxluw9wiwjpsv7llg4j2,1v5jaf7ipboq828mtkrif0ncfttzz6y252al98v6nfnfctdofbmrut8c3xvch3g2quzyt292ir4aqjqfu6vkmrr8gpylj1zn0m2o,u15vi0r5sq5k7v5zbdvmm6q86hpfw9sys0hfxddyhfm0z0j641dqeypc76imbept85zj7gb9rvomvh7t140fb8kqspn9x7wq49e,qxa4bifwb6aboo7usknwvm5ls6i7xynhzbwj08ji911p340f7uj9o4iomi0wwn07v4qjemccnlnx1w6pizkfv42exh5tej8k70i 1g5abt0t9lzns9o22orbp5781hnqpype2be5ibyi2xwy3d16bhunj80n1mvvuyfjwwptd63v1xab2ye7jbzoktbby43rmdsftw7x,5hptavby1mjar5re4ntxv195mugsv3cy1bnpmv23gtajbgwma92jlb7i3vy3kxqxbgmtknhirbnwbu8psie5tc58zdcx7gg6ag7,ein8cwv00byiii9c5xy7gu657kw087cwa7cnkd1koglbt1ffm8z3x9fn8i2v28dkj96osm917pyv4u8kywfyi2rr6e8sgnac3u4,sfz1e0zp80l3atpnorcgwd204b1iydb5rsfbrymg1ydyenhtvna185vcw61g6ddv9q1qo5v9anqmgegou2gefltvg4fld9p0rrp,fw8p0l8kpas9h97efo2e4drgoul1zspo3iu12tnalp1g4uwyqlxodwjpjez6zb8720viahpbcra9ec4x7jnhg4ymv5vy7mk1pe8
+1779630067.575	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 691763337 NGC 6 11y6atobzgbe0zy6rtfo1in36su3zxbe1vhunzm923sy6d3cpm9by06ffteyticnz83hjhuerua4mmxmrmljgkasukr9n8821j2h,1slmc1vq294x0w6o14k5od6wh5j3v6exmmxx3fjo4a56zi77cy446332wlxwpjb79w1w41f410xpk3ttfu6weu82297ovviv1bxg,hj0tse1ef14683sbqgkzad8hx6wzk44qf0xuqmknf4gy37dv60w9mobsyrpgmsr9nyiqijhlxfbo744vprdmatpv2b109gokv11,5lkzgefbmwqqr26hs5uc6h7l71w3xli4f6wvmk3f4cxpw9og1ib1u2cbx9yzy2qbe18l8dg7qmiwggx7yekelgv4eyj0l8hb0s2,20cwi1kr75q2rqurc03w5ozdp13njm1bfafc5jejyz30cghuqn3mfc2s2si08zthsbve16puqdtsij9vhw0efiwu6ulq6knwkdlj 10aq0obr3haud8e1i4iv0rkjidynh9qyod7psc34tod6n85d3j6mz4iuiv0b560y15cv11abo5maenkdz374h28v4azluooaafw9,12h24bi3fv9ueq78hf8zlnj6gtq67y41wdezprpxrxh17seu0w3yc9pkosj7452nlcxlbhyfoctrzq499kmombg62ruyg4ejwx4e,1gcwqwudrj9e4mesd3anv0l625ntf1ykibjlzr3z0mt7y2g1vghr8k3su7fjjzg8da85hv85u213op3kguxrdorkh77fn6lww9wz,n2v6rfra851wtzszpc5mnmd2fopmm7d2nupgieeez3mhom9kzfu7zmx30fy2znud2cp9bxamybbnbr6m61sq015g6nmotaujli3,1aspaose9r4tv8dd5tfzszaa3pg8z9twy3hg4c3cz7zxkcjeg9wosp2piw8uv9e0ub4u5svo4kz781385s75dfcyneuxdgvc8b24
+1779630067.695	ACK
+1779630067.725	ACK
+1779630067.755	ACK
+1779630067.796	ACK
+1779630067.905	ACK
+1779630067.905	ACK
+1779630067.936	ACK
+1779630067.976	ACK
+1779630068.026	ACK
+1779630068.118	ACK
+1779630068.118	ACK
+1779630068.149	ACK
+1779630068.209	ACK
+1779630068.251	ACK
+1779630068.329	ACK
+1779630068.329	ACK
+1779630070.560	MSGFROM @ hhvl_36 RECOMM kVfx6hca 691763337 NGS 10 7 1216ws8oz9kddmlp2f4v15tdkrat6s761dc12ekwrupq1933i6rw3s9f8ih3z01p1531iusrnrqbsmqwheuvtokhg2ump44k9wz9 R
+1779630070.560	MSGFROM @ hhvl_36 RECOMM kVfx6hca 691763337 NGS 10 6 hn3j701srbbdaelv61lc83uxk0mgwnq1l9hfpjlzn2n8vjb5gixcck8erp3eve66m4ig8oasup3fi6bb1ubq8cl9qv94feea8wn N
+1779630070.560	MSGFROM @ hhvl_36 RECOMM kVfx6hca 691763337 NGS 10 10 h0yn7e09aynkifpo6xww8ogwx082r3laokxhkal8s4irsa8f1w3ufxix2n976fgecv4c3od0jjy746or9iyoirm7jm0vjs6twew N
+1779630070.560	MSGFROM @ wxwy_16 RECOMM kVfx6hca 691763337 NGS 3 7 jj8egof7prhpahvvyk1pcuyadus5egv68au5g3vt9gxp7y3dlkxqr7w3pbmvxpq57tlh4wye8p97fkujqeiit83hn84x85svkr9 R
+1779630070.560	MSGFROM @ wxwy_16 RECOMM kVfx6hca 691763337 NGS 3 6 oro65iwtrkv6ze7q23sudn1cz32wn6vbh8zutq5l0zxwnqu68fcmc1a4osk4bjpf73creiwefpnibiv6zq3jqcim5pytd08qhm8 N
+1779630070.560	MSGFROM @ wxwy_16 RECOMM kVfx6hca 691763337 NGS 3 10 yu7i0yrsquj46a263rhin1ucpryshssqj1iukuskljejhtg38ozzwpvsvnn54e222e23fbrsqvi86udd0tztbds79p82lm12jqb N
+1779630070.560	MSGFROM @ qksp_2 RECOMM kVfx6hca 691763337 NGS 8 7 h64yyc65trtoi2t1etls9vhmfr157ch6fhwziip9p5qb0do0m0u93783u56cdm83mhc4lz9irxf0e74yvvdge8t4ba2nhj65doj R
+1779630070.591	MSGFROM @ qksp_2 RECOMM kVfx6hca 691763337 NGS 8 6 fhfuwmg3x2px1qlras2fbe3x1udbkppz266edjsqcg0cef46c6onv4dkb2anj117dbtlf1g24hrojdvdg1tkbcdxknuohfsal4k N
+1779630070.591	MSGFROM @ qksp_2 RECOMM kVfx6hca 691763337 NGS 8 10 y514c4tfplbu16qykbjskitg8xe897ys7fg4099toyj0fk3xh7ex2uslvy1sgn7g045qz3ekpa6htfjgm46oe0o3hv3u7g8ro0x N
+1779630070.591	MSGFROM @ uinn_17 RECOMM kVfx6hca 691763337 NGS 6 7 u6q777o6qzdkj5ppt8if3fzk6yw5d7ug27qbzfv8j9967fn1pxkjmftlppsoqanir182aegkbbx3ulhd684jgwb0g367o805j4g R
+1779630070.591	MSGFROM @ uinn_17 RECOMM kVfx6hca 691763337 NGS 6 6 dkjc8kynjulcqvv4naquh3luhtq5dt4ym2ur2ethvsrhdticmxdisl6w9xj5j5trlazq445n3s7xyx2de42z2pwtkvln1w7krvq N
+1779630070.591	MSGFROM @ uinn_17 RECOMM kVfx6hca 691763337 NGS 6 10 lvff3lfkmwo6jgd1l7ewxhwcfwi4vxzzpqy8nfzecfa1e6c1w421kzhxhhfdog5slgvhawiavn6h7d5goz64vj57ulkxvlqq4wb N
+1779630070.591	MSGFROM @ sgyz_47 RECOMM kVfx6hca 691763337 NGS 4 7 j6o407nxp0qbc78c6dcxmzhwdiwkairqip7w2n9v3puxuh3mtw08s6eifuwwohh1d394dknga1rstjtl8k02zr98rp2zayfivw9 R
+1779630070.591	MSGFROM @ sgyz_47 RECOMM kVfx6hca 691763337 NGS 4 6 s9wio1j30impbnc2yw3qvvq4189daqdsgwg6q5in4psvaau7x8nkejprowy8md4g5c8t6l2m0n9zc35voze1w3rrqndqjo9rdg5 N
+1779630070.591	MSGFROM @ sgyz_47 RECOMM kVfx6hca 691763337 NGS 4 10 7houzshg75fhrsn6vss4uaswqut8dmk09zegmi03woqewy819ftscy2poh8xm5tlfc4ritgpwn6rai80zslycf44uy7td4cns6p N
+1779630070.591	MSGFROM @ qyxo_26 RECOMM kVfx6hca 691763337 NGS 9 7 jzup6zfy35ac1lfg23od6tj926rf64stwtev7tlb9d2s3beupy1i2qyqp0ynl2du3eb8klofp3uu9suqrfwm881fi13pr5a7npx R
+1779630070.591	MSGFROM @ qyxo_26 RECOMM kVfx6hca 691763337 NGS 9 6 q7m6oi9vo2x3hbd0gwny8okb6ep9y4h9nobhnd75rf3sidzkr113awwh4nomasfuhtoujgqs1aysgj6cjiem16msge9u7czh9sg N
+1779630070.591	MSGFROM @ qyxo_26 RECOMM kVfx6hca 691763337 NGS 9 10 iv5wc70ltu9xrn4waup1tw51em5fvkdyio20g2r9cnugz2esg1sujfgmifx18a0qcwr9ef0zqez3oc61jki4u1btj0gypso259s N
+1779630070.621	MSGFROM @ nnhi_0 RECOMM kVfx6hca 691763337 NGS 5 7 5fp4bofh6q5rze018r7eep1iv7fmgptltz2rjv4dr2bbksig8jl2gg0wwainqsmlgysf23q4oua64wcf0nkc7k55lreatd0u9az R
+1779630070.621	MSGFROM @ nnhi_0 RECOMM kVfx6hca 691763337 NGS 5 6 xetd5dvflulk8hi3nlkjsbev6mrfznutn97mah9xueo4iv3uetacikg2zhlamb63mpqo2ebdyu7l9ibhuhchn9oa7wt7ugeo9z2 N
+1779630070.621	MSGFROM @ pusj_49 RECOMM kVfx6hca 691763337 NGS 2 7 7nckispcwko8yi63rsi0ylwphbar9k22gk5poohptrqvhjdckeuwgfqe99x3jftbt5g9lx62s6rb5zck3r7monhm1g9o1250tny R
+1779630070.621	MSGFROM @ nnhi_0 RECOMM kVfx6hca 691763337 NGS 5 10 b5v5nqhfd1a4lgs4x4wic1xlkl128gmxj7kqorily79wr07rt6j4r60acfo0unovg63a6e6o0jqhwhn7bwgl64sd1z5m278dtl9 N
+1779630070.621	MSGFROM @ pusj_49 RECOMM kVfx6hca 691763337 NGS 2 6 yk47auxeqlfi0pgvxq1w61q05ydrcz67seav4dsxct2ub9ju8q1uvmtmppo1h7m70iwqdpbfaf5hnfp910pbhmt2sxo366b8zxt N
+1779630070.621	MSGFROM @ pusj_49 RECOMM kVfx6hca 691763337 NGS 2 10 11hom6b5yh32gnedtj1rngetkchaob0a5k07hec0tdnpp5cvha3gmhdcu8qh5gymakyl1uaeplqo3pzyee3h3lpsgs2s2sl35j9d N
+1779630074.867	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 691763337 BR 4 vzozem857ys26dw8zb0pd9ajrwws164s2claexvmdjih65va5m9s0ge1iaosaba4hy242ff9qqpkdxb6k3mquyrb1gv4dtjegsz
+1779630074.867	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 691763337 BR 10 122kzn4iwxze8byj65hrxuxtqzbhwjy2wzq3gwk7z0rc5pgz9zsjbyv5yeujjgj3rzubiw4hrm99bg1j8yqrrtygow32qzhdq829
+1779630074.867	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 691763337 BR 3 4a0tbk2coftu3p30y2r8abm2td3jcyag3zfcyvdankikzspdcw56oyd96oq81dc9ubpph4cukngsdgungqs0xpnjqv1x696nh8e
+1779630074.927	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 691763337 BR 6 ni1soulmfymctnj2p37gh7nikfkdtkcttijmiqa2haqwsgh46pi3nn27fi9bpsd266t9c80yot76h3m9ooin2lupirfa5txlmn8
+1779630074.927	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 691763337 BR 8 w4fxu3noya73ke6uj6te27jhllt45tn7hopuouyiao71qfl671obcuv0kghn32l4t15tgzuxe6l5aqhom49uec0u9x0fz8jfzk5
+1779630074.927	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 691763337 BR 9 j7ma87ixudtq46pudzcovfh9kmxmrjmyk98ltvzbk075gtskbsp978mkhsa1wsmfrq2hnuech6vtpt6gocy5kbn5r80cc4gj4el
+1779630074.957	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 691763337 BR 5 gfy1s5ceawf97877e36v5so6xcd8096vn4mkayppvxbn2vh63inwv0lopxwkzfornkw225xy8ileog6ttw5zjsshuvya1h3jzda
+1779630074.957	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 691763337 BR 2 srqcix4bd52as9728zgdvshr1ogw0dszjiklr95prhtv2pbfyugo0a4wowxqew9ewcd2i8scl1icbo0npl7m2ke0qucomrjh0ic
+1779630075.289	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 691763337 PR cmwqalapflx7atmymj5n6no9p2f42ibpzyqvrkkrhyz80iid36qtv1lx93ib0sp7lwg6xzz9wlf9i5i71twbelje3r7x1f74yl0
+1779630075.289	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 691763337 PR cmwqalapflx7atmymj5n6no9p2f42ibpzyqvrkkrhyz80iid36qtv1lx93ib0sp7lwg6xzz9wlf9i5i71twbelje3r7x1f74yl0
+1779630075.289	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 691763337 PR cmwqalapflx7atmymj5n6no9p2f42ibpzyqvrkkrhyz80iid36qtv1lx93ib0sp7lwg6xzz9wlf9i5i71twbelje3r7x1f74yl0
+1779630075.289	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 691763337 PR cmwqalapflx7atmymj5n6no9p2f42ibpzyqvrkkrhyz80iid36qtv1lx93ib0sp7lwg6xzz9wlf9i5i71twbelje3r7x1f74yl0
+1779630075.318	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 691763337 PR cmwqalapflx7atmymj5n6no9p2f42ibpzyqvrkkrhyz80iid36qtv1lx93ib0sp7lwg6xzz9wlf9i5i71twbelje3r7x1f74yl0
+1779630075.319	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 691763337 PR cmwqalapflx7atmymj5n6no9p2f42ibpzyqvrkkrhyz80iid36qtv1lx93ib0sp7lwg6xzz9wlf9i5i71twbelje3r7x1f74yl0
+1779630075.319	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 691763337 PR cmwqalapflx7atmymj5n6no9p2f42ibpzyqvrkkrhyz80iid36qtv1lx93ib0sp7lwg6xzz9wlf9i5i71twbelje3r7x1f74yl0
+1779630075.348	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 691763337 PR cmwqalapflx7atmymj5n6no9p2f42ibpzyqvrkkrhyz80iid36qtv1lx93ib0sp7lwg6xzz9wlf9i5i71twbelje3r7x1f74yl0
+1779630082.848	ACK
+1779630083.058	ACK
+1779630083.058	ACK
+1779630083.058	ACK
+1779630083.058	ACK
+1779630083.058	ACK
+1779630083.058	ACK
+1779630083.058	ACK
+1779630083.058	ACK
+1779630083.058	ACK
+1779630083.058	MSGFROM the-whispering-knife pusj_49 RECOMM K00000005 2437615536 NUC pa6fozmk7w6s2qppkrnd8ng8hunp4v6wuuow2oqbgg9vvzc68zmvnavh67z6bbvqyi6rpm5vi981hc6sonruofj7a1v7xgrv24t
+1779630084.262	MSGFROM the-whispering-knife pusj_49 RECOMM K00000005 2437615536 NUR 12034296956155412736
+1779630084.474	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 pusj_49 vlky_38 ptuv_20 piyw_24 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42
+1779630084.685	ACK
+1779630084.896	ACK
+1779630084.896	ACK
+1779630084.896	ACK
+1779630085.107	ACK
+1779630085.107	ACK
+1779630085.107	ACK
+1779630085.107	MSGFROM the-whispering-knife pusj_49 RECOMM K00000005 2437615536 JACCUSE six_toe
+1779630085.320	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 pusj_49 vlky_38 ptuv_20 piyw_24 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42
+1779630085.532	ACK
+1779630085.532	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.532	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.532	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.532	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.532	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.532	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.532	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.532	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.742	ACK
+1779630085.742	ACK
+1779630085.742	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.742	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.742	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.742	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.742	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.742	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.742	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.742	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.774	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.774	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.774	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.774	MSGFROM the-whispering-knife pusj_49 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.774	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.774	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.774	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630085.774	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1431446934 JACCUSE six_toe
+1779630091.795	ACK
+1779630092.007	ACK
+1779630092.007	ACK
+1779630092.007	ACK
+1779630092.216	ACK
+1779630092.216	ACK
+1779630092.216	ACK
+1779630092.216	ACK
+1779630092.216	ACK
+1779630092.216	ACK
+1779630092.216	ACK
+1779630092.245	MSGFROM the-whispering-knife pusj_49 RECOMM K00000006 3532627141 NUC guolf5nkg43zx2iu6vorbv3a47kbxzo7dpnq05njcbnjiaum0uops5jxux4va0k5hpseu10v2akk94igk6hj8trwx1s5qc1il2u
+1779630093.542	MSGFROM the-whispering-knife pusj_49 RECOMM K00000006 3532627141 NUR 10398932786444910066
+1779630093.752	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 pusj_49 ptuv_20 piyw_24 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42
+1779630093.963	ACK
+1779630094.174	ACK
+1779630094.174	ACK
+1779630094.174	ACK
+1779630094.387	ACK
+1779630094.388	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 pusj_49 ptuv_20 piyw_24 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25 mvuo_42
+1779630094.418	MSGFROM the-whispering-knife pusj_49 RECOMM K00000006 3532627141 NGC 1 1m1fqmiwp04831tncsz8alvry260we1e6zjzfzmzamwb0o2bisx2o97uo1so82i339b9cgjadjy4zvd9jznose5n7hlqy7o5wamb,22dkthno0v1zfrtm3iog4wpe1dglhuv6uh6ewq2rn9438igx522o5w80u6j06f8njay45rjqmp1rpzlohyvvqmdivf7zy1nmtwmm,1gggfvg3xx804h3v992qdaeqcfl2xhg429t6iu4eji2j9fn3l1i90wki9hcvi46ga59rntf5cj1ftupy5vn81av1zxfej038aljm,n3k1dwalon89ttlt4s9mlmvu7cwviurutdt7zthha9gn17k2py7h74jiurbjqo39ew53tfnmxrtonpvba1agbflh9o1agngqrqa,p8212wgs8pwzgbdg87m4222kf1r7l6fzphjm4vfpmxojawfq731nwnuvuepmqaibijm0ogvbt78zjhywhnoez5k61hhq24cv6k4 2qiinq0plcypnndktjonawzie55ga1y8f01hj7gtexy3wccoxflr0o8wrdxjm17g9mcp0wulzfe44juuihkgerpmqgcgrixmv9k,m5klibtcqsr6bo85c6mozsqdid64n47peqp7nste62cmljf9h56oy2sdvydtbj3ww7s8ixwz7l1f3e8ktomxcdrwt3nm4oam8s1,16740ywzwvpcqd2eg6n1tm1nfkkrwdksqwli4fydiwk4uuyo4bv22us0lal75kmg0ek4ubbpj3mw0dy9v3lo1ntcohirimxrqli7,1jtd8zvzkaje72tdm505554zxtv2wr6xe81oost5xilpsxgi53zyobi91nr6c40k5kfk18jteney9vvfg562hkl2zzje9kh5z1vf,1pc1tkqmmw6r03zlbkj6ms34bdm2c60ovzqh4zw5db4fy3575zuq2a5nn4e9s3t0bsmsw15wmigwv3mb5egnlrxoeb4d3egq7xwh
+1779630094.599	ACK
+1779630094.599	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.599	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.599	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.599	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.599	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.599	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.629	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.810	ACK
+1779630094.810	ACK
+1779630094.810	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.810	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.810	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.810	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.810	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.810	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.810	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.840	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.840	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.840	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.840	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.840	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.840	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630094.840	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3963583531 JACCUSE six_toe
+1779630097.430	MSGFROM @ pusj_49 RECOMM K00000006 3532627141 NGS 1 2 3zuzuncs7zkujg2bbdcg57bgukz95azk3djvlnye83v19evupc4lvp09z6fmv282kqeydp9at9la404eyclyzlmi84uumv42vw0 R
+1779630097.430	MSGFROM @ pusj_49 RECOMM K00000006 3532627141 NGS 1 3 eqqswtupmxdwnmn8aeqk70zte0nzq6aqtsyv1r2rairzb6s9g25l4mlbhnno2zx6azz06xm6p4l3xvb4syic1ku3rhnf09vondl R
+1779630097.430	MSGFROM @ pusj_49 RECOMM K00000006 3532627141 NGS 1 4 mnhmgglz1aqpw1kprcli13nfiiv5c8r2nbjf95y4k6x2yxvtrb3qu5crhevtc2x629g8v7dvgl84by38smuhaicngfcnepmzlpf R
+1779630097.430	MSGFROM @ pusj_49 RECOMM K00000006 3532627141 NGS 1 5 lp5uke1zpca6veyq97kv505h89029dioy3muw30b0kogfi1cfll6om2zgcc8knumlsqfencu6dxn3fu2mdwg3d964f3pocf16x7 R
+1779630097.430	MSGFROM @ pusj_49 RECOMM K00000006 3532627141 NGS 1 6 wdblukpz8of81zzogs75m4hgmgkm3ven3orz0d9wjttg9qdxfblhxskcjnuycv7tmru9ba7c4h88ijte86es6k2x609jg4m3m91 R
+1779630097.430	MSGFROM @ pusj_49 RECOMM K00000006 3532627141 NGS 1 7 pfp731j1cxkpap5yieil1e9obc2xgnnf9jsskf01vac01sjlx8j99o8ck1ux8701d6cgfbnxwp1vary8gzzskuimiokh5m4fuq6 R
+1779630099.689	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 847250653 PROPOSE
+1779630099.689	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 847250653 NUC gcaf4kzd8cf59y3mpbij37hlqzrpn2todurwfbt434oieixpcglnycfmbszh1crrytuiyisuea2frgrjkr38fkgbm4b9agydgv
+1779630099.689	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 847250653 NUC 509olr4uinszhwgepmulnt43u8eaomu4cs1dssy0pngbvalcfc0poce89z2r0kcvgz1x7j1807h2wgxrwtgznp74r8pihqfxbet
+1779630099.689	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 847250653 NUC i4b2fpxdbq2yx0gd9vid86kbf4kua8twl950joqb31xq6quhh1cdouvxuzf4l1it5krm1bv2nqsl8zgmyuc73pnsctjsemvkjsh
+1779630099.719	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 847250653 NUC 5wcs2aykkbyte8b84cywrusnxli1zry4dx39sjrds16iz80tz8ku0jov8b0v69oc0msk0s4wme81hsmpkcnsnws22f377g1mw59
+1779630099.719	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 847250653 NUC k8ntm4bgu85aw1giqgkd5rg0ryhbtd0166upv8iuqbhfm7cjeckiuvgd2trl48fwddmn1cib7tdd6kgcans1z7metivo8alaqg1
+1779630099.719	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 847250653 NUC q5biyl12bx7xi5xyd4ey1fdq8ajww5k4yv5caf88r65bepq6dteh9pthsp35tm8ovb6kb427qfpd1rn06a369l9ajb1tpwj91jr
+1779630099.719	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 847250653 NUC gpnectbgs8wzof6a6rgee8gbbfb3iny6gb04v4u6krqcsip0vajtrrz5bbqv3wws4n9e1s7ruv09xmzovl0kgvrf62ilk15tkes
+1779630100.893	ACK
+1779630101.104	ACK
+1779630101.104	ACK
+1779630101.104	ACK
+1779630101.315	ACK
+1779630101.315	ACK
+1779630101.315	ACK
+1779630101.315	ACK
+1779630101.315	ACK
+1779630101.315	ACK
+1779630101.315	ACK
+1779630104.748	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 847250653 JACCUSE ProtocolBreach
+1779630106.223	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ptuv_20 piyw_24 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25
+1779630106.433	ACK
+1779630106.644	ACK
+1779630106.644	ACK
+1779630106.644	ACK
+1779630106.854	ACK
+1779630106.854	ACK
+1779630106.854	ACK
+1779630107.065	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ptuv_20 piyw_24 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25
+1779630107.276	ACK
+1779630107.276	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1952940586 NUC mm1wctnmu2b9g17kwi3nxjldvd7ft9u3viwj9unfb76a4jduuojftgei40dsaj7dp87guuzn5y4ueut8iu21s3nl42qmda3zm4t
+1779630107.276	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1952940586 NUC 5pooutdeigq363i808x1krmsydvpf83mv98iw8ol20po6iy9i7yowo5r4j8iebbb60pvvwl6wal2yekrrk2que0bzwn6to4hzlc
+1779630107.276	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1952940586 NUC 11j168bmpkzqkuorv6n1sb8lgoftnlhpxytze1kcaqv4z1ei70v1nn42t08kndi27okm6dsduy8vfmc27may645oc46dvksiqlev
+1779630107.276	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 1952940586 NUC 5gnhuixrse20jwk8zc60p9fwliyxbtya1m8sq3y1z28ewy4wnqc6jkhfzyrs41gc57tzzz5w3p046y2xxb7vxgwjdqwjz5dgzp5
+1779630107.276	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1952940586 NUC 3h76jjohdqm8ws7wplnd09u99qukjqr5sr5qzf3sgejrz49df0nm1p5garcovf1bk26r91tj6ibs00gvhtno50x9skjft1wn2t2
+1779630107.276	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1952940586 NUC ehdaw3d2wk4quun67ahni1kw9fti8du8t6dlqdgmhpvve4dbxp0qhd014dp3bhl67uqip28lk3rcky58uhpj9ll0jrac72dl55l
+1779630107.276	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1952940586 NUC c63cve12vyld9d7tpizpuyhoc2mn8cop89usx158k53pbtn9y822tt8ydx6bd8xiypixi6e1qut2somths8qr7l16toophikpsg
+1779630107.487	ACK
+1779630107.487	ACK
+1779630108.571	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1952940586 NUR 12119390032529542660
+1779630108.571	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1952940586 NUR 13332540305628501601
+1779630108.571	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1952940586 NUR 6879814202544191667
+1779630108.631	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1952940586 NUR 10173100804788670423
+1779630108.631	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1952940586 NUR 4117083874212007167
+1779630108.631	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1952940586 NUR 4745711202873003320
+1779630108.631	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 1952940586 NUR 14530538713809148348
+1779630108.841	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ptuv_20 piyw_24 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25
+1779630109.052	ACK
+1779630109.263	ACK
+1779630109.263	ACK
+1779630109.296	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1952940586 NGC 3 k4o72d6kb3le8z98os73bp047407suazdz3ohevpt64os9qivr45zc8r29ixlkzjcldw4v90nhjgts54zgxz2qx1w6sx8d4q6qx,s5luiwhbkrk7u98mjixs66smjxsrzuzvr38d3fg2bgscnk5cwc2ebt150bmk8pov47ih91qzejr0uz42lxq0w2h3arkc11uxtm1,75ls77lej1fpaz3p76ua1gmlzpbugtlx73mlgvw3wkocitrr07q88unlr4te2x0lc66xzb9rxqjkico7kl079as5ncgz94uflaa,1f58sjnhm0enzso4rgmlhp7lfm455do6jz3asgmuf7q01gmb0skdfiqiocuydozmcya3n0nzgufpewzy9qvhvelx1nm357r04dst,stprakdq6vd9aoj12x5kv24hak6cflp0kbf62rnzp1u5vufic7o73uddvoy4utq8ik6ywkhvp0p7lvdo1r6h6jb5vnsaqm6arim 1vcj6h5llbmp5o7baw3ww6m35pa4zwyjdewnhctohjxfunu2x6xt1gi5q6qmhuib3sn476v5bsds69nipaooeiz3j8dq96rjp346,dou1lo96e51lva2i6hwzu0qktt56m0k6q2fhz4r2zm28m90rlqj0lirzyritczd993tupevy7jju1glpdsp2bgvupnkp57npv9e,2e5uyh2ivimo93x0mycbrg2tr8yyqo8qmjajmrzdts3wcdqbv5xflejc4bl3sl2j9abg23egw261e8opbd14ukwd8oyvljok0j2,1ztka38d326zdadcd2q9ynu915jstifkt1qpbrj2jpxlggz41p6iff2ke0y2clnp4ptk05of6zk5n58d0zb14mzd3li0dtnfg2uu,cson9s7g9lae04v1fjilpm9nzbmdi1wg7ske4791vjz7uhpm6hxs8zts3za5hkzja3fs0408klffc3owrro7epn3xrrx490horg
+1779630109.326	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1952940586 NGC 9 w7j3icxv8rm8sfuemgbmrpxkjvz682uw932mryt6l8tf1b7vcbukgt9ssjxidsv3quhxvfawp8aowgpn0pfem7t494wk3nogu4i,1osclijb4kvurr92xsbhanik9wcznbqnwwvbayi0otlhx90s9bp4kwex6x34rd09jbo4oji2dxt60dq452ola42agvfwsambpuod,15c3i3fh8pallet0tlb1lm1c65d5gns98md381x5dmzxahgdpp8frq1bjo84w7vtu21gq3t3sc4o0nl9sh4h3lzooz7zr7gquu3z,3k5bjm93fhsj2iwkutfjvrgzcpgkq31n810lolyf6ondncwqp37vh90z8ugy5h8qmclmr8udm58x7sjka61xwnbymubllk309x7,i0dzape5iod5lb8wigxuxyw13lhgosp4rpkdw7rmhpn6y96u7svany8r3gnfofrrwewxdj1g201t1fk8i89guqzk8xh2wu2aub5 1s2evv99axmqhty7claero9cv5qxndaloeb6oxu90kfi0m8h819oj7y097jnwbim14ffq7jbej6l5qd3fpm5937q9syjpy6nbx8n,11jfafkf7717jmtoth2ugn36leui0tasfrmdmqiv90umbr0zr3q10t87alyl5pagtdiydf831far7mblrdaquv6rwuofqptnbafj,1swhja6mwdzqidnqj18bgkm8i16vcy0unh7073cunjurbeinq9vmgtnpv2yv1v6oqbiq34lx9e5sizw5ag2xmz94gconf7sosyiq,1z97px9bafh29tgidcsinbptokpl63cctzrgvzuq1hcphzdnikl4iqry5dirkkhh6hon5oo47nzrc1rlbxtuejlcipb7ys3l5gqx,6pxf6s4g7fliggy9aipbapiydvpohknfnvf8ittrchhh60ynutrbqe6yr4ma8nega7u82unvg4pk42pyxgjy96rhini2254lyq9
+1779630109.326	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1952940586 NGC 5 1gy2f1mmyoxkz3z1cnutmfp8lpjoeyfq17rats1x2znkasfkz7jjlj5ud1fuyupf3foowbjuuiqjn8n0ekx0nmi20tz07q1k63uy,sb3i1zrh4vu5oixhojbbzl5fqt87u32io1xtouyeb3jyjuzn7xsspzsaph51jyy24zurbsyw8b0c3ylqnjv0fksknok05qlpt8w,4jy533ey3mxqzzkqmxe9fywrw2o44v89h9qe1l8psh9nynz469rbza924i04srzhvz1w9lo0cm40281eo1jzp7w3o58am7tbmh5,dqtevwrs2es7idmfsg1fwt8ubelks7sleiqjew0fatc7f8lnxzjewcm4w13r39jatoiaos12ef6nln93rr81svvmwcluq6f064,1irtwbenc5w7uyi730sshvygjkm9rvatuebf1vz9t74ey0whlutye4es3tkhy8faz177mw3ycpnhjy17w3q97lsgee8t467p433i fitlq0oau2z3ku5f4qnaw7utrloadpslye3j9n5nauhxv1dubhtmjt4cyznmmcuqu2qxtg597pq8nukl58jl2gafx5pbicp83f1,9mjkwy1raxexqulcstdkputwywwmkv1kbkrnq15hovuyzneaxgk7km20jj9ud944sdcz4cs9kpnku9hoj9kfdw41nuju3d8lrtj,1pdeijl3ot597bhtn2zhx4eyrkqbe5m37fegglz3lf7ixprrvrl2cl2zhaks041x16y2m0prrpw1awwpeqrkdr9wvi3f3hlcykcc,1ji67ygfergfvxh8owc0oo8ocmqvv8mjtj9r1tltcksb72ag095vx629sxm7mem5tte9de8fhx08hdbcm9lv7z03d0490rfhuzgo,7gge3ajo8ss9d1jrdejctm211khghcd2t6wxpf76miq0n0ycu1k4cj1p9scs0seyapw2y3nmx3aic6j52ca0oebgcn7vcxg4ft9
+1779630109.326	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1952940586 NGC 8 suwz4i4uy0ozxqk3jwjz62cveuyk8a2iehdy9h0zmw0ag0acnrmymoi2uh1vb4fuqe0gk5os74ayv4xfx59g3bs5icg324dxvca,7jseajdd3v18k7hna8021xm0zge61eqrwdbcvixwp8wr988otwxn7mmbbbhynpum82gri1nperxk0gfdvrf3uhg4anc9f5p47o1,3copeami1myxk15ncmqdozxyxnbb3dtymuypgzvwfqs2i4v91juf7o99wohfh0lfwqsdnv5gpg6vsnz9tpvze02197rpv7nlcwo,qoo84g22qohe4y4skrzpyb3o5pgqn9in8ezidveynb1gxrom5l6pntwqvgsezwetbkukq60yhxqjsor4dgzp2wv8mblxazhqxcf,1b14qvt94b3xbw6rcvg4oocma2iitstbpaoy8lsunp4levwn1sujw8qtdmzgmdlbzhadfeax41l4knk4vqkxibzv2cv3lpfdmpo6 gq0430u1j2xgy5qutkzdj2e4tabo9xvtgqbglwi6tabtos8l2435ntrzsynklc1ee7h55c7lmw8kbnw3igcngj2kqapl46mixmo,1uf7b3tlf4yo8sg6k876ri5ivoee7wyptxjx4lxxosgbc3bpye356t2sacj6e0gzzjb443z1l9094bvxyae4nhgsb8dpdwuzfvjh,1u4nm5yxojualvk7ufqa3rkv0zw4iqn1rc71ft29gfwdpqim05nkc9ulr34h83b9keo8clfqtpk6493jpen73as7tc33kov9k3tx,1264xdc3jffuqslh5vhn1ik2q2awdq57t365md5sc1wauh2fojrqt69mjxvzhxxtgi8pdh8qoausdvuxuvh9kpbi3j77wli86slg,20d4q948y74p5poextgqpuxr66gm4k637qu8g751c16ra5tv6tr7d3kvmgfevb0paqr9yrorohyby1arlfg2gs4c31sfdvm4txsw
+1779630109.356	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 1952940586 NGC 2 1wfs0ykz3h6arzx5ebwz5zv6bts5xga3v3l5rymrpcvaotd8wbhw49v8to50cpi69a0zjpreh8t5xqrsyvae6u0g06ps1sr5xt8p,dzqxc72qnfi87lnf9tqb576rit80au44yq0nnas02rdhx6l2mhfdkmpduv1ru87bgdn6gwwf89twddep42mti0fj4wgz754zjfq,1dxj1l7hj29tdxk1t5upuwfj5uduw6f56v1co4g8x16kdost2mr5bibjhcf5c3n1yo480a8yd0pz7txlyi6s848708jo2sfogifq,1b4vx5r9qm6lbcunpglg9ouo6uy0mh18ljurkearnaag9coci9hlbb0tfsza9ny0psghkzcic00w5e52d29pjp49xh91j3r0neys,qw1bks8hveysvfp04hiau4lak7ktdy1g6vayc7sjbbh6n4hwal6y5s0vde1cp58jzr139igyo6a3uj3bto2s1caddox90i8kosz 1579526jsyhg49yvwu5v89vbf1ns1amcwsrtg8xww9hpqs0ybt9l44ag19a8xh955oar52dw0zaq4rw5jvp7c6k3d7bhkrk8gr8h,k6qf67x9ca928dy9livu9oa75bwvydl9x98nnsj05dtgvo0de2m9b6irt3ka0hntko206nimxrk3566fbxguq6gljlfqpdxo681,1u4kf9pipx2p8qz6obccqs0ychc2siq3yvc7b7pbxqfqtdekozq2sy48iectxspp4s3k5yt23n4f9in7c20kc1j3kgcvrr9s7snl,1mjqvpqb0646qpw1izmh045t7g8r1h76ukewjgsyp87if5pzb8yf34owqpw579l1s6pwilgifvi20lhr9z2a4u9hvxqtxlpjlqoz,16g25a70xca5a4j4dwk2h7knofwkoutyw2qxsxl7g21u0efsfcjhakqfuu82mfgu4xnbp7gltnuqjv2ml7x7o020g9un3i7o63h0
+1779630109.386	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1952940586 NGC 7 gs5me29zilthvlm7akl1ffeepy4pa6nnd04yctkndp5frw1gfknqh9f2gt3bdrywvtbvdosux6z0smjrxu6fzpw0bzx8ehq4h0b,12d1p3odsycbfd41gyz2dxw1b9mt7xegkryi2vvy7fzts86dye0ncoeamqdrv2mgc2r6jx5d6kr9xsmbi18oqcal7c5oz4fooui7,1ckyz0y65g9w4hj9x3kaqkj9j9zau4oiked59zx1obwdjhnkmmbrnxt96l67z75rc57h8ydpde0apmnm21szx8e85rgpnrc9fgtj,1uqz91nurunz7op2uv8nog1b6nrrjli4uz6v4uueemrda1vtt6fcjn2gpc2ee48xo7c0hfboqbt0x988bblzmkjr8037ehh38vyz,v647b3pdos1qm8v9qpnhrt57kcsptlbqnhdwfq2n4ioybr7gtet0zrw4wiue4k32k0044j5n0atbt0961z91f6n7fgiqqqlmd2l 8h4kgn4cnek3s6a6pw76vwzit7ood78e3960mj593huy8a1rc3ec0a9hgk5esxnqnefvenvahekjo22y1plod3baflbvi9t9rpg,23dwouv60dyy917cr1ktf2h4llbsftxm6qff3tdeqi025pbn72clmcxnea4pk052hqzih624ky44dlq1yl885xq2csjc2vyk1nae,e944yxom1mxmkbi4ito1kojznkqzu8pl0ay6qoi9u3r2pkykvl992pal7mjz4ybefzmivpdfgcl3nx7ipc8gmpx9hqhxwjnor3v,2eoetm4cil1x576xsp50xj43iewc47e79njzedels5w81ww8mhaob2wmdziuvflxib0vhu1ogdseage37qlfcehbe807cxn0rc3,1f4qxxsrezuregwy9wt90zslz4w6r9avdwfdda7sw4hhq4kzacojwptgl3z7e8e9q1r82dvgzxhd46l649ccgda5qs0ldpdm17gy
+1779630109.386	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1952940586 NGC 4 1sb2os251x2qg2mfjb5ajmia08itdppbgipdbxjpo9y8j3n8o7kn0pybmcd0t5mnl7nw9ld6w1gsowk3pidn7bjr8e2tldlixd9z,1p7quk652p1rj1kuxgc4p7u42z7ktn24p6tmf3dkx4ii60xy4hx2wh8f45l0717huclug0873tl8k385fq4ujboi3k3zyvlipksq,10la2vfl8da4871j46u6nqy983n0as2jdlqu74zt6vg7k7ueyntiupa8378vpdsabvye2dcz6xu6472d93cmx8nl797k893w38cu,od9yanqz648k9kn06n5p1szlxgqxunyd1i9c88cxe58wufoqner812ymnh54nunwir7bszq6a3u1yq0ah5zepgyxu1rl7nahu7l,5ba2meexrdxnpusfj8w7byg6hfw8xrb77zq3wnd1vbwe3x5a30faa4apitoj34yz14aou405nr7r23h8asf9hveoxrst0sh7nty 69kvalpi7e524nr3s1tm2zhn2qjxwmfuzshdd3wvpp6p5gztcrnvp4trkfqr6xhfmhlm6jijt69qfd0svazkb8et89r1kzw724z,mzib2er8g49hp6gq32qydnq5l09pjdfzjhxdfc78yj7etf0du8apge4jh95y55jqb916d5f7v2y1eb8b142w47l3vqsprombkvv,1415f3y8toaogtoos0qu9p5qavajcy4jxc54c01w9gcilsti53i9xjwen683gi3nj46hv5cu627mveb5qibwqmx55gndqvj500gc,e9hs9du5agz1vqfrbzwqn68xr4c72c0ruifj4hrnrap6g0mgaogqhclhjamyk54qzkfsujrzpwnfw9pdeizjyfknqabd9g64d95,nbtdev14pf60cc1cf7x9ghh4qsc451gb02g9jc1fnqlay2gdoct0zce90w7i4h8wkpmfyxx48suh5q02osnvj3dmiqmmo0e5d14
+1779630109.477	ACK
+1779630109.477	ACK
+1779630109.537	ACK
+1779630109.567	ACK
+1779630109.608	ACK
+1779630109.688	ACK
+1779630109.688	ACK
+1779630109.778	ACK
+1779630109.838	ACK
+1779630109.898	ACK
+1779630109.898	ACK
+1779630109.989	ACK
+1779630110.049	ACK
+1779630110.109	ACK
+1779630110.109	ACK
+1779630110.199	ACK
+1779630110.260	ACK
+1779630110.320	ACK
+1779630110.411	ACK
+1779630110.411	ACK
+1779630110.471	ACK
+1779630110.531	ACK
+1779630110.531	ACK
+1779630110.622	ACK
+1779630110.682	ACK
+1779630110.743	ACK
+1779630110.845	ACK
+1779630110.845	ACK
+1779630111.042	ACK
+1779630112.309	MSGFROM @ sgyz_47 RECOMM kVfx6hca 1952940586 NGS 3 6 rmzfcgwq5iyq52u17bzalzzvhmthxcat9cvs75933mlaivwwn2f6xhh7g4zih1dukip9nja4q837x003npac9yp77a809sk4ord R
+1779630112.309	MSGFROM @ sgyz_47 RECOMM kVfx6hca 1952940586 NGS 3 10 4ooutx2gyxaz9c7056yfxnbb1h9rfynduxaqkp9qk7y39qi2fayy3xi7uf9z8ap5y6caza3xu8fyf7xxjz0s9w4zujh8v4rq1ye R
+1779630112.309	MSGFROM @ sgyz_47 RECOMM kVfx6hca 1952940586 NGS 3 5 ckor68g7iq74tuzi2ybeei57m4lmx44ekt2ttw3l8dmbe0wzyhsfx87mvq2796q869zl0zg3i9getol9zyyofhq602gs8qwogio N
+1779630112.309	MSGFROM @ sgyz_47 RECOMM kVfx6hca 1952940586 NGS 3 9 7whqagthkcskng8h8sxm5zr8jcnhge2l3yxod9vju2zcw3px2pg4rczfrxj0bgg8zvab5drami67g397jlw9ezloba0xq847z9f N
+1779630112.309	MSGFROM @ sgyz_47 RECOMM kVfx6hca 1952940586 NGS 3 10 g72p41ew5tcpjb7sh5fisz2t59k7jbopgyyyv7ukosm5eicqm2r9rh2i6wmmclyasqn7bn0zxtkrn3d74asd7kkn0ogwx0sfqy1 N
+1779630112.309	MSGFROM @ hhvl_36 RECOMM kVfx6hca 1952940586 NGS 9 6 rqvu4j69bft9awnioghqf9p1wxv2htpjcupy6x7ltccjt1uc7un1mb07xmznk6nnt4ve7u3c8cq572ttqdh5oxgg2dk8gk2q9cs R
+1779630112.309	MSGFROM @ uinn_17 RECOMM kVfx6hca 1952940586 NGS 5 6 xg4hwkf1oaghw4rz298kqsnwrtea2mlmafb30k2rjp3pxodxkmk6jdswj61y7ulc8eij8xbtdzw0ffueve88uh2wnfzy223taau R
+1779630112.339	MSGFROM @ hhvl_36 RECOMM kVfx6hca 1952940586 NGS 9 10 mzhkx5gapsdb3ptxitl3a3orujyo4y4ea8qofvapyoydyz81vf4lvlc5v2iyoc8ikzh7s7i1dr4onq7zz0qkkjbpfhhnss9l35p R
+1779630112.339	MSGFROM @ hhvl_36 RECOMM kVfx6hca 1952940586 NGS 9 5 uui7t95yghkjoub7vq9o64g0mghysmrpeyuv590dj256p0290bbppl7b8qr768bu7eobiwcxag90hdv2yes3h8tlatadw1favjx N
+1779630112.339	MSGFROM @ hhvl_36 RECOMM kVfx6hca 1952940586 NGS 9 9 ch10v3gjmaemquirik2digheokfwea5wv7mrbyl9l57gzaj1p4p8anwam7gixtbxdvj2zgip1nllzhvscwwqneq5c8cv3o9viev N
+1779630112.339	MSGFROM @ hhvl_36 RECOMM kVfx6hca 1952940586 NGS 9 10 2f5agsisr9tfxytse1713arrgfqzpmpixldpg5zw5m6jcr0r81jn0jbnxq98ukrjre6fh58368myjwvo3mv6jeg6rv1blp7prcw N
+1779630112.369	MSGFROM @ uinn_17 RECOMM kVfx6hca 1952940586 NGS 5 10 k4v2484891sx1yb2cxv9dd5s5g6cu4tfidux8m25sj5vz5y7emnjvyo5fovle862tlzb1s7reeyvlw47obefe4j0e7lqr86h9wa R
+1779630112.369	MSGFROM @ qyxo_26 RECOMM kVfx6hca 1952940586 NGS 8 6 ngajzljrzhb3vq43qi94g2a8c7zhew9uf2zchk5kbgkgtuv0ckapdly4xcj8xfmz5ogohcyvukclqd5jjidx4yjcz4nduds2uq3 R
+1779630112.369	MSGFROM @ uinn_17 RECOMM kVfx6hca 1952940586 NGS 5 5 e3g12o5ctkkdqxts3asbu2b8vkrqg1kzh1ejmaqymk6l2exdrz8835uf5w8wghvm441jtx9f6nahsi3rt7sce0s87nt2jnvjd50 N
+1779630112.369	MSGFROM @ qyxo_26 RECOMM kVfx6hca 1952940586 NGS 8 10 6emwhnmgopki0pcjk4jqor3a9powhbclqwtnckptuqjuh02n6ad4tg29ands0vnnbltife4eb1yfhz1nd024eteabp0mr8rp597 R
+1779630112.369	MSGFROM @ qyxo_26 RECOMM kVfx6hca 1952940586 NGS 8 5 eistnnk9mo2af8wb45cspsnem22vmz9fcrk6ferbhypt4q62tr00cdy35kx00o1xzuunwb9s92pgeov2v9eviu6gz3x9ckqf8dd N
+1779630112.369	MSGFROM @ qyxo_26 RECOMM kVfx6hca 1952940586 NGS 8 9 mskx9y5eygwxgoiiy3qyb5usd1vq337gtx1nu4taz4w53flt7qb6ntlsv64fan8q0bmsti4bheurd9g51cgwiqciivwdbt42qfs N
+1779630112.369	MSGFROM @ qyxo_26 RECOMM kVfx6hca 1952940586 NGS 8 10 2tjailucf21nctfy6rin5bvv398n0zf0ynh170238gsc1437xhst1rzrn8chpg83b6eixh8m4sozinnc61h964q3uebvh4t3s5u N
+1779630112.400	MSGFROM @ qksp_2 RECOMM kVfx6hca 1952940586 NGS 7 6 dzehnwzwgdu6b70ja5e1clfavkiawsfyi3yuaxb5qc3gx777fozl5tlhfovgrmwk82k0h11kqriug5xu6j8ncqjrtgw42p237rg R
+1779630112.400	MSGFROM @ qksp_2 RECOMM kVfx6hca 1952940586 NGS 7 10 2rm9o69yd4u5x2c9dhxsenensfpi757l4d868ht4372afmhlv9x3bi1noqhcb3urmjsz68lvqxhg0nxx2muxpxhsor7hq5g0uoz R
+1779630112.400	MSGFROM @ qksp_2 RECOMM kVfx6hca 1952940586 NGS 7 5 vg5ywkzggga251x248gldhxtlebj1zspc07ur39trho30y924b828gcckgsg9jdp97uug39une3kuhq3uf8p54wsutmn5xijpqm N
+1779630112.400	MSGFROM @ qksp_2 RECOMM kVfx6hca 1952940586 NGS 7 9 pluilhjqg3nayh4bw3xuo3pv369fo3slsmno1lz0c57y30hst37aickuk131thjc9hl3hcejpz0i00fn63z9lmht839s9exw6qq N
+1779630112.400	MSGFROM @ qksp_2 RECOMM kVfx6hca 1952940586 NGS 7 10 9pacchy25nr95j43crhpl8950wns6fwhuhtmccyrc8tnb74xc4oe918ym4f1oxpldl060gzazr75byudgte7757yp2drc8y1osk N
+1779630112.400	MSGFROM @ uinn_17 RECOMM kVfx6hca 1952940586 NGS 5 9 na106px3kmb447bu2euo1flt676zbz27k3u2z8j7o7jf1uhyvrs936brl9ivutr5364ajiugblp3gi6r4u6k36hjjokwtabq6z9 N
+1779630112.400	MSGFROM @ uinn_17 RECOMM kVfx6hca 1952940586 NGS 5 10 k85m6e5mh60kzxfagxhaign2xyznpkd0htgx4cd2af11vf4k75gutkrs7hd7x149h2pwrkg21osh4a5rke0japfjlvm14ur4n3n N
+1779630112.430	MSGFROM @ wxwy_16 RECOMM kVfx6hca 1952940586 NGS 2 6 evds2jeb0vpcu9buwr5lrnjqmlg5hftiis0xfoznz6u40euva2rqmnjk3bgt3age6l2e6azmsp1wf8xver4c5f4zvzbvzi5ni6j R
+1779630112.430	MSGFROM @ wxwy_16 RECOMM kVfx6hca 1952940586 NGS 2 10 3xzdoa8jbw4pvm4xzsy36vdv2s18r8x8qtrr0j6q1flu2qrwu2c2jqfw0nq5xd7afhsf5e1e6xa4c6h1l672y5igjhuol2rgp5j R
+1779630112.430	MSGFROM @ wxwy_16 RECOMM kVfx6hca 1952940586 NGS 2 5 mf69l9lwe9ekc6guri9fbwm2tmmz05krbvh1cg1zj2igp253t15gzgfrxf5ju0hx4jfcmp0cdkeg6zbuxvcg7d1x0viiqqrlq76 N
+1779630112.430	MSGFROM @ nnhi_0 RECOMM kVfx6hca 1952940586 NGS 4 6 1jcaggqrx87w91h5fd92tasgatobozby6sx2ftjuzepjopgek6adqy8r5h5ee5oz40dxd9t9gx8qsdby5xg2guitjf41ritgbhu R
+1779630112.460	MSGFROM @ wxwy_16 RECOMM kVfx6hca 1952940586 NGS 2 9 k5kc0xzpul301gfubh7uaf7kggbt8cab2fpoi24ye0wud24b62380py9dpm0i3y9vkednuodq58767h55c7w32l26k8dsic0axt N
+1779630112.460	MSGFROM @ nnhi_0 RECOMM kVfx6hca 1952940586 NGS 4 10 wksd9z79z9ecu6rdhgyf3osece386akutcg3a3xyiijs2g5fliymkl2nh96ngj2wt5vqqipl26ejbjdvfdfp3r7djamll25qyig R
+1779630112.460	MSGFROM @ wxwy_16 RECOMM kVfx6hca 1952940586 NGS 2 10 10i3ljcc9rxjpb9p5jdgrz2t7l8s6263xci3v4lkclodgd78yxi4g0iyfd4kkadsp6kr34zicd3a9v6yvd5e2df78ktb86j1oeny N
+1779630112.460	MSGFROM @ nnhi_0 RECOMM kVfx6hca 1952940586 NGS 4 5 5sey4uxz3ijob5t42a6ve7x5ulxekwljarvhwmdof2wteslph7odnoxhc73i5j55xqlqcb99e270y2wt54w1zhgpxe676ds2ugw N
+1779630112.460	MSGFROM @ nnhi_0 RECOMM kVfx6hca 1952940586 NGS 4 9 mwxkcwrh87ia3ala4rkab2idajdse02sd7lanzaj0ca0ukdmxc84gpf37p222pxspn6kn14iexgyum7umvfn9m179k5xa5i9ds8 N
+1779630112.460	MSGFROM @ nnhi_0 RECOMM kVfx6hca 1952940586 NGS 4 10 qnbn8xunfd1hb2p667py5k9js6jwz3lpe3bftcbio97aho4vani3syy5u2lhiekppl29mfipa9em4xx5dt8r4hnvka8ydksys4v N
+1779630115.562	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1952940586 BR 3 5u8g6iib6eu9dq82cs7ivxpr1zp5fmvsrmmn0dw2dpxe0ticq2utg2fs8je46rqxb0q54wywgrj0seua11j02bdyp2fvlp9c3eb
+1779630115.894	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1952940586 BR 9 1150331qs8w651vmjav3tceea40u8s3szhoxb88otto7k5bi3fbotw2f6f7yuct3wvtazuabyuuhy055og0sxom8ol6i6bhb5za1
+1779630116.742	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1952940586 BR 7 5qsi2div648o9q67z4gq0hey9s9872y199m6v3dos4hioryikajmd13f7qvgv69xem7o8yfz841wsdgb03ixcke8kwmvbmwqzry
+1779630116.742	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1952940586 BR 8 8tiw5or0c01xpsvegot6ns1vvofgxc58a0kd99s3k4fdkxo9ubjsn13t6ffmomklultk7sv463awh0i8s0se2m3yydfvvil3zhi
+1779630116.742	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1952940586 BR 5 dsqspou901zq0boj02i7z940xtouq7d4q5gz8rdo03v8qjnourpt0mj98nxplzafyik1r8cq0hp6ukmcomuc3bxg0ui0lbbt7uy
+1779630116.742	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 1952940586 BR 2 hmc8ug56kuswyzi3w6fhb8li1ma5nqb7qky2bqsknqrjdwc14blbad5j6j3ez18lfto57oo3lcw30ngos40tf7jah3k4vsdb1xp
+1779630116.742	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1952940586 PR wfm4jia2wp5faytmddkpo5oesdgfcjbyf127jw4592vv08uboto15l0vl3ol789gem00t7jxmu2kzff9unagmoh6uqxux3wq9df
+1779630116.742	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1952940586 PR wfm4jia2wp5faytmddkpo5oesdgfcjbyf127jw4592vv08uboto15l0vl3ol789gem00t7jxmu2kzff9unagmoh6uqxux3wq9df
+1779630116.950	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1952940586 BR 4 u4cqtyilencs2qca6wpsa6vhc9paukqnqgrraoey8zv5gpi5ihanebqywvdh883o91r1yq459vs899793xicv9dzsspu17tasgn
+1779630116.950	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1952940586 PR wfm4jia2wp5faytmddkpo5oesdgfcjbyf127jw4592vv08uboto15l0vl3ol789gem00t7jxmu2kzff9unagmoh6uqxux3wq9df
+1779630116.950	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1952940586 PR wfm4jia2wp5faytmddkpo5oesdgfcjbyf127jw4592vv08uboto15l0vl3ol789gem00t7jxmu2kzff9unagmoh6uqxux3wq9df
+1779630116.950	MSGFROM the-whispering-knife wxwy_16 RECOMM kVfx6hca 1952940586 PR wfm4jia2wp5faytmddkpo5oesdgfcjbyf127jw4592vv08uboto15l0vl3ol789gem00t7jxmu2kzff9unagmoh6uqxux3wq9df
+1779630116.950	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1952940586 PR wfm4jia2wp5faytmddkpo5oesdgfcjbyf127jw4592vv08uboto15l0vl3ol789gem00t7jxmu2kzff9unagmoh6uqxux3wq9df
+1779630117.762	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1952940586 PR wfm4jia2wp5faytmddkpo5oesdgfcjbyf127jw4592vv08uboto15l0vl3ol789gem00t7jxmu2kzff9unagmoh6uqxux3wq9df
+1779630125.326	ACK
+1779630125.476	ACK
+1779630125.477	ACK
+1779630125.537	ACK
+1779630125.537	ACK
+1779630125.537	ACK
+1779630125.537	ACK
+1779630125.537	ACK
+1779630125.537	ACK
+1779630125.537	ACK
+1779630125.537	MSGFROM the-whispering-knife wxwy_16 RECOMM K00000008 4287805027 NUC y5nnlk3vdqjcf8n2cwnuednj9m5ze9v7mfa4l8x9qte5hbjws28f3bjfjo1c8da0d9tubnpltnyowdb6g0nol72orpyyw63ozr
+1779630126.863	MSGFROM the-whispering-knife wxwy_16 RECOMM K00000008 4287805027 NUR 8410648800186310321
+1779630127.074	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ptuv_20 piyw_24 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25
+1779630127.285	ACK
+1779630127.496	ACK
+1779630127.496	ACK
+1779630127.496	ACK
+1779630127.707	ACK
+1779630127.707	ACK
+1779630127.739	MSGFROM the-whispering-knife wxwy_16 RECOMM K00000008 4287805027 NGC 1 1r9l767bwp68jujmhh9gh1ztfbfip4gahkgw7pn1yeba48przh1zykaa2bfl62jlih4om55cra6zt347gry5e6b37tgij8ytfb01,1v3km7tar0oxyk29ci7ev6e0ppijcgq6j39mbpshd4wwdbyg1d3gaqhbcrtg54ft5s17ytgocsckzfvu2km7ftmt7edab0wj8ykj,6lmlnvots0hoq5ipmqc4dloob2eyarrjshjvwxg3vqira52vvk2ivq5t9l9om3r2o795d5s1htlb40hj0093qa605mrtydl8dhe,314vd3dfsj24h1c4t7039o1oeifgxghayi140wfyo2fd9s3nehjrqbn73e3jzodxnbbej42499igzktqficm06qmot1vritv181,1ebnym0i6hokj48jdmn1vmkkolfl3h07ge96pe5zt321rq7a2fjlcrhpi9wzbx03d9yl5g2y2n8ils17p573p5wmi88m35xurxsg 1oc9xvk2ewdn5l32h4thhmvttztjdes5rj3bz7kt8l7trduas27f2n59d2bgpuxo8kx4ortqb9trqsslu8fneq6n58sxojr8r3ge,1443lrdeok3y8mzgrqvaspjifdsn5c0ry0n84okqun36t8g1ofj3txq13tptezu294lb9k52oz29c92hcz3vupyx1uo9vv0vassf,bnr6tkdb1t9iyg4zbqwk29fdqqxetotjnfk7vknyw5omy96ldvnuyyci94uzrfnuvvflmmvly6djuyrh1fe1h2okyt81cd50z1j,m8i84n4frpl1wixxngjbptanfq7hx5zc0p7za79a4xqbhjivpqq8ybhnbashoyvv1n3lptkdfr2hzdf5t3gzs2a48rd93q6vyq2,1mhl6il5yvu5u2q6ezz5ehbr2bfvy77havqglh1kqul1v7s60ujet1r1hk16hlhfnp5nef1z33zo9pitex1p8lzml9ud0eaj3yco
+1779630127.981	USERS six_toe sjsv_15 nnhi_0 jizs_32 wxwy_16 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ptuv_20 piyw_24 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25
+1779630128.242	ACK
+1779630128.242	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630128.242	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630128.242	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630128.242	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630128.265	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630128.265	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630128.379	ACK
+1779630128.379	ACK
+1779630128.379	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630128.379	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630128.379	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630128.379	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630128.379	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630128.379	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630128.431	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630128.431	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630128.431	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630128.431	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630128.431	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630128.431	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630128.462	ACK
+1779630129.549	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630129.549	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630129.549	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630129.549	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630129.549	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630129.844	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 232206044 JACCUSE six_toe
+1779630130.753	MSGFROM @ wxwy_16 RECOMM K00000008 4287805027 NGS 1 2 yl2f81zon40wmv28h4ek2v6pkpx9wsiv3x1y68ntmm852n3qgg8zp0l3r0pkvdtn66akt9ps5oczlkj73to1ge14fohwz3banbk R
+1779630130.753	MSGFROM @ wxwy_16 RECOMM K00000008 4287805027 NGS 1 3 6tbumch974fioh7xlfhhlbxcuyhyi7utk50bzxbkagml9g6bfj2dn8k7o4wan8xcwf1b2c1ja3qys9mylb9tv73hx9t2ychd65g R
+1779630130.753	MSGFROM @ wxwy_16 RECOMM K00000008 4287805027 NGS 1 4 m6b0hi3y1h58zvpzidgbavzaxfxpsm7r457aq31d4jhgzmuxu53203sflta7rjgvnuz56u96q9vr38cb2vygnj745rvtz55kyrq R
+1779630130.753	MSGFROM @ wxwy_16 RECOMM K00000008 4287805027 NGS 1 5 kcxgi8luhp0lx0z2q35krpp5nsiclw5fnqsta92zw9umlufhgi9usn4jbjeorkqlkrzumxcjrq015jsy9r3i4cqyg7vr718jnsc R
+1779630130.753	MSGFROM @ wxwy_16 RECOMM K00000008 4287805027 NGS 1 6 xgkf6u2o4mrh6eeyv6upx217p5jappd8epqoqfqwcs5qjp5ct9w6ynw9y7ewdlmfnf9c6pbn1tjerf0xgt1g5frgeusve0nv9i7 R
+1779630130.753	MSGFROM @ wxwy_16 RECOMM K00000008 4287805027 NGS 1 7 xidp51jydpf3391l8blospkdbt921ub9hx1zatnm1tz0iampail1yd6o0e029zsgxw1rmvjqv2sqqqc6wry8198xuxswy5nm76n R
+1779630134.554	ACK
+1779630134.765	ACK
+1779630134.765	ACK
+1779630134.765	ACK
+1779630134.976	ACK
+1779630134.976	ACK
+1779630134.976	ACK
+1779630134.976	ACK
+1779630134.976	ACK
+1779630134.976	ACK
+1779630134.976	ACK
+1779630139.888	USERS six_toe sjsv_15 nnhi_0 jizs_32 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ptuv_20 piyw_24 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25
+1779630140.098	ACK
+1779630140.309	ACK
+1779630140.309	ACK
+1779630140.309	ACK
+1779630140.519	ACK
+1779630140.519	ACK
+1779630140.519	ACK
+1779630140.730	USERS six_toe sjsv_15 nnhi_0 jizs_32 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ptuv_20 piyw_24 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25
+1779630140.941	ACK
+1779630140.941	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 2546689869 NUC 5xv7l4o02yqtr3b8i73uzg21111ism2x30gczmhdw31mqdy4u6hkqygduaaemgiab1wu3nwgqbatnuf04b884cwsskny29o6lfc
+1779630140.941	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 2546689869 NUC yt42a3xhkl5k05243re1n4k38utdi6biibgu08jdk99vht0a6a7lywmnn4i8b85qo4a72pgbrv2q7xez540oj4kt0463rxtt9th
+1779630140.941	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 2546689869 NUC agiih0hdjkets8771y4i48te0ttjm981e2eqgkkaetp5sok698vvf7kze08xfytirgd2g3x5kvtu8wz017dcdqqgbe998kfemw6
+1779630140.941	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 2546689869 NUC 6uta981pww0i8wfszvp7q0e2n4k7z8vvwthp3pvcgjn2kjslsx3uhz94h2czryvjuudoeajt67289fwzwjlkn3joeztugt8wn93
+1779630140.941	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 2546689869 NUC 11cf3uixnjbjmaz5prj4e2opmjxqybp49wvp6n6alcstt3cfdnr69hsec0is8kj1c079s89h5kajau5ydhy6dyvcq96zw2v6jlt7
+1779630140.941	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 2546689869 NUC bqgwz5pj185muy7vma3o9uwgvqdvm5lixcpyy6jelh8k71o4y9d79jpbzon0nj194wpomcwub0pexwwadw5cyq61ll7gzy9gkdw
+1779630141.151	ACK
+1779630141.151	ACK
+1779630141.151	ACK
+1779630142.358	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 2546689869 NUR 6257810419495339534
+1779630142.358	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 2546689869 NUR 61784165668797392
+1779630142.358	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 2546689869 NUR 8018399162592868459
+1779630142.358	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 2546689869 NUR 3348376619713185375
+1779630142.358	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 2546689869 NUR 10931437067597135384
+1779630142.418	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 2546689869 NUR 8090490293906557990
+1779630142.630	USERS six_toe sjsv_15 nnhi_0 jizs_32 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ptuv_20 piyw_24 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25
+1779630142.840	ACK
+1779630143.051	ACK
+1779630143.051	ACK
+1779630143.051	ACK
+1779630143.051	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 2580730089 NUC 10a9ntbet0bkakxcbasho0rjl2yw1ksiha30rqoq35fjseqp9y74y4g8gcxqsaie2pzgri817r5w47ypflp51bni9ixfgl2ixn8n
+1779630143.051	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 2580730089 NUC c232ng11hcled340nni0ejhcfdprhjobo5hu09xynyqrf9o5bk03e71yli74cru54t8yzr9vt696x0w9x01dbvsqhy6f0vkeera
+1779630143.051	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 2580730089 NUC 6ivw9mkw30v0e55bhdegtl80zqpp3a0n8g9jr7tdwt2f7rgb03np8smyvn76w3blwcxeco9ugilr60av8zyeicv65v6tphupko4
+1779630143.051	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 2580730089 NUC c41bwrf6yr0pwlgk64at7wxip3lljmsvkcws39yktu4hr9lv9329xdrv9268gxi8npy8v90cf6yeg5lvoqndmu5t6j0ii0ygfo5
+1779630143.051	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 2580730089 NUC fm5gya566tn2o5tlqx0xsi7zmynxjuee6dt1f492jlloxa42gs0pihjw1infge39md0c48eu52kolyn89aizim5pxwsqq39wkco
+1779630143.111	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 2580730089 NUC yk4pjykjovr3a1bqblpixle73dt82fy9go8ggfg4jfh56mv9g6dzitm2tfqaloz5qefpuueylpy35fy2r50gmhnj25uxsfeucvv
+1779630143.261	ACK
+1779630144.224	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 2580730089 NUR 51071106452425436
+1779630144.224	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 2580730089 NUR 4873896041543807852
+1779630144.375	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 2580730089 NUR 3153562955935419183
+1779630144.375	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 2580730089 NUR 14390745253182495259
+1779630144.405	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 2580730089 NUR 11850171980083426865
+1779630144.405	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 2580730089 NUR 9070321975406368027
+1779630144.616	USERS six_toe sjsv_15 nnhi_0 jizs_32 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ptuv_20 piyw_24 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25
+1779630144.826	ACK
+1779630145.037	ACK
+1779630145.037	ACK
+1779630145.037	ACK
+1779630145.037	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1172524002 NUC io5kqtaru299p44ldkbv52w2udzt0pkdpkb6l7cxwfpqrpy5dml0fjlszims7zcyb5yqem1qxj6kgukfa0mhl0rb5rfox4sfaxc
+1779630145.037	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1172524002 NUC sth08jdrhgrnohw7u60z4x8gsr7wfcmyyuftfrbrwbp2f87ruokh84fa3x313zp9rokog3v4ghog9xjh2y0jzutmc2btm5n5yn0
+1779630145.037	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1172524002 NUC c9agtqe090nmnzumu0ankl68evctqz2tj4axuxzezh4bppslnj9w06irpzner5x74zvh0mifk39aedd8syjnmmdl50k8jvl52d9
+1779630145.037	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1172524002 NUC ndf01q3u8k7n8g1e0311ypg9o3lca5wdwixug1pyjdhtr56wdqsctr15afa32mpmu6d8wqdn4wcgmmuuu0odqksg0utwqtep70x
+1779630145.037	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1172524002 NUC hffb7exu5gvyigx2at1em1vcnygr62ak46zj28tslv217vhtzs22a6ds58v7devil500slwjfsepgsj10w0vxc2sbmt02x5kul8
+1779630145.037	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1172524002 NUC uo3clfz9zfzusz5j5k4kgcvfeh6e595oaw0lh6ojxqbbiqqd1oxhhmvvmrutsecc3ok5p8gmrdx3nfmy9zd48026qh4x698ondb
+1779630145.248	ACK
+1779630146.543	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1172524002 NUR 2056904537194911877
+1779630146.543	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1172524002 NUR 2531023956136012723
+1779630146.543	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1172524002 NUR 12476140965049472822
+1779630146.543	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1172524002 NUR 2545198275880246942
+1779630146.543	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1172524002 NUR 1229350395386064530
+1779630146.543	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1172524002 NUR 12363050598238666680
+1779630146.753	USERS six_toe sjsv_15 nnhi_0 jizs_32 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ptuv_20 piyw_24 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25
+1779630146.964	ACK
+1779630147.175	ACK
+1779630147.175	ACK
+1779630147.175	ACK
+1779630147.204	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1543417281 NUC tgpl0jcqz9iiddzid40ox2bka7z2gvgqrj47uijil9199wghd7grh8wma2783netrpd9zl8qo37ctvd8s5khgg3xnu7qdrjy6aa
+1779630147.204	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1543417281 NUC q0m89ibc8dyhpaefymn86q1u8ig1my930g4ksuyflli1k4b2tgly31kwcjvrslo0ibqx2ls781ct6uo370yp6krw0orw4zim0bd
+1779630147.204	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1543417281 NUC q4utnxhwan4olfeapy2sk6vdarnqgeosi6md6elg9nlzchevfi996yfxa2nctza7qlonobeh7gq0p5s17ctqf35dna8a8fzq4lj
+1779630147.204	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1543417281 NUC 11v02shzeblyqhqbwdi68p8bmg1i9wk40hchxpbfzef9vk51qgk1njkdqon4yumh0bp1i2pljfetwumylbr5hmtu1dxemyivdxte
+1779630147.204	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1543417281 NUC mr9pxhxwsjcic5mo3tl0au93wqr6n7rykr9smiifryponwdc3p36e2qso0n4ggw30gfajt80744vylc8nnsi56svf3yvk3jpai3
+1779630147.204	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1543417281 NUC 7kup25kihk4atrbjiwlb5994nkw8h0y62tym8d03wmulziq3qz9rthyk3v6z9de342zlxz78j6s73bp525xcad1ke6pulhvzcoy
+1779630147.355	ACK
+1779630148.411	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1543417281 NUR 18296357065785987066
+1779630148.411	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1543417281 NUR 10066887645750241059
+1779630148.411	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1543417281 NUR 12717117632828147076
+1779630148.441	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1543417281 NUR 2606837623026087677
+1779630148.501	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1543417281 NUR 871879638215014801
+1779630148.501	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1543417281 NUR 12443586601945445489
+1779630148.713	USERS six_toe sjsv_15 nnhi_0 jizs_32 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ptuv_20 piyw_24 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25
+1779630148.923	ACK
+1779630149.135	ACK
+1779630149.135	ACK
+1779630149.135	ACK
+1779630149.135	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1130722998 NUC mseok5kry1dravw363otjvqeuv87n5sva35dvkjnpbd14tlconn37qpt4eldren40kcb9h4pyba8i2tsd5h9pf3s489tmdo6ccv
+1779630149.135	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1130722998 NUC ldpni1brbu26p242egm1n1xnsa0q4lgsumrvj7n3m7ssxr89mh09u2w7yx0zq93kc2e19wihp9z0yqmidjusd9itgan532n16us
+1779630149.135	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1130722998 NUC oaysuvjbrj3mmofspllvzone5xw8zyvutaeiyhvzqr7zkkfum18eiieczjdau13yfv90bb83kkxmsqhgapkfy7egphnu5d6iga5
+1779630149.135	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1130722998 NUC qrjmro91efi1ytxlx9zcjtl7hht0pjkhqxnra7azczy0g5ff6gyjhdptha741ncybh7wos99g99et4brrimpod0gqfpwx3mc7mw
+1779630149.135	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1130722998 NUC iirpw8zm32sc5a7hvkpmlld2vog2fs0zy5ibtowa4lwpoyp14cmgi1xun89se09cm88owhweszzs1utcgqqyml5d361hxo4aufr
+1779630149.135	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1130722998 NUC c6g62fu1ukjfpomykoibpe9ga9jmwo4v2onl56z25sqevbdv73l2q8sjqv2pwnn48xszkunwh7vpdiem8fzh0t2xumuysc6hhhh
+1779630149.345	ACK
+1779630150.400	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1130722998 NUR 10248189341412525894
+1779630150.400	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 1130722998 NUR 16685073693637510235
+1779630150.400	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1130722998 NUR 562004444182640030
+1779630150.460	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1130722998 NUR 12880546677250408542
+1779630150.460	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1130722998 NUR 4891973742106692868
+1779630150.460	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1130722998 NUR 3232254894324258557
+1779630150.671	USERS six_toe sjsv_15 nnhi_0 jizs_32 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ptuv_20 piyw_24 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25
+1779630150.882	ACK
+1779630151.093	ACK
+1779630151.093	ACK
+1779630151.093	ACK
+1779630151.093	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 4200432936 NUC 61f2pkpreuxb18syaxpkcikxbhwwbdcmbl9aw8gf1mt6ltzuzhmrthkpm2rz7nx6joco30g66ek7qrguhmtucko0189rzi9c20g
+1779630151.093	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 4200432936 NUC 2svsoydleg9h95njjsq6ig0n3n2zdse4zimbweb2813zibc9fbbfolc0nc7926qhnskl9tujeunmg5yio5r2bj1isg039tx21zf
+1779630151.093	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 4200432936 NUC wfgtvc4z4fk8o5xyujgl4w3px3oohipjlrigkd8w3r0p1rrvoen1qg7g585eskxrfq4i9gsh9n69zy3cgn5bdg1yff36pv2xm0b
+1779630151.093	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 4200432936 NUC kb8ggupp397xxkb7nijipquyw0fuq04st4frtgsnk1oveghmfa7gfjnwnepk8p806rg9zkyqkzlqu47axrgowormtmmz8h4praj
+1779630151.093	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 4200432936 NUC 2jczha7mmymhga38kb2d37n02o963e881be09dgifmrccwk7klvlo8gl3fs1i2pz8q42ggqtxq1x0h9g65yo9ph5kn6ttv2ab78
+1779630151.123	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 4200432936 NUC bik7jzfllev4zcg2lopthmxrgi7jxbif1az1vz6md3ixv2ouzg9xse7nyfqwuz5wbb405a1p7dlkxlse4r6dr1uwmlp3sqypzju
+1779630151.304	ACK
+1779630152.364	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 4200432936 NUR 1534421509427059622
+1779630152.364	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 4200432936 NUR 841305795585401356
+1779630152.364	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 4200432936 NUR 6495940977756566562
+1779630152.364	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 4200432936 NUR 11719178471520501197
+1779630152.389	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 4200432936 NUR 10086891242573242443
+1779630152.389	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 4200432936 NUR 8428792939190367940
+1779630152.600	USERS six_toe sjsv_15 nnhi_0 jizs_32 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ptuv_20 piyw_24 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25
+1779630152.811	ACK
+1779630153.052	ACK
+1779630153.052	ACK
+1779630153.083	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 4200432936 NGC 8 db11e39sguzf5mman3az9m2apuwtm8soeaw99vobt5hhuk14iist3hixaqi8muymfs5w313dy9ql7v9yzlz71vh6tytvf1bp722,15bcrmcju1uk82b185tbbcci023qnc3825b1dv7qlogoitbcnlmqfznmumhf6c4lv1xaqetgm9s4ao1ienatkmth7bo7wkopkwfk,h8e1a6d5607xq70uzv3wi3xgeco0t9rwuid4n93bpripdfx8tbyi9mwk4kf7taqlh7dbxv5prwh49ppf37cpltu87u9ji108av9,1isgpjzgsitg1gql1b9w9wmfqhqyzohjpxrm76l4a7i6gvtafhecardh3cqgv3vh1hgyw1ww6ub110r0dvowxtz10was6mwvdcbj,8755dt8h7690eaircg3nqh8iv85lzf2q7avcc6rg0v1iq5vsi817utducvb3yf8y8rmoau22flf6kfklh7n4ywj3635g20vbsic 58depwsw9pcukpgza0wdrrf1myfbyyidcguajv6cgwez8ddvkfydep1s8jplkse8o5awwhqnu48h1imlp6k7hpi4vnyemdrpqi9,1vz24sboeaah7j2b6zd35rjsmryecofuev3tqpu0zmyqbmklmekg143l48tux5qg5b9torfqdfq46xab5akgnmv81bnmm8ds68yg,1gn3fw9tko4czo1cudruah99it8ty6obc5nearclsgbvno4dvir1idi484vlo242fsdkn4qzwh135axliyc4m83rdpcb0qy6uvax,kmw0anfaxupnsc6iz2rm23qmiwyuvyt28pbuviv8i593w7nui7a4adszxoanm5xwtt1sbyjr2cm90spo41ipbdziy8llr7wfhfh,1pb68680rf3dgfwkl6rc7yd8y83asuryy2cmwn70i8austy0p5p2pkd7sagojxsbj8f8lcy37axiyfeve1fvwu0mor188npwgt29
+1779630153.083	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 4200432936 NGC 2 16my0pcu5h65lfnfqba403bibxe7ef4xla6tgtnropabgvi6q3y3vfh3f4hirkg7igusjewymhkim0md666uhw9moqcbjnydk0j9,1xix4y24wms66ges833mj15llmyyaii8y7a27d143s97w4enh222wcwwqm0m95krjbu32fgioz8tolw4fz4svalfpsuq5pzpgbi5,6r7cpa0i0cej1luaq6lso0goyq6m8701c733bq3nhnwsan40cgk32p5fuwryuvzerekasw0b9xadxz7rlve47grtp1w4o3c00w5,136nlw1aa3yql4bxvkftlhfc3hns52mkgwmz8j444p49r1m8dzqq7liiu09lmr3c6u0oxxnss856likku9muknfiolptggfji3fg,zzwj07ncjam0r1irugl8kwdqlig6m98ssr5gosm5hj2ohjd6pusjlr79rpuq5t6peb75g87hropnls4jip8xuv7x7stj77gejr0 om5zjoj73q1ixmh4nmlri6ipri2p0swd3b5jpx4zwf602wh8r4e0c0g2gax22xoo2fkm3bz64ay2kvyi8eyyi4rctysnx7k63pe,7sbv4c04qmp8rd1mt3g3zpgffewndb4gzve38gau9ryhqgk22m0200eawvaxionu84wg4uytdb0g650hl1uu2y2g1j2l6o3pvv,11wzolxk5yhy2vivur0it3lttuwxfm3t8rxdc0frzuttslffvsk23i6dlqpr0qemptnpaqq6ezrcmndipvt2qny4yhr3chas4okv,ysvuyf86aatei35649dnjtqyqa1chysjg7326y30l0cn2z8qvns4nysbyo5wh9ixn5k3oz6olmfyo59zmewb9oix9h3r6r6t3w6,24fmq2ku6p7phrzlxnd0szbponnle3dv3602ewkow0qm7yicgs9bu875hjmj84q75dkhvfk832m0ekgbu0gaezwe4f9jjmilrjx
+1779630153.083	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 4200432936 NGC 4 1426i614jzjcd0jim8b4tdhx4s90hu99mu9e1end40k5kjy22w2o3aiq8o76dd53bwcoiykxq5wwimzuro6frehlzev1e9nghegb,247opls6ry5wmoolieynkicgtvc3qtnq614q0nnuo52uas0vjhsx77degwhntmocl6t96pnqoz12btb3f77hj971dio7sjahp6rl,1qdy29xqzry3baq4yt1syl2w87x9i8p1wh3fv6rzbvdmwm9dqso0cojaw5kvznspi8rs5qwjk9a9y8zwvey679j5nt1gp6au63v7,gauxdo49zwoxu5pxcuwh0r1dk0i2kcynrac0f0mmjwatmwe1ukpkg55w65dzqvx455swz7u20lxd6e658zqugp7dstnj86aytcp,xi3h4ziww24fzogy26oiyfg0nuvky9xcgzh21ywcorb7rvge1acd3omtgw0rmkfeseet8w3bkiawg1hhb1r54rl15siw3adjbpn uvjy5xif0o8k2y209j4at3inb3cbxhczjwhdzlea0ponjv0prz2uffk1qcqacy8hm2g7dkrr6ju44167s3kvvnjp5ng6v8qyyuk,18x5gog2x7wvnep9hjlbddyvkogbxx99esqywos6blt4rtz92o091ka1p9hyrb63lapm7deuw0zjt71uxycfd5wi3opl81trtnri,19lkgxrsp5lwelg5z0hf9g2vfmmtu8607n19tslewrvxqvelpskezsd73qs6dhbctzng2aas8wcncltwsxbwohzmvq10572cpvkm,1wokhc11lfi1k41opxt0h6own6koohrkfc1bowqeg9qy52yrnsq71pyqaijozv3enupj6mcm1o38fpy1ilgyau4g0rpbt1eu0im0,7lnmrd1mexf1k63j2pbpgqs4mob8c7a029bkblsujgnp5x139e8ldgbxhi5rgiyp19thxjpbrq9ho74sj7nu1ciga8k1z4oylm4
+1779630153.116	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 4200432936 NGC 7 22j51imtbhm4suglk8sfpnlt9notyao4bbkry9mxsqev2ag89d8ilcg19qh7ngs67a2kq5nnwns12gw4ax3kq1pj46atqbli9kp4,lou9knq1a35ueemli2pliijsrhn4e7vozcu6w5ulvijopxqt0i3ndrohujnofd8lfw72ownxksfnyuqqj8nkvhyx2677i47f83j,1ceomoi81bq0mlv5u4yu2l3wcr8hz0in19otzcbtanqxjasuxhdvqxa3u56ln30c3vpbb38ilw16takr2clmygeg0kmjc4dknx8g,1e7ixhovez23cmflibcdudheroavdas7bgzcugt8mefby534q8rca0hdj8l2amzn6fj6j999qk7iy86agg0fyuwhnwakdzdsj4uh,1wljkfnoycjhfx9rfanym32pr41mag5oyi9g9ipbw5ry8ljxseizsck8jczupyinlghr7jxxx5ywli5123izwz9ftatia6v5aulh 17y07v21bhlv7llum222flafoff5kl48l3obbvfevjyb5z69a6t2qu1qbz8dmhvne3uxhhka3n6wyxggq99vuxpghaa86bz7l5iz,6mlrmd5him7lzxtxcujtmiifsqf5q1se310kwf1vw96jqd2geie1493moyhejk5bbalqt4ue1jgndn1xown5rhcwf9qdg61vsgl,2kkt8prb24crvvmgla0jb9hyfy19ddg9g67o8rq8ud3jn7yws8ohzpt0ru1mtktit2s9gtd8tdfh5wpnaighmkd2gvmhy9oyagp,s2xzpp00an5u8ozn7aukubt2v20musoyj0d8qcf5vjnoei7081g9f9umkulczu3czqyguhqontqzgttj8yd3ajoi0so6f1ili0s,1x7u6oybe9pvasabekczng5xvjhhf7aff4246pph86wk11m111yw7qv5yzmj7boxqf2yor9e75hy4griui7cbad52nekm4c4a45z
+1779630153.146	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 4200432936 NGC 6 4bp6zqvcl4pt75h1qy992qc3zddlty1xeb5i4jlbfe2tgfhy16wr68d3xtkq9s65lj2chb0df3q3my3ofu1rvepjzzqqmqpq63p,p0gw8na4thbxtacrwecf6y236em1rgo8nvra5vhhy31rvwjvn6aq11472gqkof5j31nm3prx1hq4pzz3s22l9snclk2zg0p5c2l,luk12t0mb7jqeih9rthrddttlct1cpncbuedwl567rpk99fjxk4cldh6ydodhirb9bk7tnr65rs6rl0nqlhejj4tmf8m13ro8nl,170yycer5tzjrriwir8jwevtxhodal97po73wmx5lht6pu1m2qt6azcr5jq5wamez5cg22t12se3cd4sgi79cfjj0tubygvioff7,1m2y18j2uaxpwyrjm89g6iciv3ahkx8pmaaje407o22t99vnmeowkxgwxzd4m20taum1c84g1a92ayl2zwldb8rl8pfgee2v3zj8 ykk8xlzj06ka7p3zkx1us3cohp385ui27e691ulpf8lnbmz73qptx613cxgmn00uevd1jufywob6z0d4d6sh5c7kw4r1l7xdaq,1jhetopmta50ndx48h4j46a6n6jufke7c29035u7dmow6tcmycwdozh1biz7ejyglsjb02mlkore729xh3ul3sk8f5t4bxzrjg1c,vgbegybd4i8k2dw4pkkhv67humspuf676mwu7sf7gv2u7u98grmj7ihk9v22b23i80k28o2kcss6odjy1v3au970qkltol13c2e,uwf6ffps6eq7ihyw46bg3lkz49t6ta2p8em8zj79ygj0nz6ekgosl0tvja0e5rhpe976fp0ns9lt2xe52c5btfp266kmjjku1cr,1ws1334t8x5h6r11493xq46g27vb2b8ef8wsitf2j27d5u6lonbxtkpdzlclgxef8v3jx5hewvl33k9zjhghn0v1q8r9m97ip94w
+1779630153.176	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 4200432936 NGC 3 1ft6d4elcixtehxk6e2z8ahddpsggk8lowjsghktv4j1tzyl5ysvlg81idjc829h4ihydfo88gbzdjb1ummkpoahq7l1dmwqkf15,vpazvjlmx4l0pkb875f71b4tc2hyozo77v858sqsno5y2dgodzbeban94xu9zodsai7d1jvf5osdsomlyengdyicrruqq54a8dj,22lkza870nkvamd4g7qe9eiztx6i86h4ymd4m23dr76pq5r2wz1n53yklnlkb68gybbxs3jtlug3w7l51e2nmromudykljji8bs4,1ink3udfg01q33sfqiv4lzoo2dath5269sickpzqt9hdw18bz1k6zx3sj2xijm7vvtimit9p3fyy2zpolcnhw3yghj2hhvx9a8o0,bhr1xzw39om29swgbqzdwp6a6xj0jy0gchjvy5v252pdodx1ifzi4xcseds8sm8r746trrylvaf3jqfbr6x7b66amval0ubwlcc 6gybhr0sbfvyy9c6781mwpwrjpvrgpgbaxc4famunkaomaj37eoj7ah7v84ectj651linxy33oif6krfkzbb6key6jd2k5gbznk,g7ixkwst2x1mt7d3wljzgi4jb6zokpser65idhrldklhlgmr5rgusxvtnyqn1n1cpg3tzeimpm1hnc48l6hd9ydgp49wiifd2qz,11gf7d2brxdf4aogdhbrf4dh5qaogagbodw5c8jfehg4mnvevegugzl25clmgdipxyl855kvlqp4fi0vzh4xzdt4lwnra7jja7z5,23ztg7sqs90kj4mwqeh3zi5fk1r4edaj8kmpet02fqj1rsaow83006dun6ugfzo57sr7katauo2p7cq85bpx7hnb1w6aw2b4bc4f,vhkbwbtytxx8m9g5vrtgb4iuxxcuovn81lnxd9bwed0ybjvb86rnc58eg7rdj4bheg93mqjn83xfi3pfa0h0vlvjceitkcx6ek6
+1779630153.266	ACK
+1779630153.266	ACK
+1779630153.266	ACK
+1779630153.446	ACK
+1779630153.683	ACK
+1779630153.683	ACK
+1779630153.683	ACK
+1779630153.838	ACK
+1779630153.838	ACK
+1779630153.838	ACK
+1779630153.838	ACK
+1779630154.020	ACK
+1779630154.020	ACK
+1779630154.050	ACK
+1779630154.231	ACK
+1779630154.231	ACK
+1779630154.261	ACK
+1779630154.441	ACK
+1779630154.441	ACK
+1779630154.441	ACK
+1779630154.472	ACK
+1779630154.652	ACK
+1779630154.652	ACK
+1779630154.652	ACK
+1779630154.683	ACK
+1779630154.833	ACK
+1779630154.833	ACK
+1779630154.833	ACK
+1779630154.893	ACK
+1779630155.044	ACK
+1779630155.044	ACK
+1779630155.044	ACK
+1779630155.255	ACK
+1779630155.255	ACK
+1779630155.255	ACK
+1779630155.465	ACK
+1779630155.465	ACK
+1779630155.465	ACK
+1779630155.465	ACK
+1779630156.068	MSGFROM @ hhvl_36 RECOMM kVfx6hca 4200432936 NGS 8 5 3hcvc88ttwd7qo1vnq8f6o1xg9e253dluor1zsnu3ooxrpphh0cee61ncpns3a916aul7gofemuomub5a1ppszo9wnu5cfxnm46 R
+1779630156.068	MSGFROM @ hhvl_36 RECOMM kVfx6hca 4200432936 NGS 8 9 2n1t54g1ir44z7dxj51xv7zvir960uw2kibt6zbqhh3xvn6tteuf09yepq0wq0eqduecpvwy9avk78vpoem7q4kc6yqvvpvmj1p R
+1779630156.068	MSGFROM @ hhvl_36 RECOMM kVfx6hca 4200432936 NGS 8 10 gedwbapz52408dbtf7cbx1q7il39wgqb02xoaz0xiqdb4nrtc3k7m5a6bx133lv78s1j1em4a401z14fikauji5dk1w5t6n14s0 R
+1779630156.068	MSGFROM @ hhvl_36 RECOMM kVfx6hca 4200432936 NGS 8 4 b164y8tj582381rvq4g8rduxelqu9skgjeqzjyozlcssqgdfgn81c50cperyeqf9hqwv7x2zr91x59bwibqi3oqcy8i4au7w8si N
+1779630156.068	MSGFROM @ hhvl_36 RECOMM kVfx6hca 4200432936 NGS 8 8 11tkujrme4pse54bhod7braovho0dahfx6c7zi4aa8t15l1vzbvgsl56cbphemp6semwtzmxwzherj7xpzjfije7td14uhnavv94 N
+1779630156.068	MSGFROM @ hhvl_36 RECOMM kVfx6hca 4200432936 NGS 8 9 zjl8k5ib1k51q594jcrahk0zz6k05dt19l5fuqmsqyk8lxow7m4f5aezi40a55jrtu9uqfi51sehoiqb5ex3nw5zpwtzl7huepz N
+1779630156.068	MSGFROM @ hhvl_36 RECOMM kVfx6hca 4200432936 NGS 8 10 xgai30ex6oarbc4wo8282uqxitzgvkvuce9euqs57mtji1q2c7qxgmv9ojp40vqjxhuq0uty7s2qh9lffzgfcl2yojjrol1gfvf N
+1779630156.128	MSGFROM @ uinn_17 RECOMM kVfx6hca 4200432936 NGS 4 5 2podj8891k52akadu9gb3970cgmhty3lu0ri43hpyksuli42puzdclwlqsgizhzdencppc7wlpgg28q0jfix4u55m477dl0w2wk R
+1779630156.128	MSGFROM @ uinn_17 RECOMM kVfx6hca 4200432936 NGS 4 9 ty7xv9zzd5gmuy2ij9rzj2zgfs88xn4kibzotv2cj4wcs5kb8v8tm62c690ccjfk0km8ma8hybwhrt2tix57ic3q7ixst7qjiot R
+1779630156.128	MSGFROM @ uinn_17 RECOMM kVfx6hca 4200432936 NGS 4 10 mzmxuf0iezihrmrfi7od1u7lv0kjwmjtu149zti49ulmafpjl816q7au6xt318stdr7dzgcge00m982x9li8dm3kh4aoscz5e6x R
+1779630156.128	MSGFROM @ sgyz_47 RECOMM kVfx6hca 4200432936 NGS 2 5 y6ffh6obc8f3b0qiy5tu8upomq9r1i9xkyc4054txx52bjmc6v34f7rjcoa3f2fapwj61zxguotbad375z58z2dky5vax4xpqfg R
+1779630156.128	MSGFROM @ qksp_2 RECOMM kVfx6hca 4200432936 NGS 6 5 lueey7nu0aaetb8jf4g7qtz6i5foig0c6k8h13tbjgf2wy0ypf6vvhwcwotk312q1b4f18yqfcb9nilu4nw46v363gv3nejuple R
+1779630156.128	MSGFROM @ qksp_2 RECOMM kVfx6hca 4200432936 NGS 6 9 pt7cggit8su75u4czfuqrb4ortaop2jcarwxd8o1nzmx6iowume7y46c9fp0psfugnqskf4uvs222n9x8ispk4hry04scoq2vuy R
+1779630156.158	MSGFROM @ qksp_2 RECOMM kVfx6hca 4200432936 NGS 6 10 ntbxm7tm0aczy61j34l74mz07m453cbbhos4bxkwfrku7y4td7qh9ikdej70tm0fszlfavp6z1j434u87s43y6zosaxhss7tw6s R
+1779630156.158	MSGFROM @ qksp_2 RECOMM kVfx6hca 4200432936 NGS 6 4 izfs9p8fey8y8ua9a8ilbvf4nb07kd02swv1oqyufl6jd4biuias625o4dlq57iemkivczvaonctvmx87hjs6beuqyldpay19go N
+1779630156.158	MSGFROM @ qksp_2 RECOMM kVfx6hca 4200432936 NGS 6 8 ehoab7rasn0tbawhcncocp85dmc7tfa3t0dpb10g8710qgove4uz1eqr8axzjzc4vx03a1f2on089vmi5d4hqmsuim2lxn3po94 N
+1779630156.158	MSGFROM @ qksp_2 RECOMM kVfx6hca 4200432936 NGS 6 9 xd1ytws4yk12fvgb1gw9ixcybwbx9evtluaotyttcgrwyfgvhkewledpimvt22ndyvx8zlr1y7inrazuse7a9h7h1g7o8sm3a2m N
+1779630156.158	MSGFROM @ qksp_2 RECOMM kVfx6hca 4200432936 NGS 6 10 yix4d9t2f3vvvdnjj2kfqh70cfx1aji0t9os06onn4c6329yswetzlgu9lyf1t1fvtyxteadiekj78st5acyq81qcwyro4zsbpk N
+1779630156.158	MSGFROM @ qyxo_26 RECOMM kVfx6hca 4200432936 NGS 7 5 gt047tx6v0ze0qy37u2rqpvbs7t6evxokn5pazu1njxqyroz71r1jy4t272hshcfis6m18v2evpwgfi5amz066cne1b1ga8fdsl R
+1779630156.158	MSGFROM @ qyxo_26 RECOMM kVfx6hca 4200432936 NGS 7 9 gbhkafkbkig9a7iej9uabmw2gcnnjbzbg8v6ah712kynfw3z1d3jpz5udu00oaftykfslcczki14u1nwa6xj30j6qs1z0lm246o R
+1779630156.158	MSGFROM @ qyxo_26 RECOMM kVfx6hca 4200432936 NGS 7 10 scuq2r99cmesu8g16r9ng1ad93zj70dng6k3o9yz45jfqch527wu7elt5g98xxvv7v5ozb504livbxr38iu5ez5atkfqhts7vrp R
+1779630156.158	MSGFROM @ qyxo_26 RECOMM kVfx6hca 4200432936 NGS 7 4 lg6h0xmqnfqhp7s6fi26y9x23fkmiwga4tu2t5yipf7uv86fm0mjtsmue6k2cxz143719maudjfzdd2zj3njkvxwgqg8scl7o94 N
+1779630156.158	MSGFROM @ qyxo_26 RECOMM kVfx6hca 4200432936 NGS 7 8 s0ointoj6gksjl201vns5nhm6g18rhvlh3zk120d5he4akxn6tggw7u10tv7p6l3gevv4krta62360s0n091d3sk288hxyktxm8 N
+1779630156.158	MSGFROM @ qyxo_26 RECOMM kVfx6hca 4200432936 NGS 7 9 xbvrze3pflwibtkm6i7ty59ulidr1pk3xg635v7f9n16j902ebgi9h1g6n4jbvm028k5216ctaqdz7r7kx7mffmz42xcpxtgykc N
+1779630156.158	MSGFROM @ qyxo_26 RECOMM kVfx6hca 4200432936 NGS 7 10 zl7ybz5g25o9wz6ftbfzrmxjo4mnz9gk33rfyq5y4k2zyuapti5h1suhiasjw0figlkxj7ahvrxfauj2wdcgdogv5cmqmuqajw6 N
+1779630156.158	MSGFROM @ uinn_17 RECOMM kVfx6hca 4200432936 NGS 4 4 m84jr650sei52mc24dlgbidcwqiqbq2umuk4g429mv5p8fqw73a9ox0ihilew0vznr2vrysvrss36a5i6cteahzp84iqn8nmwor N
+1779630156.158	MSGFROM @ sgyz_47 RECOMM kVfx6hca 4200432936 NGS 2 9 z2znqmth06ar138oez9jnz5pk79xh7m5cbgs1en0sdzn01fm79ozsea2wob5ssxbu28nro1ietc89pzixkn8id75p36m9n8q2sl R
+1779630156.158	MSGFROM @ sgyz_47 RECOMM kVfx6hca 4200432936 NGS 2 10 h8npu91y4x8rptv00ace2ryfpavidjsnbakhob0glwdeqd34irlidg1zv6fv01hpt6w0080bdon7d5j8ed5a16yvehaiks2lyit R
+1779630156.158	MSGFROM @ uinn_17 RECOMM kVfx6hca 4200432936 NGS 4 8 bso07aqpd82y939jwqcy1lccboohr5b40tq1vn8nluj9h00h2pmkr3z0clclecg0d3io1i2i7ibqf7jc5m7z0x7q0qfytyy4fig N
+1779630156.158	MSGFROM @ sgyz_47 RECOMM kVfx6hca 4200432936 NGS 2 4 ent9lwr6rk59vlvb2xo064yyfmika9y9qn70ebfchhkwac975fn2vw60y8tev9ob2t5ilet3e61lp3uo7re4bib131sagp94g78 N
+1779630156.158	MSGFROM @ sgyz_47 RECOMM kVfx6hca 4200432936 NGS 2 8 l3yyxg9k607p2eruorc06w7w7uhxi14w6maw09oeb8zmi0u6cw3zx7qpodc6ziduwn4hvvh3gjimodjhul1t20lveth10nqyibm N
+1779630156.158	MSGFROM @ sgyz_47 RECOMM kVfx6hca 4200432936 NGS 2 9 slzma8hi9finqj9s3r0azebp4hjegv5vto5rb9nddmi1nssro93xj6rh15nt0hxbovsav4umh9204br8znxn8efxd3qs22c592r N
+1779630156.158	MSGFROM @ sgyz_47 RECOMM kVfx6hca 4200432936 NGS 2 10 jcee7pl0aw0kdlest6v76o3fh2t0pa41gf0ckpqp5aumpl5j88r8mxbqjytaupj7l3g9tqvdu2ye1gz6iyy0o7ta9a9edaydnc9 N
+1779630156.188	MSGFROM @ nnhi_0 RECOMM kVfx6hca 4200432936 NGS 3 5 iqem27y2br7fw6w4exkj33hk4r54fz7ymv0bfxgvkzun24o29mor62raxvr0qhu0d0sx8utvquidqtyw39c38ye15i79reuwyh3 R
+1779630156.188	MSGFROM @ nnhi_0 RECOMM kVfx6hca 4200432936 NGS 3 9 fcggwtv9zl472vr2cv76ntrkzrcplr96mlp30dv2g1a0fgayczrbymud7yz1a5ow5xl45eqlvwiiietqhoeiuolke8btba5gak3 R
+1779630156.188	MSGFROM @ nnhi_0 RECOMM kVfx6hca 4200432936 NGS 3 10 kcq04yhatcurl6n5zmbzxov3k4omiyt25cpu9vh4ro6bcfrca05vhh41alfhy6ngmr4dpz5s0enjv2j5j1ehuov3uc1s1ujmxsv R
+1779630156.188	MSGFROM @ nnhi_0 RECOMM kVfx6hca 4200432936 NGS 3 4 6volmqpdgfaofi9nmrw94zqwyc82j8hjxlhznmsy9zgxdjvgqazx1y3soe19h5k5wsoddx7b3qq7ndmgj6gdrdz2hcyhrqi78sz N
+1779630156.188	MSGFROM @ nnhi_0 RECOMM kVfx6hca 4200432936 NGS 3 8 vjos4aqb3vt62s3poyeqyiel8x7fza7r2lw1lfq00qhcdzgoyxx23a35kby3rgxm5rb7v90alc6iv9iw42fyz2oqc5qepjejfe8 N
+1779630156.188	MSGFROM @ nnhi_0 RECOMM kVfx6hca 4200432936 NGS 3 9 sak208z6kjdo5euygamde99s11g50sgvjraijrateom1zjsrgvj8dkrdp0nd7p5txp5yp86nfy5hf7faj8fdegfbcq46vjednmw N
+1779630156.188	MSGFROM @ nnhi_0 RECOMM kVfx6hca 4200432936 NGS 3 10 5f2qwii32x4cpadhvmhttuhz7yreiq3364mvx91sf143cs1mjjcq9kqmy7fu6j1fl62rfcnrkrz6wo9cqpgzat5ainunuwj9e6n N
+1779630156.218	MSGFROM @ uinn_17 RECOMM kVfx6hca 4200432936 NGS 4 9 tcc6f5now5ljkoe7rxs0qm8wa94u81orrdxuk7b10h9nxzbdu0cejo24hwr2kynstktva8be8p4s5v5h8umywx0ig4chb7exk8v N
+1779630156.219	MSGFROM @ uinn_17 RECOMM kVfx6hca 4200432936 NGS 4 10 10tmh3jwpr6zkb0yejaw13wmqa8du8bgxkd7rcj3zxqhmry3t3ju0i6fccamayy4sqa21kytihtql8wtusjdav3audn347iwfbx7 N
+1779630160.438	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 4200432936 BR 8 6v3qj9223p5ihxmmriv2gagyi0vtj3gx2jh225sccsg603n86i4quvzcmgf8etao33y3tchwhx1tzhsfvn8m7sxl6nxi38auznw
+1779630160.438	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 4200432936 BR 3 502zstek2pidqsoj58vd0gqjnhtkkgckzvgykooejhzfi35xge1e0ha52w823i57gziuab02py3ijdy218rjy65tgzmbnw2x7d8
+1779630160.468	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 4200432936 BR 6 8fthd3p2vqd4ga1bbhrh6dmats3mehtl3hofkcgruum2cr156e5onrzbzy77sbdap49v40zu5v06gqfmpge5l0eh1fbin9c0v7d
+1779630160.529	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 4200432936 BR 7 a0nxaugzm5t8pv1gpb0m64e45dkx4w9aapbphfrkgz99it3g9cl5qlrf2sr33pfhku5o7j6rnjphfefzvkb62vpzv3xvda8bxxv
+1779630160.529	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 4200432936 BR 2 io6vndhunzftkrrpcr7wz2tvrvgyhgn2os0nt6rasn8opix7fvvc7sm5c71oiwehxe1nx2umrbo2epsbpmbrheg55imt2wl91pw
+1779630160.558	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 4200432936 BR 4 22c3xur6c42dggir5lkpchtnrwkpr9nsj6hihjeg83fozw14ojrr0ao5gh93rc4b1ky35hz4yp6ygvmwgsxu0x90qcx7vt5m9j9
+1779630160.740	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 4200432936 PR ravt4npqgeuez329rv1jnjtxkeg28f10l4g0ad8lm7u3kdv06k0ta05ifh0bydrx30ho4q0us6y78r5mmifs9u07fj67jqla1nw
+1779630161.142	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 4200432936 PR ravt4npqgeuez329rv1jnjtxkeg28f10l4g0ad8lm7u3kdv06k0ta05ifh0bydrx30ho4q0us6y78r5mmifs9u07fj67jqla1nw
+1779630161.142	MSGFROM the-whispering-knife sgyz_47 RECOMM kVfx6hca 4200432936 PR ravt4npqgeuez329rv1jnjtxkeg28f10l4g0ad8lm7u3kdv06k0ta05ifh0bydrx30ho4q0us6y78r5mmifs9u07fj67jqla1nw
+1779630161.142	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 4200432936 PR ravt4npqgeuez329rv1jnjtxkeg28f10l4g0ad8lm7u3kdv06k0ta05ifh0bydrx30ho4q0us6y78r5mmifs9u07fj67jqla1nw
+1779630161.142	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 4200432936 PR ravt4npqgeuez329rv1jnjtxkeg28f10l4g0ad8lm7u3kdv06k0ta05ifh0bydrx30ho4q0us6y78r5mmifs9u07fj67jqla1nw
+1779630161.142	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 4200432936 PR ravt4npqgeuez329rv1jnjtxkeg28f10l4g0ad8lm7u3kdv06k0ta05ifh0bydrx30ho4q0us6y78r5mmifs9u07fj67jqla1nw
+1779630169.900	ACK
+1779630170.110	ACK
+1779630170.110	ACK
+1779630170.110	ACK
+1779630170.110	ACK
+1779630170.110	ACK
+1779630170.110	ACK
+1779630170.110	ACK
+1779630170.110	ACK
+1779630170.110	ACK
+1779630170.110	MSGFROM the-whispering-knife sgyz_47 RECOMM K00000010 2447137591 NUC qds4s8tq0q1qlo161wfudv9zyhcwazm8lguivtaj0itxg2mrzn3xca5wzydgr3egr5i7g949ly37obmf9q3lql0jrb93qdqc92
+1779630171.495	MSGFROM the-whispering-knife sgyz_47 RECOMM K00000010 2447137591 NUR 15956716080991110185
+1779630171.706	USERS six_toe sjsv_15 nnhi_0 jizs_32 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ptuv_20 piyw_24 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25
+1779630171.917	ACK
+1779630172.128	ACK
+1779630172.128	ACK
+1779630172.128	ACK
+1779630172.339	ACK
+1779630172.339	USERS six_toe sjsv_15 nnhi_0 jizs_32 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ptuv_20 piyw_24 ijst_43 sgyz_47 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25
+1779630172.368	MSGFROM the-whispering-knife sgyz_47 RECOMM K00000010 2447137591 NGC 1 1n6istmplkosw1wyo6z2d26dsvams1j2bmfkzmc0e1lo092691lhxtipmfhe6t1g4gdnn43xmf0phf9r59qqdni24ig4f7cs172g,1fqdoykxgvn4tbwxnb99w6oiaog0z405skkzdl0fdla6w9iu9iv5z2nqhol0jnvldsuyfhivc2of46pz106cn1eb5a4jvmb8q926,y3tnyhhtga2kzq75tv6wxezqtxnui2yr7nexbhfcfn5bbb2gd0av9ie77fszxizocpd7kd7klu1m56xi2qnt1tcmnqxr69i74l4,1yv1pu80nvninfj1x50dtnd83u01xqrf071k77wwu4fw0zlz1raa1feomlbmpeais7eclw8p30nabi38i8cfbav804a9k5x5ae28,8ty7k38ksbo3vl77osy5c6jgapabll1z1ma3luq27t07us9jy003uu1mqkfu7wc3yh9y0c01yj1myjd67ion3r82gdn6yupeehe 3dugql3sp2zvhux8vmgdbvmcjdjcg47hj8q4a7kcri48842j6gmwxiu5tpaklfomjpd6w4euva8zmbq5pivl4q97gxmfopt2lqo,ni3hm5ai6eqwny3sncmo1ke2gjwqeo4higxrggwq1t9bltjc0gq1px7seqckff54c6vqf69p3yjs7u6uiwv8pp8mjjdp9sxkqv8,dtitva0c6ta394ged62snxzmymrymia87hk3qj0llejpgsise8xvllv5o1xsa0jjekfulykn6j254p3jh12zduc22rdpvtqrtpt,13mrzy6fi2gpl4vdwwubduwtzk40em4xcn3z4ouv0hlletnbis8gqrbi1bsqeleww7k6qplf3r4qbasj1zr8ciyqdvtja9lqj0nl,1thtao1qo9gywrar5x4vp0c3r5ro7ritmjxmh00bun9r52r1roqi6dugzgfm7hs4du0bbxc46v7h1brgi1j2f05zd6btnn3vwvqu
+1779630172.550	ACK
+1779630172.550	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630172.550	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630172.550	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630172.550	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630172.550	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630172.760	ACK
+1779630172.760	ACK
+1779630172.760	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630172.760	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630172.760	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630172.760	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630172.760	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630172.791	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630172.791	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630172.791	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630172.791	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630172.791	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630172.972	ACK
+1779630172.972	ACK
+1779630173.664	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630173.841	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630173.965	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630173.965	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630173.965	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630173.965	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630173.965	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630173.976	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630173.976	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630173.976	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 4075957272 JACCUSE six_toe
+1779630175.353	MSGFROM @ sgyz_47 RECOMM K00000010 2447137591 NGS 1 2 s21dw1213txeybg15b4d9zndqyrz3dh3scghfbmpvd0ria0te07j7ur166plmh0e4k7tzut42jez2tnh9foynxfitgetbz4fccl R
+1779630175.353	MSGFROM @ sgyz_47 RECOMM K00000010 2447137591 NGS 1 3 wwrcc80o2tfmytg29fb2nmk949iue01uwn7nwzyg2l2xe6e55uu9jdd27ucwohrdk3o0f9gsiw9sdsh9ddj3u4069nyldkoejs3 R
+1779630175.353	MSGFROM @ sgyz_47 RECOMM K00000010 2447137591 NGS 1 4 8tha0brei55yb8laq2spmp1vfrzl4qsq5p0a8o51v0peklwre3m4pfdcvhfciwm5032e7jc5nn81ywxndiw5pk16yx6jk039462 R
+1779630175.353	MSGFROM @ sgyz_47 RECOMM K00000010 2447137591 NGS 1 5 tqnak6sgomcb2k5ijpofyjiwmv2te63oh861l22vxs4qjcv8e1zx444nx3zdjl512hcko0em1lktd1xx2iqbs7ho4dr3iewelno R
+1779630175.353	MSGFROM @ sgyz_47 RECOMM K00000010 2447137591 NGS 1 6 n2pw7zif393qpl6d9iljxtkbe6oh76qt3qb6p8ketwlvihotrm2io2hrwap2ny6ryegouq6ktpl76fwucfflweaeob5jnee7pnf R
+1779630175.353	MSGFROM @ sgyz_47 RECOMM K00000010 2447137591 NGS 1 7 10hah1w8t32qfj1k0h7unbf4rmeduve4ashsiknz68pcgdysd6hdohokjlpfbjcbuwuer4ckmqsruan4wuicf1kbnjg4annnf8lm R
+1779630179.273	ACK
+1779630179.474	ACK
+1779630179.474	ACK
+1779630179.474	ACK
+1779630179.572	ACK
+1779630179.572	ACK
+1779630179.572	ACK
+1779630179.572	ACK
+1779630179.572	ACK
+1779630179.572	ACK
+1779630179.572	ACK
+1779630184.388	USERS six_toe sjsv_15 nnhi_0 jizs_32 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ptuv_20 piyw_24 ijst_43 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25
+1779630184.600	ACK
+1779630184.865	ACK
+1779630184.865	ACK
+1779630184.865	ACK
+1779630184.991	ACK
+1779630184.991	ACK
+1779630185.165	ACK
+1779630185.203	USERS six_toe sjsv_15 nnhi_0 jizs_32 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ptuv_20 piyw_24 ijst_43 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25
+1779630185.544	ACK
+1779630185.544	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1252547276 NUC 2uf4f3qglpxlygyigqrmdyaq1qz0j11eqmhos44263rc0moun3grk3mt9scztbftzkdlmmccia81vv7oea6maidzv87qj3gmcbo
+1779630185.544	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1252547276 NUC ma8r2fv9tmy3trswms4wfb6rfv9izh4o7nfvde7k7t832bmxjnv3b2s7t7rxiktf0b44vrjyggilbdl6gacjgzaq8jfmf6f0ijl
+1779630185.544	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1252547276 NUC q7viuz3otwpg9amxx24wz1dwq3bzdd8jytprdypj1fkxp6jt26ctb3s9fpvz53u4je2h7k1fn11t2isksfrkxsqavn7493xq934
+1779630185.544	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1252547276 NUC ewdwz9kxxcyiywy4f6nc9e6yazmn47fyul39s1owl8piqo5o64uh0u3m0tjwhy8hiji5hj2hfp04162yy7ms9lovt805oe6kpp2
+1779630185.544	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1252547276 NUC 23fzvq3cnb1bphhwtdoio980at0lsmsyoqm971p5k4p1opulccxlo9dgxuh4m8namhpv75szl9rx9wr1ey2r0u3sg6p40g7d8g8
+1779630185.624	ACK
+1779630185.624	ACK
+1779630185.624	ACK
+1779630185.777	ACK
+1779630186.771	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 1252547276 NUR 3658141007057206760
+1779630186.771	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 1252547276 NUR 3651402787554308031
+1779630186.771	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 1252547276 NUR 7677938012756160806
+1779630186.771	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 1252547276 NUR 16339506032626074792
+1779630186.868	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 1252547276 NUR 14204548622486151318
+1779630187.172	USERS six_toe sjsv_15 nnhi_0 jizs_32 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ptuv_20 piyw_24 ijst_43 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25
+1779630187.542	ACK
+1779630187.667	ACK
+1779630187.667	ACK
+1779630187.667	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3727552155 NUC 1q1iat9enti2gsl99h4flbebc9mp8mrudw5lbgbmdfmotez1r3j0lem2c10b0e104g8o6sizr9cm5iowl7dxiwlyixfhhytng98
+1779630187.667	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3727552155 NUC s64pdiabr2a5zc1ghivo8mveinbzkgwd6tasa7a7ezom318i0lhhtjzw4szwzhxi6zzkxsbve8g054y40hsov4ql68d4a0mk2qm
+1779630187.667	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3727552155 NUC 5k7cp4xvuzzn8mgq8pic1dppbkeqstnneuv5ur6jv1jvfwf7hcqt03wi5svoy8q5znabttxuufqy2u88fk3dp7a0bzj7my0s79n
+1779630187.667	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3727552155 NUC tvpq3sm4v0rthmwp6l7zlh0qec1svu5zdubzkdcc9aahseowxrj6d9ztqz4k3cwm6dkqpkfv3m4b1o9z73sgmcinte899tjw11v
+1779630187.667	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3727552155 NUC zkra6eza4z9ncccr6hy9b6y4bzy9dvo59dyo1c4bsxrr4910n2z7wwc6lb7qwj26ifxcpqrwso21kpu02dhu1ure8dnolkgfnue
+1779630187.845	ACK
+1779630187.845	ACK
+1779630187.845	ACK
+1779630189.067	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3727552155 NUR 18009467838008130302
+1779630189.067	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3727552155 NUR 3523113577147001412
+1779630189.067	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3727552155 NUR 12707217481158577298
+1779630189.067	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3727552155 NUR 9729805775703683416
+1779630189.067	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3727552155 NUR 11865653314655122480
+1779630189.580	USERS six_toe sjsv_15 nnhi_0 jizs_32 oxrk_9 qksp_2 tsst_3 vvwh_4 whtp_19 qmxh_1 gyiq_5 zmtw_14 uuwz_13 gtqh_6 ojor_7 ptuv_20 piyw_24 ijst_43 xjhn_48 jknt_29 kjvp_33 vlrl_22 yipp_30 vqgn_46 gvli_23 hsvz_34 gvym_31 uinn_17 olmm_35 hyln_10 hhvl_36 lhov_18 tqjv_12 gryh_27 oyoq_37 liip_41 qyxo_26 ungo_39 wpgt_44 rpzp_25
+1779630189.944	ACK
+1779630190.046	ACK
+1779630190.046	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3727552155 NGC 3 1bfqln99p9lllqja2wn0x2bxtabio6ibnfhvwngz63bym9ke4riqqsk3oha4tycdvkyipbbkfejodv43mo6mr04g049qegecxp33,zelofvwal3zzotkthcvjkb7p2lzkoo34tkdiqju3p57cinft0fhbocbrdebp1whk39ngfngnrdw14rnpak9kgrng7la89nzx9ae,182g7lo98lkkd9kb6np6zvocehktus62ec5nwrl6mw0c20rkviod0nbduhlvgu9jozurc5il7ywcmk8q8bz9z739a37it6hhdxlu,1e3ro195u2vt8h70i6mwoqfeejaalbosmhey125e1usd11eqddbia9tq8vxayw32z0yibqfivkoiedhlutq9qx206kuu3uv592xz,1nzxckbr11i8s9t93a6hhyq5bin4gwyef8chgon51l5ae4j0tyzyo8mr78ipk9jhk7qo5c0n0xp7uwgkkqhteifvrulss0o5pahl 1cu6randhu829vvqfiystwejf3lyxfoxw264ipdmn1n1yyd5bgzskddvyuos7op0ffrs9g44eq4y25rjr2v5c3jpo2keboxoynq0,1dgz3cu8rmr4z09t55pg7zd46ql2tcphyjx71mca1i1kpa7gtp15d478jxlxkogxn6c02yfkooadh97e2fgbyx87yfpljbr5lbsh,u8sfe1iceeynss6hzzc8dh1d7k28d854l6w3yvwsjmbo67gbpmlsls2llsv3u69mhd6nry0fvwcdk1c9ihg9vdcwtqrjvgt31u8,u55m33z16z6l8ek6jqms1igwza5b9v6pej0gbq99bf0ejxjlkiivl3xt52zewgkkux3am7em2sk7ticf47qzach0x9mcwmpg7tb,1ng1xgathrl53ktfu2oiwtk2wat0nlo7byp0pjprhrqp9nnnz3ulgj3jeppjkc6j5p9tb5ykdx6rb2hp2ec9ahlnwvwlffychvfg
+1779630190.149	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3727552155 NGC 2 169m6rrpwdy6tkikzxfcqijgntslouy06z4lc7rdidpzsp1zwkmsahc0n9f4j98tssezsphbphd3vu5xcxkydu7ephwvbbnpxco5,1pajndfhn8d4pjxfmct5w6fwo3c17xksx4d9xwyagjr5r9vmqgpk3odkbhv9ndm0n2ege8edp2wl3ym8h6ozfisbsqyu8xjzm78m,dz3wg9l5ordk4br5pq14d7rdd7igx47g23csz2cqg9yicqgo0lg1c684qxluswazlawm5jcnscjrrfd1s5fwbolz30shcs6y4uw,1vfvuz9i60uvf272a7wnpvyhuyzlrr6fiylf4sil64283p8bfdqbpuzozctx287tbl0qxxpjeek5pciav5vi5vfhc94eor4zye96,ooup8woxcdk69bzz81epg5rl0pt1wubxqmf6gcjg8sum8tdfo3stx2uskl0eyj4iwbljo4au3ollbj9isy23pqh7cogg32urj26 1e22h13tle0uivuatyfbojd2sreh9nfo6dzif2jbor9eow2ol1peg0dexzccsqnaxoctk0ls7ftveanfosv8zwbliwgkj0pf0gbx,6otb3sxc1c18vajrxeay442a59wnuzh022ffxq9nwz1jpjmjwd90o7kzdauakacsw5m5382l7e78qxc2mkwd54se9fvcr9r7a1w,1hsdxhvjhsembmw7aw8sl37o3rxodi3xjdji5sca3v1if6lq1l7z9xtchjx8021b0irf4bfdq6yj56wj4odar2s87j6qzztlo27k,1d00ym1kesytwzuvsdyhygej3c06vspu5tjvvgs73ppucdtg85h1bnwzvrqfc62nox957docp1kze05p8scawt069lcbxx08za3d,q6xvlp7br423ib8wwd6sjjr5qbgr3ljowr325hwn8d4yf7x6o5kkvw5mohq7gv3lxtz3dhem1y096xl2lpmaoky4t4d8mnxepp
+1779630190.149	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3727552155 NGC 7 23c80w2k6xcdcm5731hcvdb0akfvnzfisn5qvhd61wq9tgj17bip3y5nxcuzpeghdruhkzyz0n3dyj2z9fmzdf4rbnl131tz4ivf,1r42s5zbr8lp53xke2qs3bdh3yd43rd4gox8jbjsvw6ef9rmtni8cs8mq4bwfqlpwz4obpu22bhf3jpp08yh6spxlkbferodb7d3,1g138crdjgfygcek8m6b2f5i7c9i0logvgghrfhueiulwz23fnur7wjft5l7b7o2buxihjsr5n0j4148gao589tnjd1e02f85fuy,y634lm24yfkdwkh1h0pomi817tj0i2dg58duuix8wioybv9qao1cmiucb339o4iikb7eknggq17nt0expzvy24mo00czg9y27p7,owss3ot5o4w9gts4e249c43dm1qf7d07cpfg40lmr2j9nkb9ssbiizwxr3b7zqn4y91od78o9dz512ep3elklnjw4nhtraw7occ 1qnjcb8mabu73e71ow5a6k6ddzfg962wqn5348az8r1mssy04kjom11y49dm5qgi2p7yf5r484m8dn9aqyhu0ht92camwbq3bzit,2466wphs32yj50ly0v8uymvdbo90rn1f54tbwsymnvpzbk8s1gc5w6h17frr7yyzkn0b5jyyst4wyz3yriyq7noksuc8obrw9rfs,19wg85cqnzvejrefngyvmxfav2g3toos25lvh35qrr6tc7dkh1vwr6ifwzgl15x8w7hitx7p04zzo65bjg278ub92wx2hecv2nvs,16cs9ug5algu7aqp97330g9y5ol2fixtlz8d9ij3y7z5k0y6iavr838ph6hbdyhkqju61h1tc702bqamwllw04m7en64oxdw8htu,1md2yg3lfweu874v29n4808fruf3rdg9j3a4lxq5jwqglnut9c16d46ra2of1k3tnlqi15wu6ebkoikh6u4eu7prmk96kw0aydn
+1779630190.149	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3727552155 NGC 6 ckni7tlxsbydxe4n8kkp4is1jq2rrxru81f6sj0985pzfz5jfbo3ep5bwfvimef8hnci3zvi895s61ddqvynfm69fcu3sfnfmql,d01x1j0buj21d4o6mxv2p08pdehm1id871clv56iw3gdu72g1ipxl5cexro0yy4rh4ezjok8yeycv1kxxxxxw3vje84goj9fvs6,21thua0in2gnjkpqjrgvuyzedkquggramswuc36owlpbrzgl6ilw40b7i6rbufzswooumh5f8ftww2g2q9ptj0p6cqcfv4j12xdr,et2qt5kwqwphzum9hwtu1ju58n5f2iid6bmict9fr7bubl17x6t70ld4f3x0gcfuk68qwymu9rxt1qlqid45jb2af1tk91u98yp,1n2iwlak78mxyddn4i2ig1at2afn6qtz46cdp2w671qsqkkyltq08uhooju5tqdv41tid4xnfvufhh2fykndciztpmqui26kq5dn 175b4jdymeqrkrq3531qng2e229j8kas0pys01ixg4uivyr1v9ke7aapwsaqzlwy67kmvroy35at5ivy4jsxo313idci6kyiyukc,q3wwjgtacop336fsxl7lbbwfw7vejrjvwx231hs7d1vrxcdrr5zs2h6m559qk72wcvwl7auoievx8ng7ozu6e4ee2b0t1p05zxp,12ve23p70xfivkcdsmiffcwxxmw3pdskjcqdaphpnkelx87bwib3udzqvgyvbumkr2ptqdgdhsvd5ft3si0wg2rjbmrp6w2mf7m0,8nrxmdqh9lcdwyqi2v8nwzahx57qelkwjo31frfbhow8a5nzplg9cmwyxf5n8gy7zxjn9ajrr9m0ql9yrk895zv1fzlcv9nw049,b142k1dyd4xa0ql3q5p7pmtd2gs4bhfcixdzwsdkqiuriaxy806hj68wn9se6iqqu4axtdrtu0fxb93n3ry59o137x2kkn595yw
+1779630190.149	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3727552155 NGC 5 915bg08seyp11yykx2c0l8scissjrx3dg62ezrda4u9md3rv3ralbns98r1sawfmotp5x5tyz9ttdnihnwxcosufewzfqc9q81w,kagni1ok2wl0fu44f2d0a419cl7fwrhbi1739hazttowjz6eiqq9bux7p6j77r03dmfqr1vdnod2ml8vozs8tnlcbncq6c4z02j,nh9w19crslb2811rg6fz28vz3303400xilayw42cap3llml7zsj0qc3xclbh9w51yi9pb41ufvdkiwvvdwpv1vxx4wvgadr8v3m,qr7mokfncvec2ky4alyaxhmeouv8y35a3eo477cr7a2nhvhpilt23d7z0tobipjz8c01delsngqqzp06897f6qh5bhmkglbepi7,1x8v6om8or9s11yok9wcmjei8ntkgzhnf93m012evhbzf07olzu49x0ikw68y1d67ut3uuc9qk239h1zgvdcujr3i904zdpzeotw 1bib0pv9tkdiomurftufqpcvml8i6an9xbezuik4zclaoiflgsc2zg63j9gou9vusgs3suf5kk93tau3uttdtjn2q6db7pcqr3hj,1kw5d06h7q4hafwgbnkzcn4pvga7kngf6q4h6tnxlu930ge9ut6sh1pl1fzgo6c90icyb5qn5w9go8l89ldejtxfzz0g8lopf8dl,20dnnvujjs2tk4tacntron00inqgjcehrhzgalvfybbtppgy18ij05y2yb8cgli7y8a4dkkyxhlao3849m2soc5z29fz50wdz2w9,1j2ozsgqu8arokwlamt1496z2h78z0gv7t50iizlnfsodtings5cjz00efqqp2uzw12701n5nwwp4hykgzosdg802rtm2389az51,12l8k80u0ilm5x62apa3h2qllbbzgx91vlmbx7g8wwjpmsiohwcytzcku8b7r7vpr4hd25r0uz9kkgt6x74eg58qlestfblji0bz
+1779630190.368	ACK
+1779630190.368	ACK
+1779630190.368	ACK
+1779630190.368	ACK
+1779630190.575	ACK
+1779630190.594	ACK
+1779630190.594	ACK
+1779630190.677	ACK
+1779630190.677	ACK
+1779630191.042	ACK
+1779630191.042	ACK
+1779630191.042	ACK
+1779630191.042	ACK
+1779630191.178	ACK
+1779630191.178	ACK
+1779630191.275	ACK
+1779630191.275	ACK
+1779630191.370	ACK
+1779630191.505	ACK
+1779630191.506	ACK
+1779630191.506	ACK
+1779630191.676	ACK
+1779630191.676	ACK
+1779630191.676	ACK
+1779630191.769	ACK
+1779630191.769	ACK
+1779630191.871	ACK
+1779630192.066	ACK
+1779630192.066	ACK
+1779630192.480	ACK
+1779630192.480	ACK
+1779630192.480	ACK
+1779630192.480	ACK
+1779630192.480	ACK
+1779630192.480	ACK
+1779630192.480	ACK
+1779630192.480	ACK
+1779630192.670	ACK
+1779630192.670	ACK
+1779630192.670	ACK
+1779630192.670	ACK
+1779630192.775	ACK
+1779630192.775	ACK
+1779630192.775	ACK
+1779630193.069	MSGFROM @ uinn_17 RECOMM kVfx6hca 3727552155 NGS 3 4 l8xfrsihtf1uwbmdctxqeqyjyidls9eyhbfne4wsqde6uwoovawhhbnz1bmil9ykf9cmtq43uzoprzwylh15scycggtzxh6looq R
+1779630193.069	MSGFROM @ uinn_17 RECOMM kVfx6hca 3727552155 NGS 3 8 38aguv99hq9zukg43o6mi0dkdjah14y2yg4jtitpeezr0uix26kj9fsqlasvruv5umzdr5mzmbdweje37xc6paj99954ntqnvus R
+1779630193.069	MSGFROM @ uinn_17 RECOMM kVfx6hca 3727552155 NGS 3 9 48im9x6p3x7ovxj1klc53otbbqrsi5rwbeuyzrrb5ttpnh0l70kpdtu7tadkjyvkzp9u8jshsg2t3nd4p0hb66lzlnzytzcbx8f R
+1779630193.069	MSGFROM @ uinn_17 RECOMM kVfx6hca 3727552155 NGS 3 10 o7930qzxwip31c5sga2t94bqytq359e6x0kznpcfhhtg9j8smcjc45rlygg4gn9dmkm3an8lr4x1uefj7ue7ves8i0j73nskh88 R
+1779630193.069	MSGFROM @ uinn_17 RECOMM kVfx6hca 3727552155 NGS 3 3 tf641sbqffywrey4a88gfpnbi9fqyd5smqzphtia0loibl0lsuiw26coc4hrd4bzcx12by4n75isjskuaxufftyqs5zyg1xby1j N
+1779630193.069	MSGFROM @ uinn_17 RECOMM kVfx6hca 3727552155 NGS 3 7 s7u62nkqlh3kdu9hl1hgpleg95gan0ms0ixwz2kj62p8c13auho6cf8i12j97o6ok1ti73ki7g4heppj07k45ybgm2c08un7itp N
+1779630193.069	MSGFROM @ uinn_17 RECOMM kVfx6hca 3727552155 NGS 3 8 cy7ekqknh7jdilk78qpkc4ik2hjlhk597wm2kxhfuh9qu9ia8z50dmr06oarb3ae3z00x2d0eq5z9vodwdhsdzavo313zlcm9qs N
+1779630193.069	MSGFROM @ uinn_17 RECOMM kVfx6hca 3727552155 NGS 3 9 agvvrnyyu16882vtnv8jvduuyfyyqwhc2fia51gqfa044i6q3k6hjllxx8tk22tguoxg237w3hiy23zlb19dhpb9s43m3lyrh0z N
+1779630193.069	MSGFROM @ uinn_17 RECOMM kVfx6hca 3727552155 NGS 3 10 7emj6q21qhpd9u5v1u7bid393u7x62563gpuo6mx9ai8qcp7j2b1rs9jh7ct01wiqqa5pw34ez7qa395b5lmjdr7f5c79hh5r3h N
+1779630193.069	MSGFROM @ hhvl_36 RECOMM kVfx6hca 3727552155 NGS 7 4 32b0ez63fmxy1ibx5biumms88bnikq5yr0cgaswdpj2ezfw8vo10cicem7xaqxrst4cndm44oux0hoen0nvrgwg0jnsu49rg4um R
+1779630193.069	MSGFROM @ hhvl_36 RECOMM kVfx6hca 3727552155 NGS 7 8 8xrlol1mppas13numwp23neo9cprzz51rodaugmptnehnxx17i921exrlieyseuww4ya1xrhbfnrig60pvs1xh9jczanku8aks5 R
+1779630193.069	MSGFROM @ hhvl_36 RECOMM kVfx6hca 3727552155 NGS 7 9 57363l4h6s4uvyqgdahevr4brmxzeooaiqmpcd8h1p7z3t7ska65bwogatv7xtqgqncqbi58ujjpfi768pq51fq9q9ow7nyqruu R
+1779630193.069	MSGFROM @ hhvl_36 RECOMM kVfx6hca 3727552155 NGS 7 10 zsg6ed13sivg77yotuxwe1nortvr0z2ks645btkw4i6fxdtr36ytp6kzgrtht4fv27026b2elna0u2hmfl7zk6o6v5mzxi4gs8t R
+1779630193.069	MSGFROM @ qyxo_26 RECOMM kVfx6hca 3727552155 NGS 6 4 d5bc57q1annuj7otv1si12dq1nxslprb13g364njq8h1tbrbu22db6mdzubxbragcao2c1ydks95v5mauabv4omqf8zv84k5d0m R
+1779630193.069	MSGFROM @ hhvl_36 RECOMM kVfx6hca 3727552155 NGS 7 3 r3muuwqagd2xn23ezlb0ln1zg8hsiiw2dvyr9egeburoib4yb0o19naj9ozpj7ljjtepyp7huqhuoybfwajn0qqxcgxyt3ec4d N
+1779630193.069	MSGFROM @ qyxo_26 RECOMM kVfx6hca 3727552155 NGS 6 8 nbmu98ubfg0aj1u74px0f8tizqn0bkiutahaafyk5lfyk8d9xstyh6ehraxo5qzatfqg2d5229wferr4gt4s2cqswonzwywd3g7 R
+1779630193.069	MSGFROM @ qyxo_26 RECOMM kVfx6hca 3727552155 NGS 6 9 dtqynn1q6suonauirrswss196txhu97x6x84f8zffex6cii55rg38qp1dkey2hw6fsjv2bb49kgsze9naayz048qoxws0q345bb R
+1779630193.069	MSGFROM @ qyxo_26 RECOMM kVfx6hca 3727552155 NGS 6 10 tsszqda9hqa2boxmgx1ikrt84n9djpnc9xoo9xmt1c24vuecx04uhdlyk3w78090itk6ar96gz0iiuuaouv1um1eajcbeh0r9t9 R
+1779630193.069	MSGFROM @ qyxo_26 RECOMM kVfx6hca 3727552155 NGS 6 3 dyaygcfun4sgttl8i8pozq0s1d7zga2amy0l6u5u8fnwruijm9hth3ku1w36nv8qrjktf8h6iw1566lmfu1dg028m9tltg4gj6z N
+1779630193.069	MSGFROM @ qyxo_26 RECOMM kVfx6hca 3727552155 NGS 6 7 yan5ldan636dzuasa4iwkqaeewnrrtu92ukwkst8ge3tcchhjozo73d1d091j0ljoup5c51sdxig4d9mgfg2t3yhdm3qaj11zsk N
+1779630193.069	MSGFROM @ qyxo_26 RECOMM kVfx6hca 3727552155 NGS 6 8 u26j00p33fmlbt3yncy5fb025xpvh9yhexhtavfp7ed4jjjty27xvqoapmvj8igw12qbc3q4612er3ge3xlbb03hxc64f6a8sv N
+1779630193.069	MSGFROM @ qyxo_26 RECOMM kVfx6hca 3727552155 NGS 6 9 kt7m40ddgmtmgey6tgx4gc7vclw5qvu5x9joezbv3qk40twlhbl2rlkdf47jt6wkr0zp5k5p4wsbn1bnu5h12mlxznl50fvc9bh N
+1779630193.069	MSGFROM @ qyxo_26 RECOMM kVfx6hca 3727552155 NGS 6 10 bovqqxpe2jhifhd1wrwskakx3f1b9hkyyfavok8t5jdb7d3amsp3fpqk0i9jw0cwtzbxnnujdh26iqkdmqfe1e7hv2cuoj8xwi5 N
+1779630193.094	MSGFROM @ nnhi_0 RECOMM kVfx6hca 3727552155 NGS 2 4 c1wn05f79uhnv9cfbe836ql7fs4m441d5ubzjbolyu9s6hhn0ob1eikvr4efdhtblhg8swn2fukbffvefgixsubhgb7gq245vnt R
+1779630193.094	MSGFROM @ nnhi_0 RECOMM kVfx6hca 3727552155 NGS 2 8 ioe8vsh9pw77azoh6ujdnh5hvwuk2be638tr78hfajxjy1xkgvb1ia9ne8xpaqqy1xnvomuvz4c9mroenfkgg2z5j07gut1d86e R
+1779630193.094	MSGFROM @ nnhi_0 RECOMM kVfx6hca 3727552155 NGS 2 9 mu2mdav9l6z30r731umx0ongnhynu447uzzcit5uw2st09q7dk787j6wv9jbedgzemlgkbjy66frixcbj7559z7md67sregsdq4 R
+1779630193.094	MSGFROM @ nnhi_0 RECOMM kVfx6hca 3727552155 NGS 2 10 anaqsh7z79xtlliyml77qvavc4et53z66xzeq5s1461yfi3gvitfat592bsdjolghrmemrwqc9kzaqjsvknxle3pipnc4wehe7j R
+1779630193.094	MSGFROM @ nnhi_0 RECOMM kVfx6hca 3727552155 NGS 2 3 shwkmlv9cv7e4uonrum0w1o6zxpzxsj8zmd1c8p8730va7xxgrelpy1aue4buzav6ju55we2kaur8ihk6jqn0w0ni77h7685vt0 N
+1779630193.094	MSGFROM @ nnhi_0 RECOMM kVfx6hca 3727552155 NGS 2 7 1z1h722rv3sl6hd9r1gr6s8wdx2o5llx75ot74u2brlywirt32ja30jnf3g3vlayyy20ijgc5y9fpqkd1uzq1gketiqy48b1fyu N
+1779630193.094	MSGFROM @ nnhi_0 RECOMM kVfx6hca 3727552155 NGS 2 8 10vhein5t7kje9y4fyhngj10lvdoail9llszpkk223f8r0y2fmng84cb4erhyck6retslqfketq1ldynht1t997bfhsrkx378e1 N
+1779630193.094	MSGFROM @ nnhi_0 RECOMM kVfx6hca 3727552155 NGS 2 9 69ptvdyomgr1nq5y6uqut9421a1wikc5sl9hvrye1xx22vurwho8tvfa5k6siinm14tel4j5jdnkiynsnak48t7jgteq9p4w3bt N
+1779630193.094	MSGFROM @ nnhi_0 RECOMM kVfx6hca 3727552155 NGS 2 10 qi0tncs3q8sc4lx2fersh2b7xa3dph5ofx1mzvagbaj38roojzwf09ahysskes3mdne6q09dtzhwlpzynldhtdiv78q7fq4dk68 N
+1779630193.094	MSGFROM @ hhvl_36 RECOMM kVfx6hca 3727552155 NGS 7 7 xtxmlsfi38nkmmyctmg6re5eoga51925m6d9vcj75n2j3brooucf05uvgs34r0w33fhjoxn4i537o110za112pjodecszac5ddf N
+1779630193.094	MSGFROM @ hhvl_36 RECOMM kVfx6hca 3727552155 NGS 7 8 pfjvdrj86b66bdyevqw4m9vaieh0nigjv9iqz1jfntjg2e1t5efbgh0rhjw7nimgjdl9ci2vsy2oercmyswho1nyh2pz04g7aqz N
+1779630193.094	MSGFROM @ hhvl_36 RECOMM kVfx6hca 3727552155 NGS 7 9 518xertcg30f72jn5lnv7t5ad9p4u0a16yn6mgtc0jo15xvsk2hq7z596y6qqpla8qkzwswfskfffp12pfrpgpnssu2o07q8apj N
+1779630193.165	MSGFROM @ hhvl_36 RECOMM kVfx6hca 3727552155 NGS 7 10 yl8rdtcz5rtv8c1xfl99qns06741ahp935hqx25plrngl922omwya20evl0ly670mtlgqo83ffqpgb8rkz2d0cwwcg52mx2e2xo N
+1779630193.165	MSGFROM @ qksp_2 RECOMM kVfx6hca 3727552155 NGS 5 4 vrmkzm7l8s9thnj9ecfbqnj42c31gxi2hxqdj2il9x0xwn0uro207166olx13tgrazy42l672v6n7ywzuoew08iqkuy3p1kmv2i R
+1779630193.165	MSGFROM @ qksp_2 RECOMM kVfx6hca 3727552155 NGS 5 8 llm9teoyc3jm8bxm7mtp6pny7mmuzixtpg6su1uph3t8olm9fdx3d7t4rb8zpgdht8p4t5k6a8coffkdgnkrulljtbvmhxxte3y R
+1779630193.165	MSGFROM @ qksp_2 RECOMM kVfx6hca 3727552155 NGS 5 9 bf38jkk7uvjeh2filrgv4ztkp59a7h421rse6bz6yzbpd7qfvqxhpjghk6jr6hba9rbcofdxy24pxnth0irb6q0zqay6qi5kfcz R
+1779630193.165	MSGFROM @ qksp_2 RECOMM kVfx6hca 3727552155 NGS 5 10 c11t0n2wqzy7zxshfeitle5zb7z6fz7miwzp2lfku8ys729kdupb217lmtrkrax1szb3fej25htuhdi3aorke3yaa5n632g6hso R
+1779630193.165	MSGFROM @ qksp_2 RECOMM kVfx6hca 3727552155 NGS 5 3 q1z31k55gnwdcyfjucvvulgybx34akgyyhnzz4q5fllihw8b0tyi2y1vuehbhzjv8p5bmcfgz5adqv4hoyefrxgn08oru1r4sej N
+1779630193.165	MSGFROM @ qksp_2 RECOMM kVfx6hca 3727552155 NGS 5 7 101ln9da6228qtlyramrgpw9byv18bfg86rvx9k2udaoaie3n5wzd69wlmvwdqgpziymrlcdi3xsm1bp557gcy92ksku9qaoie0k N
+1779630193.165	MSGFROM @ qksp_2 RECOMM kVfx6hca 3727552155 NGS 5 8 ssq52rb2q41p3ni4tjpws1nknb65bhajw6turc5j3piaxjmsat3bsg16lantk2s6559ye4h0yeeoll9n1k7cxmy49ofvg8mekcu N
+1779630193.165	MSGFROM @ qksp_2 RECOMM kVfx6hca 3727552155 NGS 5 9 kb9ndcv85hvq0ks91rul92bo0ndvbfujaqao2myy93gi0u9cma8fainnmdzmft58clrkzdk2hiib1a4tyjp7z9cwjdvm4s0cmrs N
+1779630193.165	MSGFROM @ qksp_2 RECOMM kVfx6hca 3727552155 NGS 5 10 6mevz14k50sutgqww5zib6pd0eqqgiq5qfigoxfwtw6qt7omxjobhxdqufyvvqek7ikg9dyxnw5pv9s9avhpneb88qs0hs1gsjr N
+1779630197.584	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3727552155 BR 2 j828y2tvbj8nynhcf8cf48q0xgfvuncvymhhc9t1ma7xu1zilymq8xbvd1ozuxz7ohb9yhv7xfle3csob9e7i03f4p1hyepsppr
+1779630197.584	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3727552155 BR 6 4ym7ujnms4z35vdjxj1r459sq9pps2h2za7biid51dtpslvpzk2wdxjug3y8q3msqblaplnmbvvnxyy581co9ucmhcjr1a3p5te
+1779630197.584	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3727552155 BR 3 xr9v4asyho75rsr02od7wl8i3kalgfxh4figjm0utne16oabn8bt802pfudemqcp957p6l0zew4721uzh7dcnkyu9vkp5dv2fvn
+1779630197.890	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3727552155 BR 5 9abuqml77g8f7kajwl6eyn4w29yphze87zuqt4ew4af8f9qq36ufpugsgo1okqvjqx1a3d6xrjfi1rk2seh2xl5xht9l8qjkjkx
+1779630197.890	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3727552155 BR 7 pnbva1fftnvzxmkzn3mytaeezwi3rri3219xeia9lq7uk5mcssfvggiy37dtsp8yur8ey2xkjwoaki7f2tiyk9ktvehmlwzuw1x
+1779630197.980	MSGFROM the-whispering-knife nnhi_0 RECOMM kVfx6hca 3727552155 PR 686j3qb8lzwja9j0dnnnrjp230vtmiyffddvx65luoyg7p52mpmg0x7s4y57dkgedysuhtqb8wdio0o0xhdgkinskz7we6h6cd5
+1779630197.980	MSGFROM the-whispering-knife uinn_17 RECOMM kVfx6hca 3727552155 PR 686j3qb8lzwja9j0dnnnrjp230vtmiyffddvx65luoyg7p52mpmg0x7s4y57dkgedysuhtqb8wdio0o0xhdgkinskz7we6h6cd5
+1779630197.980	MSGFROM the-whispering-knife qyxo_26 RECOMM kVfx6hca 3727552155 PR 686j3qb8lzwja9j0dnnnrjp230vtmiyffddvx65luoyg7p52mpmg0x7s4y57dkgedysuhtqb8wdio0o0xhdgkinskz7we6h6cd5
+1779630198.185	MSGFROM the-whispering-knife qksp_2 RECOMM kVfx6hca 3727552155 PR 686j3qb8lzwja9j0dnnnrjp230vtmiyffddvx65luoyg7p52mpmg0x7s4y57dkgedysuhtqb8wdio0o0xhdgkinskz7we6h6cd5
+1779630198.364	MSGFROM the-whispering-knife hhvl_36 RECOMM kVfx6hca 3727552155 PR 686j3qb8lzwja9j0dnnnrjp230vtmiyffddvx65luoyg7p52mpmg0x7s4y57dkgedysuhtqb8wdio0o0xhdgkinskz7we6h6cd5
+1779630207.077	TATA_AND_FAREWELL
+1779630207.370	[2m 210.698087492s[0m [32m INFO[0m The sheriff's back---no words, no welcome, just that look he gives when he's deciding if you belong here, or don't.
+1779630207.370	[2m 210.698121953s[0m [32m INFO[0m What do you do?
+1779630210.085	[2m 213.465601492s[0m [32m INFO[0m Every ghost in this town knows your name now---the flag is yours, for better or worse [3mflag[0m[2m=[0m"bbb{cavalcade_of_beggars_and_thieves:r6RfIwRESjd3RXMpEhFHhYGaKlN0iIeWNVvlXaeCqpBERMhi7BK_wMjnkWWapZNDMmsrN93gxK6hn--j1sNLYb5Qc_aZiVfm2TM}"

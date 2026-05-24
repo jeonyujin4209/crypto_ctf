@@ -1,0 +1,31 @@
+1779606320.784	Team token: == proof-of-work: argon2id ==
+1779606320.784	    python3 <(curl -sSL https://pow.ctfwithbirds.com/pow) solve a2id.v2.17.2faa9b4574e7adc54294010ac908ff6d
+1779606320.784	
+1779606385.581	Solution? Correct
+1779606385.653	[2m   0.000283545s[0m [32m INFO[0m Smoke curls from the saloon chimney as the town stirs to life.
+1779606386.655	[2m   1.002028083s[0m [32m INFO[0m The air smells of tobacco, blood, and old secrets. [3msaloon[0m[2m=[0m"the-black-vulture"
+1779606387.656	[2m   2.002198776s[0m [32m INFO[0m The piano stops mid-note as you walk in, coat dragging dust behind you. [3mprotagonist[0m[2m=[0m"deadeye"
+1779606388.670	[2m   3.017720588s[0m [32m INFO[0m The dealer smirks like he already knows how the night ends.
+1779606389.675	[2m   4.022099694s[0m [32m INFO[0m A few names are muttered, a warning or a prayer---and with scarcely a goodbye, the sheriff steps off the boardwalk and out of town, like a man leaving something half-finished. [3msheriff[0m[2m=[0m"silver_star"
+1779606389.677	[2m   4.024408577s[0m [32m INFO[0m What do you do?
+1779606389.799	MSGFROM the-black-vulture silver_star COMMITMENTS THO37Klq 10wpn9vnme2yi6wnbdlkwt4xyfsq4snw4ped2tc9f3ox9mfw2643v2ewb7dq0ndltvqy706uklv2i04w1czhioiqws8lc3z1h0mz 2 qq3wxap4dmyivbpb80ydhm89341ouez21ae989zy2jpni3kbh6lkzrqx17pm855id9758pm3cexes6hyfoo5kt1ivl55z2qt1ed,10ig4ubfzz21ffq53dva8vv53ngo7119iktirs8khuy0dwwj87l1029c72cc80ygy6mgooktqgseyxhr4i295kuj3osbis4kxyuk,s633bhw95i2bqcimo4kimyfi4a3dmtxaqce86mt0uitrk39yhe0qoqm1hnpcmmfppeifmzd1vrrpt388vyocpsayk4jw63goumh,tpg2ex83qo1bkzh7w5y2fpyr8w2z4axg39i9w1mudz3ppc7rh9fhnw9sdfcqvx5hwsboaj94c3jf5vk72rfwplq7r7wyesncml4,134d32rnj9e5zjpzch6j9ll6vhd686stut595t7a7xz9i8edtbgr249smhf97p3ach0bzt7do6fu26jr7wgrckzml9ajcor22n8j svxy_29,deadeye,qits_27,tguq_39,youn_19,pjkt_42,nhuw_0,yiwv_20,upys_14,qznk_34
+1779606389.799	MSGFROM @ silver_star SHARE THO37Klq 2 7gmgbmnf76jj9kluoh4pedby7036j9omcoop2aw6rwp4xs4e38ckevixasqspmfpekzyauuio8wl27dk4hvwb43l242c0dyi8j6
+1779606488.702	MSGFROM the-black-vulture svxy_29 RECOMM THO37Klq 2389728191 PROPOSE
+1779606488.702	MSGFROM the-black-vulture tguq_39 RECOMM THO37Klq 2389728191 NUC 4iiixqz4pgk0wy0epzk2h866x6hi3vp251psvm838dd83y9x3jlbtvpvrxcpe6l0g9e1bfh1yrwd9jiphhqqaxgetm2uzghxpew
+1779606488.702	MSGFROM the-black-vulture nhuw_0 RECOMM THO37Klq 2389728191 NUC 10k1kzx16gzw8n57wtyksw91xcxpwjux52u005mfrtatha7pkpi1q52bihxmgbrockh11yg4bk9yym85rcxen0t1abqg85wfjyje
+1779606488.702	MSGFROM the-black-vulture yiwv_20 RECOMM THO37Klq 2389728191 NUC w2c1bso852wt99sku3jxz0atoox4v7jy09ml8qv0gd21pwbxv2lkyxger6x88to3wqu2h2lhohsqq2iskyf91gnttmnnrbtxkr3
+1779606488.702	MSGFROM the-black-vulture qits_27 RECOMM THO37Klq 2389728191 NUC dpbqxx7vx1u7xuwa7qpf23dvtodt4spfyvztoi7loz5pm7ecno79hua98rw91s2fdpj0pdq0biznjkdy8ingic760a80qh6rd3k
+1779606488.702	MSGFROM the-black-vulture upys_14 RECOMM THO37Klq 2389728191 NUC unegm1xvsnpp1nidbuyhzcuca9dycrv3dqyr2jv7agix5htr84rvgxxg9qla3q1pqvgd0bzw7rdhsgmxfee0nehuhtvt36pmp50
+1779606488.702	MSGFROM the-black-vulture qznk_34 RECOMM THO37Klq 2389728191 NUC ohl2qr213r1wv254b6hm5xz9ldn83mzlgh9vds4chwqypn7zxqz6i4gr8ncx1dxrjhi2ip1hrd9qac8dtwcwas3ey9mch2me27o
+1779606488.702	MSGFROM the-black-vulture youn_19 RECOMM THO37Klq 2389728191 NUC ku0t9jq5780bf7pwi9zo1aby95979y89yjdi59yip95m4zxrlstwzm6vh7q2qbw9rgrkbiu7j5rl9zhib0q5fmd3eyaig6s79bt
+1779606488.761	MSGFROM the-black-vulture svxy_29 RECOMM THO37Klq 2389728191 NUC edh5zk8y454k11n6qail3qvciqq4sakb8kl9v2adsjxuf8a2p0lmbuq1u7f6s6rynzkx3b91woby5xqhlzdlx9szexzx2xpdt2q
+1779606493.820	MSGFROM the-black-vulture tguq_39 RECOMM THO37Klq 2389728191 JACCUSE ProtocolBreach
+1779606588.787	MSGFROM the-black-vulture svxy_29 RECOMM THO37Klq 3432380451 PROPOSE
+1779606588.787	MSGFROM the-black-vulture tguq_39 RECOMM THO37Klq 3432380451 NUC t712ldw5i1bh1io8dlz6h5akhiibkbo4jcj0yb2n3tvrdqx9hgbniu0q6he95kpg8hk1tp3m80u0roqg94xl0aw9jlrjbffd6e
+1779606588.787	MSGFROM the-black-vulture qznk_34 RECOMM THO37Klq 3432380451 NUC pztl33wopc9qaww7udwy3sqwe9gvpmx9pnh941m3hyizyanrngp9dqskg7q02gtpb528nn35zle1c0vpehwwjqrlicfq7c73m03
+1779606588.787	MSGFROM the-black-vulture nhuw_0 RECOMM THO37Klq 3432380451 NUC z207vllayun311q6w47eit2iwozf53depkl2o0jnjazwp31otov7uqwgpxh565voqsish9f2ilp1jsrsdtuy5wdxh3pn9qf1qk6
+1779606588.787	MSGFROM the-black-vulture qits_27 RECOMM THO37Klq 3432380451 NUC 2bqn69zaifkfks97gspqo6tskltvzrzhl57d6sni4hyobpxx7xx3ql4ypqr6zkzeu1psjjxoxxmhd6rwratia4fp2b7r7q8e62l
+1779606588.787	MSGFROM the-black-vulture yiwv_20 RECOMM THO37Klq 3432380451 NUC 5qify3mg88assry9pz2y8syyz6kahv5rgofz3k727f2tmsvgido47uj2c20dt82rbg2ry3zclpmarg44kzz697j1zjeele0vddg
+1779606588.787	MSGFROM the-black-vulture upys_14 RECOMM THO37Klq 3432380451 NUC h7i9na491qwvd7rji8pyvv6lnn5u1t4qfip1d8vfk8zjxly4mkexzezgc6tc61buufym6nh8fyb6bv8kpq2sc4mfghbbnlaqww4
+1779606588.847	MSGFROM the-black-vulture svxy_29 RECOMM THO37Klq 3432380451 NUC 2iet55oiwqkubxg8sxw382xj8t2nk3zi26rqo182657ktky67x5mlz2l4dix666sxbbha77ztsl4egcy74k7xzguzrv354uyz43
+1779606593.846	MSGFROM the-black-vulture nhuw_0 RECOMM THO37Klq 3432380451 JACCUSE ProtocolBreach

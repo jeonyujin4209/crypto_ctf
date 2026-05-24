@@ -1,0 +1,12 @@
+1779608812.269	Team token: == proof-of-work: argon2id ==
+1779608812.269	    python3 <(curl -sSL https://pow.ctfwithbirds.com/pow) solve a2id.v2.17.61142ca4655ce55292d878692b3f913e
+1779608812.269	
+1779608857.824	Solution? Correct
+1779608857.891	[2m   0.000261144s[0m [32m INFO[0m Smoke curls from the saloon chimney as the town stirs to life.
+1779608858.892	[2m   1.002309198s[0m [32m INFO[0m The air smells of tobacco, blood, and old secrets. [3msaloon[0m[2m=[0m"the-hollow-oak-saloon"
+1779608859.893	[2m   2.002491374s[0m [32m INFO[0m The piano stops mid-note as you walk in, coat dragging dust behind you. [3mprotagonist[0m[2m=[0m"cold_iron"
+1779608860.908	[2m   3.018307796s[0m [32m INFO[0m The dealer smirks like he already knows how the night ends.
+1779608861.911	[2m   4.021193701s[0m [32m INFO[0m A few names are muttered, a warning or a prayer---and with scarcely a goodbye, the sheriff steps off the boardwalk and out of town, like a man leaving something half-finished. [3msheriff[0m[2m=[0m"good_as_gold"
+1779608861.913	[2m   4.023571006s[0m [32m INFO[0m What do you do?
+1779608862.246	MSGFROM the-hollow-oak-saloon good_as_gold COMMITMENTS zvR0dCor vv4hnlye2aaqumbdbzvnoxungfn4houlclx37u707hc54ln8dknzsns8un2c2m7zjn7cetvcurjjpca40x8i6tinscktvfrd4rz 2 jpc6mdjh9gnqqcuqyzggwex2vae5d2r38p1h9srkv8gym1jgjz9uz5vu9n4es1max99kqzbe1753tm5qu319i97og6gjmzb1oxe,1fliv9jxdc8vn7d1vhoku3h96xvfynfw6xltj0rgp6kjnesh0tj6bi7rq5v443t2t030obbxzskvoxmys72k9akaczfiujf10ad,105mnrmv17p57spqojtywjhrj4ea5b69ryvdfe62wuv50pso01ljiudv7q1124o3zpamfeal1v1rwjsvnvspw77k8s4apesrvcsf,1fw3z02bvedygnumh9itbk2z9ldw68pe1m6cfuftlmrkhmz66mj7f3czqyx2bc48baaakx3b6wtslhl7nngc3qwg9uv0u43s0ric,1hzliptlkcsvgladk7sb3cc5u406781seicoar0654wxrizj2pxktyx15fufnvhebh0xlyfgoxc8qjarc2n74670hygh5u8nlh7n ksoj_5,skvy_1,zhhi_3,hvxp_20,qznq_33,xhzk_26,tiik_42,nnij_17,kpmu_45,cold_iron
+1779608862.246	MSGFROM @ good_as_gold SHARE zvR0dCor 10 mkp9am43ltvzn09parluwlfc9adghd0gzziu20zcuxmptwvs9kakx37udpmj7p919abvcprh7ejf5v1ovy5q81atlrx8dba37eb

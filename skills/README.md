@@ -77,6 +77,8 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [dghv-overflow-oracle-mod-N-crt](attack/dghv-overflow-oracle-mod-N-crt.md) — DGHV `c=p*q+N*r+m`에서 (c%p)%N decrypt 오라클 + 공격자 제어 N. Action 1 + K번 add(m=1) 누적 시 `T=N*ΣR+(k+1)`이 p 경계 넘으며 decrypt가 `((k+1)-j*p) mod N`로 계단형 변화 → 비-+1 diff = `1 - p mod N`. 허용된 N 범위 내 prime sweep + CRT로 p 즉시 복구. η-ρ tight (gap=2 bits)라 lattice 안 통하는 케이스의 정공법. CSC Belgium 2024 Additional problems
 - [invalid-curve-composite-modulus-twist-crt](attack/invalid-curve-composite-modulus-twist-crt.md) — EC scalar mul mod composite N=p1·p2 (no on-curve check) → CRT decomposes per prime. x0가 각 prime side에서 twist 위 smooth-order 점으로 떨어지도록 CRT 구성 → 한 query로 PH×2sides → CRT k. Per-side sign coupling으로 4 candidate, 서버에 순차 제출. CryptoHack An Evil Twisted Mind
 - [smart-lift-attack-Zpk-modulus](attack/smart-lift-attack-Zpk-modulus.md) — modulus=p^k(k≥2)에서 |E(F_p)|·twist 모두 prime이어도 reduction kernel ≅ (F_p,+)이 항상 새는 channel. Hensel-lift base point + N·P (Jacobian, hand-coded mod p^k) → formal log -X·Z/Y ÷ p → k mod p in ONE query. CryptoHack An Exceptional Twisted Mind
+- [pedersen-pss-k-position-accumulation](attack/pedersen-pss-k-position-accumulation.md) — Proactive Pedersen VSS recommittee의 1-collusion attack. `new_users.add(user)` dedup 없으면 user duplication으로 K positions 누적. NUR XOR subset 조작 + self-NGS math correction (server self-DM filter 보정). K=5 → 5 evaluations of same polynomial → Lagrange. The Black Talon (DEF CON 2026)
+- [unwrap-panic-as-kill-primitive](attack/unwrap-panic-as-kill-primitive.md) — Rust/tokio peer가 server `ErrorContinue` 응답에 `panic!("Unexpected")`하면 의도적 error 유발로 peer task kill. Forged Commitments+NGS의 fake user DM → server "No such user" → peer panic → connection drop. The Black Talon kill primitive
 
 ---
 
@@ -109,6 +111,10 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [premature-dlp-wall-missed-value-reuse](failures/premature-dlp-wall-missed-value-reuse.md) — Collision 시 "값 만들려면 DLP" 결론 직전 자문: 그 값이 *이미 protocol 안에 자유 형태로 존재*하나? Honest commit 그대로 복사 가능한 자리 찾으면 DLP 우회 (Ham2)
 - [per-side-sign-coupling-not-per-factor](failures/per-side-sign-coupling-not-per-factor.md) — x-only PH ±k 모호성은 per "y-lift unit" (per prime side / per group) 수준으로 묶임, per-factor 아님. CRT-decomposed multi-side에서 2^(num_factors) 시도하면서 base sign 고정 = valid configs 절반 누락. 정확히 2^(num_sides) enumerate
 - [infinity-return-as-leakage-channel](failures/infinity-return-as-leakage-channel.md) — Server source의 "Infinity"/error sentinel branch는 보호용처럼 보여도 side channel: GCD(Z, N)≠1 trigger = `(k·P) ≡ O` in some quotient = `k ≡ 0 (mod ord(P_F))` leak. ord(P_F) smooth하게 만들 수 있으면 PH per query. Defensive code로 dismiss 금지
+- [self-broadcast-filtered-math-correction](failures/self-broadcast-filtered-math-correction.md) — Server가 self-DM filter (`from != sender`)하면 우리가 보낸 share를 우리 자신이 못 받음. MPC reconstruction에서 누락된 self term 수동 보정 필요. 결과 ≠ 예상 / 일정 offset이면 missing contribution 의심. The Black Talon
+- [tokio-broadcast-lag-panic](failures/tokio-broadcast-lag-panic.md) — `tokio::sync::broadcast::channel(N)` + `Ok(msg) = ... else => unreachable!()` 패턴: subscriber가 N 메시지 lag시 RecvError::Lagged 매치 안 됨 → unreachable → server task panic → 그 client connection drop. 50+ peer high-traffic protocol에서 우리 read 속도 못 따라가면 자기 자신 끊김. The Black Talon
+- [stdin-forwarder-guess-race](failures/stdin-forwarder-guess-race.md) — orchestrator/nsjail이 stdin→child forwarding하면 child 죽기 전후 race. GOODBYE 직후 guess 송신 시 forwarder thread가 consume → broken pipe → drop. 해결: guess를 3초마다 반복 송신 (적어도 하나는 in_thread death 후 도착하게). The Black Talon flag submission
+- [nur-all-bot-validation-mpc-cycle](failures/nur-all-bot-validation-mpc-cycle.md) — `XOR(random shares)` aggregation 프로토콜에서 일부 peer share 누락 시 우리 XOR ≠ peer XOR → false MATCH로 cycle 낭비. 받은 count == expected count 검증 + 부족하면 cycle skip + JACCUSE abort. The Black Talon R3 cycle 디버깅
 
 ---
 
@@ -122,6 +128,7 @@ AI가 삽질했거나 직접 쓴 패턴 정리. frontmatter `type` 기준으로 
 - [sage-gf-large-fp2-construction](tools/sage-gf-large-fp2-construction.md) — 큰 p에서 `GF((p,2),...)` → GAP order 에러. `GF(p^2,'i',modulus=[1,0,1])`로 바꿀 것
 - [sage-preparser-xor-trap](tools/sage-preparser-xor-trap.md) — `.sage` 파일에서 `^`는 XOR 아닌 거듭제곱. Sage XOR은 `^^`
 - [try-first-principle](tools/try-first-principle.md) ⭐⭐ — AI 1위 실수: 이론만으로 infeasible 판정. 생각을 실험으로 전환하는 범용 원칙
+- [live-pow-budget-calibration](tools/live-pow-budget-calibration.md) — kCTF-style PoW (Argon2id difficulty 17) 시간 variance 30~100s. nsjail 300s budget에서 game phase = 300 - PoW - 5(setup) - 30(post-game). 첫 PoW 측정 후 deadline 동적 계산 또는 conservative 220s fixed. The Black Talon live attack
 - [stuck-checklist-5-questions](tools/stuck-checklist-5-questions.md) ⭐ — "복잡 → skip" 전 6문 체크 (Q0: 실측 근거 / 분해 / dir(obj) / 제목 공격명 / 두 번째 약점 / github 구현)
 - [cascade-not-all-at-once](tools/cascade-not-all-at-once.md) ⭐ — AI 자주 빠지는 함정: 한 번에 다 풀려 함. A→B→C 단계적 cascade로 분해. 각 단계 산출물이 다음 단계 input
 - [z3-bitblast-sat-for-crypto](tools/z3-bitblast-sat-for-crypto.md) — Z3 bitvector 곱셈+XOR 문제에서 `Then('simplify','bit-blast','sat')`로 극적 속도 향상

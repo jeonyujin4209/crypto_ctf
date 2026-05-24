@@ -1,0 +1,49 @@
+[+] committee: ['yqyz_0', 'uhop_35', 'pizg_13', 'xuny_27', 'zpwn_45', 'vulture', 'gnxn_5', 'oorw_12', 'ktrj_34', 'oult_29'], our_key=6
+[+] our positions in sheriff_users: 1
+[+] initial kill: yqyz_0
+  -> retry 1/3
+  -> retry 2/3
+  -> yqyz_0 dead (active: 50)
+cycle 1 starting, dead=False, elapsed=-940.3s
+cycle 2 starting, dead=False, elapsed=-937.4s
+cycle 3 starting, dead=False, elapsed=-934.6s
+cycle 4 starting, dead=False, elapsed=-931.8s
+  *** cycle 4: CHOSEN! K_new=2, evals: keys=[5, 10] ngs=24 br=8 ***
+    new sheriff_users: ['uhop_35', 'pizg_13', 'xuny_27', 'zpwn_45', 'vulture', 'gnxn_5', 'oorw_12', 'ktrj_34', 'oult_29', 'vulture'], n_my=2
+cycle 5 starting, dead=False, elapsed=-913.2s
+  cycle 5: trying to kill uhop_35
+    -> uhop_35 STILL ALIVE; retry next cycle
+cycle 6 starting, dead=False, elapsed=-907.1s
+  cycle 6: trying to kill uhop_35
+    -> uhop_35 confirmed dead (active count: 49)
+cycle 7 starting, dead=False, elapsed=-900.9s
+cycle 8 starting, dead=False, elapsed=-898.2s
+cycle 9 starting, dead=False, elapsed=-895.3s
+cycle 10 starting, dead=False, elapsed=-892.4s
+  cycle 10: K=2 N=48 no_match my_idx=47
+  cycle 15: K=2 N=46 no_match my_idx=45
+cycle 20 starting, dead=False, elapsed=-864.2s
+  *** cycle 20: CHOSEN! K_new=3, evals: keys=[3, 8, 9] ngs=30 br=6 ***
+    new sheriff_users: ['pizg_13', 'xuny_27', 'zpwn_45', 'vulture', 'gnxn_5', 'oorw_12', 'ktrj_34', 'oult_29', 'vulture', 'vulture'], n_my=3
+  cycle 21: trying to kill pizg_13
+    -> pizg_13 STILL ALIVE; retry next cycle
+  cycle 21: len(commits)=0 len(nurs)=0 K=3 - insufficient (need 2)
+  cycle 22: trying to kill pizg_13
+    -> pizg_13 confirmed dead (active count: 45)
+  cycle 25: K=3 N=43 no_match my_idx=42
+  cycle 27: K=3 N=42 MATCH subset=0b0 my_idx=41
+  cycle 30: K=3 N=42 no_match my_idx=41
+  cycle 35: K=3 N=42 no_match my_idx=41
+  cycle 39: K=3 N=40 MATCH subset=0b0 my_idx=39
+cycle 40 starting, dead=False, elapsed=-732.4s
+  cycle 40: K=3 N=40 no_match my_idx=39
+  cycle 45: K=3 N=40 no_match my_idx=39
+  cycle 50: K=3 N=40 no_match my_idx=39
+  cycle 51: K=3 N=40 MATCH subset=0b10 my_idx=39
+  cycle 55: K=3 N=40 no_match my_idx=39
+cycle 60 starting, dead=False, elapsed=-640.7s
+  cycle 60: K=3 N=40 no_match my_idx=39
+  cycle 65: K=3 N=39 no_match my_idx=38
+  cycle 70: K=3 N=38 no_match my_idx=37
+  cycle 75: K=3 N=38 no_match my_idx=37
+cycle 80 starting, dead=False, elapsed=-548.5s
