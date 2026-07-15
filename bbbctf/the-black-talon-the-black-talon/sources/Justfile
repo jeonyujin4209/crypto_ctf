@@ -1,0 +1,32 @@
+default:
+    @echo "This justfile is just for debugging purposes"
+    @echo "NOTE: Use 'just orch' to run the orchestrator"
+    @just --list --unsorted
+
+docker:
+    docker build -t the-black-talon .
+    docker run --rm -p 1337:1337 the-black-talon
+
+socat:
+    cargo build
+    socat TCP-LISTEN:1337,fork,reuseaddr EXEC:target/debug/orchestrator
+
+socat-release:
+    cargo build --release
+    socat TCP-LISTEN:1337,fork,reuseaddr EXEC:target/release/orchestrator
+
+orch +FLAGS='-v':
+    cargo build
+    cargo run --bin orchestrator -- {{FLAGS}}
+
+network:
+    cargo run --bin network -- -v
+
+bots:
+    cargo run --bin client -- --channel test -m 100
+
+secret_inject:
+    cargo run --bin client -- -ev -u "u$RANDOM" --secret "testtest" --channel test
+
+request_shares USERNAME PASSWORD IDENT:
+    cargo run --bin client -- -ev -u "{{USERNAME}}" --password "{{PASSWORD}}" --channel test --request-release "{{IDENT}}"

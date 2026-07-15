@@ -1,0 +1,4 @@
+ # As of writing, latest stable is 1.95.0; should not actually impact anything
+ # in this challnge though, so we just set it to stable.
+[toolchain]
+channel = "stable"
